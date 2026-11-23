@@ -671,52 +671,210 @@ const UI={
  async refresh(){await SIGD.refresh();PT.hydrate();bellPaint()},
 };
 const INF=(()=>{
- let root,screen='home',doc=null,section=null,reviewing=false,cb=()=>{};
- const myDocs=()=>SIGD.data.reports.filter(p=>p.teacher.id===U.teacherId);
- const catalog=()=>doc?.catalogSnapshot||SIGD.data.catalog;
- const sections=()=>catalog().sections.filter(s=>s.active).sort((a,b)=>a.order-b.order);
- const editable=()=>doc&&!reviewing&&['draft','returned'].includes(doc.status);
- const get=id=>root.getElementById(id),esc=UI.esc,b=UI.button;
- function items(){return [['layout-dashboard','Mis informes','home'],...(doc?sections().map(s=>['list-check',s.label,'section:'+s.id,doc.sections[s.id]?.completion==='done'?0:1]):[]),['paperclip','Evidencias','evidence'],...(U.roles.includes('head')?[['clipboard-check','Revisión de informes','inbox']]:[])]}
- function home(){doc=myDocs()[0]||null;const approvedPlan=Object.values(SIGD.data.planState.plans).some(p=>p.teacher.id===U.teacherId&&p.semester.id===SIGD.data.period.id&&p.status==='approved');return UI.head('Informe de Actividades',SIGD.data.period.code,b('create','Nuevo informe',true))+(!approvedPlan?UI.notice('El plan del periodo debe estar aprobado para iniciar el informe.'):'')+`<section class="xc"><h2>Mis informes</h2>${UI.table(['Periodo','Estado','Versión','Acciones'],myDocs().map(p=>[esc(p.semester.label),UI.status(p.status),p.version,b('edit','Consultar',false,`data-id="${p.id}"`)+b('export','Exportar',false,`data-id="${p.id}"`)]))}</section>`}
- function editor(){if(!doc)return UI.notice('Crea un informe después de que se apruebe tu plan.');const all=sections(),sec=all.find(s=>s.id===section)||all[0];section=sec.id;const a=doc.sections[section],done=all.filter(s=>doc.sections[s.id]?.completion==='done').length,locked=!editable();
-  return UI.head('Informe '+doc.semester.label,`${doc.teacher.name} · ${UI.status(doc.status)} · Versión ${doc.version}`,reviewing?b('back','Volver a revisión'):b('save','Guardar borrador')+b('preview','Vista previa')+b('send','Enviar a revisión',true,locked?'disabled':''))+
-  (doc.lastReturn?UI.notice(doc.lastReturn.comment):'')+(locked?UI.notice(reviewing?'Revisión de la versión enviada. Consulta cada sección antes de aprobar.':'La edición está bloqueada para conservar la versión enviada.'):'')+
-  `<section class="xc"><div class="hr1"><b>Avance de captura</b><span>${done} de ${all.length} secciones listas</span></div><div class="bar" role="progressbar" aria-label="Avance del informe" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${all.length}"><i style="width:${100*done/all.length}%"></i></div></section>`+
-  `<div class="pg"><div class="main"><section class="xc"><div class="hd"><h2>${esc(sec.label)}</h2>${!locked?b('add','Agregar actividad'):''}</div><fieldset ${locked?'disabled':''} style="border:0;padding:0">${a.rows.map((r,i)=>`<section class="box"><div class="hr1"><h3>Actividad ${i+1}</h3>${b('remove','Eliminar',false,`data-id="${r.id}"`)}</div><div class="g2">${sec.fields.map(f=>UI.field(f,r[f.id],r.id)).join('')}</div></section>`).join('')||'<p class="mut">Sin actividades registradas.</p>'}</fieldset><div class="rowa">${!locked?b('confirm','Guardar sección',true)+b('na','Sin actividad'):''}${reviewing?b('visit','Marcar sección revisada',true):''}</div></section>${section==='docencia'?courses(locked):''}</div><aside class="side"><section class="xc"><h2>Índice del informe</h2>${all.map(s=>`<button class="btn ${s.id===section?'tonal':''}" data-act="section" data-id="${s.id}" style="width:100%;justify-content:space-between;margin-bottom:8px">${esc(s.label)} ${UI.icon(doc.sections[s.id]?.completion==='done'?'circle-check':'alert-triangle')}</button>`).join('')}</section>${reviewing?`<section class="xc"><h2>Decisión</h2><label class="fl">Observaciones<textarea id="reviewComment" rows="4"></textarea></label><div class="rowa">${b('approve','Aprobar',true)}${b('return','Solicitar correcciones')}</div></section>`:''}</aside></div>`;
- }
- function courses(locked){return `<section class="xc"><h2>Resultados de cursos</h2><fieldset ${locked?'disabled':''} style="border:0;padding:0">${(doc.courseResults||[]).map(r=>`<section class="box"><h3>${esc(r.subject)} · Grupo ${esc(r.group)}</h3><div class="g2"><label class="fl">Alumnos inscritos<input type="number" min="0" data-course="${r.assignmentId}" data-key="enrolled" value="${r.enrolled}"></label><label class="fl">Alumnos aprobados<input type="number" min="0" max="${r.enrolled}" data-course="${r.assignmentId}" data-key="passed" value="${r.passed}"></label><label class="fl">Justificación de reprobación<textarea data-course="${r.assignmentId}" data-key="justification">${esc(r.justification)}</textarea></label></div><p>Reprobación: ${r.enrolled?((r.enrolled-r.passed)/r.enrolled*100).toFixed(1)+'%':'Sin alumnos'}. Umbral para justificar: ${SIGD.data.period.rejection_threshold}%.</p></section>`).join('')}</fieldset></section>`}
- function collect(){if(!editable()||!section)return;const sec=sections().find(s=>s.id===section);for(const row of doc.sections[section].rows)Object.assign(row,UI.read(root,sec.fields,row.id));for(const el of root.querySelectorAll('[data-course]')){const r=doc.courseResults.find(r=>r.assignmentId===el.dataset.course);r[el.dataset.key]=el.dataset.key==='justification'?el.value:Number(el.value)}}
- async function save(confirm=false){collect();const content=structuredClone(doc);if(confirm)content.confirmSection=section;doc=await SIGD.request('/documents/'+doc.id+'/save','POST',{revision:doc.revision,content});await UI.refresh();get('message').textContent='Guardado en el servidor.'}
- function inbox(){const rows=SIGD.data.reports.filter(d=>d.teacher.id!==U.teacherId&&d.status==='in_review');return UI.head('Revisión de informes',SIGD.data.period.code)+`<section class="xc">${UI.table(['Docente','Periodo','Versión','Acciones'],rows.map(d=>[esc(d.teacher.name),esc(d.semester.label),d.version,b('review','Revisar',true,`data-id="${d.id}"`)]))}</section>`}
- async function evidence(){const list=await SIGD.request('/evidence');get('view').innerHTML=UI.head('Evidencias',doc?.semester.label||SIGD.data.period.code)+(doc&&editable()?`<section class="xc"><h2>Adjuntar evidencia</h2><p>PDF, PNG o JPEG de hasta 5 MiB.</p><label class="fl">Archivo<input id="upload" type="file" accept="application/pdf,image/png,image/jpeg"></label>${b('upload','Subir archivo',true)}</section>`:UI.notice('Abre un informe en borrador para adjuntar evidencias.'))+`<section class="xc">${UI.table(['Archivo','Tamaño','Acciones'],list.filter(e=>!doc||e.document_id===doc.id).map(e=>[esc(e.filename),(e.bytes/1024).toFixed(1)+' KiB',`<a class="btn" href="/api/evidence/${e.id}">Descargar</a>`]))}</section>`}
- function preview(){return UI.head('Vista previa del informe',doc.semester.label,b('edit-current','Volver')+b('print','Imprimir PDF',true))+`<section class="xc" id="printable"><h2>Universidad del Istmo</h2><p>${esc(doc.teacher.name)} · ${UI.status(doc.status)} · Versión ${doc.version}</p>${sections().map(s=>`<h3>${esc(s.label)}</h3>${UI.table(s.fields.map(f=>f.label),doc.sections[s.id].rows.map(r=>s.fields.map(f=>esc(r[f.id]))))}`).join('')}${courses(true)}</section>`}
- function render(){if(!root)return;get('view').innerHTML=screen==='inbox'?inbox():screen==='editor'?editor():screen==='preview'?preview():screen==='evidence'?'':home();if(screen==='evidence')evidence().catch(e=>UI.error(root,e));cb()}
- async function action(act,el){
-  if(act==='create'){doc=await SIGD.request('/documents','POST',{kind:'REPORT'});await UI.refresh();section=sections()[0]?.id;reviewing=false;screen='editor'}
-  else if(act==='edit'){doc=SIGD.data.reports.find(p=>p.id===el.dataset.id);reviewing=false;section=sections()[0]?.id;screen='editor'}
-  else if(act==='edit-current'){screen='editor'}
-  else if(act==='section'){if(editable())collect();section=el.dataset.id;screen='editor'}
-  else if(act==='add'){collect();doc.sections[section].rows.push({id:crypto.randomUUID()});doc.sections[section].applicability='applies';doc.sections[section].completion='pending'}
-  else if(act==='remove'){collect();doc.sections[section].rows=doc.sections[section].rows.filter(r=>r.id!==el.dataset.id);doc.sections[section].completion='pending'}
-  else if(act==='save'){await save()}
-  else if(act==='confirm'){await save(true)}
-  else if(act==='na'){collect();doc.sections[section].applicability='not_applicable';doc.sections[section].completion='done';await save(true)}
-  else if(act==='send'){await save();if(!confirm('¿Enviar esta versión a revisión? La edición quedará bloqueada.'))return;doc=await SIGD.request('/documents/'+doc.id+'/submit','POST',{revision:doc.revision},{'Idempotency-Key':SIGD.key()});await UI.refresh();screen='home'}
-  else if(act==='review'){doc=SIGD.data.reports.find(p=>p.id===el.dataset.id);reviewing=true;section=sections()[0].id;screen='editor'}
-  else if(act==='visit'){await SIGD.request('/documents/'+doc.id+'/visit','POST',{version:doc.version,section});get('message').textContent='Sección revisada.';return}
-  else if(act==='approve'||act==='return'){const comment=get('reviewComment').value;doc=await SIGD.request('/documents/'+doc.id+'/review','POST',{revision:doc.revision,decision:act==='approve'?'approved':'returned',comment},{'Idempotency-Key':SIGD.key()});await UI.refresh();screen='inbox'}
-  else if(act==='back'){screen=reviewing?'inbox':'home'}
-  else if(act==='upload'){const file=get('upload').files[0];if(!file)throw Error('Selecciona un archivo.');await SIGD.request('/documents/'+doc.id+'/evidence','POST',file,{'Content-Type':file.type,'X-Filename':encodeURIComponent(file.name)});screen='evidence'}
-  else if(act==='preview'){collect();screen='preview'}
-  else if(act==='export'){doc=SIGD.data.reports.find(p=>p.id===el.dataset.id);screen='preview'}
-  else if(act==='print'){const win=window.open('','_blank');if(!win)throw Error('Habilita la ventana de impresión.');win.document.write('<!doctype html><html lang="es"><meta charset="utf-8"><title>Informe de actividades</title><style>body{font:11pt Arial;margin:20mm}table{border-collapse:collapse;width:100%}th,td{border:1px solid #bbb;padding:6px;text-align:left}section{break-inside:avoid}button{display:none}input,textarea{border:0;font:inherit}h3{margin-top:24px}</style>'+get('printable').outerHTML+'</html>');win.document.close();win.print();return}
-  render();
- }
- function mount(el,css){root=UI.mount(el,PTCSS+css);root.addEventListener('click',e=>{const el=e.target.closest('[data-act]');if(el&&!el.disabled)action(el.dataset.act,el).catch(err=>UI.error(root,err))});render()}
- function navGo(k){collect();if(k.startsWith('section:')){section=k.slice(8);screen='editor'}else screen=k;render()}
- return{mount,items,navGo,active:()=>screen==='editor'?'section:'+section:screen,reset(){root=null;doc=null;screen='home';reviewing=false},set onChange(f){cb=f}};
-})();
+const IC={doc:'file-description',gauge:'gauge',cal:'calendar-event',plusc:'circle-plus',list:'list',pen:'pencil',trash:'trash',eye:'eye',dl:'download',okc:'circle-check',alc:'alert-triangle',alt:'alert-triangle',bell:'bell',cla:'message-exclamation',cll:'clipboard-list',clc:'clipboard-check',chr:'chevron-right',chl:'chevron-left',save:'device-floppy',send:'send',clock:'clock',book:'book',flask:'flask',ban:'ban',up:'upload',plus:'plus',x:'x',info:'info-circle',chart:'chart-bar',ck:'check',circ:'circle',print:'printer',back:'arrow-left',cap:'school',case:'briefcase'};
+let root=null,host=null,lastFocus=null,api={onChange(){}};
+const $=s=>root.querySelector(s),$$=s=>[...root.querySelectorAll(s)];
+const I=(n,c='')=>`<i class="ti ti-${IC[n]||n} ${c}" aria-hidden="true"></i>`;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today=()=>new Date().toLocaleDateString('es-MX',{day:'2-digit',month:'2-digit',year:'numeric'});
+const now=()=>today()+' '+new Date().toTimeString().slice(0,5);
+const fmt=s=>s?s.split('-').reverse().join('/'):'';
+const SEC=[['A','Docencia','DOCENCIA','book'],['B','Investigación','INVESTIGACIÓN','flask'],['C','Formación de Recursos Humanos','FORMACIÓN RH','doc'],['D','Tutorías','TUTORÍAS','doc'],['E','Vinculación','VINCULACIÓN','doc'],['F','Difusión de la Cultura','DIFUSIÓN CULTURA','doc'],['G','Gestión','GESTIÓN','doc'],['H','Distinciones','DISTINCIONES','doc'],['I','Promoción al Desarrollo','PROMOCIÓN AL DESARROLLO','doc']];
+const G={B:[['Memorias de congreso',['Trabajo presentado','Congreso','Fecha','Lugar']],['Ponencias en congresos, seminarios, foros o talleres',['Evento','Fecha','Lugar']],['Publicación de carteles',['Nombre del cartel','Fecha','Lugar']],['Libros / capítulos de libro',['Título','Autores','Editorial','Fecha']],['Otros (patente, informe técnico, prototipo…)',['Actividad','Clave / oficio / informe','Descripción']]],
+C:[['Jurado de exámenes profesionales',['Sustentante','Fecha']],['Dirección de tesis (solo concluidas y aprobadas)',['Título de tesis','Tesista','Fecha de conclusión']],['Revisión de tesis',['Título de tesis','Tesista','Fecha']]],
+D:[['Tutorados atendidos',['Nombre del tutorado','Matrícula','Semestre / grupo']]],
+E:[['Asesoría y capacitación profesional externas',['Descripción','Institución o empresa']],['Distinciones obtenidas',['Descripción']],['Otras actividades de vinculación',['Descripción']]],
+F:[['Participación en eventos culturales',['Evento','Fecha']],['Coordinación relacionada con la cultura',['Descripción']],['Compilación de libros y revistas culturales',['Descripción']],['Elaboración de materiales (trípticos, folletos, carteles)',['Descripción']]],
+G:[['Integrante de comisión',['Comisión','Periodo']],['Integrante de comité',['Comité','Periodo']],['Coordinador(a) de programa',['Programa','Periodo']],['Planeación institucional',['Descripción']],['PRODEP',['Descripción']],['CONACYT',['Descripción']],['Representaciones externas a la UNISTMO',['Descripción']],['Sinodales en concursos de definitividad',['Descripción']],['Viajes de prácticas',['Descripción']],['Actualización de planes y programas',['Descripción']],['Representante de Cuerpo Académico',['Descripción','Periodo']],['Otras actividades de gestión',['Descripción']]],
+H:[['Distinciones, perfil deseable y becas',['Nombre de distinción','Fuente de financiamiento','Nivel','Vigencia (inicio–término)']]],
+I:[['Proyectos de promoción al desarrollo',['Proyecto','Hombres beneficiados','Mujeres beneficiadas','Municipio']]]};
+const mk=k=>G[k].map(g=>[g[1].map(()=>'')]);
+const mkd=()=>({B:{p:{},a:{},arts:[],projs:[],x:mk('B')},C:mk('C'),D:mk('D'),E:mk('E'),F:mk('F'),G:mk('G'),H:mk('H'),I:mk('I')});
+const SL={A:'Docencia',B:'Investigación',C:'Formación RH',D:'Tutorías',E:'Vinculación',F:'Difusión de la cultura',G:'Gestión',H:'Distinciones',I:'Promoción al desarrollo'};
+const SIN={na:'No aplica',e1:'Extraordinario 1',e2:'Extraordinario 2',es:'Especial'};
+const PL={borrador:['Borrador','pencil'],revision:['En revisión','clock'],aprobado:['Aprobado','circle-check'],obs:['Devuelto','alert-triangle']};
+const STN={borrador:'Borrador',revision:'En revisión',aprobado:'Aprobado',obs:'Devuelto'};
+const initial=()=>({st:'borrador',del:false,sent:null,apr:null,cur:'A',mod:(()=>{const d=new Date(),q=n=>String(n).padStart(2,'0');return q(d.getDate())+'/'+q(d.getMonth()+1)+'/'+d.getFullYear()+' '+q(d.getHours())+':'+q(d.getMinutes())})(),
+ courses:[{n:'Programación Web',g:'404-A',a:35,r:15,j:''},{n:'Bases de Datos',g:'405-B',a:28,r:35,j:'Grupo numeroso y contenidos complejos.'}],sin:['na'],esp:'',
+ sec:{A:'done',B:'pend',C:'noact',D:'noact',E:'noact',F:'noact',G:'noact',H:'noact',I:'noact'},
+ d:mkd(),
+ obs:['Justificar reprobación en Bases de Datos (35%).','Completar Investigación.']});
+const blank=()=>({st:'borrador',del:false,sent:null,apr:null,cur:'A',mod:now(),courses:[],sin:['na'],esp:'',sec:{A:'pend',B:'pend',C:'pend',D:'pend',E:'pend',F:'pend',G:'pend',H:'pend',I:'pend'},d:mkd(),obs:[]});
+const SAMPLE={courses:[{n:'Estructuras de Datos',g:'301-A',a:30,r:10,j:''},{n:'Redes',g:'502-B',a:26,r:32,j:'Alta inasistencia durante el semestre.'}],sin:['na'],esp:'',sec:{A:'done',B:'noact',C:'noact',D:'done',E:'noact',F:'noact',G:'noact',H:'noact',I:'noact'},d:Object.assign(mkd(),{D:[[['Ana López Ruiz','2201001','3° A'],['Luis Pérez Gómez','2101045','5° B']]]})};
+let S,JPo,JR,RV,JI,PV,PF,role,roleKey,screen,DOC=null,PVD=null,HYD='',SAVE=Promise.resolve();const VIS=new Set();
+function reset(){S=Object.assign(blank(),{del:true});DOC=null;PVD=null;HYD='';VIS.clear();if(0)S=initial();JPo=[];JR=[];RV={i:0,k:'A'};JI=0;PV=null;PF='dp';role=null;roleKey=null;screen='dp'}
+reset();
+const person=()=>DOC?.teacher?.name||U?.n||'';
+const RS={draft:'borrador',in_review:'revision',approved:'aprobado',returned:'obs'};
+const PER=()=>SIGD.data?.period?.code||'';
+const TH=()=>Number(SIGD.data?.period?.rejection_threshold??30);
+const fd=x=>x?new Date(x).toLocaleDateString('es-MX',{day:'2-digit',month:'2-digit',year:'numeric'}):null;
+const fdt=x=>x?fd(x)+' '+new Date(x).toTimeString().slice(0,5):now();
+const DEAD=()=>fd((SIGD.data?.windows||[]).find(w=>w.kind==='REPORT')?.closes_at)||'--';
+const mine=()=>(SIGD.data?.reports||[]).filter(r=>r.teacher.id===U?.teacherId);
+const others=()=>(SIGD.data?.reports||[]).filter(r=>r.teacher.id!==U?.teacherId);
+const curDoc=()=>mine().find(r=>r.semester.id===SIGD.data?.period?.id)||null;
+const byLabel=p=>mine().find(r=>r.semester.label===p)||null;
+const careerOf=d=>d?.teacher?.career||'';
+const JC=()=>SIGD.data?.profile?.career||careerOf(others()[0])||'';
+const decided=d=>d.status==='approved'||d.status==='returned'?(d.decidedAt||d.savedAt):null;
+function fromDoc(d){const i=d.informe||{courses:(d.courseResults||[]).map(c=>({assignmentId:c.assignmentId,n:c.subject,g:c.group,a:c.enrolled,r:c.enrolled?Math.round((c.enrolled-c.passed)/c.enrolled*100):0,j:c.justification||''})),sin:['na'],esp:'',sec:Object.fromEntries(SEC.map(x=>[x[0],'pend'])),d:null};
+ return{st:RS[d.status]||'borrador',del:false,sent:fd(d.submittedAt),apr:d.status==='approved'?fd(d.decidedAt):null,cur:'A',mod:fdt(d.savedAt),courses:i.courses.map(c=>({...c})),sin:[...i.sin],esp:i.esp||'',sec:{...i.sec},d:i.d||mkd(),obs:d.status==='returned'&&d.lastReturn?String(d.lastReturn.comment).split('\n').map(x=>x.trim()).filter(Boolean):[]}}
+function hydrate(force){if(!U)return;const d=curDoc(),key=d?d.id+'#'+d.revision:'none';if(!force&&key===HYD)return;HYD=key;const cur=S?.cur||'A';DOC=d;S=d?fromDoc(d):Object.assign(blank(),{del:true});S.cur=cur;
+ JPo=others().filter(r=>r.status==='in_review').map(r=>({n:r.teacher.name,i:inis(r.teacher.name),p:r.semester.label,d:fd(r.submittedAt)||'--',doc:r}));
+ JR=others().filter(r=>r.status==='approved'||r.status==='returned').sort((a,b)=>String(decided(b)).localeCompare(String(decided(a)))).map(r=>({n:r.teacher.name,i:inis(r.teacher.name),st:RS[r.status],d:fd(decided(r))||'--',doc:r}))}
+const toInf=()=>({courses:S.courses.map(c=>({assignmentId:c.assignmentId??null,n:String(c.n??''),g:String(c.g??''),a:Math.max(0,Math.trunc(Number(c.a)||0)),r:Math.min(100,Math.max(0,Number(c.r)||0)),j:String(c.j??'')})),sin:[...S.sin],esp:String(S.esp||''),sec:{...S.sec},d:S.d});
+async function refresh(){await SIGD.refresh();hydrate(true);api.onChange()}
+function persist(){if(!DOC)return Promise.resolve();const p=SAVE.catch(()=>{}).then(async()=>{try{const r=await SIGD.request('/documents/'+DOC.id+'/save','POST',{revision:DOC.revision,content:{informe:toInf()}});const list=SIGD.data.reports,ix=list.findIndex(x=>x.id===r.id);if(ix>-1)list[ix]=r;DOC=r;HYD=r.id+'#'+r.revision;S.mod=fdt(r.savedAt)}catch(e){toast(e.message);if(e.status===409){await refresh();if(screen==='editor')editor()}throw e}});SAVE=p;return p}
+function visitSec(d,k){const key=d.id+'#'+d.version+'#'+k;if(VIS.has(key))return;VIS.add(key);SIGD.request('/documents/'+d.id+'/visit','POST',{version:d.version,section:k}).catch(e=>{VIS.delete(key);toast(e.message)})}
+
+const short=n=>{const w=n.split(' ');return w[0][0]+'. '+(w[1]||'')};
+const inis=n=>{const w=n.split(' ');return w[0][0]+'.'+(w[1]||' ')[0]};
+const JP=()=>JPo;
+const canSwitch=()=>!!U&&U.roles.includes('teacher')&&U.roles.includes('head');
+const lock=()=>S.st==='revision'||S.st==='aprobado';
+const aBad=()=>S.courses.findIndex(c=>c.r>=TH()&&!String(c.j||'').trim());
+const st=k=>k==='A'&&aBad()>-1?'warn':S.sec[k];
+const nDone=()=>SEC.filter(s=>['done','noact'].includes(st(s[0]))).length;
+const rowsOk=g=>g.some(grp=>grp.some(r=>r.some(c=>String(c||'').trim())));
+const has=k=>k==='B'?S.d.B.projs.length>0||S.d.B.arts.length>0||rowsOk(S.d.B.x):rowsOk(S.d[k]);
+function lab(k){const s=st(k);if(s==='noact')return'Sin actividad';if(s==='done')return k==='A'?S.courses.length+' cursos'+(S.courses.some(c=>c.r>=TH())?', justificada':''):'Completo';return'Pendiente'}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),3200)}
+function openM(id){lastFocus=root.activeElement||null;$('#mb').classList.remove('hidden');$$('.md').forEach(m=>m.classList.toggle('hidden',m.id!==id));const f=$('#'+id).querySelector('textarea,button:not(.x),input');setTimeout(()=>f&&f.focus(),30)}
+const closeM=()=>{$('#mb').classList.add('hidden');if(lastFocus&&lastFocus.focus&&lastFocus.isConnected)lastFocus.focus()};
+function go(id){screen=id;$$('.screen').forEach(s=>s.classList.toggle('active',s.id===id));({dp,dj,editor,review,preview}[id])();window.scrollTo(0,0);api.onChange()}
+const get=p=>p.split('.').reduce((o,k)=>o?.[k],S);
+function set(p,v){const k=p.split('.'),l=k.pop();k.reduce((o,x)=>o[x],S)[l]=v}
+const val=p=>esc(get(p)),chk=p=>get(p)?'checked':'';
+const pill=s=>`<span class="pill ${s}">${I(PL[s][1])}${PL[s][0]}</span>`;
+const btn=(c,i,t,a,v='',x='')=>`<button class="btn ${c}" data-act="${a}" data-v="${v}" ${x}>${i?I(i):''}${t}</button>`;
+const seg=()=>canSwitch()?`<div class="seg" role="group" aria-label="Vista del módulo"><button data-act="role" data-v="prof" aria-pressed="${role==='prof'}">${I('cap')}Docente</button><button data-act="role" data-v="jefe" aria-pressed="${role==='jefe'}">${I('case')}Jefatura</button></div>`:'';
+const tile=(ic,v,l)=>`<div class="tile"><span class="ic">${I(ic)}</span><div><b>${v}</b><small>${l}</small></div></div>`;
+/* ---------- Paneles ---------- */
+function rows(){const r=[];if(!S.del)r.push({p:'2026-2027 A',s:S.st,e:S.sent||'--',a:S.apr||'--',act:1});r.push({p:'2025-2026 B',s:'aprobado',e:'15/05/2026',a:'20/05/2026'},{p:'2025-2026 A',s:'obs',e:'10/01/2026',a:'--'});return r}
+function dp(){const R=rows(),al=[];
+ R.forEach(r=>{if(r.s==='obs')al.push(`Tu informe ${r.p} tiene observaciones pendientes.`);if(r.act&&r.s==='borrador')al.push(`Tu informe ${r.p} está en borrador; puedes enviarlo.`);if(r.act&&r.s==='revision')al.push(`Tu informe ${r.p} está en revisión por Jefatura.`);if(r.act&&r.s==='aprobado')al.push(`Tu informe ${r.p} fue aprobado.`)});
+ const ac=r=>({borrador:btn('sm','pen','Editar','edit')+btn('sm danger','trash','Eliminar','del'),revision:btn('sm','eye','Consultar','view',r.p),aprobado:btn('sm','eye','Consultar','view',r.p)+btn('sm','dl','Exportar','exp',r.p),obs:(r.act?btn('sm','pen','Editar','edit'):btn('sm','pen','Editar','edit2'))+btn('sm','eye','Consultar','view',r.p)})[r.s];
+ $('#dp').innerHTML=`<div class="hd"><div><h1>Panel de control</h1><p>Docente · ${esc(person())}</p></div><div class="acts">${seg()}${btn('primary','circle-plus','Nuevo informe','nuevo')}</div></div>
+ <div class="tiles">${tile('cal',esc(PER()),'Periodo activo')}${tile('clock',esc(DEAD()),'Fecha límite')}${tile('doc',S.del?'Sin informe':STN[S.st],'Estado de tu informe actual')}</div>
+ <div class="xc" id="tbl"><h2>${I('list')}Mis informes</h2><div class="tw"><table><thead><tr><th>Periodo</th><th>Estado</th><th>Envío</th><th>Aprobación</th><th class="r">Acciones</th></tr></thead><tbody>${R.map(r=>`<tr><td><b>${r.p}</b></td><td>${pill(r.s)}</td><td>${r.e}</td><td>${r.a}</td><td class="r">${ac(r)}</td></tr>`).join('')}</tbody></table></div></div>
+ <div class="xc al"><span class="ic">${I('bell')}</span><div style="flex:1"><h2>Alertas</h2><ul>${al.length?al.map(x=>`<li>${x}</li>`).join(''):'<li>No tienes alertas pendientes.</li>'}</ul></div></div>`}
+function dj(){const P=JP(),rv=JR.map(r=>`<tr><td><span class="who"><span class="av2">${r.i}</span>${r.n}</span></td><td>${pill(r.st)}</td><td>${r.d}</td><td class="r">${btn('sm','eye','Consultar','vrev',r.n)}</td></tr>`).join('');
+ $('#dj').innerHTML=`<div class="hd"><div><h1>Panel de control</h1><p>Jefatura de carrera${JC()?' · '+esc(JC()):''}</p></div><div class="acts">${seg()}</div></div>
+ <div class="tiles">${tile('cll',P.length,'Pendientes de revisión')}${tile('clc',JR.length,'Revisados recientemente')}</div>
+ <div class="xc"><h2>${I('cll')}Informes pendientes de revisión (${P.length})</h2><div class="tw"><table><thead><tr><th>Docente</th><th>Periodo</th><th>Fecha de envío</th><th class="r">Acciones</th></tr></thead><tbody>${P.length?P.map((r,i)=>`<tr><td><span class="who"><span class="av2">${r.i}</span>${esc(r.n)}</span></td><td>${r.p}</td><td>${r.d}</td><td class="r">${btn('sm primary','eye','Revisar','rev',i)}</td></tr>`).join(''):'<tr><td colspan="4" class="mut">No hay informes pendientes.</td></tr>'}</tbody></table></div></div>
+ <div class="xc"><h2>${I('clc')}Informes revisados recientemente</h2><div class="tw"><table><thead><tr><th>Docente</th><th>Estado</th><th>Fecha de revisión</th><th class="r">Acciones</th></tr></thead><tbody>${rv||'<tr><td colspan="4" class="mut">Aún no hay informes revisados.</td></tr>'}</tbody></table></div></div>`}
+/* ---------- Editor ---------- */
+function editor(){const L=lock(),n=nDone(),pc=Math.round(n/9*100);
+ if(S.del){$('#editor').innerHTML=`<div class="hd"><div><h1>Mi informe</h1><p>No tienes un informe del periodo ${esc(PER())}.</p></div><div class="acts">${btn('primary','circle-plus','Nuevo informe','nuevo')}</div></div>`;return}
+ $('#editor').innerHTML=`<button class="crumb" data-act="back">${I('back')}Volver al panel</button>
+ <div class="hd"><div><h1>Informe ${esc(PER())} <span class="pill ${S.st}">${I(PL[S.st][1])}${STN[S.st]}</span></h1><p>${I('clock')} Última modificación: ${S.mod}</p>
+ <div class="prog"><b>Progreso general: <span class="gt">${pc}%</span></b><span class="mut">(${n} de 9 secciones listas)</span><div class="bar" role="progressbar" aria-valuenow="${pc}" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso del informe"><i style="width:${pc}%"></i></div></div></div>
+ <div class="acts">${btn('tonal','save','Guardar borrador','saveR','',L?'disabled':'')}${btn('','eye','Vista previa','prev')}${btn('primary','send','Enviar a revisión','send','',L?'disabled':'')}</div></div>
+ ${L?`<div class="lockb">${I('info')}El informe está ${S.st==='aprobado'?'aprobado':'en revisión'}; la edición está bloqueada.</div>`:''}
+ <div class="eg"><aside class="xc" aria-label="Índice del informe"><h3 class="cap">Índice del informe</h3>${SEC.map(([k])=>{const s=st(k);return`<button class="xi ${S.cur===k?'on':''} ${s==='pend'||s==='warn'?'w':''}" data-act="cur" data-v="${k}" ${S.cur===k?'aria-current="true"':''}>${I(s==='done'?'okc':s==='noact'?'circ':'alt',s==='done'?'c1':s==='noact'?'c3':'c2')}<span class="t"><b>${k}. ${SL[k]}</b><small>${lab(k)}</small></span>${I('chr','ch')}</button>`}).join('')}</aside>
+ <section class="xc"><fieldset id="sc" ${L?'disabled':''}></fieldset></section>
+ <aside class="xc ob"><span class="ic">${I('cla')}</span><h3>Observaciones de Jefatura</h3>${S.obs.length?`<ul>${S.obs.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>${btn('primary','okc','Marcar como atendidas','accObs')}`:'<p class="mut">Sin observaciones.</p>'}</aside></div>`;
+ sec()}
+function sec(){const k=S.cur,m=SEC.find(s=>s[0]===k);let b=k==='A'?secA():k==='B'?secB():secG(k);
+ $('#sc').innerHTML=`<div class="sh"><span class="ic">${I(m[3])}</span><h2>${k}. ${m[1]}</h2></div>${b}<div class="acts2">${btn('tonal','save','Guardar sección','ss')}${btn('warnb','ban','Marcar como sin actividad','na')}</div>`;
+ $$('#sc [data-b]').forEach(e=>{const f=()=>{let v=e.type==='checkbox'?e.checked:e.type==='number'?(e.value===''?'':Number(e.value)):e.value;const p=e.dataset.b;set(p,v);if(/^courses\.\d+\.(n|r)$/.test(p))updRep(+p.split('.')[1])};e.addEventListener('input',f);e.addEventListener('change',f)});
+ $$('#sc [data-sin]').forEach(e=>e.addEventListener('change',()=>{const k=e.dataset.sin;let a=S.sin.filter(x=>x!==k);if(e.checked){a=k==='na'?['na']:[...a.filter(x=>x!=='na'),k]}S.sin=a;sec()}));
+ const fi=$('#fa');if(fi)fi.addEventListener('change',()=>{const f=fi.files[0];if(!f)return;if(f.type!=='application/pdf'||f.size>5*1048576){toast('El archivo debe ser PDF de hasta 5 MB.');fi.value='';return}S.d.B.a.fn=f.name;$('#fn').textContent=f.name+' · subiendo…';(async()=>{try{await SAVE.catch(()=>{});const ev=await SIGD.request('/documents/'+DOC.id+'/evidence','POST',f,{'Content-Type':f.type,'X-Filename':encodeURIComponent(f.name)});S.d.B.a.ev=ev.id;$('#fn').textContent=f.name;toast('Archivo guardado como evidencia.')}catch(e){S.d.B.a.fn='';$('#fn').textContent='';toast(e.message)}})()})}
+function secA(){return `<div class="box"><h4>Datos generales</h4><div class="g2"><p>Número de empleado: ${esc(DOC?.teacher?.employeeNumber||U.k)}</p><p>Nombre: ${esc(person())}</p><p>Carrera: ${esc(careerOf(DOC))}</p><p>Fecha del informe: ${today()}</p></div></div>
+ <div class="box"><h4>Cursos impartidos</h4><div class="tw"><table class="ct"><thead><tr><th>Curso</th><th>Grupo</th><th>Alumnos inscritos</th><th><span class="sr" style="position:absolute;left:-9999px">Quitar</span></th></tr></thead><tbody>${S.courses.map((c,i)=>`<tr><td><input aria-label="Curso" data-b="courses.${i}.n" value="${esc(c.n)}" ${c.assignmentId?'readonly title="Dato institucional"':''}></td><td><input aria-label="Grupo" data-b="courses.${i}.g" value="${esc(c.g)}" ${c.assignmentId?'readonly title="Dato institucional"':''}></td><td><input aria-label="Alumnos inscritos" type="number" min="0" data-b="courses.${i}.a" value="${c.a}" ${c.assignmentId?'readonly title="Dato institucional"':''}></td><td><button class="btn sm sq danger" data-act="delc" data-v="${i}" aria-label="Eliminar curso" title="Eliminar curso">${I('trash')}</button></td></tr>`).join('')}</tbody></table></div>${btn('tonal sm mini','plus','Agregar curso','addc')}</div>
+ <div class="box"><h4>Sinodal de examen</h4>${Object.entries(SIN).map(([k,v])=>`<label class="ck"><input type="checkbox" data-sin="${k}" ${S.sin.includes(k)?'checked':''}>${v}</label>`).join('')}<label class="fl" style="margin-top:8px">Especificar<input data-b="esp" value="${esc(S.esp)}" placeholder="Escribe aquí (opcional)"></label></div>
+ <div class="box"><h4>Porcentaje de reprobación</h4><div id="rp">${S.courses.map((c,i)=>repRow(i)).join('')||'<span class="mut">Agrega cursos.</span>'}</div></div>`}
+const repCell=i=>{const c=S.courses[i];return c.r>=TH()?`<div class="rc"><button class="btn jbtn ${c.j.trim()?'ok':'bad'}" data-act="just" data-v="${i}"><span style="overflow:hidden;text-overflow:ellipsis">${c.j.trim()?esc(c.j):'Justifica el porcentaje de reprobación...'}</span></button><span class="req">${I('alt')}Obligatorio</span></div>`:`<span class="okt">No requiere justificación (&lt; ${TH()}%)</span>`};
+const repRow=i=>{const c=S.courses[i];return`<div class="rp"><span class="lb" id="rl${i}">${esc(c.n)||'Curso'}</span><span class="pcw"><input aria-label="Porcentaje de reprobación" type="number" min="0" max="100" data-b="courses.${i}.r" value="${c.r}">%</span><div id="rc${i}">${repCell(i)}</div></div>`};
+function updRep(i){const c=S.courses[i];if(c.r>100||c.r<0){c.r=Math.min(100,Math.max(0,c.r||0))}const l=$('#rl'+i),r=$('#rc'+i);if(l)l.textContent=c.n||'Curso';if(r)r.innerHTML=repCell(i)}
+function secB(){const a=S.d.B.a;return `<div class="box"><h4>Proyectos <small class="mut" style="font-weight:400">(puedes agregar varios)</small></h4><div class="gr r2"><label class="fl">Nombre del proyecto<input data-b="d.B.p.nombre" value="${val('d.B.p.nombre')}"></label><label class="fl">Clave/oficio<input data-b="d.B.p.clave" value="${val('d.B.p.clave')}"></label></div>
+ <div style="margin:10px 0 2px"><small class="mut">Tipo de proyecto</small><div>${[['int','Interno'],['con','Conacyt'],['pro','Prodep'],['otr','Otro']].map(([k,v])=>`<label class="ck"><input type="checkbox" data-b="d.B.p.t_${k}" ${chk('d.B.p.t_'+k)}>${v}</label>`).join('')}</div></div>
+ <div class="gr r2" style="margin-top:12px"><div><label class="fl">Vigencia<span style="display:flex;gap:8px;align-items:center"><input aria-label="Inicio de vigencia" type="date" data-b="d.B.p.v1" value="${val('d.B.p.v1')}">al<input aria-label="Fin de vigencia" type="date" data-b="d.B.p.v2" value="${val('d.B.p.v2')}"></span></label><label class="fl" style="margin-top:12px">Colaboradores<input data-b="d.B.p.col" value="${val('d.B.p.col')}"></label></div><label class="fl">Descripción<textarea rows="4" data-b="d.B.p.desc">${val('d.B.p.desc')}</textarea></label></div><div style="margin-top:12px;text-align:right">${btn('tonal','plus','Agregar proyecto','addp')}</div>${S.d.B.projs.length?`<ul class="arts">${S.d.B.projs.map((x,i)=>`<li><span><b>${esc(x.nombre)}</b>${x.clave?' · '+esc(x.clave):''}${x.v1?' · '+fmt(x.v1)+' al '+fmt(x.v2):''}</span><button class="btn sm sq danger" data-act="delp" data-v="${i}" aria-label="Eliminar proyecto">${I('trash')}</button></li>`).join('')}</ul>`:''}</div>
+ <div class="box blue"><h4>${I('doc')} Artículos <small class="mut" style="font-weight:400">(solo publicados en el periodo)</small></h4>
+ <div class="gr r3"><label class="fl">Título<input data-b="d.B.a.t" value="${val('d.B.a.t')}"></label><label class="fl">Revista<input data-b="d.B.a.r" value="${val('d.B.a.r')}"></label><label class="fl">Autores<input data-b="d.B.a.au" value="${val('d.B.a.au')}"></label></div>
+ <div class="gr r2" style="margin-top:12px"><div>${[['ind','Indexado'],['arb','Arbitrado'],['div','Divulgación'],['ace','Aceptado'],['pub','Publicado'],['nac','Nacional'],['ext','Extranjero']].map(([k,v])=>`<label class="ck"><input type="checkbox" data-b="d.B.a.${k}" ${chk('d.B.a.'+k)}>${v}</label>`).join('')}</div><label class="fl">Fecha de publicación<input type="date" data-b="d.B.a.f" value="${val('d.B.a.f')}"></label></div>
+ <div class="gr r3" style="margin-top:12px"><label class="fl">ISSN<input data-b="d.B.a.issn" value="${val('d.B.a.issn')}"></label><label class="fl">Índice: JCR / SCOPUS / Otro<input data-b="d.B.a.idx" value="${val('d.B.a.idx')}"></label><label class="fl">URL/DOI<input data-b="d.B.a.doi" value="${val('d.B.a.doi')}"></label></div>
+ <div style="display:flex;gap:12px;align-items:end;margin-top:12px;flex-wrap:wrap"><div style="flex:1;min-width:240px"><small class="mut">Adjuntar archivo (PDF, hasta 5 MB)</small><div class="fb"><label class="btn sm" for="fa" tabindex="0" data-act="pick">${I('up')}Seleccionar archivo</label><input type="file" id="fa" accept="application/pdf"><span id="fn">${esc(a.fn)||'Ningún archivo seleccionado'}</span></div></div>${btn('tonal','plus','Agregar artículo','adda')}</div>
+ ${S.d.B.arts.length?`<ul class="arts">${S.d.B.arts.map((x,i)=>`<li><span><b>${esc(x.t)}</b> – ${esc(x.r)}${x.fn?' · '+esc(x.fn):''}</span><button class="btn sm sq danger" data-act="dela" data-v="${i}" aria-label="Eliminar artículo">${I('trash')}</button></li>`).join('')}</ul>`:''}</div>`+grp('B',S.d.B.x,'d.B.x')}
+function grp(k,base,path){return G[k].map((g,gi)=>{const R=base[gi];return `<div class="box"><h4>${g[0]}</h4>${R.length?R.map((r,ri)=>`<div class="gr" style="grid-template-columns:repeat(${g[1].length},minmax(0,1fr)) 40px;margin-bottom:8px;align-items:end">${g[1].map((c,ci)=>`<label class="fl">${ri?'':c}<input aria-label="${c}" ${/Fecha/.test(c)?'type="date"':/Hombres|Mujeres/.test(c)?'type="number" min="0"':''} placeholder="${c}" data-b="${path}.${gi}.${ri}.${ci}" value="${esc(r[ci])}"></label>`).join('')}<button class="btn sm sq danger" style="min-height:40px" data-act="delr" data-v="${k}.${gi}.${ri}" aria-label="Eliminar registro" title="Eliminar registro">${I('trash')}</button></div>`).join(''):'<p class="mut" style="margin:0 0 8px">Sin registros.</p>'}${btn('tonal sm mini','plus','Agregar','addr',k+'.'+gi)}</div>`}).join('')}
+const secG=k=>grp(k,S.d[k],'d.'+k);
+/* ---------- Revisión / Vista previa ---------- */
+function summ(k,s){if(s.sec[k]==='noact')return'<p class="mut">Sin actividad que reportar.</p>';
+ if(k==='A')return s.courses.map(x=>`<div class="rw"><b>• ${esc(x.n)} (${esc(x.g)})</b><span>Alumnos: ${x.a}</span><span>Reprobación: <b class="${x.r>=TH()?'rd':''}">${x.r}%</b></span><span>Justificación: ${x.r>=TH()?'“'+esc(x.j||'Sin justificar')+'”':'<span class="gt">No requerida</span>'}</span></div>`).join('')+`<div class="rw"><span>Sinodal: <b>${s.sin.map(x=>SIN[x]).join(', ')||'—'}</b></span><span>Especificar: <b>${esc(s.esp)||'—'}</b></span></div>`;
+ const gs=(k,b)=>G[k].map((g,gi)=>b[gi].filter(r=>r.some(c=>String(c||'').trim())).map(r=>`<div class="rw"><b>${g[0]}</b>${g[1].map((c,ci)=>r[ci]?`<span>${c}: ${esc(/Fecha/.test(c)?fmt(r[ci]):r[ci])}</span>`:'').join('')}</div>`).join('')).join('');
+ if(k==='B'){const B=s.d.B,o=B.projs.map(p=>`<div class="rw"><span>Proyecto: <b>${esc(p.nombre)}</b></span><span>Clave: ${esc(p.clave)||'—'}</span><span>Vigencia: ${fmt(p.v1)||'—'} al ${fmt(p.v2)||'—'}</span><span>Colaboradores: ${esc(p.col)||'—'}</span></div>`).join('')+B.arts.map(x=>`<div class="att">${I('doc')}<span><small class="mut">Artículo adjunto</small><br><b>${esc(x.t)}${x.fn?' (PDF)':''}</b><br><small class="mut">DOI: ${esc(x.doi)||'—'} · ${esc(x.r)}</small></span></div>`).join(' ')+gs('B',B.x);return o||'<p class="mut">Pendiente de captura.</p>'}
+ return gs(k,s.d[k])||'<p class="mut">Pendiente de captura.</p>'}
+function review(){const P=JP(),t=P[RV.i];if(!t){return go('dj')}const s=fromDoc(t.doc),full=t.n;visitSec(t.doc,RV.k);
+ $('#review').innerHTML=`<button class="crumb" data-act="back2">${I('back')}Volver a pendientes</button><div class="hd"><div><h1>Revisión de informe</h1><p>Docente ${esc(full)} · Periodo ${t.p}</p></div><div class="acts"><span class="pill revision">${I('clock')}En revisión</span></div></div>
+ <div class="rv"><aside class="xc" aria-label="Índice"><h3 class="cap">Índice</h3>${SEC.map(([k,n])=>`<button class="xi ${RV.k===k?'on':''}" data-act="rk" data-v="${k}" ${RV.k===k?'aria-current="true"':''}>${I('okc','c1')}<span class="t"><b>${n.replace('Formación de Recursos Humanos','Formación RH').replace('Difusión de la Cultura','Difusión')}</b></span></button>`).join('')}</aside>
+ <div><div class="xc"><h3 class="cap">Contenido</h3><div class="box"><h4 style="color:var(--pon)">${I(SEC.find(x=>x[0]===RV.k)[3])}${SEC.find(x=>x[0]===RV.k)[1]}</h4><div style="margin-top:8px">${RV.k==='A'?`<small class="mut">Cursos impartidos (${s.courses.length} registrados)</small>`:''}${summ(RV.k,s)}</div></div>
+ <div class="rvb">${btn('primary','okc','Aprobar','apr')}${btn('warnb','alc','Devolver con observaciones','corr')}${btn('','dl','Exportar','exp',t.p)}${btn('','pen','Ver adjuntos','adj')}</div></div>
+ <div class="obx"><h4>Observaciones</h4><label class="fl">Escribe tus observaciones<textarea id="ro" rows="2" placeholder="Escribe tus observaciones aquí..."></textarea></label>${btn('primary','send','Confirmar devolución','sobs')}<div style="clear:both"></div></div></div></div>`}
+function preview(){const pd=PVD||(PV?byLabel(PV):DOC),s=PVD?fromDoc(PVD):(PV&&pd?fromDoc(pd):S),per=pd?.semester?.label||PER();
+ $('#preview').innerHTML=`<div class="pbar">${btn('','chl','Volver','back')}${btn('primary','print','Exportar / Imprimir','print')}</div><div class="pv"><h1>INFORME INDIVIDUAL DE ACTIVIDADES</h1><p style="text-align:center">Semestre ${per} · Campus ${esc(pd?.teacher?.campus||'')}</p><div class="g2" style="margin-top:12px"><p><b>Docente:</b> ${esc(pd?.teacher?.name||person())}</p><p><b>Número de empleado:</b> ${esc(pd?.teacher?.employeeNumber||U.k)}</p><p><b>Carrera:</b> ${esc(careerOf(pd))}</p><p><b>Fecha de elaboración:</b> ${today()}</p></div>${SEC.map(([k,n,t])=>`<h3>${k}. ${t}</h3>${summ(k,s)}`).join('')}<div class="sig"><div>Elaboró<br><small>Docente investigador</small></div><div>Revisó<br><small>Jefe de Carrera de ${esc(careerOf(pd))}</small></div></div></div>`}
+/* ---------- Modales ---------- */
+function sendModal(){const items=[['Datos generales','done','Completos'],...SEC.map(([k,n])=>[n,st(k),lab(k)])],bad=SEC.find(([k])=>['pend','warn'].includes(st(k)));
+ $('#msb').innerHTML=`<h3>Confirmar envío a revisión</h3><p>Estás a punto de enviar tu informe del periodo <b class="gt">${esc(PER())}</b>. Una vez enviado, no podrás editar hasta que Jefatura lo revise o solicite correcciones.</p>
+ <div class="cl2"><div class="head"><b>Verifica que todos los datos estén completos</b></div>${items.map(([n,s,l])=>{const o=s==='done'||s==='noact';return`<div>${I(o?'okc':'alt',o?'ok':'no')}<b>${n}</b><em class="${o?'ok':'no'}">– ${o?l:'Pendiente (requerido)'}</em></div>`}).join('')}</div>
+ ${bad?`<div class="nb">${I('alt')}<span><b>No se puede enviar:</b> La sección de ${bad[1]} está pendiente. Completa o marca como 'Sin actividad'.</span></div>`:''}
+ <div class="ac"><button class="btn" data-act="cm">Cancelar</button>${bad?btn('primary','','Ir a sección pendiente','goP',bad[0]):btn('primary','send','Confirmar envío','confS')}</div>`;openM('ms')}
+function delModal(){$('#msb').innerHTML=`<h3>Eliminar borrador</h3><p>Se eliminará el borrador del informe ${esc(PER())}. Esta acción no se puede deshacer.</p><div class="ac"><button class="btn" data-act="cm">Cancelar</button>${btn('danger','trash','Eliminar borrador','confD')}</div>`;openM('ms')}
+/* ---------- Acciones ---------- */
+function finish(k,t){toast(t);editor();api.onChange();persist().then(()=>{if(screen==='editor')editor()}).catch(()=>{})}
+const A={
+ cm:closeM,
+ role(v){role=v;go(role==='jefe'?'dj':'dp');toast('Vista cambiada a '+(role==='jefe'?'Jefatura.':'Docente.'))},
+ async nuevo(){if(S.del){try{await SIGD.request('/documents','POST',{kind:'REPORT'});await refresh();S.cur='A';go('editor');toast('Informe creado a partir de tu plan aprobado.')}catch(e){toast(e.message)}return}toast('Ya tienes un informe para '+PER()+'.');S.cur='A';go('editor')},
+ todos(){$('#tbl').scrollIntoView({behavior:'smooth',block:'start'})},
+ edit(){S.cur='A';go('editor')},edit2(){toast('Periodo cerrado: solo se puede editar el informe del periodo activo ('+PER()+').')},
+ del(){delModal()},async confD(){closeM();try{await SAVE.catch(()=>{});await SIGD.request('/documents/'+DOC.id,'DELETE');await refresh();dp();toast('Borrador eliminado.')}catch(e){toast(e.message)}},
+ view(p){PF='dp';PVD=null;PV=p===PER()?null:p;go('preview')},prev(){PVD=null;PV=null;PF='editor';go('preview')},
+ exp(p){PF=screen;PVD=screen==='review'?(JP()[RV.i]||{}).doc||null:null;PV=p===PER()?null:p;go('preview');setTimeout(()=>{try{window.print()}catch(e){toast('Use Ctrl+P para exportar a PDF.')}},300)},print(){try{window.print()}catch(e){toast('Use Ctrl+P para exportar a PDF.')}},
+ back(){go(screen==='preview'&&PF==='editor'?'editor':role==='jefe'?'dj':'dp')},
+ cur(k){S.cur=k;editor()},saveR(){persist().then(()=>{toast('Borrador guardado.');editor()}).catch(()=>{})},
+ addc(){S.courses.push({n:'Nuevo curso',g:'000-A',a:0,r:0,j:''});sec();toast('Curso agregado.')},
+ delc(i){if(S.courses[+i]?.assignmentId){toast('Este curso proviene de tu asignación institucional; no se puede eliminar.');return}S.courses.splice(+i,1);sec();toast('Curso eliminado.')},
+ just(i){$$('.thv').forEach(e=>e.textContent=TH());JI=+i;const c=S.courses[JI];$('#jm').textContent=c.n;$('#jp').textContent=c.r+'%';$('#jt').value=c.j;$('#je').classList.add('hidden');openM('mj')},
+ saveJ(){const v=$('#jt').value.trim();if(v.length<10){$('#je').textContent='La justificación es obligatoria (mínimo 10 caracteres).';$('#je').classList.remove('hidden');return}S.courses[JI].j=v;closeM();if(S.cur==='A'){$('#rc'+JI).innerHTML=repCell(JI)}toast('Justificación guardada correctamente.');persist().catch(()=>{})},
+ adda(){const a=S.d.B.a;if(!(a.t||'').trim()||!(a.r||'').trim()||!(a.au||'').trim()){toast('Completa título, revista y autores del artículo.');return}if(!a.pub){toast('Solo se registran artículos publicados en el periodo: marque "Publicado".');return}S.d.B.arts.push({...a});S.d.B.a={};sec();toast('Artículo agregado.')},
+ addp(){const p=S.d.B.p;if(!(p.nombre||'').trim()){toast('Escribe el nombre del proyecto.');return}S.d.B.projs.push({...p});S.d.B.p={};sec();toast('Proyecto agregado.')},
+ delp(i){S.d.B.projs.splice(+i,1);sec()},
+ addr(v){const[k,g]=v.split('.'),b=k==='B'?S.d.B.x:S.d[k];b[g].push(G[k][g][1].map(()=>''));sec()},
+ delr(v){const[k,g,r]=v.split('.'),b=k==='B'?S.d.B.x:S.d[k];b[g].splice(+r,1);sec()},
+ dela(i){S.d.B.arts.splice(+i,1);sec()},
+ ss(){const k=S.cur;if(k==='A'){const b=aBad();if(S.courses.some(c=>!c.n.trim()||c.r<0||c.r>100)){toast('Revisa los nombres de curso y que el porcentaje esté entre 0 y 100.');return}if(b>-1){toast(`Justifica el porcentaje de reprobación (≥ ${TH()}%).`);A.just(b);return}S.sec.A='done';return finish(k,'Sección Docencia guardada.')}
+  if(k==='B'&&(S.d.B.p.nombre||'').trim()){toast('Agrega el proyecto con "Agregar proyecto" antes de guardar.');return}
+  if(k==='B'&&(S.d.B.a.t||'').trim()){toast('Agrega el artículo con "Agregar artículo" antes de guardar.');return}
+  if(!has(k)){toast('Capture información o marque la sección como "Sin actividad".');return}S.sec[k]='done';finish(k,'Sección guardada.')},
+ na(){const k=S.cur;S.sec[k]='noact';finish(k,'Sección marcada como "Sin actividad que reportar".')},
+ accObs(){S.obs=[];toast('Observaciones aceptadas.');editor()},
+ send(){sendModal()},goP(k){closeM();S.cur=k==='A'&&aBad()<0?'B':k;editor();toast('Completa la sección o márcala como "Sin actividad".')},
+ async confS(){closeM();try{await persist();await SIGD.request('/documents/'+DOC.id+'/submit','POST',{revision:DOC.revision},{'Idempotency-Key':SIGD.key()});await refresh();toast('Informe enviado a revisión.');go('dp')}catch(e){toast(e.message)}},
+ rev(i){RV={i:+i,k:'A'};go('review')},vrev(n){toast('Informe de '+n+' ya revisado.')},back2(){go('dj')},rk(k){RV.k=k;review()},async adj(){const t=JP()[RV.i];try{const ev=(await SIGD.request('/evidence')).filter(e=>e.document_id===t?.doc?.id);toast(ev.length?'Adjuntos: '+ev.map(e=>e.filename).join(', '):'Este informe no tiene archivos adjuntos.')}catch(e){toast(e.message)}},
+ async apr(){const t=JP()[RV.i];if(!t)return;try{await SIGD.request('/documents/'+t.doc.id+'/review','POST',{revision:t.doc.revision,decision:'approved',comment:''},{'Idempotency-Key':SIGD.key()});await refresh();toast('Informe aprobado. Queda bloqueado para edición.');go('dj')}catch(e){toast(e.message)}},
+ corr(){const v=$('#ro').value.trim();if(!v){$('#ro').focus();toast('Escribe las observaciones para solicitar correcciones.');return}A.sobs()},
+ async sobs(){const v=$('#ro').value.trim();if(!v){$('#ro').focus();toast('Escribe las observaciones para solicitar correcciones.');return}const t=JP()[RV.i];if(!t)return;try{await SIGD.request('/documents/'+t.doc.id+'/review','POST',{revision:t.doc.revision,decision:'returned',comment:v},{'Idempotency-Key':SIGD.key()});await refresh();toast('Observaciones enviadas al profesor.');go('dj')}catch(e){toast(e.message)}}};
+const SKEL=`<div id="dp" class="screen"></div><div id="dj" class="screen"></div><div id="editor" class="screen"></div><div id="review" class="screen"></div><div id="preview" class="screen"></div>
+<div class="mb hidden" id="mb">
+ <div class="md hidden" id="mj" role="dialog" aria-modal="true" aria-labelledby="mjt"><button class="x" data-act="cm" aria-label="Cerrar">${I('x')}</button>
+  <h3 id="mjt">Justificar porcentaje de reprobación</h3>
+  <div class="jb"><span>${I('chart')}</span><div>Materia: <b id="jm"></b><br>Porcentaje: <b class="rd" id="jp"></b> (≥ <span class="thv">30</span>%: justificación obligatoria)</div></div>
+  <label class="fl">Motivo de la reprobación<textarea id="jt" placeholder="Describa el motivo de la reprobación..."></textarea></label><p class="err hidden" id="je" role="alert"></p>
+  <div class="inf">${I('info')}<span>Si el porcentaje es menor a <span class="thv">30</span>%, la justificación no es necesaria y se muestra el mensaje "No requiere justificación (&lt; <span class="thv">30</span>%)".</span></div>
+  <div class="ac"><button class="btn" data-act="cm">Cancelar</button><button class="btn primary" data-act="saveJ">${I('save')}Guardar justificación</button></div></div>
+ <div class="md hidden" id="ms" role="dialog" aria-modal="true"><button class="x" data-act="cm" aria-label="Cerrar">${I('x')}</button><div id="msb"></div></div>
+</div><div id="toast" role="status" aria-live="polite"></div>`;
+function mount(el,css){host=el;root=el.attachShadow({mode:'open'});root.innerHTML=`<style>${css}.screen{display:none}.screen.active{display:block}</style>${SKEL}`;
+ hydrate();if(roleKey!==U.k){roleKey=U.k;role=U.roles.includes('head')?'jefe':'prof';screen=role==='jefe'?'dj':'dp'}
+ root.addEventListener('click',e=>{const t=e.target.closest('[data-act]');if(t&&!t.disabled)A[t.dataset.act]?.(t.dataset.v,t)});
+ root.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#mb').classList.contains('hidden'))closeM();if(e.key==='Enter'&&e.target.dataset?.act==='pick')$('#fa').click()});
+ $('#mb').addEventListener('click',e=>{if(e.target.id==='mb')closeM()});
+ if(role==='jefe'&&['dp','editor','preview'].includes(screen))screen='dj';if(role==='prof'&&['dj','review'].includes(screen))screen='dp';
+ go(screen)}
+const items=()=>role==='jefe'?[['layout-dashboard','Panel de control','dj'],['clipboard-check','Revisión de informes','review']]:[['layout-dashboard','Panel de control','dp'],['pencil','Mi informe','editor']];
+function navGo(k){if(!root)return;if(k==='review'&&!JP().length){toast('No hay informes pendientes de revisión.');return}if(k==='review')RV={i:Math.min(RV.i,JP().length-1),k:'A'};if(k==='preview'){PV=null;PF='editor'}go(k)}
+return{mount,reset,items,navGo,active:()=>screen,set onChange(f){api.onChange=f}}})();
 const NX=(()=>{
  let root,screen='inicio',cb=()=>{},tables=null,catalog=null,selected='campuses',editing=null;
  const get=id=>root.getElementById(id),esc=UI.esc,b=UI.button;
@@ -752,11 +910,771 @@ const NX=(()=>{
  return{mount,go(s){screen=s;if(s==='periodos')selected='capture_windows';render()},active:()=>screen,views:VIEWS,set onChange(f){cb=f}};
 })();
 const VR=(()=>{
- let root,screen='resumen',cb=()=>{};
- const items=()=>[['layout-dashboard','Resumen institucional','resumen'],['users','Carga docente','carga']];
- async function render(){if(!root)return;const s=await SIGD.request('/statistics');const fmt=x=>x==null?'Sin datos':Number(x).toLocaleString('es-MX',{maximumFractionDigits:2});root.getElementById('view').innerHTML=UI.head(screen==='carga'?'Carga docente':'Resumen institucional',SIGD.data.period.code)+`<section class="xc"><h2>Indicadores del periodo</h2>${UI.table(['Indicador','Resultado'],[['Planes recibidos',s.plans],['Planes aprobados',s.approvedPlans],['Informes recibidos',s.reports],['Informes aprobados',s.approvedReports],['Carga semanal promedio',fmt(s.averageWeeklyHours)+(s.averageWeeklyHours==null?'':' h')],['Alumnos inscritos',s.enrolled],['Alumnos reprobados',s.failed],['Reprobación global',fmt(s.failurePercent)+(s.failurePercent==null?'':'%')]])}</section><section class="xc"><h2>Planes por docente</h2>${UI.table(['Docente','Carrera','Estado','Horas semanales'],s.rows.map(r=>[UI.esc(r.name),UI.esc(r.career),UI.status(r.state),fmt(r.hours)]))}</section>`;cb()}
- return{mount(el){root=UI.mount(el,PTCSS);render().catch(e=>UI.error(root,e))},items,navGo(s){screen=s;render().catch(e=>UI.error(root,e))},active:()=>screen,reset(){root=null;screen='resumen'},set onChange(f){cb=f}};
-})();
+let root=null,cb=()=>{},sec='resumen',pending=null;
+const $=id=>root.getElementById(id),$$=s=>[...root.querySelectorAll(s)];
+const ITEMS=[['layout-dashboard','Vista General y KPIs','resumen'],['chart-bar','Estadísticas de Reprobación','reprobacion'],['search','Búsqueda e Informes','busqueda'],['flask','Investigación y SNII','investigacion'],['history','Histórico y Comparativas','historico']];
+const RESTRINGIDAS=['investigacion','historico']; /* ocultas para el rol secretaria (restricted-route del prototipo) */
+/* Rol del prototipo según la cuenta del SIGD. Roles del prototipo: vicerrectoria | rectoria | secretaria | representante */
+const ROL_POR_CUENTA={'100':'vicerrectoria','118':'vicerrectoria','000':'vicerrectoria'};
+let rolDebug=null; /* solo lo cambia el botón flotante de depuración; si se quita ese bloque queda en null */
+const rol=()=>rolDebug||ROL_POR_CUENTA[U&&U.k]||'vicerrectoria';
+
+// ================= BASE DE DATOS DE SIMULACIÓN =================
+
+
+// Campus y carreras de la simulación (los nombres de Ixtepec y Juchitán son de ejemplo).
+
+
+// ===== Datos reales del SIGD (Service.vrData): reemplazan la base de simulación del prototipo =====
+const baseDocentes=[];const CAMPUS={};const SEMS=[];const PERIODOS=[];const REPROB={};const EVAL_CARRERA={};
+Object.defineProperty(REPROB,'undefined',{value:[],enumerable:false});
+let VRD={periodo:'',periodos:[],campus:{},sems:[],docentes:[],reprob:{},resumen:{}};
+function cargarDatos(v){VRD=v||VRD;const safe=t=>typeof t==='string'?t.replace(/[<>&"'`]/g,''):t;
+ const clean=o=>Array.isArray(o)?o.map(clean):o&&typeof o==='object'?Object.fromEntries(Object.entries(o).map(([k,x])=>[k,clean(x)])):safe(o);
+ const d=clean(VRD);baseDocentes.length=0;baseDocentes.push(...(d.docentes||[]));
+ for(const k of Object.keys(CAMPUS))delete CAMPUS[k];Object.assign(CAMPUS,d.campus||{});
+ SEMS.length=0;SEMS.push(...(d.sems||[]));PERIODOS.length=0;PERIODOS.push(...(d.periodos||[]));
+ for(const k of Object.keys(REPROB))delete REPROB[k];Object.assign(REPROB,d.reprob||{});PERIODOS.forEach(p=>{if(!REPROB[p])REPROB[p]=[]});
+ if(!PERIODOS.includes(F.periodo))F.periodo=d.periodo||PERIODOS[0]||''}
+function metricas(){const ds=baseDocentes,n=ds.length,f=x=>Number(x||0).toLocaleString('es-MX'),pc=(a,b)=>b?Math.round(a/b*1000)/10:0;
+ const P=ds.reduce((a,d)=>a+d.planHoras,0),RR=ds.reduce((a,d)=>a+d.realHoras,0),B=ds.reduce((a,d)=>a+Math.min(d.realHoras,d.planHoras),0),SUP=Math.max(0,RR-B),top=Math.max(P,RR)||1;
+ const cnt=e=>ds.filter(d=>d.estado===e).length,s={};for(const e of ['cumplido','incompleto','critico','extraordinario'])s[e]={n:cnt(e),p:pc(cnt(e),n)};
+ let acc=0;const seg=[['var(--green-text)','cumplido'],['#f59e0b','incompleto'],['var(--red-text)','critico'],['var(--purple-text)','extraordinario']].map(([c,e])=>{const a=acc;acc+=s[e].p;return`${c} ${a}% ${acc}%`});
+ const balTxt=!P?'Sin planes aprobados en el periodo':SUP>0?`Superávit detectado (+${pc(SUP,P)}%)`:RR<P?`Pendiente ${pc(P-RR,P)}% de lo comprometido`:'Cumplimiento completo';
+ const box=(cls,badge,lista,vacio,btn)=>{const x=lista[0];return`<div class="incident-box ${cls}"${cls==='box-purple'?' style="background-color: var(--purple-bg); border-color: var(--purple-border);"':''}><div><span class="badge ${badge[0]}">${badge[1]}</span><h4>${x?x.nombre+(lista.length>1?` (y ${lista.length-1} más)`:''):'Sin casos'}</h4><p>${x?x.inc.texto:vacio}</p></div>${x&&btn?`<button class="link-action ${btn[0]}" data-act="audit" data-v="${x.id}">${btn[1]}</button>`:''}</div>`};
+ const inc=t=>ds.filter(d=>d.inc&&d.inc.tipo===t);
+ const incHTML=box('box-red',['badge-red','Discrepancia de Carga'],inc('discrepancia'),'Sin discrepancias de carga en el periodo.',['text-red','Revisar discrepancia →'])
+  +box('box-gray',['badge-gray','⌛ Alerta Silenciosa'],inc('silenciosa'),'Todos los informes del periodo están entregados.',null)
+  +box('box-purple',['badge-purple','Caso Protegido'],inc('protegido'),'Sin casos justificados en el periodo.',['text-purple','Ver justificación →']);
+ const dist=ds.flatMap(d=>(d.distinciones||[]).map(x=>({x,d})));
+ const honorHTML=dist.length?dist.slice(0,4).map(({x,d})=>`<div class="honor-box"><i class="ti ti-award honor-icon" style="color: #fbbf24;"></i><div><span class="honor-tag text-primary">${x}</span><h4>${d.nombre}</h4><p>${d.carrera}</p></div></div>`).join(''):`<div class="honor-box"><i class="ti ti-award honor-icon" style="color: #9ca3af;"></i><div><span class="honor-tag text-primary">Sin registros</span><h4>Sin distinciones en el periodo</h4><p>Se mostrarán al registrarse en los expedientes docentes.</p></div></div>`;
+ const sni=ds.filter(d=>d.sni).length,pd=ds.filter(d=>d.perfilDeseable).length,per=VRD.periodo||'',prev=(VRD.periodos||[]).find(p=>p!==per)||'',rs=VRD.resumen||{};
+ const a=rs[prev]||null,b=rs[per]||{horas:RR,sni,criticos:cnt('critico')},tend=(x,y,inv)=>{if(!a)return`<div class="comp-col text-right text-muted font-bold flex-end">Sin periodo previo</div>`;const d=y-x,pp=x?Math.round(d/x*1000)/10:null,good=inv?d<0:d>0;return`<div class="comp-col text-right ${d===0?'text-muted':good?'text-success':'text-red'} font-bold flex-end"><i class="ti ti-trending-${d<0?'down':'up'}"></i> ${inv?(d<0?'Mejoría':d>0?'Aumento':'Sin cambio'):(pp===null?(d?'+'+d:'0'):(pp>0?'+':'')+pp+'%')}</div>`};
+ const tot=(a?a.sni:0)+b.sni;
+ const h={a:{sni:a?a.sni:0,horasTxt:a?f(a.horas)+' hrs':'—',sniTxt:a?a.sni+' docentes':'—',critTxt:a?a.criticos+' casos':'—'},b:{sni:b.sni,horasTxt:f(b.horas)+' hrs',criticos:b.criticos},aPct:pc(a?a.sni:0,tot),bPct:pc(b.sni,tot),
+  sniTxt:a&&a.sni?`${b.sni>=a.sni?'+':''}${pc(b.sni-a.sni,a.sni)}% Crecimiento`:'Sin periodo comparable',horasTend:tend(a?a.horas:0,b.horas),sniTend:tend(a?a.sni:0,b.sni),critTend:tend(a?a.criticos:0,b.criticos,true)};
+ const cars=[...new Set(Object.values(CAMPUS).flat())];
+ return{n,plan:f(P),real:f(RR),realPct:pc(RR,P),base:f(B),basePct:pc(B,RR||1),sup:f(SUP),supPct:pc(SUP,RR||1),wBase:pc(B,top),wSup:pc(SUP,top),balTxt,balClass:SUP>0||(P&&RR>=P)?'text-success':'text-warning',
+  extra:ds.reduce((a,d)=>a+(d.actividadesExtra||[]).length,0),extraord:cnt('extraordinario'),criticos:cnt('critico'),s,pieSem:n?`conic-gradient(${seg.join(',')})`:'#e5e7eb',incHTML,honorHTML,
+  carOpts:cars.map(c=>`<option value="${c}">${c}</option>`).join(''),sni,sniPct:pc(sni,n),dist:dist.length,distNuevas:dist.length?'en el periodo':'',cand:ds.filter(d=>d.perfilDeseable&&!d.sni).length,
+  pd,pdPct:pc(pd,n),npd:n-pd,npdPct:n?pc(n-pd,n):0,per,prev:prev||'anterior',h}}
+const LV=['campus','carrera','semestre','profesor'];
+const LV_TXT={global:'Global',campus:'Campus',carrera:'Carrera',semestre:'Semestre',profesor:'Profesor'};
+const LV_PL={campus:'campus',carrera:'carreras',semestre:'semestres',profesor:'profesores'};
+
+
+// ----- Estado del prototipo (vive en memoria; sobrevive a los cambios de rol y de pestaña) -----
+const F={campus:'',carrera:'',semestre:'',periodo:'',semaforo:''};
+const CARDS=[['balance','Balance Global: Planeado vs. Realizado'],['kpis','Indicadores clave (KPIs)'],['incidencias','Monitor de Entregas e Incidencias'],
+ ['reprob','Promedio de alumnos reprobados'],['incump','Incumplimientos detectados'],['reprob2','Reprobación: segunda vista para comparar'],['eval','Evaluación estudiantil (opcional)']];
+const nomCard=id=>(CARDS.find(c=>c[0]===id)||[,(typeof NOMBRES_EXTRA!=='undefined'&&NOMBRES_EXTRA[id])||id])[1];
+const clone=o=>JSON.parse(JSON.stringify(o));
+const FABRICA={order:['balance','kpis','reprob','incidencias','reprob2','incump','eval'],vis:{balance:1,kpis:1,incidencias:1,reprob:1,incump:1,reprob2:0,eval:0},
+ disp:{balance:1,kpis:1,incidencias:1,reprob:1,incump:1,reprob2:1,eval:1},persp:'campus',vista:'barras'};
+let DEF=clone(FABRICA),MINE=null,VISTAS=[],vistaAct='def',drawerOpen=false,aviso='';
+const cfg=()=>MINE||DEF;
+const esConfig=()=>rol()==='configurador';
+const RC={reprob:{persp:'campus',path:[],vista:'barras'},reprob2:{persp:'semestre',path:[],vista:'barras'}};
+const COLS={emp:1,campus:1,plan:1,estado:1,punt:1};
+const COLS_TXT={emp:'N° Emp.',campus:'Campus',plan:'Plan vs. Real',estado:'Estado',punt:'Puntuación'};
+let XT='cumplimiento',XINV=false;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=n=>n.toFixed(1)+'%';
+const tono=p=>p<10?'ok':p<18?'warn':'bad';
+const editable=()=>{if(!MINE){MINE=clone(DEF);vistaAct='mine'}return MINE};
+
+// ----- Barra de filtros compartida (Vista General y Búsqueda) -----
+function renderChips(){
+ const el=$('vr-chips');if(!el)return;
+ const cars=F.campus?CAMPUS[F.campus]:[].concat(...Object.values(CAMPUS));
+ const sel=(k,lbl,ops,todos)=>`<label class="chip${F[k]?' on':''}"><span>${lbl}</span><select data-chip="${k}">${todos?`<option value="">${todos}</option>`:''}${ops.map(o=>{const v=Array.isArray(o)?o[0]:o,t=Array.isArray(o)?o[1]:o;return`<option value="${esc(v)}"${F[k]===v?' selected':''}>${esc(t)}</option>`}).join('')}</select></label>`;
+ el.innerHTML=`<span class="chips-lbl"><i class="ti ti-filter"></i> Filtros</span>
+  ${sel('campus','Campus',Object.keys(CAMPUS),'Todos')}
+  ${sel('carrera','Carrera',cars,'Todas')}
+  ${sel('semestre','Semestre',SEMS,'Todos')}
+  ${sel('periodo','Periodo',PERIODOS,'')}
+  ${sel('semaforo','Semáforo',[['cumplido','🟢 Cumplido'],['incompleto','🟡 Incompleto'],['critico','🔴 Crítico'],['extraordinario','🟣 Extraordinario']],'Todos')}
+  ${(F.campus||F.carrera||F.semestre||F.semaforo)?'<button class="chip-clear" data-act="chips-clear"><i class="ti ti-x"></i> Limpiar filtros</button>':''}
+  <span class="chips-note">Datos reales del periodo</span>`;
+}
+function cambiarChip(k,v){F[k]=v;if(k==='campus'&&F.carrera&&v&&!CAMPUS[v].includes(F.carrera))F.carrera='';refrescar()}
+function refrescar(){renderChips();renderNuevas();aplicarFiltros();guardarConfig()}
+
+// ----- Tarjetas nuevas de la Vista General -----
+function filasBase(){return REPROB[F.periodo].filter(x=>(!F.campus||x.campus===F.campus)&&(!F.carrera||x.carrera===F.carrera)&&(!F.semestre||x.semestre===F.semestre))}
+function agrupar(rows,key){const m=new Map();rows.forEach(x=>{const o=m.get(x[key])||{k:x[key],ins:0,rep:0,id:x.id,campus:x.campus,carrera:x.carrera};o.ins+=x.ins;o.rep+=x.rep;m.set(x[key],o)});
+ const a=[...m.values()].map(o=>({...o,p:o.ins?o.rep/o.ins*100:0}));
+ return key==='semestre'?a.sort((x,y)=>SEMS.indexOf(x.k)-SEMS.indexOf(y.k)):a.sort((x,y)=>y.p-x.p)}
+function renderReprob(cid){
+ const el=$('card-'+cid);if(!el)return;const st=RC[cid];
+ let rows=filasBase();st.path.forEach(p=>rows=rows.filter(x=>x[p.k]===p.v));
+ const tot=rows.reduce((a,x)=>({ins:a.ins+x.ins,rep:a.rep+x.rep}),{ins:0,rep:0}),pg=tot.ins?tot.rep/tot.ins*100:0;
+ const key=st.persp==='global'?'campus':st.persp,next=LV[LV.indexOf(key)+1],data=agrupar(rows,key),max=Math.max(25,...data.map(d=>d.p));
+ const ruta=['<button class="crumb" data-act="rp-crumb" data-c="'+cid+'" data-i="0">Global</button>'].concat(st.path.map((p,i)=>`<i class="ti ti-chevron-right"></i><button class="crumb" data-act="rp-crumb" data-c="${cid}" data-i="${i+1}">${esc(p.v)}</button>`)).join('');
+ const persp=['global','campus','carrera','semestre','profesor'].map(p=>`<button class="seg${st.persp===p?' on':''}" data-act="rp-persp" data-c="${cid}" data-v="${p}">${LV_TXT[p]}</button>`).join('');
+ const titulo=st.persp==='global'&&!st.path.length?'Promedio global (todos los campus)':'Promedio en esta selección';
+ let cuerpo;
+ if(!data.length)cuerpo='<p class="empty">No hay datos con los filtros actuales.</p>';
+ else if(st.vista==='tabla')cuerpo=`<table class="rp-tabla"><thead><tr><th>${LV_TXT[key]}</th><th>Inscritos</th><th>Reprobados</th><th>Promedio</th><th></th></tr></thead><tbody>${data.map(d=>`<tr><td class="font-bold">${esc(d.k)}</td><td>${d.ins}</td><td>${d.rep}</td><td><span class="rp-pill ${tono(d.p)}">${pct(d.p)}</span></td><td class="text-right">${accion(cid,key,next,d)}</td></tr>`).join('')}</tbody></table>`;
+ else cuerpo=`<div class="rp-bars">${data.map(d=>`<div class="rp-row"><div class="rp-lbl" title="${esc(d.k)}">${esc(d.k)}${key==='profesor'?`<small>${esc(d.carrera)} · ${esc(d.campus)}</small>`:''}</div><div class="rp-track"><div class="rp-bar ${tono(d.p)}" style="width:${Math.max(2,d.p/max*100)}%"></div></div><div class="rp-val">${pct(d.p)}<small>${d.rep}/${d.ins}</small></div><div class="rp-go">${accion(cid,key,next,d)}</div></div>`).join('')}</div>`;
+ el.innerHTML=`<div class="flex-row-between rp-top"><div><span class="tag-meta">Rendimiento escolar · ${esc(F.periodo)}</span><h3 class="card-title mt-1">${nomCard(cid)}</h3>
+  <p class="card-subtitle">${titulo}: <b class="rp-big ${tono(pg)}">${pct(pg)}</b> · ${tot.rep} de ${tot.ins} alumnos</p></div>
+  <div class="rp-tools"><div class="segs" role="group" aria-label="Perspectiva">${persp}</div>
+  <div class="segs" role="group" aria-label="Vista"><button class="seg${st.vista==='barras'?' on':''}" data-act="rp-vista" data-c="${cid}" data-v="barras" title="Gráfica"><i class="ti ti-chart-bar"></i></button><button class="seg${st.vista==='tabla'?' on':''}" data-act="rp-vista" data-c="${cid}" data-v="tabla" title="Tabla"><i class="ti ti-list"></i></button></div></div></div>
+  <div class="crumbs">${ruta}</div>${cuerpo}
+  <div class="rp-legend"><span><i class="dot ok"></i>Menos de 10%</span><span><i class="dot warn"></i>10% a 18%</span><span><i class="dot bad"></i>Más de 18%</span>${next&&data.length?'<span class="rp-hint">Usa «Ver…» en una fila para bajar de nivel</span>':''}${cid==='reprob'?'<button class="link-action rs-link" data-act="go" data-v="reprobacion">Ver estadísticas completas →</button>':''}</div>`;
+}
+function accion(cid,key,next,d){
+ if(key==='profesor')return d.id?`<button class="link-action" data-act="audit" data-v="${d.id}">Ver expediente →</button>`:'<span class="muted-xs">Sin expediente en la demo</span>';
+ return `<button class="link-action" data-act="rp-drill" data-c="${cid}" data-k="${key}" data-v="${esc(d.k)}">Ver ${LV_PL[next]} →</button>`}
+function rpDrill(cid,k,v){const st=RC[cid];st.path.push({k,v});st.persp=LV[LV.indexOf(k)+1];renderReprob(cid);guardarConfig()}
+function rpCrumb(cid,i){const st=RC[cid];st.path=st.path.slice(0,i);st.persp=i===0?(st.persp==='global'?'global':'campus'):LV[LV.indexOf(st.path[i-1].k)+1];renderReprob(cid);guardarConfig()}
+
+function docsFiltrados(){return baseDocentes.filter(d=>(!F.campus||d.campus===F.campus)&&(!F.carrera||d.carrera===F.carrera)&&(!F.semestre||d.semestre===F.semestre)&&(!F.semaforo||d.estado===F.semaforo))}
+function renderIncump(){
+ const el=$('card-incump');if(!el)return;const lista=[];
+ docsFiltrados().forEach(d=>d.actividadesDetalle.filter(a=>!a.cumplida).forEach(a=>lista.push({d,a})));
+ el.innerHTML=`<div class="flex-row-between"><div><span class="tag-meta" style="background:var(--red-bg);color:var(--red-text)">Comprometido vs. realizado</span><h3 class="card-title mt-1">Incumplimientos detectados <span class="count-pill">${lista.length}</span></h3>
+  <p class="card-subtitle">Actividades que el docente comprometió en su plan de trabajo y no aparecen en su informe final.</p></div></div>
+  ${lista.length?`<div class="inc-list">${lista.map(({d,a})=>`<div class="inc-row"><i class="ti ti-x inc-x"></i><div class="inc-main"><b>${esc(a.nombre)}</b><small>${esc(d.nombre)} · ${esc(d.carrera)} · ${esc(d.campus||'')}</small></div><button class="link-action text-red" data-act="audit" data-v="${d.id}" data-tab="cumplimiento">Ver expediente →</button></div>`).join('')}</div>`:'<p class="empty">Sin incumplimientos con los filtros actuales.</p>'}`;
+}
+function estrellas(v){const n=Math.round(v);return '<span class="stars">'+'★'.repeat(n)+'<span class="off">'+'★'.repeat(5-n)+'</span></span>'}
+function renderEval(){
+ const el=$('card-eval');if(!el)return;
+ const cars=Object.entries(EVAL_CARRERA).filter(([c])=>(!F.carrera||c===F.carrera)&&(!F.campus||CAMPUS[F.campus].includes(c)));
+ el.innerHTML=`<span class="tag-meta">Opcional · Minuta No. 18</span><h3 class="card-title mt-1">${nomCard('eval')}</h3><p class="card-subtitle">Promedio de la evaluación que los alumnos hacen a sus profesores, escala de 1 a 5.</p>
+  <div class="rp-bars mt-4">${cars.map(([c,v])=>`<div class="rp-row"><div class="rp-lbl">${esc(c)}</div><div class="rp-track"><div class="rp-bar ev" style="width:${v/5*100}%"></div></div><div class="rp-val">${v.toFixed(1)}<small>${estrellas(v)}</small></div><div class="rp-go"></div></div>`).join('')||'<p class="empty">Sin datos.</p>'}</div>`;
+}
+function renderNuevas(){renderReprob('reprob');renderReprob('reprob2');renderIncump();renderEval();renderEstad()}
+
+// ----- Panel configurable -----
+function aplicarPanel(){
+ const s=$('section-resumen');if(!s)return;const c=cfg();
+ const vis=c.order.filter(id=>c.vis[id]&&(esConfig()||DEF.disp[id]));
+ c.order.forEach(id=>{const el=s.querySelector(`[data-card="${id}"]`);if(!el)return;el.hidden=!vis.includes(id);s.appendChild(el)});
+ $('vr-empty').hidden=vis.length>0;s.appendChild($('vr-empty'));
+ renderVistas();if(drawerOpen)renderDrawer();guardarConfig();
+}
+function renderVistas(){
+ const el=$('vr-views');if(!el)return;
+ el.innerHTML=`<span class="chips-lbl"><i class="ti ti-layout-grid"></i> Vistas</span>
+  <button class="vchip${vistaAct==='def'?' on':''}" data-act="vista-def">Predeterminada</button>
+  ${MINE&&vistaAct==='mine'?'<button class="vchip on">Mi vista (sin guardar)</button>':''}
+  ${VISTAS.map((v,i)=>`<span class="vchip${vistaAct===i?' on':''}"><button data-act="vista-ir" data-v="${i}">${esc(v.n)}</button><button class="vx" data-act="vista-del" data-v="${i}" title="Eliminar vista"><i class="ti ti-x"></i></button></span>`).join('')}
+  ${aviso?`<span class="vr-aviso"><i class="ti ti-check"></i> ${esc(aviso)}</span>`:''}`;
+}
+function renderDrawer(){
+ const d=$('vr-drawer');if(!d)return;const c=cfg();
+ const lista=c.order.filter(id=>esConfig()||DEF.disp[id]);
+ d.innerHTML=`<div class="dr-hd"><div><h3>Personalizar panel</h3><p>${esConfig()?'Rol Configurador: tus cambios se pueden aplicar a todos.':'Los cambios solo afectan tu vista.'}</p></div><button class="dr-x" data-act="drawer-close" title="Cerrar"><i class="ti ti-x"></i></button></div>
+ <div class="dr-body">
+  ${sec!=='resumen'?`<div class="dr-note"><i class="ti ti-info-circle"></i><div>Las tarjetas se muestran en la <b>Vista General</b>. <button class="link-action" data-act="go" data-v="resumen">Ir a la Vista General →</button></div></div>`:''}
+  <p class="dr-sec">Tarjetas de la Vista General</p>
+  <ul class="dr-list">${lista.map((id,i)=>`<li><label><input type="checkbox" data-vis="${id}"${c.vis[id]?' checked':''}> <span>${nomCard(id)}</span></label>
+   <span class="dr-mv"><button data-act="mv" data-v="${id}" data-d="-1" title="Subir"${i===0?' disabled':''}><i class="ti ti-chevron-up"></i></button><button data-act="mv" data-v="${id}" data-d="1" title="Bajar"${i===lista.length-1?' disabled':''}><i class="ti ti-chevron-down"></i></button></span>
+   ${esConfig()?`<label class="dr-sw" title="Si se apaga, los demás roles no pueden ver esta tarjeta"><input type="checkbox" data-disp="${id}"${DEF.disp[id]?' checked':''}> Disponible para todos los roles</label>`:''}</li>`).join('')}</ul>
+  <details class="dr-adv"><summary>Opciones avanzadas</summary>
+   <label class="filter-label mt-4">Perspectiva inicial de reprobación</label><select class="filter-input" data-adv="persp">${['global','campus','carrera','semestre','profesor'].map(p=>`<option value="${p}"${c.persp===p?' selected':''}>${LV_TXT[p]}</option>`).join('')}</select>
+   <label class="filter-label mt-4">Mostrar la reprobación como</label><select class="filter-input" data-adv="vista"><option value="barras"${c.vista==='barras'?' selected':''}>Gráfica de barras</option><option value="tabla"${c.vista==='tabla'?' selected':''}>Tabla</option></select>
+  </details>
+  <p class="dr-sec">Columnas de la tabla de Búsqueda</p>
+  <div class="dr-cols">${Object.keys(COLS).map(k=>`<label><input type="checkbox" data-colchk="${k}"${COLS[k]?' checked':''}> ${COLS_TXT[k]}</label>`).join('')}</div>
+  <p class="dr-sec">Guardar esta vista</p>
+  <div class="dr-save"><input class="filter-input" id="vista-nombre" placeholder="Ej. Por campus" maxlength="30"><button class="btn-secondary" data-act="vista-save"><i class="ti ti-device-floppy"></i> Guardar</button></div>
+  ${esConfig()?`<div class="dr-conf"><p class="dr-sec"><i class="ti ti-user-cog"></i> Configurador</p><button class="btn-primary" data-act="def-set"><i class="ti ti-check"></i> Aplicar como predeterminada para todos</button><button class="btn-secondary mt-2" data-act="def-fab"><i class="ti ti-refresh"></i> Volver al diseño original</button></div>`:''}
+ </div>
+ <p class="dr-ls"><i class="ti ti-device-floppy"></i> La configuración se guarda en este navegador. <button class="link-action" data-act="ls-clear">Borrar lo guardado</button></p>
+ <div class="dr-ft"><button class="btn-secondary" data-act="reset"><i class="ti ti-refresh"></i> Restablecer</button><button class="btn-primary" data-act="drawer-close">Listo</button></div>`;
+}
+function abrirDrawer(o){drawerOpen=o;$('vr-drawer').hidden=!o;$('vr-scrim').hidden=!o;if(o)renderDrawer()}
+function avisar(t){aviso=t;renderVistas();setTimeout(()=>{if(aviso===t){aviso='';if(root)renderVistas()}},2600)}
+function mover(id,dir){const c=editable(),o=c.order,lista=o.filter(x=>esConfig()||DEF.disp[x]),i=lista.indexOf(id),j=i+dir;if(j<0||j>=lista.length)return;
+ const a=o.indexOf(lista[i]),b=o.indexOf(lista[j]);[o[a],o[b]]=[o[b],o[a]];aplicarPanel()}
+function aplicarAvanzadas(){const c=cfg();RC.reprob.persp=c.persp;RC.reprob.path=[];RC.reprob.vista=c.vista;renderReprob('reprob')}
+
+// ----- Columnas de la tabla de Búsqueda -----
+function aplicarColumnas(){const st=$('vr-cols-css');if(st)st.textContent=Object.keys(COLS).filter(k=>!COLS[k]).map(k=>`.custom-table [data-col="${k}"]{display:none}`).join('');
+ const p=$('vr-cols-pop');if(p)p.innerHTML=Object.keys(COLS).map(k=>`<label><input type="checkbox" data-colchk="${k}"${COLS[k]?' checked':''}> ${COLS_TXT[k]}</label>`).join('');guardarConfig()}
+
+// ----- Expediente del docente: informe -----
+function informeHTML(doc){
+ const ok=doc.actividadesDetalle.filter(a=>a.cumplida).length,tot=doc.actividadesDetalle.length;
+ return `<div class="rep"><div class="rep-hd"><div><small>Universidad del Istmo · Vicerrectoría Académica</small><h2>Informe individual del docente</h2><p>Periodo ${esc(F.periodo)} · Generado el ${new Date().toLocaleDateString('es-MX')}</p></div><span class="rep-tag">Prototipo · datos de simulación</span></div>
+ <table class="rep-kv"><tr><th>Docente</th><td>${esc(doc.nombre)}</td><th>N° de empleado</th><td>${doc.id}</td></tr><tr><th>Carrera</th><td>${esc(doc.carrera)}</td><th>Campus</th><td>${esc(doc.campus||'')}</td></tr><tr><th>Ingreso</th><td>${doc.ingreso||''}</td><th>SNII</th><td>${doc.sni?esc(doc.sniNivel):'No'}</td></tr></table>
+ <h3>Cumplimiento del plan de trabajo</h3><p>Horas planeadas: <b>${doc.planHoras}</b> · Horas reportadas: <b>${doc.realHoras}</b> (${doc.planHoras?Math.round(doc.realHoras/doc.planHoras*100)+'%':'sin plan'}) · Actividades cumplidas: <b>${ok} de ${tot}</b></p>
+ <table class="rep-t"><thead><tr><th>Actividad comprometida</th><th>Estado</th></tr></thead><tbody>${doc.actividadesDetalle.map(a=>`<tr${a.cumplida?'':' class="bad"'}><td>${esc(a.nombre)}</td><td>${a.cumplida?'Cumplida':'Incumplida'}</td></tr>`).join('')}</tbody></table>
+ <h3>Trayectoria de investigación</h3><table class="rep-t"><thead><tr><th>Año</th><th>Trabajo</th><th>Tipo</th><th>Lugar</th></tr></thead><tbody>${(doc.inv||[]).map(x=>`<tr><td>${x.a}</td><td>${esc(x.t)}</td><td>${esc(x.tipo)}</td><td>${esc(x.campus)}</td></tr>`).join('')}</tbody></table>
+ ${(()=>{const r=repDoc(doc);if(!r)return'';return `<h3>Reprobación de sus grupos</h3><p>${r.dif>0?'<b>'+r.dif.toFixed(1)+' pts arriba</b>':'<b>'+Math.abs(r.dif).toFixed(1)+' pts abajo</b>'} del promedio de su carrera.</p><table class="rep-t"><thead><tr><th>Comparación</th><th>Reprobados</th><th>Promedio</th><th>Periodo anterior</th></tr></thead><tbody>${r.filas.map((f,i)=>`<tr${i===0?' class="me"':''}><td>${esc(f.k)}</td><td>${f.rep} de ${f.ins}</td><td><b>${pct(f.p)}</b></td><td>${pct(f.a)}</td></tr>`).join('')}</tbody></table>`})()}
+ ${doc.evalEst?`<h3>Evaluación estudiantil</h3><p>Promedio: <b>${doc.evalEst.toFixed(1)} / 5</b></p>`:''}
+ ${doc.justificacion?`<h3>Observaciones</h3><p>${esc(doc.justificacion)}</p>`:''}</div>`}
+const REP_CSS=`body{font-family:Inter,system-ui,sans-serif;color:#172b4d;margin:32px}.rep h2{font-size:20px;margin:4px 0}.rep h3{font-size:14px;margin:22px 0 8px;color:#0f766e;text-transform:uppercase;letter-spacing:.05em}.rep p{font-size:12.5px;margin:4px 0}.rep small{color:#60738a;font-size:11px}
+.rep-hd{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #0f766e;padding-bottom:12px}.rep-tag{font-size:10px;font-weight:700;background:#fef3c7;color:#92400e;border-radius:6px;padding:3px 8px}
+.rep-kv,.rep-t{width:100%;border-collapse:collapse;font-size:12px;margin-top:12px}.rep-kv th,.rep-t th{text-align:left;color:#60738a;font-weight:600;padding:6px 8px;background:#f4f7fb}.rep-kv td,.rep-t td{padding:6px 8px;border-bottom:1px solid #d7e1ec}.rep-t tr.bad td{color:#b42318;background:#fff1f0}.rep-t tr.me td{font-weight:700;background:#e4f4f2}`;
+function descargarPDF(id){
+ const doc=baseDocentes.find(d=>d.id===id);if(!doc)return;
+ /* Se imprime desde un iframe oculto: el SIGD define una función global open() que tapa a window.open. */
+ const old=document.getElementById('vr-print-frame');if(old)old.remove();
+ const f=document.createElement('iframe');f.id='vr-print-frame';f.setAttribute('aria-hidden','true');f.title='Informe';
+ f.style.cssText='position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden';
+ f.srcdoc=`<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Informe ${esc(doc.nombre)}</title><style>${REP_CSS}@media print{body{margin:12mm}}</style></head><body>${informeHTML(doc)}</body></html>`;
+ f.onload=()=>setTimeout(()=>{try{f.contentWindow.focus();f.contentWindow.print()}catch(e){avisar('No se pudo abrir la impresión')}},150);
+ document.body.appendChild(f);
+}
+
+// ----- Apartado "Estadísticas de Reprobación" -----
+const NOMBRES_EXTRA={reprobS:'Explorar: de lo global al profesor'};
+RC.reprobS={persp:'global',path:[],vista:'barras'};
+const sumP=rows=>{const t=rows.reduce((a,x)=>({ins:a.ins+x.ins,rep:a.rep+x.rep}),{ins:0,rep:0});return{...t,p:t.ins?t.rep/t.ins*100:0}};
+function barras(data,opt={}){const max=Math.max(25,...data.map(d=>d.p));
+ return data.length?`<div class="rp-bars">${data.map(d=>`<div class="rp-row rs-row${opt.sel&&d.k===opt.sel?' sel':''}"><div class="rp-lbl" title="${esc(d.k)}">${esc(d.k)}${opt.sub?`<small>${esc(opt.sub(d))}</small>`:''}</div><div class="rp-track"><div class="rp-bar ${tono(d.p)}" style="width:${Math.max(2,d.p/max*100)}%"></div></div><div class="rp-val">${pct(d.p)}<small>${d.rep}/${d.ins}</small></div>${opt.go?`<div class="rp-go">${opt.go(d)}</div>`:''}</div>`).join('')}</div>`:'<p class="empty">No hay datos con los filtros actuales.</p>'}
+function renderEstad(){
+ if(!$('rs-kpis'))return;
+ const P=F.periodo,ant=PERIODOS.find(p=>p!==P);
+ const sinCampus=rows=>rows.filter(x=>(!F.carrera||x.carrera===F.carrera)&&(!F.semestre||x.semestre===F.semestre));
+ const all=sinCampus(REPROB[P]),allAnt=sinCampus(REPROB[ant]),g=sumP(all),gA=sumP(allAnt);
+ const tend=(a,b)=>{const d=a-b;return `<span class="rs-tr ${d>0?'up':'down'}"><i class="ti ti-trending-${d>0?'up':'down'}"></i> ${d>0?'+':''}${d.toFixed(1)} pts vs ${ant}</span>`};
+ const camp=Object.keys(CAMPUS).map(c=>({c,...sumP(all.filter(x=>x.campus===c)),a:sumP(allAnt.filter(x=>x.campus===c)).p})).filter(x=>x.ins);
+ $('rs-kpis').innerHTML=`<div class="card kpi-card rs-kpi rs-global"><p class="kpi-label">Global · todos los campus</p><div class="kpi-value-group"><span class="kpi-value">${pct(g.p)}</span><span class="kpi-unit">reprobados</span></div><small>${g.rep} de ${g.ins} alumnos</small>${tend(g.p,gA.p)}</div>`+
+  camp.map(x=>{const d=x.p-g.p;return `<div class="card kpi-card rs-kpi${F.campus===x.c?' sel':''}"><p class="kpi-label">Campus ${esc(x.c)}</p><div class="kpi-value-group"><span class="kpi-value rs-v ${tono(x.p)}">${pct(x.p)}</span></div><small class="${d>0?'text-red':'text-success'} font-bold">${d>0?'+':''}${d.toFixed(1)} pts ${d>0?'arriba':'abajo'} del global</small>${tend(x.p,x.a)}</div>`}).join('');
+ // Matriz semestre × campus
+ const cols=Object.keys(CAMPUS);
+ $('rs-matrix').innerHTML=`<span class="tag-meta">Comparativa entre campus · ${esc(P)}</span><h3 class="card-title mt-1">Promedio de reprobación por semestre en cada campus</h3><p class="card-subtitle">Cada celda es el porcentaje de alumnos reprobados. La última columna es el promedio global de todos los campus.</p>
+  <table class="rs-mx"><thead><tr><th>Semestre</th>${cols.map(c=>`<th${F.campus===c?' class="sel"':''}>${esc(c)}</th>`).join('')}<th>Global</th></tr></thead><tbody>${SEMS.filter(s=>!F.semestre||s===F.semestre).map(s=>{const rs=all.filter(x=>x.semestre===s);return `<tr><td class="font-bold">${s}</td>${cols.map(c=>{const v=sumP(rs.filter(x=>x.campus===c));return v.ins?`<td><span class="rp-pill ${tono(v.p)}">${pct(v.p)}</span></td>`:'<td class="muted-xs">—</td>'}).join('')}<td><b>${pct(sumP(rs).p)}</b></td></tr>`}).join('')}</tbody></table>`;
+ // Cuatro perspectivas
+ const base=filasBase(),cab=(t,s)=>`<h3 class="card-title">${t}</h3><p class="card-subtitle">${s}</p><div class="mt-4"></div>`;
+ $('rs-carrera').innerHTML=cab('Por carrera','Ordenado de mayor a menor reprobación.')+barras(agrupar(base,'carrera'),{sub:d=>d.campus});
+ $('rs-semestre').innerHTML=cab('Por semestre','Del primero al noveno semestre.')+barras(agrupar(base,'semestre'));
+ const prof=agrupar(base,'profesor').slice(0,8);
+ $('rs-profesor').innerHTML=cab('Por profesor','Los 8 grupos con mayor reprobación.')+barras(prof,{sub:d=>d.carrera+' · '+d.campus,go:d=>d.id?`<button class="link-action" data-act="audit" data-v="${d.id}">Expediente →</button>`:''});
+ $('rs-campus').innerHTML=cab('Por campus','Comparación entre campus con los mismos filtros de carrera y semestre.')+barras(agrupar(all,'campus'),{sel:F.campus});
+ renderReprob('reprobS');
+}
+
+// ----- Reprobación de los grupos del docente (extra del informe) -----
+function repDoc(doc){
+ const P=F.periodo,ant=PERIODOS.find(p=>p!==P),R=REPROB[P],RA=REPROB[ant];
+ const g=R.filter(x=>x.id===doc.id);if(!g.length)return null;
+ const sems=[...new Set(g.map(x=>x.semestre))].join(', ');
+ const mk=(k,f)=>{const a=sumP(R.filter(f)),b=sumP(RA.filter(f));return{k,...a,a:b.p}};
+ const filas=[mk('Su grupo ('+sems+' semestre)',x=>x.id===doc.id),
+  mk('Promedio de la carrera '+doc.carrera,x=>x.campus===doc.campus&&x.carrera===doc.carrera),
+  mk('Promedio del campus '+doc.campus,x=>x.campus===doc.campus),
+  mk('Global (todos los campus)',()=>true)];
+ /* el grupo del docente en el periodo anterior se identifica por campus, carrera y semestre */
+ const pa=sumP(RA.filter(x=>x.campus===doc.campus&&x.carrera===doc.carrera&&g.some(y=>y.semestre===x.semestre)));filas[0].a=pa.p;
+ return{filas,dif:filas[0].p-filas[1].p}}
+function repDocCard(doc){const r=repDoc(doc);if(!r)return'';
+ return `<div class="xp-extra"><div class="flex-row-between"><div><span class="tag-meta">Extra · Estadísticas de reprobación</span><h3 class="card-title mt-1">Reprobación de sus grupos · ${esc(F.periodo)}</h3>
+  <p class="card-subtitle">Su grupo está <b class="${r.dif>0?'text-red':'text-success'}">${Math.abs(r.dif).toFixed(1)} pts ${r.dif>0?'arriba':'abajo'}</b> del promedio de su carrera. Esta sección también se incluye en el PDF.</p></div>
+  <button class="link-action rs-link" data-act="go" data-v="reprobacion">Ver estadísticas completas →</button></div>
+  <div class="mt-4">${barras(r.filas,{sel:r.filas[0].k})}</div></div>`}
+
+// ----- Persistencia del prototipo -----
+// Configuración (vistas, predeterminada, filtros, columnas): localStorage, se conserva al recargar y al cerrar el navegador.
+// Estado de navegación (pestaña, expediente abierto, rol de prueba): sessionStorage, solo dura en esta pestaña.
+const VR_LS='sigd-vr-config-v1',VR_SS='sigd-vr-estado-v1';
+const okCfg=c=>c&&Array.isArray(c.order)&&c.order.length===FABRICA.order.length&&FABRICA.order.every(x=>c.order.includes(x))&&c.vis;
+function guardarConfig(){try{localStorage.setItem(VR_LS,JSON.stringify({DEF,MINE,VISTAS,vistaAct,F,COLS,RC}))}catch(e){}}
+function cargarConfig(){try{const o=JSON.parse(localStorage.getItem(VR_LS)||'null');if(!o)return;
+ if(okCfg(o.DEF))DEF=Object.assign(clone(FABRICA),o.DEF);
+ MINE=okCfg(o.MINE)?Object.assign(clone(FABRICA),o.MINE):null;
+ VISTAS=Array.isArray(o.VISTAS)?o.VISTAS.filter(v=>v&&okCfg(v.cfg)):[];
+ vistaAct=o.vistaAct;if(!(vistaAct==='def'||(vistaAct==='mine'&&MINE)||(typeof vistaAct==='number'&&vistaAct<VISTAS.length)))vistaAct=MINE?'mine':'def';
+ if(o.F)Object.keys(F).forEach(k=>{if(typeof o.F[k]==='string')F[k]=o.F[k]});if(!REPROB[F.periodo])F.periodo=PERIODOS[0];
+ if(o.COLS)Object.keys(COLS).forEach(k=>{if(k in o.COLS)COLS[k]=o.COLS[k]?1:0});
+ if(o.RC)['reprob','reprob2','reprobS'].forEach(k=>{const r=o.RC[k];if(r&&Array.isArray(r.path))RC[k]={persp:r.persp||'campus',path:r.path,vista:r.vista==='tabla'?'tabla':'barras'}})
+}catch(e){}}
+function borrarConfig(){try{localStorage.removeItem(VR_LS)}catch(e){}
+ DEF=clone(FABRICA);MINE=null;VISTAS=[];vistaAct='def';Object.assign(F,{campus:'',carrera:'',semestre:'',periodo:PERIODOS[0],semaforo:''});
+ Object.keys(COLS).forEach(k=>COLS[k]=1);RC.reprob={persp:'campus',path:[],vista:'barras'};RC.reprob2={persp:'semestre',path:[],vista:'barras'};RC.reprobS={persp:'global',path:[],vista:'barras'}}
+function guardarEstado(){try{sessionStorage.setItem(VR_SS,JSON.stringify({sec,pending,XT,rolDebug}))}catch(e){}}
+cargarConfig();
+try{const e=JSON.parse(sessionStorage.getItem(VR_SS)||'null');if(e){sec=e.sec||'resumen';pending=e.pending||null;XT=e.XT||'cumplimiento';rolDebug=e.rolDebug||null}}catch(e){}
+
+const mapaVistas={
+ resumen:{t:"Panel de Control General",s:"Monitoreo del cumplimiento del plan de trabajo."},
+ busqueda:{t:"Búsqueda Avanzada e Informes",s:"Audite discrepancias y verifique entregas."},
+ investigacion:{t:"Inteligencia de Investigación y SNII",s:"Métricas del Sistema Nacional de Investigadoras e Investigadores."},
+ historico:{t:"Repositorio Histórico Institucional",s:"Comparativas interanuales de desempeño."},
+ reprobacion:{t:"Estadísticas de Reprobación",s:"Promedio de alumnos reprobados por carrera, semestre, profesor y campus, con comparativa entre campus."},
+ particular:{t:"Auditoría en Detalle",s:"Extracción y cruce particular del expediente docente."}};
+const BODY=M=>`<!-- ================= 1. VISTA GENERAL ================= -->
+            <div id="section-resumen" class="content-section view-active">
+<div class="vr-views" id="vr-views"></div>
+                <div class="card card-full" data-card="balance">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Metas Institucionales</span>
+                            <h3 class="card-title mt-1">Balance Global: Planeado vs. Realizado</h3>
+                            <p class="card-subtitle"><span class="${M.balClass} font-bold">${M.balTxt}</span> en el padrón actual.</p>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="resumen" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Resumen -->
+                    <div id="view-chart-bar-resumen" class="chart-view active-chart mt-4">
+                        <div class="progress-group">
+                            <div class="progress-labels">
+                                <span>Total de Horas/Actividades Planeadas</span>
+                                <span class="font-mono">${M.plan} hrs (100%)</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar bar-muted" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress-labels">
+                                <span class="font-bold">Total Realizado / Informado</span>
+                                <span class="${M.balClass} font-bold font-mono">${M.real} hrs (${M.realPct}%)</span>
+                            </div>
+                            <div class="progress-bar-container dual-bar">
+                                <div class="progress-bar bar-primary" style="width: ${M.wBase}%;"></div>
+                                <div class="progress-bar bar-pulse" style="width: ${M.wSup}%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Resumen -->
+                    <div id="view-chart-circular-resumen" class="chart-view hidden-chart">
+                        <div class="circular-chart-box">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-resumen" class="css-pie css-chart-resumen" style="background:conic-gradient(var(--pr) 0% ${M.basePct}%, #fbbf24 ${M.basePct}% 100%)"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item">
+                                    <div class="legend-color bg-primary"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Horas Cumplidas Base</p><p class="text-muted text-xs" style="font-size: 11px;">${M.base} hrs (${M.basePct}%)</p></div>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #fbbf24;"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Superávit (Extra)</p><p class="text-muted text-xs" style="font-size: 11px;">${M.sup} hrs (${M.supPct}%)</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-grid" id="kpi-grid" data-card="kpis">
+                    <div class="card kpi-card">
+                        <p class="kpi-label">Padrón Activo</p>
+                        <div class="kpi-value-group"><span class="kpi-value">${M.n}</span><span class="kpi-unit">Docentes</span></div>
+                    </div>
+                    <div class="card kpi-card">
+                        <p class="kpi-label">Puntos Extra Global</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-success">+${M.extra}</span><span class="kpi-subtext text-warning">Sobrecumplimiento</span></div>
+                    </div>
+                    <div class="card kpi-card border-purple bg-purple-light" style="background-color: var(--purple-bg); border-color: var(--purple-border);">
+                        <p class="kpi-label text-purple">Casos Extraordinarios</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-purple">${M.extraord}</span><span class="kpi-subtext text-purple">Justificados</span></div>
+                    </div>
+                    <div class="card kpi-card border-red bg-red-light" id="kpi-alertas" style="background-color: var(--red-bg); border-color: var(--red-border);">
+                        <p class="kpi-label text-red">Alertas Críticas</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-red">${M.criticos}</span><span class="kpi-subtext text-red pulse">Sin justificar</span></div>
+                    </div>
+                </div>
+                <div class="card card-full mt-6" id="monitor-incidencias" data-card="incidencias">
+                    <h3 class="card-title">Monitor de Entregas e Incidencias</h3>
+                    <p class="card-subtitle">Alertas del sistema reguladas para evitar fatiga de notificaciones en secretarías.</p>
+                    <div class="incidents-grid mt-4">${M.incHTML}                    </div>
+                </div>
+            <div class="card card-full" data-card="reprob" id="card-reprob"></div>
+<div class="card card-full" data-card="incump" id="card-incump"></div>
+<div class="card card-full" data-card="reprob2" id="card-reprob2"></div>
+<div class="card card-full" data-card="eval" id="card-eval"></div>
+<div class="card card-full vr-empty" id="vr-empty" hidden><p>No hay tarjetas visibles. Usa la burbuja <b>Personalizar</b> (abajo a la derecha) para elegir qué ver.</p></div>
+</div>
+            <!-- ================= ESTADÍSTICAS DE REPROBACIÓN (Minuta 18) ================= -->
+<div id="section-reprobacion" class="content-section view-hidden">
+<div class="rs-kpis" id="rs-kpis"></div>
+<div class="card card-full" id="rs-matrix"></div>
+<div class="rs-grid"><div class="card" id="rs-carrera"></div><div class="card" id="rs-semestre"></div><div class="card" id="rs-profesor"></div><div class="card" id="rs-campus"></div></div>
+<div class="card card-full mt-6" id="card-reprobS"></div>
+</div>
+<!-- ================= 2. BÚSQUEDA E INFORMES ================= -->
+            <div id="section-busqueda" class="content-section view-hidden">
+                <div class="card card-full">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Vista Previa Institucional</span>
+                            <h3 class="card-title mt-1">Distribución Global del Padrón (Semáforo)</h3>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="busqueda" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Búsqueda -->
+                    <div id="view-chart-bar-busqueda" class="chart-view active-chart mt-4">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels"><span class="text-success font-bold flex-align-center"><i class="ti ti-circle-check" style="font-size: 16px; margin-right:4px;"></i> Cumplido (Verde)</span><span class="font-mono text-dark font-bold">${M.s.cumplido.n} docentes (${M.s.cumplido.p}%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: ${M.s.cumplido.p}%; background-color: var(--green-text);"></div></div>
+                            </div>
+                            <div class="chart-row mt-4">
+                                <div class="chart-labels"><span class="text-warning font-bold flex-align-center"><i class="ti ti-clock" style="font-size: 16px; margin-right:4px;"></i> Incompleto (Amarillo)</span><span class="font-mono text-warning font-bold">${M.s.incompleto.n} docentes (${M.s.incompleto.p}%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-amber" style="width: ${M.s.incompleto.p}%;"></div></div>
+                            </div>
+                            <div class="chart-row mt-4">
+                                <div class="chart-labels"><span class="text-red font-bold flex-align-center"><i class="ti ti-alert-circle" style="font-size: 16px; margin-right:4px;"></i> Crítico (Rojo)</span><span class="font-mono text-red font-bold">${M.s.critico.n} docentes (${M.s.critico.p}%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner" style="width: ${M.s.critico.p}%; background-color: var(--red-text);"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Búsqueda -->
+                    <div id="view-chart-circular-busqueda" class="chart-view hidden-chart mt-4">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-busqueda" class="css-pie css-chart-busqueda" style="background:${M.pieSem}"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--green-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Cumplido</p><p class="text-muted text-xs" style="font-size: 11px;">${M.s.cumplido.p}%</p></div></div>
+                                <div class="legend-item"><div class="legend-color bg-amber"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Incompleto</p><p class="text-muted text-xs" style="font-size: 11px;">${M.s.incompleto.p}%</p></div></div>
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--red-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Crítico</p><p class="text-muted text-xs" style="font-size: 11px;">${M.s.critico.p}%</p></div></div>
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--purple-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Extraordinario</p><p class="text-muted text-xs" style="font-size: 11px;">${M.s.extraordinario.p}%</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filtros -->
+                <section class="card card-full mt-6">
+                    <h3 class="card-title-upper">Módulo de Filtrado Avanzado</h3>
+                    <div class="filters-grid mt-4">
+                        <div>
+                            <label class="filter-label highlight-label">ID Empleado <span class="ping-dot"></span></label>
+                            <input type="text" id="filter-id" placeholder="Ej. 84920" class="filter-input font-mono">
+                        </div>
+                        <div><label class="filter-label">Nombre del Docente</label><input type="text" id="filter-nombre" placeholder="Ej. Dra. Elena" class="filter-input"></div>
+                        <div>
+                            <label class="filter-label">Departamento</label>
+                            <select class="filter-input" id="filter-carrera"><option value="">Todas</option>${M.carOpts}</select>
+                        </div>
+                        <div>
+                            <label class="filter-label">Semáforo Variable</label>
+                            <select class="filter-input" id="filter-semaforo"><option value="">Todos los estados</option><option value="cumplido">🟢 Cumplido</option><option value="incompleto">🟡 Incompleto</option><option value="critico">🔴 Crítico</option><option value="extraordinario">🟣 Extraordinario</option></select>
+                        </div>
+                        <div>
+                            <label class="filter-label">Perfil Académico</label>
+                            <select class="filter-input" id="filter-perfil"><option value="">Todos los perfiles</option><option value="true">✔ Perfil Deseable</option><option value="false">⚠ Sin Perfil Deseable</option></select>
+                        </div>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="btn-secondary" id="btn-clear-filters"><i class="ti ti-x" style="font-size: 16px;"></i> Limpiar</button>
+                        <button class="btn-primary" id="btn-apply-filters"><i class="ti ti-filter" style="font-size: 16px;"></i> Aplicar Filtros</button>
+                    </div>
+                </section>
+                <section class="card card-full table-card mt-6">
+                    <div class="table-header flex-row-between"><h3 class="card-title">Registros de Desempeño</h3><details class="vr-cols"><summary class="btn-secondary"><i class="ti ti-eye"></i> Columnas</summary><div class="vr-cols-pop" id="vr-cols-pop"></div></details></div>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead><tr><th data-col="emp">N° Emp.</th><th>Docente</th><th data-col="campus">Campus</th><th data-col="plan">Plan vs. Real</th><th data-col="estado">Estado</th><th data-col="punt">Puntuación</th><th class="text-right column-action">Acción</th></tr></thead>
+                            <tbody id="table-body-docentes"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <!-- VISTA PARTICULAR: DETALLE DOCENTE -->
+            <div id="section-particular" class="content-section view-hidden">
+                <button class="btn-back" data-act="back"><i class="ti ti-arrow-left" style="font-size:16px;margin-right:4px"></i> Volver a Búsqueda</button>
+                <div class="card card-full" id="particular-view-container"></div>
+            </div>
+            <!-- ================= 3. INVESTIGACIÓN Y SNII ================= -->
+            <div id="section-investigacion" class="content-section view-hidden">
+                <div class="kpi-grid grid-3">
+                    <div class="card kpi-card bg-gradient-green text-white flex-row-between">
+                        <div><p class="kpi-label-light">Miembros SNII</p><h2 class="kpi-value-large">${M.sni}</h2><p class="kpi-desc-light">${M.sniPct}% de la plantilla</p></div>
+                        <span class="giant-icon" style="background: rgba(255,255,255,0.2);"><i class="ti ti-flask"></i></span>
+                    </div>
+                    <div class="card kpi-card flex-row-between">
+                        <div><p class="kpi-label">Distinciones</p><h2 class="kpi-value-large text-dark">${M.dist} <span class="text-success text-sm" style="font-size: 14px;">${M.distNuevas}</span></h2><p class="card-subtitle">Premios de alto impacto</p></div>
+                        <span class="giant-icon bg-neutral"><i class="ti ti-award"></i></span>
+                    </div>
+                    <div class="card kpi-card flex-row-between">
+                        <div><p class="kpi-label">Candidatos a SNII</p><h2 class="kpi-value-large text-primary">${M.cand} <span class="text-muted text-sm" style="font-size: 14px;">en seguimiento</span></h2><p class="card-subtitle">Con perfil deseable, sin SNII</p></div>
+                        <span class="giant-icon bg-neutral"><i class="ti ti-rocket"></i></span>
+                    </div>
+                </div>
+                <div class="card card-full mt-6">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Indicador de Calidad Académica</span>
+                            <h3 class="card-title mt-1">Contraste de Plantilla: Perfil Deseable</h3>
+                            <p class="card-subtitle">Equilibrio en docencia, tutoría e investigación activa.</p>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="investigacion" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Investigación -->
+                    <div id="view-chart-bar-investigacion" class="chart-view active-chart mt-4">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels">
+                                    <span class="text-success font-bold flex-align-center"><i class="ti ti-circle-check" style="font-size: 16px; margin-right:4px;"></i> Profesores con Perfil Deseable</span>
+                                    <span class="font-mono text-dark font-bold">${M.pd} docentes (${M.pdPct}%)</span>
+                                </div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: ${M.pdPct}%;"></div></div>
+                                <button class="link-action text-success" style="margin-top: 8px; font-size: 11px;" data-act="perfil" data-v="true">Ver padrón →</button>
+                            </div>
+                            <div class="chart-row mt-6">
+                                <div class="chart-labels">
+                                    <span class="text-warning font-bold flex-align-center"><i class="ti ti-alert-triangle" style="font-size: 16px; margin-right:4px;"></i> Profesores sin Perfil Deseable</span>
+                                    <span class="font-mono text-warning font-bold">${M.npd} docentes (${M.npdPct}%)</span>
+                                </div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-amber" style="width: ${M.npdPct}%;"></div></div>
+                                <button class="link-action text-warning" style="margin-top: 8px; font-size: 11px;" data-act="perfil" data-v="false">Ver padrón →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Investigación -->
+                    <div id="view-chart-circular-investigacion" class="chart-view hidden-chart mt-4">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-investigacion" class="css-pie css-chart-investigacion" style="background:conic-gradient(var(--pr) 0% ${M.pdPct}%, #f59e0b ${M.pdPct}% 100%)"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item" data-act="perfil" data-v="true" style="cursor:pointer;">
+                                    <div class="legend-color bg-primary"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Perfil Deseable (${M.pdPct}%)</p><p class="text-muted text-xs" style="font-size: 11px;">${M.pd} docentes</p><span class="link-action text-success" style="font-size: 10px; margin-top:4px;">Ver padrón →</span></div>
+                                </div>
+                                <div class="legend-item" data-act="perfil" data-v="false" style="cursor:pointer;">
+                                    <div class="legend-color bg-amber"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Sin Perfil Deseable (${M.npdPct}%)</p><p class="text-muted text-xs" style="font-size: 11px;">${M.npd} docentes en fortalecimiento</p><span class="link-action text-warning" style="font-size: 10px; margin-top:4px;">Ver padrón →</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-full mt-6">
+                    <h3 class="card-title">Muro de Honor</h3>
+                    <div class="honor-grid mt-4">${M.honorHTML}</div>
+                </div>
+            </div>
+            <!-- ================= 4. HISTÓRICO ================= -->
+            <div id="section-historico" class="content-section view-hidden">
+                <div class="card card-full mt-6">
+                    <div class="balance-header" style="margin-bottom: 0;">
+                        <div>
+                            <span class="tag-meta" style="background-color: var(--purple-bg); color: var(--purple-text); border: 1px solid var(--purple-border);">Análisis Comparativo Temporal</span>
+                            <h3 class="card-title mt-2">Crecimiento Padrón SNII: ${M.prev} vs ${M.per}</h3>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="historico" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Histórico -->
+                    <div id="view-chart-bar-historico" class="chart-view active-chart mt-6">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels"><span class="text-muted font-bold flex-align-center"><i class="ti ti-history" style="font-size: 16px; margin-right:4px;"></i> Ciclo ${M.prev}</span><span class="font-mono text-dark font-bold">${M.h.a.sni} docentes (${M.h.aPct}% del total histórico)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner" style="width: ${M.h.aPct}%; background-color: #9ca3af;"></div></div>
+                            </div>
+                            <div class="chart-row mt-6">
+                                <div class="chart-labels"><span class="text-primary font-bold flex-align-center"><i class="ti ti-calendar-event" style="font-size: 16px; margin-right:4px;"></i> Ciclo ${M.per} (Actual)</span><span class="font-mono text-primary font-bold">${M.h.b.sni} docentes (${M.h.bPct}% del total histórico)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: ${M.h.bPct}%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Histórico -->
+                    <div id="view-chart-circular-historico" class="chart-view hidden-chart mt-6">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-historico" class="css-pie css-chart-historico" style="background:conic-gradient(#9ca3af 0% ${M.h.aPct}%, var(--pr) ${M.h.aPct}% 100%)"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item"><div class="legend-color" style="background-color: #9ca3af;"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Ciclo ${M.prev}</p><p class="text-muted text-xs" style="font-size: 11px;">${M.h.a.sni} investigadores</p></div></div>
+                                <div class="legend-item"><div class="legend-color bg-primary"></div><div><p class="font-bold text-primary text-sm" style="font-size: 13px;">Ciclo ${M.per} (Actual)</p><p class="text-muted text-xs" style="font-size: 11px;">${M.h.b.sni} investigadores</p><span class="link-action text-success" style="font-size: 10px; margin-top:4px;">${M.h.sniTxt}</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historic-comparison mt-6">
+                        <div class="comparison-row header-row">
+                            <div class="comp-col">Indicador Académico</div>
+                            <div class="comp-col text-center">Ciclo ${M.prev}</div>
+                            <div class="comp-col text-center font-bold">Ciclo ${M.per} (Actual)</div>
+                            <div class="comp-col text-right">Tendencia</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Horas Totales Impartidas</div>
+                            <div class="comp-col text-center text-muted">${M.h.a.horasTxt}</div>
+                            <div class="comp-col text-center font-bold">${M.h.b.horasTxt}</div>
+                            ${M.h.horasTend}
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Profesores en Padrón SNII</div>
+                            <div class="comp-col text-center text-muted">${M.h.a.sniTxt}</div>
+                            <div class="comp-col text-center font-bold">${M.h.b.sni} docentes</div>
+                            ${M.h.sniTend}
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Alertas Críticas sin Justificar</div>
+                            <div class="comp-col text-center text-muted">${M.h.a.critTxt}</div>
+                            <div class="comp-col text-center font-bold text-red">${M.h.b.criticos} casos</div>
+                            ${M.h.critTend}
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+const HD=`<header class="vr-hd"><div><h1 id="page-title"></h1><p id="page-subtitle"></p></div><div class="acts"><button class="btn-primary" id="btn-export"><i class="ti ti-download"></i> Exportar Reporte</button></div></header><div class="vr-chips" id="vr-chips"></div>`;
+
+function mount(el,css){
+ cargarDatos(SIGD.data?.vr);if(SIGD.data?.vr&&Date.now()-new Date(SIGD.data.vr.generado).getTime()>60000)SIGD.refresh().then(()=>{if(cur==='reportes'&&root)open('reportes')}).catch(()=>{});
+ root=el.attachShadow({mode:'open'});drawerOpen=false;
+ root.innerHTML=`<style>${css}</style><style id="vr-cols-css"></style>${HD}<div class="content-body">${BODY(metricas())}</div><div class="vr-scrim" id="vr-scrim" hidden data-act="drawer-close"></div><aside class="vr-drawer" id="vr-drawer" hidden aria-label="Personalizar panel"></aside><button class="vr-fab" id="vr-fab" type="button" data-act="drawer" title="Personalizar el módulo"><i class="ti ti-adjustments"></i><span>Personalizar</span></button>`;
+ root.addEventListener('click',e=>{const t=e.target.closest('[data-act]');if(!t||t.disabled)return;const v=t.dataset.v,a=t.dataset.act,c=t.dataset.c;
+  if(a==='audit')irADetalleDocente(parseInt(v),t.dataset.tab);
+  else if(a==='perfil')verListaPerfil(v);
+  else if(a==='back')cambiarSeccion('busqueda');
+  else if(a==='xtab')irADetalleDocente(pending,v);
+  else if(a==='go'){cambiarSeccion(v);if(drawerOpen)renderDrawer()}
+  else if(a==='pdf')descargarPDF(parseInt(v));
+  else if(a==='rp-persp'){RC[c].persp=v;RC[c].path=[];renderReprob(c);guardarConfig()}
+  else if(a==='rp-vista'){RC[c].vista=v;renderReprob(c);guardarConfig()}
+  else if(a==='ls-clear'){borrarConfig();renderChips();renderNuevas();aplicarColumnas();aplicarFiltros();aplicarPanel();avisar('Se borró la configuración guardada')}
+  else if(a==='rp-drill')rpDrill(c,t.dataset.k,v);
+  else if(a==='rp-crumb')rpCrumb(c,+t.dataset.i);
+  else if(a==='chips-clear'){Object.assign(F,{campus:'',carrera:'',semestre:'',semaforo:''});refrescar()}
+  else if(a==='drawer')abrirDrawer(!drawerOpen);
+  else if(a==='drawer-close')abrirDrawer(false);
+  else if(a==='mv')mover(v,+t.dataset.d);
+  else if(a==='reset'){MINE=null;vistaAct='def';aplicarAvanzadas();aplicarPanel();avisar('Se restableció la vista predeterminada')}
+  else if(a==='vista-def'){MINE=null;vistaAct='def';aplicarAvanzadas();aplicarPanel()}
+  else if(a==='vista-ir'){const x=VISTAS[+v];MINE=clone(x.cfg);Object.assign(F,x.F);vistaAct=+v;aplicarAvanzadas();refrescar();aplicarPanel()}
+  else if(a==='vista-del'){const n=+v;VISTAS.splice(n,1);if(vistaAct===n)vistaAct=MINE?'mine':'def';else if(typeof vistaAct==='number'&&vistaAct>n)vistaAct--;aplicarPanel()}
+  else if(a==='vista-save'){const n=($('vista-nombre').value||'').trim()||('Vista '+(VISTAS.length+1));VISTAS.push({n,cfg:clone(cfg()),F:clone(F)});MINE=clone(cfg());vistaAct=VISTAS.length-1;aplicarPanel();avisar('Vista «'+n+'» guardada')}
+  else if(a==='def-set'){DEF=Object.assign(clone(cfg()),{disp:DEF.disp});MINE=null;vistaAct='def';aplicarPanel();avisar('Predeterminada actualizada para todos los usuarios')}
+  else if(a==='def-fab'){DEF=clone(FABRICA);MINE=null;vistaAct='def';aplicarAvanzadas();aplicarPanel();avisar('Se restauró el diseño original')}
+ });
+ root.addEventListener('change',e=>{const t=e.target;
+  if(t.dataset.chip)cambiarChip(t.dataset.chip,t.value);
+  else if(t.dataset.vis){editable().vis[t.dataset.vis]=t.checked?1:0;aplicarPanel()}
+  else if(t.dataset.disp){DEF.disp[t.dataset.disp]=t.checked?1:0;aplicarPanel()}
+  else if(t.dataset.adv){editable()[t.dataset.adv]=t.value;aplicarAvanzadas();aplicarPanel()}
+  else if(t.dataset.colchk){COLS[t.dataset.colchk]=t.checked?1:0;aplicarColumnas()}
+  else if(t.id==='inv-campus'){XINV=t.checked;irADetalleDocente(pending)}
+ });
+ root.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawerOpen)abrirDrawer(false)});
+ inicializarFiltros();
+ inicializarSelectorGraficasUniversales();
+ aplicarControlRoles(rol());
+ renderChips();renderNuevas();aplicarPanel();aplicarColumnas();
+ aplicarFiltros();
+ if(!mapaVistas[sec]||(sec==='particular'&&!pending))sec='resumen';
+ if(sec==='particular'&&pending){irADetalleDocente(pending);cambiarSeccion('particular')}else cambiarSeccion(allowed(sec)?sec:'resumen');
+}
+
+const allowed=s=>!(rol()==='secretaria'&&(s==='investigacion'||s==='historico'));
+
+function cambiarSeccion(seccionId){
+ sec=seccionId;
+ $$('.content-section').forEach(s=>{s.classList.remove('view-active');s.classList.add('view-hidden')});
+ const el=$(`section-${seccionId}`);el.classList.remove('view-hidden');el.classList.add('view-active');
+ $('page-title').innerText=mapaVistas[seccionId].t;
+ $('page-subtitle').innerText=mapaVistas[seccionId].s;
+ const ch=$('vr-chips');if(ch)ch.hidden=!(seccionId==='resumen'||seccionId==='busqueda'||seccionId==='reprobacion');
+ guardarEstado();
+ window.scrollTo(0,0);cb();
+}
+
+// ================= SELECTORES MULTIGRÁFICA DINÁMICOS =================
+function inicializarSelectorGraficasUniversales(){
+ $$('.chart-selector').forEach(selector=>{
+  selector.addEventListener('change',e=>{
+   const target=e.target.getAttribute('data-target'),type=e.target.value;
+   const viewBar=$(`view-chart-bar-${target}`),viewCirc=$(`view-chart-circular-${target}`),cssChart=$(`css-circular-chart-${target}`);
+   if(type==='bar'){viewBar.classList.add('active-chart');viewBar.classList.remove('hidden-chart');viewCirc.classList.add('hidden-chart');viewCirc.classList.remove('active-chart')}
+   else{viewBar.classList.add('hidden-chart');viewBar.classList.remove('active-chart');viewCirc.classList.add('active-chart');viewCirc.classList.remove('hidden-chart');
+    cssChart.className=(type==='pie'?'css-pie':'css-donut')+` css-chart-${target}`}
+  })});
+}
+
+// ================= TABLA Y FILTROS =================
+function renderizarTabla(lista){
+ const tbody=$('table-body-docentes');tbody.innerHTML='';
+ if(lista.length===0){tbody.innerHTML=`<tr><td colspan="7" style="text-align:center; padding:30px; color:var(--text-muted);">Ningún registro coincide con los filtros aplicados.</td></tr>`;return}
+ const oculta=rol()==='representante'||rol()==='rectoria';
+ lista.forEach(doc=>{
+  let badgeClass='badge-yellow-light',badgeText='🟡 Incompleto';
+  if(doc.estado==='cumplido'){badgeClass='bg-green-bg text-green-text';badgeText='🟢 Cumplido'}
+  else if(doc.estado==='critico'){badgeClass='bg-red-bg text-red-text';badgeText='🔴 Crítico'}
+  else if(doc.estado==='extraordinario'){badgeClass='badge-purple-light';badgeText='🟣 Extraordinario'}
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="font-mono font-bold" data-col="emp">${doc.emp||doc.id}</td><td class="font-bold">${doc.nombre}</td><td class="text-muted" data-col="campus">${doc.campus||''}</td>
+   <td class="text-muted" data-col="plan">Plan: ${doc.planHoras}h / Real: ${doc.realHoras}h</td>
+   <td data-col="estado"><span class="table-badge ${badgeClass}">${badgeText}</span></td>
+   <td class="font-bold" data-col="punt">${doc.planHoras?Math.round((doc.realHoras/doc.planHoras)*100)+'%':'—'}</td>
+   <td class="text-right column-action${oculta?' hidden-hard':''}"><button class="btn-audit" data-act="audit" data-v="${doc.id}">Auditar Informe</button></td>`;
+  tbody.appendChild(tr)});
+}
+function aplicarFiltros(){
+ const txtId=$('filter-id').value.trim(),txtNombre=$('filter-nombre').value.toLowerCase(),selCarrera=$('filter-carrera').value,selSemaforo=$('filter-semaforo').value,selPerfil=$('filter-perfil').value;
+ renderizarTabla(baseDocentes.filter(doc=>(txtId===''||doc.id.toString().includes(txtId))&&(txtNombre===''||doc.nombre.toLowerCase().includes(txtNombre))&&(selCarrera===''||doc.carrera===selCarrera)&&(selSemaforo===''||doc.estado===selSemaforo)&&(selPerfil===''||doc.perfilDeseable.toString()===selPerfil)&&(!F.campus||doc.campus===F.campus)&&(!F.carrera||doc.carrera===F.carrera)&&(!F.semestre||doc.semestre===F.semestre)&&(!F.semaforo||doc.estado===F.semaforo)));
+}
+function inicializarFiltros(){
+ $('btn-apply-filters').addEventListener('click',aplicarFiltros);
+ $('btn-clear-filters').addEventListener('click',()=>{['filter-id','filter-nombre','filter-carrera','filter-semaforo','filter-perfil'].forEach(i=>$(i).value='');aplicarFiltros()});
+}
+function verListaPerfil(v){$('filter-perfil').value=v;aplicarFiltros();cambiarSeccion('busqueda')}
+
+// ================= DETALLE DOCENTE (expediente con pestañas internas) =================
+function irADetalleDocente(id,tab){
+ const doc=baseDocentes.find(d=>d.id===id);if(!doc)return;pending=id;
+ if(tab)XT=tab;else if(sec!=='particular')XT='cumplimiento';
+ const tabs=[['cumplimiento','checklist','Cumplimiento'],['investigacion','flask','Investigación'],['evaluaciones','school','Evaluaciones'],['informe','file-text','Informe']].filter(t=>!(rol()==='secretaria'&&t[0]==='investigacion'));
+ if(!tabs.some(t=>t[0]===XT))XT='cumplimiento';
+ const ok=doc.actividadesDetalle.filter(a=>a.cumplida).length,tot=doc.actividadesDetalle.length;
+ let panel='';
+ if(XT==='cumplimiento'){
+  panel=`<div class="metrics-summary-grid">
+   <div class="metric-summary-box"><p style="font-size: 11px; font-weight:bold; color:var(--text-muted); text-transform:uppercase;">Total Horas Planeadas</p><span style="font-size: 24px; font-weight:bold; font-family:monospace;">${doc.planHoras} hrs</span></div>
+   <div class="metric-summary-box"><p style="font-size: 11px; font-weight:bold; color:var(--text-muted); text-transform:uppercase;">Total Horas Reportadas</p><span style="font-size: 24px; font-weight:bold; font-family:monospace; color: ${doc.estado==='critico'?'var(--red-text)':'var(--green-text)'}">${doc.realHoras} hrs</span></div>
+  </div>
+  <div class="checklist-container"><div class="checklist-header"><i class="ti ti-checklist" style="font-size:18px;"></i> Comprometido vs. Realizado <span class="xp-sum">${ok} de ${tot} cumplidas${tot-ok?` · <b class="text-red">${tot-ok} incumplida${tot-ok>1?'s':''}</b>`:''}</span></div>
+   <table class="vr-cmp"><thead><tr><th>Comprometido (Plan de trabajo)</th><th>Realizado (Informe final)</th><th>Estado</th></tr></thead><tbody>
+   ${doc.actividadesDetalle.map(a=>`<tr class="${a.cumplida?'':'bad'}"><td>${esc(a.nombre)}</td><td>${a.cumplida?'<i class="ti ti-check task-icon-done"></i> Reportada en el informe':'<i class="ti ti-x task-icon-fail"></i> No aparece en el informe'}</td><td><span class="table-badge ${a.cumplida?'bg-green-bg text-green-text':'bg-red-bg text-red-text'}">${a.cumplida?'Cumplida':'Incumplida'}</span></td></tr>`).join('')}
+   </tbody></table></div>
+  ${doc.actividadesExtra?`<div class="mt-4 p-4" style="background-color: var(--green-bg); border-radius: 12px; border: 1px solid var(--border-color);"><h4 style="font-size:12px; color:var(--green-text); font-weight:bold;">⭐ Actividades Extra (No Planeadas)</h4><ul style="font-size:12px; color:var(--green-text); padding-left:20px; margin-top:8px;">${doc.actividadesExtra.map(a=>`<li>${a}</li>`).join('')}</ul></div>`:''}
+  ${doc.justificacion?`<div class="mt-4 p-4" style="background-color: var(--red-bg); border-radius: 12px; border: 1px solid var(--red-border);"><h4 style="font-size:12px; color:var(--red-text); font-weight:bold;">⚠ Alerta del Sistema de Auditoría</h4><p style="font-size:12px; margin-top:4px;">${doc.justificacion}</p></div>`:''}`;
+ }else if(XT==='investigacion'){
+  const inv=(doc.inv||[]).filter(x=>!XINV||x.campus===doc.campus);
+  panel=`<div class="flex-row-between xp-bar"><p class="card-subtitle">Ingreso a la institución: <b>${doc.ingreso||'—'}</b> · Campus de adscripción: <b>${esc(doc.campus||'—')}</b> · ${(doc.inv||[]).length} trabajos registrados</p>
+   <label class="xp-check"><input type="checkbox" id="inv-campus"${XINV?' checked':''}> Solo las hechas en el campus</label></div>
+   ${inv.length?`<ol class="tl">${inv.map(x=>`<li class="${x.campus===doc.campus?'in':''}"><span class="tl-y">${x.a}</span><div class="tl-c"><b>${esc(x.t)}</b><div class="tl-m"><span class="tl-tipo">${esc(x.tipo)}</span>${x.campus===doc.campus?'<span class="tl-campus"><i class="ti ti-building-community"></i> En el campus</span>':`<span class="tl-ext">${esc(x.campus)}</span>`}</div></div></li>`).join('')}<li class="hoy"><span class="tl-y">Hoy</span><div class="tl-c"><b>${new Date().getFullYear()}</b></div></li></ol>`:'<p class="empty">Sin trabajos con este filtro.</p>'}`;
+ }else if(XT==='evaluaciones'){
+  if(!doc.evalEst){panel=`<p class="empty">Sin evaluaciones estudiantiles registradas para este docente. Se mostrarán cuando el sistema de evaluación las publique.</p>`}else{
+  const v=doc.evalEst;
+  panel=`<div class="ev-head"><div class="ev-big">${v.toFixed(1)}<small>/ 5</small></div><div>${estrellas(v)}<p class="card-subtitle">Promedio de la evaluación estudiantil del periodo actual.</p></div></div>`}
+ }else{
+  panel=`<div class="flex-row-between xp-bar"><p class="card-subtitle">Vista previa del informe que se descarga. Se abre la ventana de impresión; elige <b>Guardar como PDF</b>.</p><button class="btn-primary" data-act="pdf" data-v="${doc.id}"><i class="ti ti-file-type-pdf"></i> Descargar PDF</button></div>
+   ${repDocCard(doc)}
+   <div class="rep-prev">${informeHTML(doc)}</div>`;
+ }
+ $('particular-view-container').innerHTML=`
+  <div class="particular-header"><div><span class="tag-meta">ID: ${doc.id}</span><h2 style="font-size: 20px; font-weight:bold; margin-top:8px;">${doc.nombre}</h2><p class="text-muted" style="font-size: 13px;">Departamento: ${doc.carrera} · Campus ${esc(doc.campus||'')} · ${esc(doc.semestre||'')} semestre</p></div>
+   <div class="xp-acts">${doc.sni?`<span class="badge-sni">🔬 Padrón SNII Activo (${doc.sniNivel})</span>`:''}<button class="btn-secondary" data-act="xtab" data-v="informe"><i class="ti ti-download"></i> Descargar informe</button></div></div>
+  <div class="xp-tabs" role="tablist">${tabs.map(t=>`<button role="tab" aria-selected="${XT===t[0]}" class="xp-tab${XT===t[0]?' on':''}" data-act="xtab" data-v="${t[0]}"><i class="ti ti-${t[1]}"></i> ${t[2]}</button>`).join('')}</div>
+  <div class="xp-panel">${panel}</div>`;
+ if(sec!=='particular')cambiarSeccion('particular');
+ guardarEstado();
+}
+// ================= RBAC (rol tomado de la sesión) =================
+function aplicarControlRoles(r){
+ $$('.column-action').forEach(el=>el.classList.toggle('hidden-hard',r==='representante'||r==='rectoria'));
+}
+
+// ===== API para el marco SIGD =====
+const items=()=>ITEMS.filter(x=>!(rol()==='secretaria'&&RESTRINGIDAS.includes(x[2])));
+const active=()=>sec==='particular'?'busqueda':sec;
+function navGo(k){if(!root)return;cambiarSeccion(k)}
+function reset(){sec='resumen';pending=null;root=null;rolDebug=null;drawerOpen=false;XT='cumplimiento';try{sessionStorage.removeItem(VR_SS)}catch(e){}}
+function setRolDebug(r){rolDebug=r||null;if(!allowed(sec))sec='resumen';guardarEstado()}
+return{mount,items,navGo,active,reset,setRolDebug,rol,set onChange(f){cb=f}}})();
+
 
 
 INF.onChange=()=>{if(cur==='informe')nav()};PT.onChange=()=>{if(cur==='plan')nav();bellPaint()};NX.onChange=()=>{if(cur==='admin')nav()};VR.onChange=()=>{if(cur==='reportes')nav()};

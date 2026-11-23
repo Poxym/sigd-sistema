@@ -35,7 +35,7 @@ test('catálogo nuevo no reescribe el borrador anterior y permite migrar',()=>{c
 test('horas institucionales no se duplican ni se editan desde el plan',()=>{const e=setup(),p=e.teacher.create('PLAN');p.sections.docencia.rows[0].weeklyHours=99;assert.throws(()=>e.teacher.save(p.id,p,p.revision),/Administración/)});
 test('carga nominal no se confunde con avance ni se vuelve a sumar la asignación',()=>{const e=setup(),p=e.teacher.create('PLAN');assert.equal(D.calculateLoad(p).totalWeeklyHours,14);assert.equal(D.calculateLoad(p).doneSections,0)});
 test('tutorías, proporción y periodos superpuestos usan el dominio compartido',()=>{const l=D.calculateLoad(D.FX.demo);assert.equal(l.totalWeeklyHours,34);assert.equal(l.totalSemesterHours,476);assert.equal(D.uncoveredDays('2026-01-01','2026-01-10','2026-01-01','2026-01-10',[['2026-01-01','2026-01-05'],['2026-01-03','2026-01-07']]),3)});
-test('resultados de cursos validan rango y reprobación ponderada',()=>{const e=setup();approved(e);let r=e.teacher.create('REPORT');r.courseResults[0].passed=1000;assert.throws(()=>e.teacher.save(r.id,r,r.revision),/aprobados/);r.courseResults[0].passed=10;for(const a of Object.values(r.sections)){a.applicability='not_applicable';a.completion='done'}r=e.teacher.save(r.id,r,r.revision);assert.throws(()=>e.teacher.submit(r.id,r.revision,'report-unjustified'),/Justifica/)});
+test('informe en formato anterior (sin secciones A–I): resultados de cursos validan rango y reprobación ponderada',()=>{const e=setup();approved(e);let r=e.teacher.create('REPORT');delete e.s.documents.find(d=>d.id===r.id).content.informe;delete r.informe;r.courseResults[0].passed=1000;assert.throws(()=>e.teacher.save(r.id,r,r.revision),/aprobados/);r.courseResults[0].passed=10;for(const a of Object.values(r.sections)){a.applicability='not_applicable';a.completion='done'}r=e.teacher.save(r.id,r,r.revision);assert.throws(()=>e.teacher.submit(r.id,r.revision,'report-unjustified'),/Justifica/)});
 test('FK inexistente y duplicado se detectan antes de persistir',()=>{const e=setup();e.s.careers[0].campus_id='missing';assert.throws(()=>validateRelations(e.s,schema),/FK/)});
 test('SQLite revierte la transacción completa y sobrevive reinicio',async()=>{const dir=mkdtempSync(path.join(tmpdir(),'sigd-'));const repo=new SQLiteRepository(path.join(dir,'data.sqlite'),schema.tables);try{await repo.transaction(s=>{seed(s)});await assert.rejects(repo.transaction(s=>{s.users[0].first_name='Perdido';throw Error('fallo')}));assert.equal(await repo.transaction(s=>s.users[0].first_name),'Ana');repo.close();const reopened=new SQLiteRepository(path.join(dir,'data.sqlite'),schema.tables);assert.equal(await reopened.transaction(s=>s.users.length),8);reopened.close()}finally{try{repo.close()}catch{}rmSync(dir,{recursive:true,force:true})}});
 test('Administración agrega o retira actividades de Docencia por periodo (sinodal de examen)',()=>{
@@ -54,3 +54,34 @@ test('las 40 horas semanales son un máximo obligatorio al enviar el plan (acuer
  p=teacher.save(p.id,p,p.revision);assert.equal(p.semester.enforceMaximum,true);assert.equal(p.semester.maximumWeeklyMinutes,2400);
  assert.throws(()=>teacher.submit(p.id,p.revision,'over-40-key-1'),/máximo obligatorio de 40 h/);
  c.rows[0].weeklyHours=10;p.sections.comisiones=c;p=teacher.save(p.id,p,p.revision);assert.equal(teacher.submit(p.id,p.revision,'under-40-key-1').status,'in_review')});
+
+test('Informe original A–I: se crea con cursos institucionales y valida el envío por secciones',()=>{
+ const e=setup();approved(e);let r=e.teacher.create('REPORT');
+ assert.deepEqual(Object.keys(r.informe.sec),['A','B','C','D','E','F','G','H','I']);
+ assert.equal(r.informe.courses.length,3);assert(r.informe.courses.every(c=>c.assignmentId));
+ const inf=structuredClone(r.informe);inf.sec.A='done';
+ r=e.teacher.save(r.id,{informe:inf},r.revision);
+ assert.throws(()=>e.teacher.submit(r.id,r.revision,'inf-pend-1'),/sección B está pendiente/);
+ for(const k of 'BCDEFGHI')inf.sec[k]='noact';inf.courses[0].r=40;
+ r=e.teacher.save(r.id,{informe:inf},r.revision);
+ assert.throws(()=>e.teacher.submit(r.id,r.revision,'inf-just-1'),/Justifica la reprobación/);
+ inf.courses[0].j='Grupo con alta inasistencia en el semestre.';
+ r=e.teacher.save(r.id,{informe:inf},r.revision);
+ const cr=r.courseResults.find(c=>c.assignmentId===inf.courses[0].assignmentId);assert.equal(cr.enrolled-cr.passed,Math.round(cr.enrolled*0.4));
+ r=e.teacher.submit(r.id,r.revision,'inf-ok-1');assert.equal(r.status,'in_review');validateRelations(e.s,schema)});
+
+test('Informe original: Jefatura debe consultar A–I antes de aprobar',()=>{
+ const e=setup();approved(e);let r=e.teacher.create('REPORT');const inf=structuredClone(r.informe);for(const k of 'ABCDEFGHI')inf.sec[k]='noact';
+ r=e.teacher.save(r.id,{informe:inf},r.revision);r=e.teacher.submit(r.id,r.revision,'inf-sub-2');
+ e.head.visit(r.id,r.version,'A');assert.throws(()=>e.head.review(r.id,r.revision,'approved','','inf-rev-2a'),/todas las secciones/);
+ assert.throws(()=>e.head.visit(r.id,r.version,'docencia'),/Sección inválida/);
+ for(const k of 'BCDEFGHI')e.head.visit(r.id,r.version,k);r=e.head.review(r.id,r.revision,'approved','','inf-rev-2b');assert.equal(r.status,'approved')});
+
+test('Informe original: datos inválidos se rechazan y el borrador nunca enviado se puede eliminar',()=>{
+ const e=setup();approved(e);let r=e.teacher.create('REPORT');const inf=structuredClone(r.informe);
+ assert.throws(()=>e.teacher.save(r.id,{informe:{...inf,courses:[{...inf.courses[0],r:120}]}},r.revision),/entre 0 y 100/);
+ assert.throws(()=>e.teacher.save(r.id,{informe:{...inf,sin:['otro']}},r.revision),/Sinodal/);
+ assert.throws(()=>e.teacher.save(r.id,{informe:{...inf,courses:[{...inf.courses[0],assignmentId:'ajena'}]}},r.revision),/ajeno/);
+ assert.deepEqual(e.teacher.discard(r.id),{ok:true});assert(!e.s.documents.some(d=>d.id===r.id));validateRelations(e.s,schema);
+ r=e.teacher.create('REPORT');for(const k of 'ABCDEFGHI')r.informe.sec[k]='noact';r=e.teacher.save(r.id,{informe:r.informe},r.revision);r=e.teacher.submit(r.id,r.revision,'inf-sub-3');
+ assert.throws(()=>e.teacher.discard(r.id),/nunca se ha enviado/)});
