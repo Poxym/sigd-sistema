@@ -1,0 +1,7077 @@
+{
+  "name": "07_documentos",
+  "directed": true,
+  "strict": false,
+  "_draw_": [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [
+        [
+          -28.8,
+          -28.8
+        ],
+        [
+          -28.8,
+          647
+        ],
+        [
+          1009.56,
+          647
+        ],
+        [
+          1009.56,
+          -28.8
+        ]
+      ]
+    }
+  ],
+  "_ldraw_": [
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        594.4
+      ],
+      "align": "l",
+      "width": 476.51,
+      "text": "SIGD  |  Plan, informe y documentos del docente"
+    },
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        568
+      ],
+      "align": "l",
+      "width": 454.88,
+      "text": "Modelo relacional / PK · FK · UQ · ? opcional"
+    }
+  ],
+  "bb": "0,0,980.76,618.2",
+  "bgcolor": "white",
+  "concentrate": "false",
+  "fontcolor": "#173847",
+  "fontname": "Arial",
+  "fontsize": "22",
+  "label": "SIGD  |  Plan, informe y documentos del docente\\lModelo relacional / PK · FK · UQ · ? opcional\\l",
+  "labeljust": "l",
+  "labelloc": "t",
+  "lheight": "0.73",
+  "lp": "246.26,587.8",
+  "lwidth": "6.62",
+  "nodesep": "0.45",
+  "outputorder": "edgesfirst",
+  "pad": "0.4",
+  "rankdir": "LR",
+  "ranksep": "0.85",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "documents",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              426.76,
+              456.4
+            ],
+            [
+              426.76,
+              456.4
+            ],
+            [
+              259.76,
+              456.4
+            ],
+            [
+              259.76,
+              456.4
+            ],
+            [
+              253.76,
+              456.4
+            ],
+            [
+              247.76,
+              450.4
+            ],
+            [
+              247.76,
+              444.4
+            ],
+            [
+              247.76,
+              444.4
+            ],
+            [
+              247.76,
+              107.8
+            ],
+            [
+              247.76,
+              107.8
+            ],
+            [
+              247.76,
+              101.8
+            ],
+            [
+              253.76,
+              95.8
+            ],
+            [
+              259.76,
+              95.8
+            ],
+            [
+              259.76,
+              95.8
+            ],
+            [
+              426.76,
+              95.8
+            ],
+            [
+              426.76,
+              95.8
+            ],
+            [
+              432.76,
+              95.8
+            ],
+            [
+              438.76,
+              101.8
+            ],
+            [
+              438.76,
+              107.8
+            ],
+            [
+              438.76,
+              107.8
+            ],
+            [
+              438.76,
+              444.4
+            ],
+            [
+              438.76,
+              444.4
+            ],
+            [
+              438.76,
+              450.4
+            ],
+            [
+              432.76,
+              456.4
+            ],
+            [
+              426.76,
+              456.4
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              247.76,
+              95.8
+            ],
+            [
+              247.76,
+              456.4
+            ],
+            [
+              438.76,
+              456.4
+            ],
+            [
+              438.76,
+              95.8
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              247.76,
+              413.4
+            ],
+            [
+              247.76,
+              456.4
+            ],
+            [
+              438.76,
+              456.4
+            ],
+            [
+              438.76,
+              413.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            280.78,
+            435.7
+          ],
+          "align": "l",
+          "width": 124.95,
+          "text": "Documento docente"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            318.8,
+            425.4
+          ],
+          "align": "l",
+          "width": 48.92,
+          "text": "documents"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            401.1
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            398.4
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            399.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            379.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            377.2
+          ],
+          "align": "l",
+          "width": 51.37,
+          "text": "teacher_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            378
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            358.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            356
+          ],
+          "align": "l",
+          "width": 45.26,
+          "text": "period_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            356.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            337.5
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            334.8
+          ],
+          "align": "l",
+          "width": 45.86,
+          "text": "career_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            335.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            316.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            313.6
+          ],
+          "align": "l",
+          "width": 50.15,
+          "text": "catalog_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            314.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            295.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            292.4
+          ],
+          "align": "l",
+          "width": 20.18,
+          "text": "kind"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            293.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            273.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            271.2
+          ],
+          "align": "l",
+          "width": 23.85,
+          "text": "state"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            272
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            252.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            250
+          ],
+          "align": "l",
+          "width": 35.46,
+          "text": "version"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            250.8
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "integer"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            231.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            228.8
+          ],
+          "align": "l",
+          "width": 37.9,
+          "text": "revision"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            229.6
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "integer"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            210.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            207.6
+          ],
+          "align": "l",
+          "width": 51.98,
+          "text": "created_at"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            208.4
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            189.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            186.4
+          ],
+          "align": "l",
+          "width": 55.05,
+          "text": "updated_at"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            187.2
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            167.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            165.2
+          ],
+          "align": "l",
+          "width": 72.16,
+          "text": "submitted_at ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            166
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            146.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            144
+          ],
+          "align": "l",
+          "width": 70.33,
+          "text": "approved_at ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            144.8
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            251.76,
+            125.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            279.76,
+            122.8
+          ],
+          "align": "l",
+          "width": 36.08,
+          "text": "content"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384.76,
+            123.6
+          ],
+          "align": "l",
+          "width": 21.52,
+          "text": "jsonb"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              247.76,
+              95.8
+            ],
+            [
+              247.76,
+              116.6
+            ],
+            [
+              438.76,
+              116.6
+            ],
+            [
+              438.76,
+              95.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            252.76,
+            102.6
+          ],
+          "align": "l",
+          "width": 127.56,
+          "text": "UQ (teacher_id, period_id, kind)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "5.0083",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Documento docente</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">documents</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"teacher_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">teacher_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"period_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">period_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"career_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">career_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"catalog_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">catalog_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"kind\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">kind</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"state\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">state</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"version\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">version</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">integer</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"revision\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">revision</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">integer</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"created_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">created_at</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"updated_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">updated_at</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"submitted_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">submitted_at ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"approved_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">approved_at ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"content\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">content</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">jsonb</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (teacher_id, period_id, kind)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "343.26,276.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 1,
+      "name": "work_plans",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              700.76,
+              557.4
+            ],
+            [
+              700.76,
+              557.4
+            ],
+            [
+              511.76,
+              557.4
+            ],
+            [
+              511.76,
+              557.4
+            ],
+            [
+              505.76,
+              557.4
+            ],
+            [
+              499.76,
+              551.4
+            ],
+            [
+              499.76,
+              545.4
+            ],
+            [
+              499.76,
+              545.4
+            ],
+            [
+              499.76,
+              462.8
+            ],
+            [
+              499.76,
+              462.8
+            ],
+            [
+              499.76,
+              456.8
+            ],
+            [
+              505.76,
+              450.8
+            ],
+            [
+              511.76,
+              450.8
+            ],
+            [
+              511.76,
+              450.8
+            ],
+            [
+              700.76,
+              450.8
+            ],
+            [
+              700.76,
+              450.8
+            ],
+            [
+              706.76,
+              450.8
+            ],
+            [
+              712.76,
+              456.8
+            ],
+            [
+              712.76,
+              462.8
+            ],
+            [
+              712.76,
+              462.8
+            ],
+            [
+              712.76,
+              545.4
+            ],
+            [
+              712.76,
+              545.4
+            ],
+            [
+              712.76,
+              551.4
+            ],
+            [
+              706.76,
+              557.4
+            ],
+            [
+              700.76,
+              557.4
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              499.76,
+              450.8
+            ],
+            [
+              499.76,
+              557.4
+            ],
+            [
+              712.76,
+              557.4
+            ],
+            [
+              712.76,
+              450.8
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              499.76,
+              514.4
+            ],
+            [
+              499.76,
+              557.4
+            ],
+            [
+              712.76,
+              557.4
+            ],
+            [
+              712.76,
+              514.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            559.66,
+            536.7
+          ],
+          "align": "l",
+          "width": 93.19,
+          "text": "Plan de trabajo"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            580.97,
+            526.4
+          ],
+          "align": "l",
+          "width": 50.58,
+          "text": "work_plans"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503.76,
+            502.1
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531.76,
+            499.4
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            658.76,
+            500.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503.76,
+            480.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531.76,
+            478.2
+          ],
+          "align": "l",
+          "width": 82.54,
+          "text": "document_id UQ"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            658.76,
+            479
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503.76,
+            459.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531.76,
+            457
+          ],
+          "align": "l",
+          "width": 98.44,
+          "text": "submitted_version ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            658.76,
+            457.8
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "integer"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "1.4806",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Plan de trabajo</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">work_plans</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"127.69999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"127.69999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">document_id UQ</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"submitted_version\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"127.69999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">submitted_version ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">integer</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "606.26,504.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.9583"
+    },
+    {
+      "_gvid": 2,
+      "name": "activity_reports",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              968.76,
+              431.6
+            ],
+            [
+              968.76,
+              431.6
+            ],
+            [
+              785.76,
+              431.6
+            ],
+            [
+              785.76,
+              431.6
+            ],
+            [
+              779.76,
+              431.6
+            ],
+            [
+              773.76,
+              425.6
+            ],
+            [
+              773.76,
+              419.6
+            ],
+            [
+              773.76,
+              419.6
+            ],
+            [
+              773.76,
+              294.6
+            ],
+            [
+              773.76,
+              294.6
+            ],
+            [
+              773.76,
+              288.6
+            ],
+            [
+              779.76,
+              282.6
+            ],
+            [
+              785.76,
+              282.6
+            ],
+            [
+              785.76,
+              282.6
+            ],
+            [
+              968.76,
+              282.6
+            ],
+            [
+              968.76,
+              282.6
+            ],
+            [
+              974.76,
+              282.6
+            ],
+            [
+              980.76,
+              288.6
+            ],
+            [
+              980.76,
+              294.6
+            ],
+            [
+              980.76,
+              294.6
+            ],
+            [
+              980.76,
+              419.6
+            ],
+            [
+              980.76,
+              419.6
+            ],
+            [
+              980.76,
+              425.6
+            ],
+            [
+              974.76,
+              431.6
+            ],
+            [
+              968.76,
+              431.6
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              773.76,
+              282.6
+            ],
+            [
+              773.76,
+              431.6
+            ],
+            [
+              980.76,
+              431.6
+            ],
+            [
+              980.76,
+              282.6
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              773.76,
+              388.6
+            ],
+            [
+              773.76,
+              431.6
+            ],
+            [
+              980.76,
+              431.6
+            ],
+            [
+              980.76,
+              388.6
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            806.82,
+            410.9
+          ],
+          "align": "l",
+          "width": 140.88,
+          "text": "Informe de actividades"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            843.63,
+            400.6
+          ],
+          "align": "l",
+          "width": 67.25,
+          "text": "activity_reports"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            777.76,
+            376.3
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            805.76,
+            373.6
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            926.76,
+            374.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            777.76,
+            355.1
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            805.76,
+            352.4
+          ],
+          "align": "l",
+          "width": 82.54,
+          "text": "document_id UQ"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            926.76,
+            353.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            777.76,
+            333.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            805.76,
+            331.2
+          ],
+          "align": "l",
+          "width": 89.9,
+          "text": "plan_document_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            926.76,
+            332
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            777.76,
+            312.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            805.76,
+            310
+          ],
+          "align": "l",
+          "width": 77.05,
+          "text": "plan_version_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            926.76,
+            310.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            777.76,
+            291.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            805.76,
+            288.8
+          ],
+          "align": "l",
+          "width": 84.38,
+          "text": "current_section ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            926.76,
+            289.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.0694",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Informe de actividades</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">activity_reports</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"121.6\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"121.6\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">document_id UQ</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"plan_document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"121.6\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">plan_document_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"plan_version_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"121.6\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">plan_version_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"current_section\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"121.6\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">current_section ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "877.26,357.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.875"
+    },
+    {
+      "_gvid": 3,
+      "name": "document_versions",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              689.76,
+              286.8
+            ],
+            [
+              689.76,
+              286.8
+            ],
+            [
+              522.76,
+              286.8
+            ],
+            [
+              522.76,
+              286.8
+            ],
+            [
+              516.76,
+              286.8
+            ],
+            [
+              510.76,
+              280.8
+            ],
+            [
+              510.76,
+              274.8
+            ],
+            [
+              510.76,
+              274.8
+            ],
+            [
+              510.76,
+              65.4
+            ],
+            [
+              510.76,
+              65.4
+            ],
+            [
+              510.76,
+              59.4
+            ],
+            [
+              516.76,
+              53.4
+            ],
+            [
+              522.76,
+              53.4
+            ],
+            [
+              522.76,
+              53.4
+            ],
+            [
+              689.76,
+              53.4
+            ],
+            [
+              689.76,
+              53.4
+            ],
+            [
+              695.76,
+              53.4
+            ],
+            [
+              701.76,
+              59.4
+            ],
+            [
+              701.76,
+              65.4
+            ],
+            [
+              701.76,
+              65.4
+            ],
+            [
+              701.76,
+              274.8
+            ],
+            [
+              701.76,
+              274.8
+            ],
+            [
+              701.76,
+              280.8
+            ],
+            [
+              695.76,
+              286.8
+            ],
+            [
+              689.76,
+              286.8
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              510.76,
+              53.4
+            ],
+            [
+              510.76,
+              286.8
+            ],
+            [
+              701.76,
+              286.8
+            ],
+            [
+              701.76,
+              53.4
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              510.76,
+              243.8
+            ],
+            [
+              510.76,
+              286.8
+            ],
+            [
+              701.76,
+              286.8
+            ],
+            [
+              701.76,
+              243.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            550.27,
+            266.1
+          ],
+          "align": "l",
+          "width": 111.97,
+          "text": "Versión inmutable"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            562.9,
+            255.8
+          ],
+          "align": "l",
+          "width": 86.71,
+          "text": "document_versions"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            231.5
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            228.8
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            229.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            210.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            207.6
+          ],
+          "align": "l",
+          "width": 62.99,
+          "text": "document_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            208.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            189.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            186.4
+          ],
+          "align": "l",
+          "width": 37.3,
+          "text": "number"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            187.2
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "integer"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            167.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            165.2
+          ],
+          "align": "l",
+          "width": 26.91,
+          "text": "event"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            166
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            146.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            144
+          ],
+          "align": "l",
+          "width": 39.13,
+          "text": "actor_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            144.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            125.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            122.8
+          ],
+          "align": "l",
+          "width": 9.17,
+          "text": "at"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            123.6
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            104.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            101.6
+          ],
+          "align": "l",
+          "width": 36.08,
+          "text": "content"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            102.4
+          ],
+          "align": "l",
+          "width": 21.52,
+          "text": "jsonb"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            514.76,
+            83.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            542.76,
+            80.4
+          ],
+          "align": "l",
+          "width": 29.35,
+          "text": "digest"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            647.76,
+            81.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              510.76,
+              53.4
+            ],
+            [
+              510.76,
+              74.2
+            ],
+            [
+              701.76,
+              74.2
+            ],
+            [
+              701.76,
+              53.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.76,
+            60.2
+          ],
+          "align": "l",
+          "width": 109.05,
+          "text": "UQ (document_id, number)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "3.2417",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Versión inmutable</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">document_versions</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">document_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"number\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">number</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">integer</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"event\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">event</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"actor_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">actor_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">at</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"content\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">content</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">jsonb</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"digest\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">digest</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (document_id, number)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "606.26,170.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 4,
+      "name": "teachers__documents",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              169.38,
+              546.2
+            ],
+            [
+              169.38,
+              546.2
+            ],
+            [
+              17.38,
+              546.2
+            ],
+            [
+              17.38,
+              546.2
+            ],
+            [
+              11.38,
+              546.2
+            ],
+            [
+              5.38,
+              540.2
+            ],
+            [
+              5.38,
+              534.2
+            ],
+            [
+              5.38,
+              534.2
+            ],
+            [
+              5.38,
+              494
+            ],
+            [
+              5.38,
+              494
+            ],
+            [
+              5.38,
+              488
+            ],
+            [
+              11.38,
+              482
+            ],
+            [
+              17.38,
+              482
+            ],
+            [
+              17.38,
+              482
+            ],
+            [
+              169.38,
+              482
+            ],
+            [
+              169.38,
+              482
+            ],
+            [
+              175.38,
+              482
+            ],
+            [
+              181.38,
+              488
+            ],
+            [
+              181.38,
+              494
+            ],
+            [
+              181.38,
+              494
+            ],
+            [
+              181.38,
+              534.2
+            ],
+            [
+              181.38,
+              534.2
+            ],
+            [
+              181.38,
+              540.2
+            ],
+            [
+              175.38,
+              546.2
+            ],
+            [
+              169.38,
+              546.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              482
+            ],
+            [
+              5.38,
+              546.2
+            ],
+            [
+              181.38,
+              546.2
+            ],
+            [
+              181.38,
+              482
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              503.2
+            ],
+            [
+              5.38,
+              546.2
+            ],
+            [
+              181.38,
+              546.2
+            ],
+            [
+              181.38,
+              503.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            67.73,
+            525.5
+          ],
+          "align": "l",
+          "width": 51.29,
+          "text": "Docente"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            28.34,
+            515.2
+          ],
+          "align": "l",
+          "width": 130.07,
+          "text": "teachers · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            9.38,
+            490.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            37.38,
+            488.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            127.38,
+            489
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Docente</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">teachers · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "93.379,514.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 5,
+      "name": "periods__documents",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              169.38,
+              450.2
+            ],
+            [
+              169.38,
+              450.2
+            ],
+            [
+              17.38,
+              450.2
+            ],
+            [
+              17.38,
+              450.2
+            ],
+            [
+              11.38,
+              450.2
+            ],
+            [
+              5.38,
+              444.2
+            ],
+            [
+              5.38,
+              438.2
+            ],
+            [
+              5.38,
+              438.2
+            ],
+            [
+              5.38,
+              398
+            ],
+            [
+              5.38,
+              398
+            ],
+            [
+              5.38,
+              392
+            ],
+            [
+              11.38,
+              386
+            ],
+            [
+              17.38,
+              386
+            ],
+            [
+              17.38,
+              386
+            ],
+            [
+              169.38,
+              386
+            ],
+            [
+              169.38,
+              386
+            ],
+            [
+              175.38,
+              386
+            ],
+            [
+              181.38,
+              392
+            ],
+            [
+              181.38,
+              398
+            ],
+            [
+              181.38,
+              398
+            ],
+            [
+              181.38,
+              438.2
+            ],
+            [
+              181.38,
+              438.2
+            ],
+            [
+              181.38,
+              444.2
+            ],
+            [
+              175.38,
+              450.2
+            ],
+            [
+              169.38,
+              450.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              386
+            ],
+            [
+              5.38,
+              450.2
+            ],
+            [
+              181.38,
+              450.2
+            ],
+            [
+              181.38,
+              386
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              407.2
+            ],
+            [
+              5.38,
+              450.2
+            ],
+            [
+              181.38,
+              450.2
+            ],
+            [
+              181.38,
+              407.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            33.78,
+            429.5
+          ],
+          "align": "l",
+          "width": 119.2,
+          "text": "Periodo académico"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            31.12,
+            419.2
+          ],
+          "align": "l",
+          "width": 124.51,
+          "text": "periods · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            9.38,
+            394.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            37.38,
+            392.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            127.38,
+            393
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Periodo académico</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">periods · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "93.379,418.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 6,
+      "name": "careers__documents",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              169.38,
+              354.2
+            ],
+            [
+              169.38,
+              354.2
+            ],
+            [
+              17.38,
+              354.2
+            ],
+            [
+              17.38,
+              354.2
+            ],
+            [
+              11.38,
+              354.2
+            ],
+            [
+              5.38,
+              348.2
+            ],
+            [
+              5.38,
+              342.2
+            ],
+            [
+              5.38,
+              342.2
+            ],
+            [
+              5.38,
+              302
+            ],
+            [
+              5.38,
+              302
+            ],
+            [
+              5.38,
+              296
+            ],
+            [
+              11.38,
+              290
+            ],
+            [
+              17.38,
+              290
+            ],
+            [
+              17.38,
+              290
+            ],
+            [
+              169.38,
+              290
+            ],
+            [
+              169.38,
+              290
+            ],
+            [
+              175.38,
+              290
+            ],
+            [
+              181.38,
+              296
+            ],
+            [
+              181.38,
+              302
+            ],
+            [
+              181.38,
+              302
+            ],
+            [
+              181.38,
+              342.2
+            ],
+            [
+              181.38,
+              342.2
+            ],
+            [
+              181.38,
+              348.2
+            ],
+            [
+              175.38,
+              354.2
+            ],
+            [
+              169.38,
+              354.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              290
+            ],
+            [
+              5.38,
+              354.2
+            ],
+            [
+              181.38,
+              354.2
+            ],
+            [
+              181.38,
+              290
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              5.38,
+              311.2
+            ],
+            [
+              5.38,
+              354.2
+            ],
+            [
+              181.38,
+              354.2
+            ],
+            [
+              181.38,
+              311.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            70.25,
+            333.5
+          ],
+          "align": "l",
+          "width": 46.26,
+          "text": "Carrera"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            30.85,
+            323.2
+          ],
+          "align": "l",
+          "width": 125.06,
+          "text": "careers · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            9.38,
+            298.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            37.38,
+            296.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            127.38,
+            297
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Carrera</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">careers · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "93.379,322.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 7,
+      "name": "catalog_versions__documents",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              174.76,
+              258.2
+            ],
+            [
+              174.76,
+              258.2
+            ],
+            [
+              12,
+              258.2
+            ],
+            [
+              12,
+              258.2
+            ],
+            [
+              6,
+              258.2
+            ],
+            [
+              0,
+              252.2
+            ],
+            [
+              0,
+              246.2
+            ],
+            [
+              0,
+              246.2
+            ],
+            [
+              0,
+              206
+            ],
+            [
+              0,
+              206
+            ],
+            [
+              0,
+              200
+            ],
+            [
+              6,
+              194
+            ],
+            [
+              12,
+              194
+            ],
+            [
+              12,
+              194
+            ],
+            [
+              174.76,
+              194
+            ],
+            [
+              174.76,
+              194
+            ],
+            [
+              180.76,
+              194
+            ],
+            [
+              186.76,
+              200
+            ],
+            [
+              186.76,
+              206
+            ],
+            [
+              186.76,
+              206
+            ],
+            [
+              186.76,
+              246.2
+            ],
+            [
+              186.76,
+              246.2
+            ],
+            [
+              186.76,
+              252.2
+            ],
+            [
+              180.76,
+              258.2
+            ],
+            [
+              174.76,
+              258.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              194
+            ],
+            [
+              0,
+              258.2
+            ],
+            [
+              186.76,
+              258.2
+            ],
+            [
+              186.76,
+              194
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              215.2
+            ],
+            [
+              0,
+              258.2
+            ],
+            [
+              186.76,
+              258.2
+            ],
+            [
+              186.76,
+              215.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            31.97,
+            237.5
+          ],
+          "align": "l",
+          "width": 122.81,
+          "text": "Versión de catálogo"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            10,
+            227.2
+          ],
+          "align": "l",
+          "width": 166.76,
+          "text": "catalog_versions · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            202.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            35.59,
+            200.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            129.17,
+            201
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Versión de catálogo</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">catalog_versions · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "93.379,226.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.5939"
+    },
+    {
+      "_gvid": 8,
+      "name": "users__document_versions",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              419.26,
+              64.2
+            ],
+            [
+              419.26,
+              64.2
+            ],
+            [
+              267.26,
+              64.2
+            ],
+            [
+              267.26,
+              64.2
+            ],
+            [
+              261.26,
+              64.2
+            ],
+            [
+              255.26,
+              58.2
+            ],
+            [
+              255.26,
+              52.2
+            ],
+            [
+              255.26,
+              52.2
+            ],
+            [
+              255.26,
+              12
+            ],
+            [
+              255.26,
+              12
+            ],
+            [
+              255.26,
+              6
+            ],
+            [
+              261.26,
+              0
+            ],
+            [
+              267.26,
+              0
+            ],
+            [
+              267.26,
+              0
+            ],
+            [
+              419.26,
+              0
+            ],
+            [
+              419.26,
+              0
+            ],
+            [
+              425.26,
+              0
+            ],
+            [
+              431.26,
+              6
+            ],
+            [
+              431.26,
+              12
+            ],
+            [
+              431.26,
+              12
+            ],
+            [
+              431.26,
+              52.2
+            ],
+            [
+              431.26,
+              52.2
+            ],
+            [
+              431.26,
+              58.2
+            ],
+            [
+              425.26,
+              64.2
+            ],
+            [
+              419.26,
+              64.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              255.26,
+              0
+            ],
+            [
+              255.26,
+              64.2
+            ],
+            [
+              431.26,
+              64.2
+            ],
+            [
+              431.26,
+              0
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              255.26,
+              21.2
+            ],
+            [
+              255.26,
+              64.2
+            ],
+            [
+              431.26,
+              64.2
+            ],
+            [
+              431.26,
+              21.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            319.06,
+            43.5
+          ],
+          "align": "l",
+          "width": 48.4,
+          "text": "Usuario"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            285.17,
+            33.2
+          ],
+          "align": "l",
+          "width": 116.17,
+          "text": "users · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            259.26,
+            8.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            287.26,
+            6.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            377.26,
+            7
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Usuario</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">users · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "343.26,32.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 5,
+      "tail": 4,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              184,
+              489.86
+            ],
+            [
+              192.53,
+              475.37
+            ],
+            [
+              232.41,
+              407.66
+            ],
+            [
+              244.36,
+              387.36
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.28,
+              387.5
+            ],
+            [
+              250.1,
+              383.39
+            ],
+            [
+              246.11,
+              384.4
+            ],
+            [
+              247.4,
+              382.21
+            ],
+            [
+              247.4,
+              382.21
+            ],
+            [
+              247.4,
+              382.21
+            ],
+            [
+              246.11,
+              384.4
+            ],
+            [
+              245.06,
+              380.42
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            239.13,
+            393.55
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              185.51,
+              493.69
+            ],
+            [
+              179.91,
+              490.39
+            ],
+            [
+              180.57,
+              489.27
+            ],
+            [
+              186.17,
+              492.57
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              182.38,
+              492.6
+            ],
+            [
+              184.03,
+              489.8
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            191.01,
+            475.25
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "239.13,396.25",
+      "headlabel": "0..N",
+      "headport": "teacher_id:w",
+      "id": "rel1",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,182.38,492.6 e,247.76,381.6 184,489.86 192.53,475.37 232.41,407.66 244.36,387.36",
+      "style": "dashed",
+      "tail_lp": "191.01,477.95",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "teachers.id → documents.teacher_id"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              185.19,
+              395.04
+            ],
+            [
+              195.06,
+              389.58
+            ],
+            [
+              228.31,
+              371.17
+            ],
+            [
+              241.9,
+              363.64
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              241.76,
+              363.72
+            ],
+            [
+              248.87,
+              363.13
+            ],
+            [
+              244.91,
+              361.97
+            ],
+            [
+              247.14,
+              360.74
+            ],
+            [
+              247.14,
+              360.74
+            ],
+            [
+              247.14,
+              360.74
+            ],
+            [
+              244.91,
+              361.97
+            ],
+            [
+              246.03,
+              358.01
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            232.89,
+            365.93
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              184.52,
+              399.13
+            ],
+            [
+              181.37,
+              393.44
+            ],
+            [
+              182.51,
+              392.81
+            ],
+            [
+              185.66,
+              398.5
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              182.38,
+              396.6
+            ],
+            [
+              185.22,
+              395.03
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            197.25,
+            385.67
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "232.89,368.63",
+      "headlabel": "0..N",
+      "headport": "period_id:w",
+      "id": "rel2",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,182.38,396.6 e,247.76,360.4 185.19,395.04 195.06,389.58 228.31,371.17 241.9,363.64",
+      "style": "dashed",
+      "tail_lp": "197.25,388.37",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "periods.id → documents.period_id"
+    },
+    {
+      "_gvid": 7,
+      "tail": 6,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              184.86,
+              302.07
+            ],
+            [
+              194.29,
+              307.63
+            ],
+            [
+              228,
+              327.53
+            ],
+            [
+              241.8,
+              335.68
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              241.86,
+              335.72
+            ],
+            [
+              245.97,
+              341.54
+            ],
+            [
+              244.96,
+              337.55
+            ],
+            [
+              247.15,
+              338.84
+            ],
+            [
+              247.15,
+              338.84
+            ],
+            [
+              247.15,
+              338.84
+            ],
+            [
+              244.96,
+              337.55
+            ],
+            [
+              248.94,
+              336.5
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            233.12,
+            327.86
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              181.29,
+              303.73
+            ],
+            [
+              184.59,
+              298.13
+            ],
+            [
+              185.71,
+              298.79
+            ],
+            [
+              182.41,
+              304.39
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              182.38,
+              300.6
+            ],
+            [
+              185.18,
+              302.25
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            197.02,
+            306.54
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "233.12,330.56",
+      "headlabel": "0..N",
+      "headport": "career_id:w",
+      "id": "rel3",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,182.38,300.6 e,247.76,339.2 184.86,302.07 194.29,307.63 228,327.53 241.8,335.68",
+      "style": "dashed",
+      "tail_lp": "197.02,309.24",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "careers.id → documents.career_id"
+    },
+    {
+      "_gvid": 8,
+      "tail": 7,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              188.27,
+              207.4
+            ],
+            [
+              196.23,
+              222.21
+            ],
+            [
+              233.44,
+              291.38
+            ],
+            [
+              244.59,
+              312.11
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.51,
+              311.97
+            ],
+            [
+              245.02,
+              319.08
+            ],
+            [
+              246.22,
+              315.14
+            ],
+            [
+              247.43,
+              317.38
+            ],
+            [
+              247.43,
+              317.38
+            ],
+            [
+              247.43,
+              317.38
+            ],
+            [
+              246.22,
+              315.14
+            ],
+            [
+              250.17,
+              316.31
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            239.7,
+            300.33
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              184.2,
+              206.71
+            ],
+            [
+              189.93,
+              203.63
+            ],
+            [
+              190.54,
+              204.78
+            ],
+            [
+              184.82,
+              207.86
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              186.76,
+              204.6
+            ],
+            [
+              188.3,
+              207.46
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            194.81,
+            216.87
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "239.7,303.03",
+      "headlabel": "0..N",
+      "headport": "catalog_id:w",
+      "id": "rel4",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,186.76,204.6 e,247.76,318 188.27,207.4 196.23,222.21 233.44,291.38 244.59,312.11",
+      "style": "dashed",
+      "tail_lp": "194.81,219.57",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "catalog_versions.id → documents.catalog_id"
+    },
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              440.52,
+              405.1
+            ],
+            [
+              449.35,
+              416.65
+            ],
+            [
+              488.76,
+              468.21
+            ],
+            [
+              497.87,
+              480.13
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              501.95,
+              480.11
+            ],
+            [
+              496.78,
+              484.06
+            ],
+            [
+              495.99,
+              483.02
+            ],
+            [
+              501.16,
+              479.08
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              499.76,
+              482.6
+            ],
+            [
+              497.78,
+              480.02
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            489.43,
+            466.39
+          ],
+          "align": "c",
+          "width": 15.01,
+          "text": "0..1"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              436.57,
+              405.29
+            ],
+            [
+              441.73,
+              401.34
+            ],
+            [
+              442.52,
+              402.38
+            ],
+            [
+              437.36,
+              406.32
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              438.76,
+              402.8
+            ],
+            [
+              440.73,
+              405.38
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            449.08,
+            413.61
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "tee",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "489.43,469.09",
+      "headlabel": "0..1",
+      "headport": "document_id:w",
+      "id": "rel5",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,438.76,402.8 e,499.76,482.6 440.52,405.1 449.35,416.65 488.76,468.21 497.87,480.13",
+      "tail_lp": "449.08,416.31",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → work_plans.document_id"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              441.65,
+              402.4
+            ],
+            [
+              472.48,
+              398.17
+            ],
+            [
+              739.59,
+              361.49
+            ],
+            [
+              770.79,
+              357.21
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              772.67,
+              353.67
+            ],
+            [
+              773.56,
+              360.11
+            ],
+            [
+              772.27,
+              360.29
+            ],
+            [
+              771.38,
+              353.85
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              773.76,
+              356.8
+            ],
+            [
+              770.54,
+              357.24
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            756.92,
+            356.41
+          ],
+          "align": "c",
+          "width": 15.01,
+          "text": "0..1"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              439.84,
+              405.93
+            ],
+            [
+              438.96,
+              399.49
+            ],
+            [
+              440.25,
+              399.31
+            ],
+            [
+              441.13,
+              405.75
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              438.76,
+              402.8
+            ],
+            [
+              441.98,
+              402.36
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            455.6,
+            397.79
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "tee",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "756.92,359.11",
+      "headlabel": "0..1",
+      "headport": "document_id:w",
+      "id": "rel6",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,438.76,402.8 e,773.76,356.8 441.65,402.4 472.48,398.17 739.59,361.49 770.79,357.21",
+      "tail_lp": "455.6,400.49",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → activity_reports.document_id"
+    },
+    {
+      "_gvid": 2,
+      "tail": 0,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              441.07,
+              401.06
+            ],
+            [
+              452.22,
+              392.72
+            ],
+            [
+              499.76,
+              357.1
+            ],
+            [
+              499.76,
+              357.1
+            ],
+            [
+              499.76,
+              357.1
+            ],
+            [
+              724.79,
+              339.44
+            ],
+            [
+              766.98,
+              336.13
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              766.93,
+              336.14
+            ],
+            [
+              773.64,
+              338.54
+            ],
+            [
+              770.52,
+              335.85
+            ],
+            [
+              773.06,
+              335.65
+            ],
+            [
+              773.06,
+              335.65
+            ],
+            [
+              773.06,
+              335.65
+            ],
+            [
+              770.52,
+              335.85
+            ],
+            [
+              773.18,
+              332.71
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            756.81,
+            334.23
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              441.23,
+              405.01
+            ],
+            [
+              437.33,
+              399.81
+            ],
+            [
+              438.37,
+              399.03
+            ],
+            [
+              442.27,
+              404.23
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              438.76,
+              402.8
+            ],
+            [
+              441.36,
+              400.85
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            452.36,
+            389.91
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "756.81,336.93",
+      "headlabel": "0..N",
+      "headport": "plan_document_id:w",
+      "id": "rel7",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,438.76,402.8 e,773.76,335.6 441.07,401.06 452.22,392.72 499.76,357.1 499.76,357.1 499.76,357.1 724.79,339.44 766.98,336.13",
+      "tail_lp": "452.36,392.61",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → activity_reports.plan_document_id"
+    },
+    {
+      "_gvid": 4,
+      "tail": 3,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              704.81,
+              235.54
+            ],
+            [
+              714.45,
+              246.57
+            ],
+            [
+              755.41,
+              293.41
+            ],
+            [
+              769.2,
+              309.19
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              769.25,
+              309.24
+            ],
+            [
+              771.32,
+              316.06
+            ],
+            [
+              771.62,
+              311.95
+            ],
+            [
+              773.3,
+              313.87
+            ],
+            [
+              773.3,
+              313.87
+            ],
+            [
+              773.3,
+              313.87
+            ],
+            [
+              771.62,
+              311.95
+            ],
+            [
+              775.73,
+              312.21
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            762.57,
+            298.9
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              700.74,
+              235.83
+            ],
+            [
+              705.63,
+              231.55
+            ],
+            [
+              706.49,
+              232.53
+            ],
+            [
+              701.59,
+              236.81
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              702.76,
+              233.2
+            ],
+            [
+              704.9,
+              235.65
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            713.95,
+            243.3
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "762.57,301.6",
+      "headlabel": "0..N",
+      "headport": "plan_version_id:w",
+      "id": "rel8",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,702.76,233.2 e,773.76,314.4 704.81,235.54 714.45,246.57 755.41,293.41 769.2,309.19",
+      "tail_lp": "713.95,246",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "document_versions.id → activity_reports.plan_version_id"
+    },
+    {
+      "_gvid": 3,
+      "tail": 0,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              439.87,
+              399.8
+            ],
+            [
+              447.85,
+              378.37
+            ],
+            [
+              496.21,
+              248.41
+            ],
+            [
+              507.43,
+              218.25
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              507.37,
+              218.42
+            ],
+            [
+              512.38,
+              213.35
+            ],
+            [
+              508.62,
+              215.05
+            ],
+            [
+              509.51,
+              212.66
+            ],
+            [
+              509.51,
+              212.66
+            ],
+            [
+              509.51,
+              212.66
+            ],
+            [
+              508.62,
+              215.05
+            ],
+            [
+              506.89,
+              211.31
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            503.83,
+            225.23
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              442.03,
+              403.32
+            ],
+            [
+              435.94,
+              401.06
+            ],
+            [
+              436.39,
+              399.84
+            ],
+            [
+              442.48,
+              402.11
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              438.76,
+              402.8
+            ],
+            [
+              439.89,
+              399.75
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            444.69,
+            384.17
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "503.83,227.93",
+      "headlabel": "0..N",
+      "headport": "document_id:w",
+      "id": "rel9",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,438.76,402.8 e,509.76,212 439.87,399.8 447.85,378.37 496.21,248.41 507.43,218.25",
+      "tail_lp": "444.69,386.87",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → document_versions.document_id"
+    },
+    {
+      "_gvid": 9,
+      "tail": 8,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              433.6,
+              12.99
+            ],
+            [
+              442.49,
+              28.79
+            ],
+            [
+              492.79,
+              118.22
+            ],
+            [
+              506.37,
+              142.38
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              506.4,
+              142.43
+            ],
+            [
+              507.04,
+              149.53
+            ],
+            [
+              508.16,
+              145.57
+            ],
+            [
+              509.41,
+              147.79
+            ],
+            [
+              509.41,
+              147.79
+            ],
+            [
+              509.41,
+              147.79
+            ],
+            [
+              508.16,
+              145.57
+            ],
+            [
+              512.14,
+              146.66
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            501.42,
+            130.88
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              429.74,
+              12.76
+            ],
+            [
+              435.41,
+              9.57
+            ],
+            [
+              436.05,
+              10.71
+            ],
+            [
+              430.38,
+              13.89
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              432.26,
+              10.6
+            ],
+            [
+              433.85,
+              13.43
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            440.59,
+            22.72
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "501.42,133.58",
+      "headlabel": "0..N",
+      "headport": "actor_id:w",
+      "id": "rel10",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,432.26,10.6 e,509.76,148.4 433.6,12.992 442.49,28.788 492.79,118.22 506.37,142.38",
+      "style": "dashed",
+      "tail_lp": "440.59,25.417",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "users.id → document_versions.actor_id"
+    }
+  ]
+}

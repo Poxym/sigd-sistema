@@ -1,0 +1,7333 @@
+{
+  "name": "08_registros",
+  "directed": true,
+  "strict": false,
+  "_draw_": [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [
+        [
+          -28.8,
+          -28.8
+        ],
+        [
+          -28.8,
+          668.8
+        ],
+        [
+          1216.8,
+          668.8
+        ],
+        [
+          1216.8,
+          -28.8
+        ]
+      ]
+    }
+  ],
+  "_ldraw_": [
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        616.2
+      ],
+      "align": "l",
+      "width": 405.56,
+      "text": "SIGD  |  Actividades y valores capturados"
+    },
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        589.8
+      ],
+      "align": "l",
+      "width": 454.88,
+      "text": "Modelo relacional / PK · FK · UQ · ? opcional"
+    }
+  ],
+  "bb": "0,0,1188,640",
+  "bgcolor": "white",
+  "concentrate": "false",
+  "fontcolor": "#173847",
+  "fontname": "Arial",
+  "fontsize": "22",
+  "label": "SIGD  |  Actividades y valores capturados\\lModelo relacional / PK · FK · UQ · ? opcional\\l",
+  "labeljust": "l",
+  "labelloc": "t",
+  "lheight": "0.73",
+  "lp": "235.44,609.6",
+  "lwidth": "6.32",
+  "nodesep": "0.45",
+  "outputorder": "edgesfirst",
+  "pad": "0.4",
+  "rankdir": "LR",
+  "ranksep": "0.85",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "document_sections",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              416,
+              564
+            ],
+            [
+              416,
+              564
+            ],
+            [
+              249,
+              564
+            ],
+            [
+              249,
+              564
+            ],
+            [
+              243,
+              564
+            ],
+            [
+              237,
+              558
+            ],
+            [
+              237,
+              552
+            ],
+            [
+              237,
+              552
+            ],
+            [
+              237,
+              406.2
+            ],
+            [
+              237,
+              406.2
+            ],
+            [
+              237,
+              400.2
+            ],
+            [
+              243,
+              394.2
+            ],
+            [
+              249,
+              394.2
+            ],
+            [
+              249,
+              394.2
+            ],
+            [
+              416,
+              394.2
+            ],
+            [
+              416,
+              394.2
+            ],
+            [
+              422,
+              394.2
+            ],
+            [
+              428,
+              400.2
+            ],
+            [
+              428,
+              406.2
+            ],
+            [
+              428,
+              406.2
+            ],
+            [
+              428,
+              552
+            ],
+            [
+              428,
+              552
+            ],
+            [
+              428,
+              558
+            ],
+            [
+              422,
+              564
+            ],
+            [
+              416,
+              564
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              394.2
+            ],
+            [
+              237,
+              564
+            ],
+            [
+              428,
+              564
+            ],
+            [
+              428,
+              394.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              521
+            ],
+            [
+              237,
+              564
+            ],
+            [
+              428,
+              564
+            ],
+            [
+              428,
+              521
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            259.9,
+            543.3
+          ],
+          "align": "l",
+          "width": 145.2,
+          "text": "Sección del documento"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            289.42,
+            533
+          ],
+          "align": "l",
+          "width": 86.16,
+          "text": "document_sections"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            508.7
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            506
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            506.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            487.5
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            484.8
+          ],
+          "align": "l",
+          "width": 62.99,
+          "text": "document_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            485.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            466.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            463.6
+          ],
+          "align": "l",
+          "width": 42.18,
+          "text": "rubric_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            464.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            445.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            442.4
+          ],
+          "align": "l",
+          "width": 23.85,
+          "text": "state"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            443.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            423.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            421.2
+          ],
+          "align": "l",
+          "width": 72.76,
+          "text": "confirmed_at ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            422
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              394.2
+            ],
+            [
+              237,
+              415
+            ],
+            [
+              428,
+              415
+            ],
+            [
+              428,
+              394.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            242,
+            401
+          ],
+          "align": "l",
+          "width": 113.04,
+          "text": "UQ (document_id, rubric_id)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.3583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Sección del documento</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">document_sections</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">document_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"rubric_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">rubric_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"state\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">state</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"confirmed_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">confirmed_at ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (document_id, rubric_id)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "332.5,479.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 1,
+      "name": "activity_records",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              672,
+              366.8
+            ],
+            [
+              672,
+              366.8
+            ],
+            [
+              501,
+              366.8
+            ],
+            [
+              501,
+              366.8
+            ],
+            [
+              495,
+              366.8
+            ],
+            [
+              489,
+              360.8
+            ],
+            [
+              489,
+              354.8
+            ],
+            [
+              489,
+              354.8
+            ],
+            [
+              489,
+              187.4
+            ],
+            [
+              489,
+              187.4
+            ],
+            [
+              489,
+              181.4
+            ],
+            [
+              495,
+              175.4
+            ],
+            [
+              501,
+              175.4
+            ],
+            [
+              501,
+              175.4
+            ],
+            [
+              672,
+              175.4
+            ],
+            [
+              672,
+              175.4
+            ],
+            [
+              678,
+              175.4
+            ],
+            [
+              684,
+              181.4
+            ],
+            [
+              684,
+              187.4
+            ],
+            [
+              684,
+              187.4
+            ],
+            [
+              684,
+              354.8
+            ],
+            [
+              684,
+              354.8
+            ],
+            [
+              684,
+              360.8
+            ],
+            [
+              678,
+              366.8
+            ],
+            [
+              672,
+              366.8
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              489,
+              175.4
+            ],
+            [
+              489,
+              366.8
+            ],
+            [
+              684,
+              366.8
+            ],
+            [
+              684,
+              175.4
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              489,
+              323.8
+            ],
+            [
+              489,
+              366.8
+            ],
+            [
+              684,
+              366.8
+            ],
+            [
+              684,
+              323.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            520.76,
+            346.1
+          ],
+          "align": "l",
+          "width": 131.48,
+          "text": "Registro de actividad"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            551.77,
+            335.8
+          ],
+          "align": "l",
+          "width": 69.47,
+          "text": "activity_records"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            311.5
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            308.8
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            309.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            290.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            287.6
+          ],
+          "align": "l",
+          "width": 49.53,
+          "text": "section_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            288.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            269.1
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            266.4
+          ],
+          "align": "l",
+          "width": 48.3,
+          "text": "activity_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            267.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            247.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            245.2
+          ],
+          "align": "l",
+          "width": 56.87,
+          "text": "project_id ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            246
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            226.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            224
+          ],
+          "align": "l",
+          "width": 50.76,
+          "text": "origin_id ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            224.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            205.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            202.8
+          ],
+          "align": "l",
+          "width": 78.26,
+          "text": "weekly_minutes"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            203.6
+          ],
+          "align": "l",
+          "width": 32.01,
+          "text": "numeric"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            493,
+            184.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            521,
+            181.6
+          ],
+          "align": "l",
+          "width": 31.8,
+          "text": "values"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            630,
+            182.4
+          ],
+          "align": "l",
+          "width": 21.52,
+          "text": "jsonb"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.6583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Registro de actividad</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">activity_records</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"section_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">section_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"activity_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">activity_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"project_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">project_id ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"origin_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">origin_id ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"weekly_minutes\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">weekly_minutes</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">numeric</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"values\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"109.39999999999999\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">values</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">jsonb</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "586.5,271.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.7083"
+    },
+    {
+      "_gvid": 2,
+      "name": "field_values",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              924,
+              286.4
+            ],
+            [
+              924,
+              286.4
+            ],
+            [
+              757,
+              286.4
+            ],
+            [
+              757,
+              286.4
+            ],
+            [
+              751,
+              286.4
+            ],
+            [
+              745,
+              280.4
+            ],
+            [
+              745,
+              274.4
+            ],
+            [
+              745,
+              274.4
+            ],
+            [
+              745,
+              149.8
+            ],
+            [
+              745,
+              149.8
+            ],
+            [
+              745,
+              143.8
+            ],
+            [
+              751,
+              137.8
+            ],
+            [
+              757,
+              137.8
+            ],
+            [
+              757,
+              137.8
+            ],
+            [
+              924,
+              137.8
+            ],
+            [
+              924,
+              137.8
+            ],
+            [
+              930,
+              137.8
+            ],
+            [
+              936,
+              143.8
+            ],
+            [
+              936,
+              149.8
+            ],
+            [
+              936,
+              149.8
+            ],
+            [
+              936,
+              274.4
+            ],
+            [
+              936,
+              274.4
+            ],
+            [
+              936,
+              280.4
+            ],
+            [
+              930,
+              286.4
+            ],
+            [
+              924,
+              286.4
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              745,
+              137.8
+            ],
+            [
+              745,
+              286.4
+            ],
+            [
+              936,
+              286.4
+            ],
+            [
+              936,
+              137.8
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              745,
+              243.4
+            ],
+            [
+              745,
+              286.4
+            ],
+            [
+              936,
+              286.4
+            ],
+            [
+              936,
+              243.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            792.1,
+            265.7
+          ],
+          "align": "l",
+          "width": 96.81,
+          "text": "Valor de campo"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            814.09,
+            255.4
+          ],
+          "align": "l",
+          "width": 52.81,
+          "text": "field_values"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            749,
+            231.1
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            777,
+            228.4
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            882,
+            229.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            749,
+            209.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            777,
+            207.2
+          ],
+          "align": "l",
+          "width": 45.86,
+          "text": "record_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            882,
+            208
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            749,
+            188.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            777,
+            186
+          ],
+          "align": "l",
+          "width": 34.86,
+          "text": "field_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            882,
+            186.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            749,
+            167.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            777,
+            164.8
+          ],
+          "align": "l",
+          "width": 26.3,
+          "text": "value"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            882,
+            165.6
+          ],
+          "align": "l",
+          "width": 21.52,
+          "text": "jsonb"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              745,
+              137.8
+            ],
+            [
+              745,
+              158.6
+            ],
+            [
+              936,
+              158.6
+            ],
+            [
+              936,
+              137.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            750,
+            144.6
+          ],
+          "align": "l",
+          "width": 93.04,
+          "text": "UQ (record_id, field_id)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.0639",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Valor de campo</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">field_values</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"record_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">record_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"field_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">field_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"value\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">value</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">jsonb</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (record_id, field_id)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "840.5,212.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 3,
+      "name": "selected_options",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              1176,
+              226.8
+            ],
+            [
+              1176,
+              226.8
+            ],
+            [
+              1009,
+              226.8
+            ],
+            [
+              1009,
+              226.8
+            ],
+            [
+              1003,
+              226.8
+            ],
+            [
+              997,
+              220.8
+            ],
+            [
+              997,
+              214.8
+            ],
+            [
+              997,
+              214.8
+            ],
+            [
+              997,
+              111.4
+            ],
+            [
+              997,
+              111.4
+            ],
+            [
+              997,
+              105.4
+            ],
+            [
+              1003,
+              99.4
+            ],
+            [
+              1009,
+              99.4
+            ],
+            [
+              1009,
+              99.4
+            ],
+            [
+              1176,
+              99.4
+            ],
+            [
+              1176,
+              99.4
+            ],
+            [
+              1182,
+              99.4
+            ],
+            [
+              1188,
+              105.4
+            ],
+            [
+              1188,
+              111.4
+            ],
+            [
+              1188,
+              111.4
+            ],
+            [
+              1188,
+              214.8
+            ],
+            [
+              1188,
+              214.8
+            ],
+            [
+              1188,
+              220.8
+            ],
+            [
+              1182,
+              226.8
+            ],
+            [
+              1176,
+              226.8
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              997,
+              99.4
+            ],
+            [
+              997,
+              226.8
+            ],
+            [
+              1188,
+              226.8
+            ],
+            [
+              1188,
+              99.4
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              997,
+              183.8
+            ],
+            [
+              997,
+              226.8
+            ],
+            [
+              1188,
+              226.8
+            ],
+            [
+              1188,
+              183.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            1036.15,
+            206.1
+          ],
+          "align": "l",
+          "width": 112.71,
+          "text": "Selección múltiple"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            1054.97,
+            195.8
+          ],
+          "align": "l",
+          "width": 75.05,
+          "text": "selected_options"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            1001,
+            171.5
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            1029,
+            168.8
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            1134,
+            169.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            1001,
+            150.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            1029,
+            147.6
+          ],
+          "align": "l",
+          "width": 40.98,
+          "text": "value_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            1134,
+            148.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            1001,
+            129.1
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            1029,
+            126.4
+          ],
+          "align": "l",
+          "width": 44.65,
+          "text": "option_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            1134,
+            127.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              997,
+              99.4
+            ],
+            [
+              997,
+              120.2
+            ],
+            [
+              1188,
+              120.2
+            ],
+            [
+              1188,
+              99.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            1002,
+            106.2
+          ],
+          "align": "l",
+          "width": 97.05,
+          "text": "UQ (value_id, option_id)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "1.7694",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Selección múltiple</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">selected_options</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"value_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">value_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"option_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">option_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (value_id, option_id)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "1092.5,163.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 4,
+      "name": "projects",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              416,
+              266.2
+            ],
+            [
+              416,
+              266.2
+            ],
+            [
+              249,
+              266.2
+            ],
+            [
+              249,
+              266.2
+            ],
+            [
+              243,
+              266.2
+            ],
+            [
+              237,
+              260.2
+            ],
+            [
+              237,
+              254.2
+            ],
+            [
+              237,
+              254.2
+            ],
+            [
+              237,
+              108
+            ],
+            [
+              237,
+              108
+            ],
+            [
+              237,
+              102
+            ],
+            [
+              243,
+              96
+            ],
+            [
+              249,
+              96
+            ],
+            [
+              249,
+              96
+            ],
+            [
+              416,
+              96
+            ],
+            [
+              416,
+              96
+            ],
+            [
+              422,
+              96
+            ],
+            [
+              428,
+              102
+            ],
+            [
+              428,
+              108
+            ],
+            [
+              428,
+              108
+            ],
+            [
+              428,
+              254.2
+            ],
+            [
+              428,
+              254.2
+            ],
+            [
+              428,
+              260.2
+            ],
+            [
+              422,
+              266.2
+            ],
+            [
+              416,
+              266.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              96
+            ],
+            [
+              237,
+              266.2
+            ],
+            [
+              428,
+              266.2
+            ],
+            [
+              428,
+              96
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              223.2
+            ],
+            [
+              237,
+              266.2
+            ],
+            [
+              428,
+              266.2
+            ],
+            [
+              428,
+              223.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            304.68,
+            245.5
+          ],
+          "align": "l",
+          "width": 55.63,
+          "text": "Proyecto"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            314.99,
+            235.2
+          ],
+          "align": "l",
+          "width": 35.01,
+          "text": "projects"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            210.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            208.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            209
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            189.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            187
+          ],
+          "align": "l",
+          "width": 43.41,
+          "text": "code UQ"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            187.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            168.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            165.8
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "name"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            166.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            147.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            144.6
+          ],
+          "align": "l",
+          "width": 36.09,
+          "text": "funding"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            145.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            126.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            123.4
+          ],
+          "align": "l",
+          "width": 21.39,
+          "text": "start"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            124.2
+          ],
+          "align": "l",
+          "width": 17.52,
+          "text": "date"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            104.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            102.2
+          ],
+          "align": "l",
+          "width": 27.53,
+          "text": "end ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            374,
+            103
+          ],
+          "align": "l",
+          "width": 17.52,
+          "text": "date"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.3639",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Proyecto</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">projects</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"code\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">code UQ</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"name\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">name</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"funding\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">funding</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"start\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">start</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">date</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"end\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">end ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">date</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "332.5,181.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 5,
+      "name": "documents__document_sections",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              164,
+              579.2
+            ],
+            [
+              164,
+              579.2
+            ],
+            [
+              12,
+              579.2
+            ],
+            [
+              12,
+              579.2
+            ],
+            [
+              6,
+              579.2
+            ],
+            [
+              0,
+              573.2
+            ],
+            [
+              0,
+              567.2
+            ],
+            [
+              0,
+              567.2
+            ],
+            [
+              0,
+              527
+            ],
+            [
+              0,
+              527
+            ],
+            [
+              0,
+              521
+            ],
+            [
+              6,
+              515
+            ],
+            [
+              12,
+              515
+            ],
+            [
+              12,
+              515
+            ],
+            [
+              164,
+              515
+            ],
+            [
+              164,
+              515
+            ],
+            [
+              170,
+              515
+            ],
+            [
+              176,
+              521
+            ],
+            [
+              176,
+              527
+            ],
+            [
+              176,
+              527
+            ],
+            [
+              176,
+              567.2
+            ],
+            [
+              176,
+              567.2
+            ],
+            [
+              176,
+              573.2
+            ],
+            [
+              170,
+              579.2
+            ],
+            [
+              164,
+              579.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              515
+            ],
+            [
+              0,
+              579.2
+            ],
+            [
+              176,
+              579.2
+            ],
+            [
+              176,
+              515
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              536.2
+            ],
+            [
+              0,
+              579.2
+            ],
+            [
+              176,
+              579.2
+            ],
+            [
+              176,
+              536.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            25.52,
+            558.5
+          ],
+          "align": "l",
+          "width": 124.95,
+          "text": "Documento docente"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            17.69,
+            548.2
+          ],
+          "align": "l",
+          "width": 140.63,
+          "text": "documents · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            523.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            32,
+            521.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            122,
+            522
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Documento docente</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">documents · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "88,547.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 6,
+      "name": "rubrics__document_sections",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              164,
+              483.2
+            ],
+            [
+              164,
+              483.2
+            ],
+            [
+              12,
+              483.2
+            ],
+            [
+              12,
+              483.2
+            ],
+            [
+              6,
+              483.2
+            ],
+            [
+              0,
+              477.2
+            ],
+            [
+              0,
+              471.2
+            ],
+            [
+              0,
+              471.2
+            ],
+            [
+              0,
+              431
+            ],
+            [
+              0,
+              431
+            ],
+            [
+              0,
+              425
+            ],
+            [
+              6,
+              419
+            ],
+            [
+              12,
+              419
+            ],
+            [
+              12,
+              419
+            ],
+            [
+              164,
+              419
+            ],
+            [
+              164,
+              419
+            ],
+            [
+              170,
+              419
+            ],
+            [
+              176,
+              425
+            ],
+            [
+              176,
+              431
+            ],
+            [
+              176,
+              431
+            ],
+            [
+              176,
+              471.2
+            ],
+            [
+              176,
+              471.2
+            ],
+            [
+              176,
+              477.2
+            ],
+            [
+              170,
+              483.2
+            ],
+            [
+              164,
+              483.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              419
+            ],
+            [
+              0,
+              483.2
+            ],
+            [
+              176,
+              483.2
+            ],
+            [
+              176,
+              419
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              440.2
+            ],
+            [
+              0,
+              483.2
+            ],
+            [
+              176,
+              483.2
+            ],
+            [
+              176,
+              440.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            33.46,
+            462.5
+          ],
+          "align": "l",
+          "width": 109.08,
+          "text": "Rubro académico"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            27.14,
+            452.2
+          ],
+          "align": "l",
+          "width": 121.72,
+          "text": "rubrics · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            427.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            32,
+            425.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            122,
+            426
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Rubro académico</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">rubrics · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "88,451.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 7,
+      "name": "activities__activity_records",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              408.5,
+              362.2
+            ],
+            [
+              408.5,
+              362.2
+            ],
+            [
+              256.5,
+              362.2
+            ],
+            [
+              256.5,
+              362.2
+            ],
+            [
+              250.5,
+              362.2
+            ],
+            [
+              244.5,
+              356.2
+            ],
+            [
+              244.5,
+              350.2
+            ],
+            [
+              244.5,
+              350.2
+            ],
+            [
+              244.5,
+              310
+            ],
+            [
+              244.5,
+              310
+            ],
+            [
+              244.5,
+              304
+            ],
+            [
+              250.5,
+              298
+            ],
+            [
+              256.5,
+              298
+            ],
+            [
+              256.5,
+              298
+            ],
+            [
+              408.5,
+              298
+            ],
+            [
+              408.5,
+              298
+            ],
+            [
+              414.5,
+              298
+            ],
+            [
+              420.5,
+              304
+            ],
+            [
+              420.5,
+              310
+            ],
+            [
+              420.5,
+              310
+            ],
+            [
+              420.5,
+              350.2
+            ],
+            [
+              420.5,
+              350.2
+            ],
+            [
+              420.5,
+              356.2
+            ],
+            [
+              414.5,
+              362.2
+            ],
+            [
+              408.5,
+              362.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.5,
+              298
+            ],
+            [
+              244.5,
+              362.2
+            ],
+            [
+              420.5,
+              362.2
+            ],
+            [
+              420.5,
+              298
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.5,
+              319.2
+            ],
+            [
+              244.5,
+              362.2
+            ],
+            [
+              420.5,
+              362.2
+            ],
+            [
+              420.5,
+              319.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            268.2,
+            341.5
+          ],
+          "align": "l",
+          "width": 128.61,
+          "text": "Actividad académica"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            267.47,
+            331.2
+          ],
+          "align": "l",
+          "width": 130.06,
+          "text": "activities · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            248.5,
+            306.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            276.5,
+            304.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            366.5,
+            305
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Actividad académica</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">activities · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "332.5,330.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 8,
+      "name": "self__activity_records",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              408.5,
+              64.2
+            ],
+            [
+              408.5,
+              64.2
+            ],
+            [
+              256.5,
+              64.2
+            ],
+            [
+              256.5,
+              64.2
+            ],
+            [
+              250.5,
+              64.2
+            ],
+            [
+              244.5,
+              58.2
+            ],
+            [
+              244.5,
+              52.2
+            ],
+            [
+              244.5,
+              52.2
+            ],
+            [
+              244.5,
+              12
+            ],
+            [
+              244.5,
+              12
+            ],
+            [
+              244.5,
+              6
+            ],
+            [
+              250.5,
+              0
+            ],
+            [
+              256.5,
+              0
+            ],
+            [
+              256.5,
+              0
+            ],
+            [
+              408.5,
+              0
+            ],
+            [
+              408.5,
+              0
+            ],
+            [
+              414.5,
+              0
+            ],
+            [
+              420.5,
+              6
+            ],
+            [
+              420.5,
+              12
+            ],
+            [
+              420.5,
+              12
+            ],
+            [
+              420.5,
+              52.2
+            ],
+            [
+              420.5,
+              52.2
+            ],
+            [
+              420.5,
+              58.2
+            ],
+            [
+              414.5,
+              64.2
+            ],
+            [
+              408.5,
+              64.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.5,
+              0
+            ],
+            [
+              244.5,
+              64.2
+            ],
+            [
+              420.5,
+              64.2
+            ],
+            [
+              420.5,
+              0
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              244.5,
+              21.2
+            ],
+            [
+              244.5,
+              64.2
+            ],
+            [
+              420.5,
+              64.2
+            ],
+            [
+              420.5,
+              21.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            266.76,
+            43.5
+          ],
+          "align": "l",
+          "width": 131.48,
+          "text": "Registro de actividad"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            258.58,
+            33.2
+          ],
+          "align": "l",
+          "width": 147.84,
+          "text": "activity_records · autorreferencia"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            248.5,
+            8.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            276.5,
+            6.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            366.5,
+            7
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Registro de actividad</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">activity_records · autorreferencia</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "332.5,32.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 9,
+      "name": "field_definitions__field_values",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              664.82,
+              143.2
+            ],
+            [
+              664.82,
+              143.2
+            ],
+            [
+              508.18,
+              143.2
+            ],
+            [
+              508.18,
+              143.2
+            ],
+            [
+              502.18,
+              143.2
+            ],
+            [
+              496.18,
+              137.2
+            ],
+            [
+              496.18,
+              131.2
+            ],
+            [
+              496.18,
+              131.2
+            ],
+            [
+              496.18,
+              91
+            ],
+            [
+              496.18,
+              91
+            ],
+            [
+              496.18,
+              85
+            ],
+            [
+              502.18,
+              79
+            ],
+            [
+              508.18,
+              79
+            ],
+            [
+              508.18,
+              79
+            ],
+            [
+              664.82,
+              79
+            ],
+            [
+              664.82,
+              79
+            ],
+            [
+              670.82,
+              79
+            ],
+            [
+              676.82,
+              85
+            ],
+            [
+              676.82,
+              91
+            ],
+            [
+              676.82,
+              91
+            ],
+            [
+              676.82,
+              131.2
+            ],
+            [
+              676.82,
+              131.2
+            ],
+            [
+              676.82,
+              137.2
+            ],
+            [
+              670.82,
+              143.2
+            ],
+            [
+              664.82,
+              143.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              496.18,
+              79
+            ],
+            [
+              496.18,
+              143.2
+            ],
+            [
+              676.82,
+              143.2
+            ],
+            [
+              676.82,
+              79
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              496.18,
+              100.2
+            ],
+            [
+              496.18,
+              143.2
+            ],
+            [
+              676.82,
+              143.2
+            ],
+            [
+              676.82,
+              100.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            523.29,
+            122.5
+          ],
+          "align": "l",
+          "width": 126.41,
+          "text": "Definición de campo"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            506.18,
+            112.2
+          ],
+          "align": "l",
+          "width": 160.65,
+          "text": "field_definitions · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            500.18,
+            87.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            529.73,
+            85.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            621.27,
+            86
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Definición de campo</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">field_definitions · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "586.5,111.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.509"
+    },
+    {
+      "_gvid": 10,
+      "name": "field_options__selected_options",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              916.5,
+              106.2
+            ],
+            [
+              916.5,
+              106.2
+            ],
+            [
+              764.5,
+              106.2
+            ],
+            [
+              764.5,
+              106.2
+            ],
+            [
+              758.5,
+              106.2
+            ],
+            [
+              752.5,
+              100.2
+            ],
+            [
+              752.5,
+              94.2
+            ],
+            [
+              752.5,
+              94.2
+            ],
+            [
+              752.5,
+              54
+            ],
+            [
+              752.5,
+              54
+            ],
+            [
+              752.5,
+              48
+            ],
+            [
+              758.5,
+              42
+            ],
+            [
+              764.5,
+              42
+            ],
+            [
+              764.5,
+              42
+            ],
+            [
+              916.5,
+              42
+            ],
+            [
+              916.5,
+              42
+            ],
+            [
+              922.5,
+              42
+            ],
+            [
+              928.5,
+              48
+            ],
+            [
+              928.5,
+              54
+            ],
+            [
+              928.5,
+              54
+            ],
+            [
+              928.5,
+              94.2
+            ],
+            [
+              928.5,
+              94.2
+            ],
+            [
+              928.5,
+              100.2
+            ],
+            [
+              922.5,
+              106.2
+            ],
+            [
+              916.5,
+              106.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              752.5,
+              42
+            ],
+            [
+              752.5,
+              106.2
+            ],
+            [
+              928.5,
+              106.2
+            ],
+            [
+              928.5,
+              42
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              752.5,
+              63.2
+            ],
+            [
+              752.5,
+              106.2
+            ],
+            [
+              928.5,
+              106.2
+            ],
+            [
+              928.5,
+              63.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            786.32,
+            85.5
+          ],
+          "align": "l",
+          "width": 108.35,
+          "text": "Opción de campo"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            766.57,
+            75.2
+          ],
+          "align": "l",
+          "width": 147.87,
+          "text": "field_options · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            756.5,
+            50.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            784.5,
+            48.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            874.5,
+            49
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Opción de campo</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">field_options · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "840.5,74.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 4,
+      "tail": 5,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              178.62,
+              524.04
+            ],
+            [
+              187.74,
+              518.59
+            ],
+            [
+              218.24,
+              500.39
+            ],
+            [
+              231.15,
+              492.69
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              231.12,
+              492.71
+            ],
+            [
+              238.2,
+              491.89
+            ],
+            [
+              234.21,
+              490.87
+            ],
+            [
+              236.4,
+              489.56
+            ],
+            [
+              236.4,
+              489.56
+            ],
+            [
+              236.4,
+              489.56
+            ],
+            [
+              234.21,
+              490.87
+            ],
+            [
+              235.2,
+              486.87
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            222.4,
+            495.21
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              178.22,
+              528.06
+            ],
+            [
+              174.89,
+              522.48
+            ],
+            [
+              176.01,
+              521.81
+            ],
+            [
+              179.34,
+              527.39
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              176,
+              525.6
+            ],
+            [
+              178.79,
+              523.93
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            190.6,
+            514.19
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "222.4,497.91",
+      "headlabel": "0..N",
+      "headport": "document_id:w",
+      "id": "rel1",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,176,525.6 e,237,489.2 178.62,524.04 187.74,518.59 218.24,500.39 231.15,492.69",
+      "style": "dashed",
+      "tail_lp": "190.6,516.89",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → document_sections.document_id"
+    },
+    {
+      "_gvid": 5,
+      "tail": 6,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              178.62,
+              431.25
+            ],
+            [
+              187.74,
+              436.99
+            ],
+            [
+              218.24,
+              456.19
+            ],
+            [
+              231.15,
+              464.32
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              231.2,
+              464.35
+            ],
+            [
+              235.14,
+              470.29
+            ],
+            [
+              234.25,
+              466.27
+            ],
+            [
+              236.41,
+              467.63
+            ],
+            [
+              236.41,
+              467.63
+            ],
+            [
+              236.41,
+              467.63
+            ],
+            [
+              234.25,
+              466.27
+            ],
+            [
+              238.26,
+              465.34
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            222.61,
+            456.24
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              174.82,
+              432.7
+            ],
+            [
+              178.28,
+              427.2
+            ],
+            [
+              179.38,
+              427.89
+            ],
+            [
+              175.92,
+              433.39
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              176,
+              429.6
+            ],
+            [
+              178.75,
+              431.33
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            190.39,
+            435.96
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "222.61,458.94",
+      "headlabel": "0..N",
+      "headport": "rubric_id:w",
+      "id": "rel2",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,176,429.6 e,237,468 178.62,431.25 187.74,436.99 218.24,456.19 231.15,464.32",
+      "style": "dashed",
+      "tail_lp": "190.39,438.66",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "rubrics.id → document_sections.rubric_id"
+    },
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              428.86,
+              507.31
+            ],
+            [
+              435.47,
+              483.67
+            ],
+            [
+              478.01,
+              331.35
+            ],
+            [
+              487.24,
+              298.32
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              487.16,
+              298.6
+            ],
+            [
+              491.72,
+              293.13
+            ],
+            [
+              488.13,
+              295.13
+            ],
+            [
+              488.81,
+              292.68
+            ],
+            [
+              488.81,
+              292.68
+            ],
+            [
+              488.81,
+              292.68
+            ],
+            [
+              488.13,
+              295.13
+            ],
+            [
+              486.09,
+              291.55
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            484.43,
+            305.67
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              431.31,
+              510.65
+            ],
+            [
+              425.04,
+              508.9
+            ],
+            [
+              425.39,
+              507.65
+            ],
+            [
+              431.65,
+              509.4
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              428,
+              510.4
+            ],
+            [
+              428.87,
+              507.27
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            432.57,
+            491.33
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "484.43,308.37",
+      "headlabel": "0..N",
+      "headport": "section_id:w",
+      "id": "rel3",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,428,510.4 e,489,292 428.86,507.31 435.47,483.67 478.01,331.35 487.24,298.32",
+      "tail_lp": "432.57,494.03",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "document_sections.id → activity_records.section_id"
+    },
+    {
+      "_gvid": 6,
+      "tail": 7,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              424.06,
+              307.16
+            ],
+            [
+              433.89,
+              301.66
+            ],
+            [
+              469.29,
+              281.84
+            ],
+            [
+              483.27,
+              274.01
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              483.02,
+              274.15
+            ],
+            [
+              490.12,
+              273.52
+            ],
+            [
+              486.16,
+              272.39
+            ],
+            [
+              488.39,
+              271.14
+            ],
+            [
+              488.39,
+              271.14
+            ],
+            [
+              488.39,
+              271.14
+            ],
+            [
+              486.16,
+              272.39
+            ],
+            [
+              487.26,
+              268.42
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            474.17,
+            276.41
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              423.66,
+              311.12
+            ],
+            [
+              420.48,
+              305.45
+            ],
+            [
+              421.61,
+              304.81
+            ],
+            [
+              424.79,
+              310.48
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              421.5,
+              308.6
+            ],
+            [
+              424.34,
+              307.01
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            436.33,
+            297.59
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "474.17,279.11",
+      "headlabel": "0..N",
+      "headport": "activity_id:w",
+      "id": "rel4",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,421.5,308.6 e,489,270.8 424.06,307.16 433.89,301.66 469.29,281.84 483.27,274.01",
+      "style": "dashed",
+      "tail_lp": "436.33,300.29",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "activities.id → activity_records.activity_id"
+    },
+    {
+      "_gvid": 3,
+      "tail": 4,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              430.62,
+              214.19
+            ],
+            [
+              439.74,
+              219.72
+            ],
+            [
+              470.24,
+              238.22
+            ],
+            [
+              483.15,
+              246.05
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              483.14,
+              246.05
+            ],
+            [
+              487.18,
+              251.92
+            ],
+            [
+              486.22,
+              247.91
+            ],
+            [
+              488.4,
+              249.24
+            ],
+            [
+              488.4,
+              249.24
+            ],
+            [
+              488.4,
+              249.24
+            ],
+            [
+              486.22,
+              247.91
+            ],
+            [
+              490.22,
+              246.92
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            474.46,
+            238.08
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              426.87,
+              215.72
+            ],
+            [
+              430.24,
+              210.16
+            ],
+            [
+              431.35,
+              210.83
+            ],
+            [
+              427.98,
+              216.39
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              428,
+              212.6
+            ],
+            [
+              430.78,
+              214.29
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            442.54,
+            218.72
+          ],
+          "align": "c",
+          "width": 15.01,
+          "text": "0..1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "474.46,240.78",
+      "headlabel": "0..N",
+      "headport": "project_id:w",
+      "id": "rel5",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,428,212.6 e,489,249.6 430.62,214.19 439.74,219.72 470.24,238.22 483.15,246.05",
+      "tail_lp": "442.54,221.42",
+      "taillabel": "0..1",
+      "tailport": "id:e",
+      "tooltip": "projects.id → activity_records.project_id"
+    },
+    {
+      "_gvid": 7,
+      "tail": 8,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              422.45,
+              13.68
+            ],
+            [
+              429.76,
+              37.26
+            ],
+            [
+              476.84,
+              189.16
+            ],
+            [
+              487.05,
+              222.1
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              486.97,
+              221.86
+            ],
+            [
+              486.1,
+              228.93
+            ],
+            [
+              488.04,
+              225.3
+            ],
+            [
+              488.79,
+              227.73
+            ],
+            [
+              488.79,
+              227.73
+            ],
+            [
+              488.79,
+              227.73
+            ],
+            [
+              488.04,
+              225.3
+            ],
+            [
+              491.69,
+              227.2
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            483.97,
+            209.46
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              418.59,
+              12.18
+            ],
+            [
+              424.8,
+              10.26
+            ],
+            [
+              425.18,
+              11.5
+            ],
+            [
+              418.97,
+              13.42
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              421.5,
+              10.6
+            ],
+            [
+              422.46,
+              13.7
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            426.53,
+            24.14
+          ],
+          "align": "c",
+          "width": 15.01,
+          "text": "0..1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "483.97,212.16",
+      "headlabel": "0..N",
+      "headport": "origin_id:w",
+      "id": "rel6",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,421.5,10.6 e,489,228.4 422.45,13.679 429.76,37.256 476.84,189.16 487.05,222.1",
+      "style": "dashed",
+      "tail_lp": "426.53,26.838",
+      "taillabel": "0..1",
+      "tailport": "id:e",
+      "tooltip": "activity_records.id → activity_records.origin_id"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              685.51,
+              310.69
+            ],
+            [
+              693.4,
+              297.55
+            ],
+            [
+              730,
+              236.59
+            ],
+            [
+              741.52,
+              217.4
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              741.47,
+              217.47
+            ],
+            [
+              747.33,
+              213.41
+            ],
+            [
+              743.33,
+              214.39
+            ],
+            [
+              744.64,
+              212.2
+            ],
+            [
+              744.64,
+              212.2
+            ],
+            [
+              744.64,
+              212.2
+            ],
+            [
+              743.33,
+              214.39
+            ],
+            [
+              742.31,
+              210.4
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            736.25,
+            223.47
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              687.12,
+              314.32
+            ],
+            [
+              681.55,
+              310.97
+            ],
+            [
+              682.22,
+              309.86
+            ],
+            [
+              687.79,
+              313.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              684,
+              313.2
+            ],
+            [
+              685.67,
+              310.41
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            692.75,
+            295.93
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "736.25,226.17",
+      "headlabel": "0..N",
+      "headport": "record_id:w",
+      "id": "rel7",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,684,313.2 e,745,211.6 685.51,310.69 693.4,297.55 730,236.59 741.52,217.4",
+      "tail_lp": "692.75,298.63",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "activity_records.id → field_values.record_id"
+    },
+    {
+      "_gvid": 8,
+      "tail": 9,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              679.49,
+              92.09
+            ],
+            [
+              688.17,
+              105.13
+            ],
+            [
+              728.48,
+              165.61
+            ],
+            [
+              741.17,
+              184.65
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              741.2,
+              184.7
+            ],
+            [
+              742.37,
+              191.73
+            ],
+            [
+              743.2,
+              187.7
+            ],
+            [
+              744.61,
+              189.82
+            ],
+            [
+              744.61,
+              189.82
+            ],
+            [
+              744.61,
+              189.82
+            ],
+            [
+              743.2,
+              187.7
+            ],
+            [
+              747.24,
+              188.49
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            735.57,
+            173.55
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              675.48,
+              91.94
+            ],
+            [
+              680.89,
+              88.34
+            ],
+            [
+              681.61,
+              89.42
+            ],
+            [
+              676.2,
+              93.03
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              677.82,
+              89.6
+            ],
+            [
+              679.63,
+              92.3
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            687.25,
+            101.05
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "735.57,176.25",
+      "headlabel": "0..N",
+      "headport": "field_id:w",
+      "id": "rel8",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,677.82,89.6 e,745,190.4 679.49,92.092 688.17,105.13 728.48,165.61 741.17,184.65",
+      "style": "dashed",
+      "tail_lp": "687.25,103.75",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "field_definitions.id → field_values.field_id"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              937.76,
+              230.47
+            ],
+            [
+              946.04,
+              219.5
+            ],
+            [
+              981.23,
+              172.88
+            ],
+            [
+              993.09,
+              157.19
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              992.87,
+              157.47
+            ],
+            [
+              999.12,
+              154.04
+            ],
+            [
+              995.04,
+              154.59
+            ],
+            [
+              996.58,
+              152.56
+            ],
+            [
+              996.58,
+              152.56
+            ],
+            [
+              996.58,
+              152.56
+            ],
+            [
+              995.04,
+              154.59
+            ],
+            [
+              994.45,
+              150.52
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            986.76,
+            162.87
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              938.99,
+              234.24
+            ],
+            [
+              933.8,
+              230.32
+            ],
+            [
+              934.58,
+              229.29
+            ],
+            [
+              939.77,
+              233.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              936,
+              232.8
+            ],
+            [
+              937.96,
+              230.21
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            946.24,
+            216.53
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "986.76,165.57",
+      "headlabel": "0..N",
+      "headport": "value_id:w",
+      "id": "rel9",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,936,232.8 e,997,152 937.76,230.47 946.04,219.5 981.23,172.88 993.09,157.19",
+      "tail_lp": "946.24,219.23",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "field_values.id → selected_options.value_id"
+    },
+    {
+      "_gvid": 9,
+      "tail": 10,
+      "head": 3,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              931.45,
+              54.86
+            ],
+            [
+              940.61,
+              65.47
+            ],
+            [
+              979.55,
+              110.59
+            ],
+            [
+              992.67,
+              125.78
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              992.52,
+              125.61
+            ],
+            [
+              994.56,
+              132.45
+            ],
+            [
+              994.88,
+              128.34
+            ],
+            [
+              996.54,
+              130.27
+            ],
+            [
+              996.54,
+              130.27
+            ],
+            [
+              996.54,
+              130.27
+            ],
+            [
+              994.88,
+              128.34
+            ],
+            [
+              998.98,
+              128.62
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            985.89,
+            115.23
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              927.46,
+              55.22
+            ],
+            [
+              932.38,
+              50.97
+            ],
+            [
+              933.23,
+              51.95
+            ],
+            [
+              928.31,
+              56.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              929.5,
+              52.6
+            ],
+            [
+              931.62,
+              55.06
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            940.61,
+            62.77
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "985.89,117.93",
+      "headlabel": "0..N",
+      "headport": "option_id:w",
+      "id": "rel10",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,929.5,52.6 e,997,130.8 931.45,54.856 940.61,65.474 979.55,110.59 992.67,125.78",
+      "style": "dashed",
+      "tail_lp": "940.61,65.469",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "field_options.id → selected_options.option_id"
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+[
+  {
+    "parent": "universities",
+    "child": "campuses",
+    "field": "university_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "campuses",
+    "child": "careers",
+    "field": "campus_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "careers",
+    "child": "careers",
+    "field": "predecessor_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "careers",
+    "child": "study_plans",
+    "field": "career_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "study_plans",
+    "field": "created_by",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "study_plans",
+    "child": "curriculum_semesters",
+    "field": "study_plan_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "curriculum_semesters",
+    "child": "curriculum_subjects",
+    "field": "semester_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "subjects",
+    "child": "curriculum_subjects",
+    "field": "subject_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "catalog_versions",
+    "child": "periods",
+    "field": "catalog_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "periods",
+    "child": "capture_windows",
+    "field": "period_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "periods",
+    "child": "groups",
+    "field": "period_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "campuses",
+    "child": "groups",
+    "field": "campus_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "curriculum_semesters",
+    "child": "groups",
+    "field": "semester_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "groups",
+    "child": "course_offerings",
+    "field": "group_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "subjects",
+    "child": "course_offerings",
+    "field": "subject_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "course_offerings",
+    "child": "teaching_assignments",
+    "field": "offering_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teachers",
+    "child": "teaching_assignments",
+    "field": "teacher_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teaching_assignments",
+    "child": "teaching_assignments",
+    "field": "previous_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "users",
+    "child": "employee_history",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "degrees",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "teachers",
+    "field": "user_id",
+    "cardinality": "1 : 0..1",
+    "required": true
+  },
+  {
+    "parent": "teacher_categories",
+    "child": "teachers",
+    "field": "category_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teachers",
+    "child": "affiliations",
+    "field": "teacher_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "careers",
+    "child": "affiliations",
+    "field": "career_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teachers",
+    "child": "distinctions",
+    "field": "teacher_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "roles",
+    "child": "role_permissions",
+    "field": "role_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "permissions",
+    "child": "role_permissions",
+    "field": "permission_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "role_assignments",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "roles",
+    "child": "role_assignments",
+    "field": "role_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "campuses",
+    "child": "role_assignments",
+    "field": "campus_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "careers",
+    "child": "role_assignments",
+    "field": "career_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "careers",
+    "child": "approval_delegations",
+    "field": "career_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "approval_delegations",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "approval_delegations",
+    "field": "assigned_by",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "audit_events",
+    "field": "actor_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "notifications",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "notifications",
+    "field": "document_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "activities",
+    "child": "activity_classifications",
+    "field": "activity_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "rubrics",
+    "child": "activity_classifications",
+    "field": "rubric_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activities",
+    "child": "field_definitions",
+    "field": "activity_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "field_definitions",
+    "child": "field_options",
+    "field": "field_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activities",
+    "child": "activity_evidence_types",
+    "field": "activity_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "evidence_types",
+    "child": "activity_evidence_types",
+    "field": "evidence_type_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "periods",
+    "child": "catalog_versions",
+    "field": "period_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "catalog_versions",
+    "field": "published_by",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "catalog_versions",
+    "child": "rubric_configuration",
+    "field": "catalog_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "rubrics",
+    "child": "rubric_configuration",
+    "field": "rubric_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "rubric_configuration",
+    "child": "activity_configuration",
+    "field": "configuration_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activities",
+    "child": "activity_configuration",
+    "field": "activity_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teachers",
+    "child": "documents",
+    "field": "teacher_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "periods",
+    "child": "documents",
+    "field": "period_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "careers",
+    "child": "documents",
+    "field": "career_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "catalog_versions",
+    "child": "documents",
+    "field": "catalog_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "work_plans",
+    "field": "document_id",
+    "cardinality": "1 : 0..1",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "activity_reports",
+    "field": "document_id",
+    "cardinality": "1 : 0..1",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "activity_reports",
+    "field": "plan_document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "document_versions",
+    "child": "activity_reports",
+    "field": "plan_version_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "document_sections",
+    "field": "document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "rubrics",
+    "child": "document_sections",
+    "field": "rubric_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "document_sections",
+    "child": "activity_records",
+    "field": "section_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activities",
+    "child": "activity_records",
+    "field": "activity_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "projects",
+    "child": "activity_records",
+    "field": "project_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "activity_records",
+    "child": "activity_records",
+    "field": "origin_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "activity_records",
+    "child": "field_values",
+    "field": "record_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "field_definitions",
+    "child": "field_values",
+    "field": "field_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "field_values",
+    "child": "selected_options",
+    "field": "value_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "field_options",
+    "child": "selected_options",
+    "field": "option_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "course_results",
+    "field": "document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "teaching_assignments",
+    "child": "course_results",
+    "field": "assignment_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "evidence",
+    "field": "document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activity_records",
+    "child": "evidence",
+    "field": "record_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "evidence_types",
+    "child": "evidence",
+    "field": "type_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "evidence",
+    "field": "uploaded_by",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "document_versions",
+    "field": "document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "document_versions",
+    "field": "actor_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "documents",
+    "child": "reviews",
+    "field": "document_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "document_versions",
+    "child": "reviews",
+    "field": "version_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "reviews",
+    "field": "reviewer_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "document_versions",
+    "child": "review_visits",
+    "field": "version_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "review_visits",
+    "field": "reviewer_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "reviews",
+    "child": "observations",
+    "field": "review_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "activity_records",
+    "child": "observations",
+    "field": "record_id",
+    "cardinality": "0..1 : N",
+    "required": false
+  },
+  {
+    "parent": "users",
+    "child": "idempotency_keys",
+    "field": "actor_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "panels",
+    "field": "owner_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "panels",
+    "child": "panel_indicators",
+    "field": "panel_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "indicators",
+    "child": "panel_indicators",
+    "field": "indicator_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "credentials",
+    "field": "user_id",
+    "cardinality": "1 : 0..1",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "sessions",
+    "field": "user_id",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "change_requests",
+    "field": "requested_by",
+    "cardinality": "1 : N",
+    "required": true
+  },
+  {
+    "parent": "users",
+    "child": "change_requests",
+    "field": "authorized_by",
+    "cardinality": "0..1 : N",
+    "required": false
+  }
+]

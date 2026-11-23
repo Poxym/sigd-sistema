@@ -1,0 +1,3038 @@
+{
+  "name": "10_reportes",
+  "directed": true,
+  "strict": false,
+  "_draw_": [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [
+        [
+          -28.8,
+          -28.8
+        ],
+        [
+          -28.8,
+          461.8
+        ],
+        [
+          718.8,
+          461.8
+        ],
+        [
+          718.8,
+          -28.8
+        ]
+      ]
+    }
+  ],
+  "_ldraw_": [
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        409.2
+      ],
+      "align": "l",
+      "width": 297.98,
+      "text": "SIGD  |  Indicadores y paneles"
+    },
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        382.8
+      ],
+      "align": "l",
+      "width": 454.88,
+      "text": "Modelo relacional / PK · FK · UQ · ? opcional"
+    }
+  ],
+  "bb": "0,0,690,433",
+  "bgcolor": "white",
+  "concentrate": "false",
+  "fontcolor": "#173847",
+  "fontname": "Arial",
+  "fontsize": "22",
+  "label": "SIGD  |  Indicadores y paneles\\lModelo relacional / PK · FK · UQ · ? opcional\\l",
+  "labeljust": "l",
+  "labelloc": "t",
+  "lheight": "0.73",
+  "lp": "235.44,402.6",
+  "lwidth": "6.32",
+  "nodesep": "0.45",
+  "outputorder": "edgesfirst",
+  "pad": "0.4",
+  "rankdir": "LR",
+  "ranksep": "0.85",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "indicators",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              426,
+              191.4
+            ],
+            [
+              426,
+              191.4
+            ],
+            [
+              249,
+              191.4
+            ],
+            [
+              249,
+              191.4
+            ],
+            [
+              243,
+              191.4
+            ],
+            [
+              237,
+              185.4
+            ],
+            [
+              237,
+              179.4
+            ],
+            [
+              237,
+              179.4
+            ],
+            [
+              237,
+              12
+            ],
+            [
+              237,
+              12
+            ],
+            [
+              237,
+              6
+            ],
+            [
+              243,
+              0
+            ],
+            [
+              249,
+              0
+            ],
+            [
+              249,
+              0
+            ],
+            [
+              426,
+              0
+            ],
+            [
+              426,
+              0
+            ],
+            [
+              432,
+              0
+            ],
+            [
+              438,
+              6
+            ],
+            [
+              438,
+              12
+            ],
+            [
+              438,
+              12
+            ],
+            [
+              438,
+              179.4
+            ],
+            [
+              438,
+              179.4
+            ],
+            [
+              438,
+              185.4
+            ],
+            [
+              432,
+              191.4
+            ],
+            [
+              426,
+              191.4
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              0
+            ],
+            [
+              237,
+              191.4
+            ],
+            [
+              438,
+              191.4
+            ],
+            [
+              438,
+              0
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              237,
+              148.4
+            ],
+            [
+              237,
+              191.4
+            ],
+            [
+              438,
+              191.4
+            ],
+            [
+              438,
+              148.4
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            274.66,
+            170.7
+          ],
+          "align": "l",
+          "width": 125.69,
+          "text": "Indicador registrado"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            316.1,
+            160.4
+          ],
+          "align": "l",
+          "width": 42.8,
+          "text": "indicators"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            136.1
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            133.4
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            134.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            114.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            112.2
+          ],
+          "align": "l",
+          "width": 43.41,
+          "text": "code UQ"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            113
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            93.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            91
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "name"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            91.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            72.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            69.8
+          ],
+          "align": "l",
+          "width": 17.74,
+          "text": "unit"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            70.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            51.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            48.6
+          ],
+          "align": "l",
+          "width": 36.7,
+          "text": "handler"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            49.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            30.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            27.4
+          ],
+          "align": "l",
+          "width": 66.65,
+          "text": "confidentiality"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            28.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            241,
+            8.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            269,
+            6.2
+          ],
+          "align": "l",
+          "width": 28.74,
+          "text": "active"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            384,
+            7
+          ],
+          "align": "l",
+          "width": 32.03,
+          "text": "boolean"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.6583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Indicador registrado</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">indicators</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"code\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">code UQ</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"name\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">name</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"unit\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">unit</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"handler\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">handler</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"confidentiality\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">confidentiality</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"active\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"115.5\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">active</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">boolean</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "337.5,95.7",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.7917"
+    },
+    {
+      "_gvid": 1,
+      "name": "panels",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              421,
+              372.2
+            ],
+            [
+              421,
+              372.2
+            ],
+            [
+              254,
+              372.2
+            ],
+            [
+              254,
+              372.2
+            ],
+            [
+              248,
+              372.2
+            ],
+            [
+              242,
+              366.2
+            ],
+            [
+              242,
+              360.2
+            ],
+            [
+              242,
+              360.2
+            ],
+            [
+              242,
+              235.2
+            ],
+            [
+              242,
+              235.2
+            ],
+            [
+              242,
+              229.2
+            ],
+            [
+              248,
+              223.2
+            ],
+            [
+              254,
+              223.2
+            ],
+            [
+              254,
+              223.2
+            ],
+            [
+              421,
+              223.2
+            ],
+            [
+              421,
+              223.2
+            ],
+            [
+              427,
+              223.2
+            ],
+            [
+              433,
+              229.2
+            ],
+            [
+              433,
+              235.2
+            ],
+            [
+              433,
+              235.2
+            ],
+            [
+              433,
+              360.2
+            ],
+            [
+              433,
+              360.2
+            ],
+            [
+              433,
+              366.2
+            ],
+            [
+              427,
+              372.2
+            ],
+            [
+              421,
+              372.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              242,
+              223.2
+            ],
+            [
+              242,
+              372.2
+            ],
+            [
+              433,
+              372.2
+            ],
+            [
+              433,
+              223.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              242,
+              329.2
+            ],
+            [
+              242,
+              372.2
+            ],
+            [
+              433,
+              372.2
+            ],
+            [
+              433,
+              329.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            320.16,
+            351.5
+          ],
+          "align": "l",
+          "width": 34.68,
+          "text": "Panel"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            322.77,
+            341.2
+          ],
+          "align": "l",
+          "width": 29.47,
+          "text": "panels"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            246,
+            316.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274,
+            314.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            379,
+            315
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            246,
+            295.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274,
+            293
+          ],
+          "align": "l",
+          "width": 44.64,
+          "text": "owner_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            379,
+            293.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            246,
+            274.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274,
+            271.8
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "name"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            379,
+            272.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            246,
+            253.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274,
+            250.6
+          ],
+          "align": "l",
+          "width": 29.35,
+          "text": "scope"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            379,
+            251.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            246,
+            232.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274,
+            229.4
+          ],
+          "align": "l",
+          "width": 66.06,
+          "text": "default_panel"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            379,
+            230.2
+          ],
+          "align": "l",
+          "width": 32.03,
+          "text": "boolean"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.0694",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Panel</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">panels</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"owner_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">owner_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"name\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">name</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"scope\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">scope</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"default_panel\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">default_panel</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">boolean</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "337.5,297.7",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 2,
+      "name": "panel_indicators",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              678,
+              312.6
+            ],
+            [
+              678,
+              312.6
+            ],
+            [
+              511,
+              312.6
+            ],
+            [
+              511,
+              312.6
+            ],
+            [
+              505,
+              312.6
+            ],
+            [
+              499,
+              306.6
+            ],
+            [
+              499,
+              300.6
+            ],
+            [
+              499,
+              300.6
+            ],
+            [
+              499,
+              154.8
+            ],
+            [
+              499,
+              154.8
+            ],
+            [
+              499,
+              148.8
+            ],
+            [
+              505,
+              142.8
+            ],
+            [
+              511,
+              142.8
+            ],
+            [
+              511,
+              142.8
+            ],
+            [
+              678,
+              142.8
+            ],
+            [
+              678,
+              142.8
+            ],
+            [
+              684,
+              142.8
+            ],
+            [
+              690,
+              148.8
+            ],
+            [
+              690,
+              154.8
+            ],
+            [
+              690,
+              154.8
+            ],
+            [
+              690,
+              300.6
+            ],
+            [
+              690,
+              300.6
+            ],
+            [
+              690,
+              306.6
+            ],
+            [
+              684,
+              312.6
+            ],
+            [
+              678,
+              312.6
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              499,
+              142.8
+            ],
+            [
+              499,
+              312.6
+            ],
+            [
+              690,
+              312.6
+            ],
+            [
+              690,
+              142.8
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              499,
+              269.6
+            ],
+            [
+              499,
+              312.6
+            ],
+            [
+              690,
+              312.6
+            ],
+            [
+              690,
+              269.6
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            537.07,
+            291.9
+          ],
+          "align": "l",
+          "width": 114.85,
+          "text": "Indicador en panel"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            558.09,
+            281.6
+          ],
+          "align": "l",
+          "width": 72.83,
+          "text": "panel_indicators"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503,
+            257.3
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531,
+            254.6
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            636,
+            255.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503,
+            236.1
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531,
+            233.4
+          ],
+          "align": "l",
+          "width": 41.59,
+          "text": "panel_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            636,
+            234.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503,
+            214.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531,
+            212.2
+          ],
+          "align": "l",
+          "width": 56.26,
+          "text": "indicator_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            636,
+            213
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503,
+            193.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531,
+            191
+          ],
+          "align": "l",
+          "width": 37.91,
+          "text": "position"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            636,
+            191.8
+          ],
+          "align": "l",
+          "width": 27.52,
+          "text": "integer"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            503,
+            172.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            531,
+            169.8
+          ],
+          "align": "l",
+          "width": 26.28,
+          "text": "filters"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            636,
+            170.6
+          ],
+          "align": "l",
+          "width": 21.52,
+          "text": "jsonb"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              499,
+              142.8
+            ],
+            [
+              499,
+              163.6
+            ],
+            [
+              690,
+              163.6
+            ],
+            [
+              690,
+              142.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            504,
+            149.6
+          ],
+          "align": "l",
+          "width": 107.06,
+          "text": "UQ (panel_id, indicator_id)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.3583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Indicador en panel</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">panel_indicators</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"panel_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">panel_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"indicator_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">indicator_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"position\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">position</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">integer</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"filters\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">filters</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">jsonb</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (panel_id, indicator_id)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "594.5,227.7",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 3,
+      "name": "users__panels",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              164,
+              350.8
+            ],
+            [
+              164,
+              350.8
+            ],
+            [
+              12,
+              350.8
+            ],
+            [
+              12,
+              350.8
+            ],
+            [
+              6,
+              350.8
+            ],
+            [
+              0,
+              344.8
+            ],
+            [
+              0,
+              338.8
+            ],
+            [
+              0,
+              338.8
+            ],
+            [
+              0,
+              298.6
+            ],
+            [
+              0,
+              298.6
+            ],
+            [
+              0,
+              292.6
+            ],
+            [
+              6,
+              286.6
+            ],
+            [
+              12,
+              286.6
+            ],
+            [
+              12,
+              286.6
+            ],
+            [
+              164,
+              286.6
+            ],
+            [
+              164,
+              286.6
+            ],
+            [
+              170,
+              286.6
+            ],
+            [
+              176,
+              292.6
+            ],
+            [
+              176,
+              298.6
+            ],
+            [
+              176,
+              298.6
+            ],
+            [
+              176,
+              338.8
+            ],
+            [
+              176,
+              338.8
+            ],
+            [
+              176,
+              344.8
+            ],
+            [
+              170,
+              350.8
+            ],
+            [
+              164,
+              350.8
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              286.6
+            ],
+            [
+              0,
+              350.8
+            ],
+            [
+              176,
+              350.8
+            ],
+            [
+              176,
+              286.6
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              307.8
+            ],
+            [
+              0,
+              350.8
+            ],
+            [
+              176,
+              350.8
+            ],
+            [
+              176,
+              307.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            63.8,
+            330.1
+          ],
+          "align": "l",
+          "width": 48.4,
+          "text": "Usuario"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            29.92,
+            319.8
+          ],
+          "align": "l",
+          "width": 116.17,
+          "text": "users · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            295.5
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            32,
+            292.8
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            122,
+            293.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Usuario</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">users · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "88,318.7",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 2,
+      "tail": 3,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              179.14,
+              297.21
+            ],
+            [
+              189.08,
+              297.24
+            ],
+            [
+              220.06,
+              297.34
+            ],
+            [
+              234.04,
+              297.38
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              234.15,
+              297.38
+            ],
+            [
+              240.64,
+              300.32
+            ],
+            [
+              237.75,
+              297.39
+            ],
+            [
+              240.3,
+              297.4
+            ],
+            [
+              240.3,
+              297.4
+            ],
+            [
+              240.3,
+              297.4
+            ],
+            [
+              237.75,
+              297.39
+            ],
+            [
+              240.66,
+              294.47
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            224,
+            294.65
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              176.64,
+              300.45
+            ],
+            [
+              176.66,
+              293.95
+            ],
+            [
+              177.96,
+              293.96
+            ],
+            [
+              177.94,
+              300.46
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              176,
+              297.2
+            ],
+            [
+              179.25,
+              297.21
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            193,
+            294.55
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "224,297.35",
+      "headlabel": "0..N",
+      "headport": "owner_id:w",
+      "id": "rel1",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,176,297.2 e,241,297.4 179.14,297.21 189.08,297.24 220.06,297.34 234.04,297.38",
+      "style": "dashed",
+      "tail_lp": "193,297.25",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "users.id → panels.owner_id"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              435.88,
+              316.27
+            ],
+            [
+              444.7,
+              305.3
+            ],
+            [
+              482.2,
+              258.68
+            ],
+            [
+              494.83,
+              242.99
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              494.71,
+              243.14
+            ],
+            [
+              501.06,
+              239.91
+            ],
+            [
+              496.96,
+              240.33
+            ],
+            [
+              498.56,
+              238.35
+            ],
+            [
+              498.56,
+              238.35
+            ],
+            [
+              498.56,
+              238.35
+            ],
+            [
+              496.96,
+              240.33
+            ],
+            [
+              496.5,
+              236.24
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            488.34,
+            248.35
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              436.94,
+              320.13
+            ],
+            [
+              431.88,
+              316.06
+            ],
+            [
+              432.69,
+              315.04
+            ],
+            [
+              437.75,
+              319.12
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              434,
+              318.6
+            ],
+            [
+              436.04,
+              316.07
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            444.66,
+            302.65
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "488.34,251.05",
+      "headlabel": "0..N",
+      "headport": "panel_id:w",
+      "id": "rel2",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,434,318.6 e,499,237.8 435.88,316.27 444.7,305.3 482.2,258.68 494.83,242.99",
+      "tail_lp": "444.66,305.35",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "panels.id → panel_indicators.panel_id"
+    },
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              439.76,
+              140.07
+            ],
+            [
+              447.96,
+              150.67
+            ],
+            [
+              482.57,
+              195.38
+            ],
+            [
+              494.74,
+              211.1
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              494.81,
+              211.18
+            ],
+            [
+              496.47,
+              218.11
+            ],
+            [
+              497.01,
+              214.03
+            ],
+            [
+              498.57,
+              216.04
+            ],
+            [
+              498.57,
+              216.04
+            ],
+            [
+              498.57,
+              216.04
+            ],
+            [
+              497.01,
+              214.03
+            ],
+            [
+              501.1,
+              214.53
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            488.59,
+            200.46
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              435.83,
+              140.3
+            ],
+            [
+              440.97,
+              136.32
+            ],
+            [
+              441.76,
+              137.35
+            ],
+            [
+              436.62,
+              141.33
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              438,
+              137.8
+            ],
+            [
+              439.99,
+              140.37
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            448.41,
+            148.54
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "488.59,203.16",
+      "headlabel": "0..N",
+      "headport": "indicator_id:w",
+      "id": "rel3",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,438,137.8 e,499,216.6 439.76,140.07 447.96,150.67 482.57,195.38 494.74,211.1",
+      "tail_lp": "448.41,151.24",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "indicators.id → panel_indicators.indicator_id"
+    }
+  ]
+}

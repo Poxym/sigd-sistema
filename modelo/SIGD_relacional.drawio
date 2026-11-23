@@ -1,0 +1,1373 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="Vista conceptual del negocio" id="00_conceptual">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1346" pageHeight="406" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users" value="Usuario" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="28.128159999999994" y="96.80012000000002" width="66.70368" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="teachers" value="Docente" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="262.12456" y="96.80012000000002" width="69.77088" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="campuses" value="Campus" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="26.599959999999996" y="164.80012000000002" width="69.76008" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="careers" value="Carrera" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="263.96704" y="164.80012000000002" width="66.08592" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="periods" value="Periodo académico" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.000800000000005241" y="264.80012" width="122.9616" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="catalog_versions" value="Versión de catálogo" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="233.9992" y="232.80012000000002" width="126.02159999999999" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="documents" value="Documento docente" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="475.54359999999997" y="203.80012000000002" width="127.25280000000001" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="work_plans" value="Plan de trabajo" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="729.5028" y="60.800120000000014" width="102.7944" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="activity_reports" value="Informe de actividades" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="980.9644000000001" y="128.80012000000002" width="139.4712" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="document_versions" value="Versión inmutable" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="722.4792" y="203.80012000000002" width="116.8416" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="reviews" value="Revisión de versión" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="988.3084" y="203.80012000000002" width="124.78320000000001" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="document_sections" value="Sección del documento" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="709.3284" y="271.80012" width="143.1432" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="activity_records" value="Registro de actividad" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="984.9388" y="271.80012" width="131.5224" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="evidence" value="Evidencia" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1211.9536" y="311.80012" width="76.4928" height="36.239760000000004" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="users" target="teachers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="141.54" y="114.92000000000002" />
+              <mxPoint x="214.63" y="114.92000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="campuses" target="careers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="142.57" y="182.92000000000002" />
+              <mxPoint x="212.91" y="182.92000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods" target="catalog_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="157.56" y="269.891" />
+              <mxPoint x="195.04" y="264.75600000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teachers" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="378.6" y="150.67000000000002" />
+              <mxPoint x="444.55" y="179.92000000000002" />
+              <mxPoint x="444.55" y="179.92000000000002" />
+              <mxPoint x="444.55" y="179.92000000000002" />
+              <mxPoint x="467.47" y="190.20000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="175.34" y="291.34200000000004" />
+              <mxPoint x="233.99" y="295.72" />
+              <mxPoint x="233.99" y="295.72" />
+              <mxPoint x="233.99" y="295.72" />
+              <mxPoint x="360.02" y="295.72" />
+              <mxPoint x="360.02" y="295.72" />
+              <mxPoint x="360.02" y="295.72" />
+              <mxPoint x="434.71" y="264.778" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="368.93" y="194.44000000000003" />
+              <mxPoint x="424.36" y="203.44000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="catalog_versions" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="402.15" y="242.25" />
+              <mxPoint x="444.55" y="238.72000000000003" />
+              <mxPoint x="444.55" y="238.72000000000003" />
+              <mxPoint x="444.55" y="238.72000000000003" />
+              <mxPoint x="454.86" y="236.87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="work_plans">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="585.13" y="170.54000000000002" />
+              <mxPoint x="633.8" y="114.92000000000002" />
+              <mxPoint x="633.8" y="114.92000000000002" />
+              <mxPoint x="633.8" y="114.92000000000002" />
+              <mxPoint x="684.55" y="102.42000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-8" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="activity_reports">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="621.74" y="205.37000000000003" />
+              <mxPoint x="633.8" y="202.92000000000002" />
+              <mxPoint x="633.8" y="202.92000000000002" />
+              <mxPoint x="633.8" y="202.92000000000002" />
+              <mxPoint x="709.32" y="187.92000000000002" />
+              <mxPoint x="709.32" y="187.92000000000002" />
+              <mxPoint x="709.32" y="187.92000000000002" />
+              <mxPoint x="883.47" y="160.92000000000002" />
+              <mxPoint x="883.47" y="160.92000000000002" />
+              <mxPoint x="883.47" y="160.92000000000002" />
+              <mxPoint x="932.6" y="156.78000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-9" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_versions" target="activity_reports">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="882.53" y="193.74" />
+              <mxPoint x="934.84" y="179.09000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-10" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="document_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="640.31" y="221.92000000000002" />
+              <mxPoint x="681.75" y="221.92000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-11" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_versions" target="reviews">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="864.52" y="222.57000000000002" />
+              <mxPoint x="883.47" y="222.72000000000003" />
+              <mxPoint x="883.47" y="222.72000000000003" />
+              <mxPoint x="883.47" y="222.72000000000003" />
+              <mxPoint x="950" y="222.72000000000003" />
+              <mxPoint x="950" y="222.72000000000003" />
+              <mxPoint x="950" y="222.72000000000003" />
+              <mxPoint x="963.95" y="222.61" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-12" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="document_sections">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="637.62" y="249.56300000000002" />
+              <mxPoint x="675.61" y="260.33900000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-13" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_sections" target="activity_records">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="893.56" y="289.92" />
+              <mxPoint x="939.81" y="289.92" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-14" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="622.68" y="271.67100000000005" />
+              <mxPoint x="709.32" y="323.92" />
+              <mxPoint x="709.32" y="323.92" />
+              <mxPoint x="709.32" y="323.92" />
+              <mxPoint x="1076" y="327.995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-15" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activity_records" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1148.2" y="309.45000000000005" />
+              <mxPoint x="1180.1" y="315.922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Estructura académica" id="01_estructura">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1513" pageHeight="533" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="universities" value="&lt;b&gt;Universidad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;universities&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0007999999999981355" y="82.60040000000001" width="191.0016" height="85.3992" />
+        </mxCell>
+        <mxCell id="campuses" value="&lt;b&gt;Campus&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;campuses&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK university_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="251.9992" y="60.80160000000001" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="careers" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK campus_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK predecessor_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="504.0012" y="119.1996" width="194.9976" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="study_plans" value="&lt;b&gt;Plan de estudio&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;study_plans&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK career_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK created_by&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;semesters&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;registered_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="759.9992" y="188.6012" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="curriculum_semesters" value="&lt;b&gt;Semestre del plan&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;curriculum_semesters&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK study_plan_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;number&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1011.9992" y="167.60160000000002" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="subjects" value="&lt;b&gt;Materia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;subjects&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;credits&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1011.9992" y="326.8016" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="curriculum_subjects" value="&lt;b&gt;Asignatura del plan&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;curriculum_subjects&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK semester_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK subject_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1263.9992" y="215.60160000000002" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="self__careers" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="259.5016" y="242.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__study_plans" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="513.5016" y="321.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="universities" target="campuses">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="203.18" y="136.07999999999998" />
+              <mxPoint x="231.76" y="135.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="campuses" target="careers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="453.04" y="127.5" />
+              <mxPoint x="488.23" y="173.43" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="self__careers" target="careers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="447.61" y="282.53" />
+              <mxPoint x="486.55" y="236.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers" target="study_plans">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="709.12" y="187.82999999999998" />
+              <mxPoint x="744.9" y="240.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__study_plans" target="study_plans">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="701.16" y="360.96000000000004" />
+              <mxPoint x="742.52" y="307.29" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="study_plans" target="curriculum_semesters">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="963.18" y="242.24" />
+              <mxPoint x="991.76" y="242.33" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="curriculum_semesters" target="curriculum_subjects">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1213.6" y="233.26000000000002" />
+              <mxPoint x="1247.2" y="271.32000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="subjects" target="curriculum_subjects">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1213.6" y="368.41" />
+              <mxPoint x="1247.2" y="330.57000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Periodo, grupos y asignaciones" id="02_docencia">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1316" pageHeight="845" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="periods" value="&lt;b&gt;Periodo académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;periods&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;effective_weeks&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;nominal_weekly_minutes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;maximum_weekly_minutes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;enforce_maximum&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;rejection_threshold&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;state&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK catalog_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="247.75959999999998" y="81.20040000000006" width="244.0008" height="276.1992" />
+        </mxCell>
+        <mxCell id="capture_windows" value="&lt;b&gt;Periodo de captura&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;capture_windows&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK period_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;kind&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;opens_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;closes_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;enabled&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552.7592" y="60.79920000000007" width="191.0016" height="191.0016" />
+        </mxCell>
+        <mxCell id="groups" value="&lt;b&gt;Grupo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;groups&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK period_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK campus_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK semester_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;kind&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;capacity&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="552.7592" y="346.2008000000001" width="191.0016" height="212.1984" />
+        </mxCell>
+        <mxCell id="course_offerings" value="&lt;b&gt;Oferta grupo materia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;course_offerings&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK group_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK subject_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="808.1992" y="436.6016000000001" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="teaching_assignments" value="&lt;b&gt;Asignación docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teaching_assignments&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK offering_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK teacher_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK previous_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;weekly_minutes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;students&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;change_reason ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1063.6011999999998" y="553.4008000000001" width="194.9976" height="233.7984" />
+        </mxCell>
+        <mxCell id="catalog_versions__periods" value="&lt;b&gt;Versión de catálogo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;catalog_versions · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0014000000000038426" y="293.19988000000006" width="186.76080000000002" height="64.20024" />
+        </mxCell>
+        <mxCell id="campuses__groups" value="&lt;b&gt;Campus&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;campuses · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="281.7616" y="389.19988000000006" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="curriculum_semesters__groups" value="&lt;b&gt;Semestre del plan&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;curriculum_semesters · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="265.0" y="485.19988000000006" width="209.52" height="64.20024" />
+        </mxCell>
+        <mxCell id="subjects__course_offerings" value="&lt;b&gt;Materia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;subjects · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="560.2616" y="590.1998800000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="teachers__teaching_assignments" value="&lt;b&gt;Docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teachers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="815.7016000000001" y="596.1998800000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="self__teaching_assignments" value="&lt;b&gt;Asignación docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teaching_assignments · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="804.7612" y="692.1998800000001" width="197.8776" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="catalog_versions__periods" target="periods">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="198.93" y="346.80000000000007" />
+              <mxPoint x="227.51" y="346.80000000000007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods" target="capture_windows">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="503.93" y="134.96000000000004" />
+              <mxPoint x="532.51" y="135.33000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods" target="groups">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="498.09" y="164.51" />
+              <mxPoint x="542.85" y="374.50000000000006" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="campuses__groups" target="groups">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="475.2" y="442.70000000000005" />
+              <mxPoint x="527.34" y="442.36000000000007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="curriculum_semesters__groups" target="groups">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="488.23" y="526.3900000000001" />
+              <mxPoint x="532.79" y="482.89000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="groups" target="course_offerings">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="753.61" y="417.13000000000005" />
+              <mxPoint x="792.31" y="485.20000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="subjects__course_offerings" target="course_offerings">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="748.12" y="626.5400000000001" />
+              <mxPoint x="790.78" y="558.7" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="course_offerings" target="teaching_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1009.4" y="510.11000000000007" />
+              <mxPoint x="1049.6" y="597.6600000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-8" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teachers__teaching_assignments" target="teaching_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1006.4" y="649.72" />
+              <mxPoint x="1041.8" y="649.52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-9" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="self__teaching_assignments" target="teaching_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1013.4" y="732.594" />
+              <mxPoint x="1047.5" y="690.532" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Identidad y trayectoria docente" id="03_identidad">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="779" pageHeight="863" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="users" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;auth_uid ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;employee_number&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;first_name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;last_name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;second_last_name ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;email&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.0" y="261.9992" width="207.0" height="212.6016" />
+        </mxCell>
+        <mxCell id="employee_history" value="&lt;b&gt;Historial de número&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;employee_history&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;employee_number&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="267.9988" y="60.80159999999995" width="201.0024" height="148.9968" />
+        </mxCell>
+        <mxCell id="degrees" value="&lt;b&gt;Grado de estudios&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;degrees&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;level&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;program&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;institution&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;obtained_on&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;license ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;official&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;maximum&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="272.9992" y="241.40079999999995" width="191.0016" height="233.7984" />
+        </mxCell>
+        <mxCell id="teacher_categories" value="&lt;b&gt;Categoría docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teacher_categories&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;level&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;researcher&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="7.999200000000002" y="549.1995999999999" width="191.0016" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="teachers" value="&lt;b&gt;Docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teachers&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK category_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;joined_on&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="272.9992" y="507.4" width="191.0016" height="127.8" />
+        </mxCell>
+        <mxCell id="affiliations" value="&lt;b&gt;Adscripción docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;affiliations&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK teacher_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK career_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="529.9992" y="656.8016" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="distinctions" value="&lt;b&gt;Distinción&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;distinctions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK teacher_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;level ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="529.9992" y="454.1995999999999" width="191.0016" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="careers__affiliations" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="280.5016" y="699.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users" target="employee_history">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="214.78" y="292.65" />
+              <mxPoint x="255.99" y="171.03999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users" target="degrees">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="220.18" y="315.71999999999997" />
+              <mxPoint x="251.69" y="316.00999999999993" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="users" target="teachers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="214.4" y="345.93999999999994" />
+              <mxPoint x="264.63" y="551.98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teacher_categories" target="teachers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="213.86" y="602.92" />
+              <mxPoint x="249.86" y="603.2199999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teachers" target="affiliations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="473.68" y="583.78" />
+              <mxPoint x="516.92" y="697.27" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers__affiliations" target="affiliations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="471.46" y="752.8" />
+              <mxPoint x="507.71" y="752.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teachers" target="distinctions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="477.51" y="554.8399999999999" />
+              <mxPoint x="510.01" y="538.8399999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Roles y permisos" id="04_permisos">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="528" pageHeight="406" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="roles" value="&lt;b&gt;Rol&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;roles&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="13.9392" y="60.79999999999999" width="191.0016" height="127.8" />
+        </mxCell>
+        <mxCell id="permissions" value="&lt;b&gt;Permiso&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;permissions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;resource&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;action&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="13.9392" y="221.0016" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="role_permissions" value="&lt;b&gt;Rol permiso&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;role_permissions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK role_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK permission_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="265.9392" y="110.00159999999998" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="roles" target="role_permissions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.57" y="126.66999999999999" />
+              <mxPoint x="249.12" y="165.39" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="permissions" target="role_permissions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.57" y="262.64599999999996" />
+              <mxPoint x="249.12" y="224.90999999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Asignación y delegación de autoridad" id="04b_autoridad">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="528" pageHeight="663" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="role_assignments" value="&lt;b&gt;Asignación de rol&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;role_assignments&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK role_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK campus_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK career_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="258.4392" y="349.2012" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="approval_delegations" value="&lt;b&gt;Delegación temporal&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;approval_delegations&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK career_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK assigned_by&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;reason&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="258.4392" y="93.20119999999997" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="users__role_assignments" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="252.79987999999997" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="roles__role_assignments" value="&lt;b&gt;Rol&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;roles · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="348.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="campuses__role_assignments" value="&lt;b&gt;Campus&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;campuses · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="444.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="careers__role_assignments" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="540.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="careers__approval_delegations" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="60.79987999999998" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__approval_delegations" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="156.79987999999997" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__role_assignments" target="role_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="206.17" y="323.24" />
+              <mxPoint x="244.24" y="396.62" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="roles__role_assignments" target="role_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.27" y="410.7" />
+              <mxPoint x="240.29" y="432.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="campuses__role_assignments" target="role_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.18" y="492.24" />
+              <mxPoint x="239.68" y="476.24" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers__role_assignments" target="role_assignments">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="206.87" y="577.883" />
+              <mxPoint x="243.78" y="513.271" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers__approval_delegations" target="approval_delegations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="208.63" y="124.24000000000001" />
+              <mxPoint x="240.63" y="152.35000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__approval_delegations" target="approval_delegations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.71" y="206.14" />
+              <mxPoint x="238.79" y="196.02999999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__approval_delegations" target="approval_delegations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.62" y="210.39999999999998" />
+              <mxPoint x="238.2" y="210.39999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Catálogo dinámico y campos de captura" id="05_catalogo">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="769" pageHeight="787" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rubrics" value="&lt;b&gt;Rubro académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;rubrics&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;axis&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0007999999999981355" y="97.80159999999995" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="activities" value="&lt;b&gt;Actividad académica&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activities&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0007999999999981355" y="278.4" width="191.0016" height="127.8" />
+        </mxCell>
+        <mxCell id="activity_classifications" value="&lt;b&gt;Clasificación vigente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_classifications&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK activity_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK rubric_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="259.9992" y="60.80159999999995" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="field_definitions" value="&lt;b&gt;Definición de campo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;field_definitions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK activity_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;key&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;label&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;type&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;required&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;position&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;constraints&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;comparison_key ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="258.0012" y="252.00039999999996" width="194.9976" height="254.5992" />
+        </mxCell>
+        <mxCell id="field_options" value="&lt;b&gt;Opción de campo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;field_options&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK field_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;value&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;label&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;position&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="519.9992" y="231.40119999999996" width="191.0016" height="169.7976" />
+        </mxCell>
+        <mxCell id="evidence_types" value="&lt;b&gt;Tipo de evidencia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;evidence_types&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;mime_types&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;max_bytes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0007999999999981355" y="580.8016" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="activity_evidence_types" value="&lt;b&gt;Evidencia requerida&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_evidence_types&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK activity_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK evidence_type_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;required&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="252.0" y="538.9996" width="207.0" height="148.6008" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activities" target="activity_classifications">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="199.26" y="308.15" />
+              <mxPoint x="245.92" y="173.38" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="rubrics" target="activity_classifications">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="204.09" y="152.43999999999994" />
+              <mxPoint x="238.09" y="155.14" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activities" target="field_definitions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="204.38" y="330.94999999999993" />
+              <mxPoint x="236.38" y="328.41999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="field_definitions" target="field_options">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="467.38" y="305.71999999999997" />
+              <mxPoint x="499.38" y="306.00999999999993" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activities" target="activity_evidence_types">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="197.73" y="363.09999999999997" />
+              <mxPoint x="241.98" y="567.49" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="evidence_types" target="activity_evidence_types">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="203.18" y="634.52" />
+              <mxPoint x="231.76" y="634.8009999999999" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Configuración por periodo e historia de catálogo" id="06_configuracion">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1021" pageHeight="835" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="catalog_versions" value="&lt;b&gt;Versión de catálogo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;catalog_versions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK period_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;version&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;published_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK published_by&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;content&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="251.9992" y="389.5992" width="191.0016" height="191.0016" />
+        </mxCell>
+        <mxCell id="rubric_configuration" value="&lt;b&gt;Configuración de rubro&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;rubric_configuration&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK catalog_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK rubric_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;in_plan&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;in_report&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;required&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;position&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="503.9992" y="469.0008" width="191.0016" height="212.1984" />
+        </mxCell>
+        <mxCell id="activity_configuration" value="&lt;b&gt;Configuración de actividad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_configuration&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK configuration_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK activity_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;calculation&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;parameters&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;required&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;position&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="756.0" y="559.0008" width="207.0" height="212.1984" />
+        </mxCell>
+        <mxCell id="change_requests" value="&lt;b&gt;Solicitud de cambio&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;change_requests&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK requested_by&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK authorized_by ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;state&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;effective_on ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;content&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;created_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="251.9992" y="166.40120000000002" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="system_settings" value="&lt;b&gt;Configuración del sistema&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;system_settings&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;revision&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;content&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0007999999999981355" y="60.79840000000003" width="191.0016" height="106.60319999999999" />
+        </mxCell>
+        <mxCell id="periods__catalog_versions" value="&lt;b&gt;Periodo académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;periods · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="7.501599999999996" y="394.99988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__catalog_versions" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="7.501599999999996" y="490.99988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rubrics__rubric_configuration" value="&lt;b&gt;Rubro académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;rubrics · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="259.5016" y="612.9998800000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="activities__activity_configuration" value="&lt;b&gt;Actividad académica&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activities · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="511.5016" y="712.9998800000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__change_requests" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="7.501599999999996" y="198.99988000000002" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods__catalog_versions" target="catalog_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="197.49" y="451.64000000000004" />
+              <mxPoint x="231.24" y="459.54" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__catalog_versions" target="catalog_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="197.49" y="541.4000000000001" />
+              <mxPoint x="231.24" y="533.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="catalog_versions" target="rubric_configuration">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="452.4" y="458.70000000000005" />
+              <mxPoint x="489" y="519.0600000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="rubrics__rubric_configuration" target="rubric_configuration">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="446.9" y="650.95" />
+              <mxPoint x="487.4" y="589.99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="rubric_configuration" target="activity_configuration">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="704.43" y="539.8000000000001" />
+              <mxPoint x="741.34" y="607.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activities__activity_configuration" target="activity_configuration">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="698.98" y="749.274" />
+              <mxPoint x="740.15" y="681.1980000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__change_requests" target="change_requests">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="197.49" y="250.41000000000008" />
+              <mxPoint x="231.24" y="244.71000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__change_requests" target="change_requests">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="197.49" y="254.49" />
+              <mxPoint x="231.24" y="259.3900000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Plan, informe y documentos del docente" id="07_documentos">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1038" pageHeight="676" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="documents" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK teacher_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK period_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK career_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK catalog_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;kind&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;state&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;version&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;revision&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;created_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;updated_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;submitted_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;approved_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;content&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="247.7592" y="161.80120000000002" width="191.0016" height="360.5976" />
+        </mxCell>
+        <mxCell id="work_plans" value="&lt;b&gt;Plan de trabajo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;work_plans&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;submitted_version ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="499.7612" y="60.79840000000003" width="212.9976" height="106.60319999999999" />
+        </mxCell>
+        <mxCell id="activity_reports" value="&lt;b&gt;Informe de actividades&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_reports&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK plan_document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK plan_version_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;current_section ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="773.76" y="186.60160000000002" width="207.0" height="148.9968" />
+        </mxCell>
+        <mxCell id="document_versions" value="&lt;b&gt;Versión inmutable&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;document_versions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;number&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;event&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK actor_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;content&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;digest&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="510.75919999999996" y="331.39880000000005" width="191.0016" height="233.4024" />
+        </mxCell>
+        <mxCell id="teachers__documents" value="&lt;b&gt;Docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teachers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="5.380600000000001" y="71.99988000000002" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="periods__documents" value="&lt;b&gt;Periodo académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;periods · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="5.380600000000001" y="167.99988000000002" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="careers__documents" value="&lt;b&gt;Carrera&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;careers · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="5.380600000000001" y="263.99988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="catalog_versions__documents" value="&lt;b&gt;Versión de catálogo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;catalog_versions · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="-0.0014000000000038426" y="359.99988" width="186.76080000000002" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__document_versions" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="255.2616" y="553.9998800000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teachers__documents" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="192.53" y="142.83000000000004" />
+              <mxPoint x="232.41" y="210.54000000000002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="periods__documents" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="195.06" y="228.62000000000006" />
+              <mxPoint x="228.31" y="247.03000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="careers__documents" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="194.29" y="310.57000000000005" />
+              <mxPoint x="228" y="290.6700000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="catalog_versions__documents" target="documents">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="196.23" y="395.99" />
+              <mxPoint x="233.44" y="326.82000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="work_plans">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="449.35" y="201.55000000000007" />
+              <mxPoint x="488.76" y="149.99000000000007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="activity_reports">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="472.48" y="220.03000000000003" />
+              <mxPoint x="739.59" y="256.71000000000004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="activity_reports">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="452.22" y="225.48000000000002" />
+              <mxPoint x="499.76" y="261.1" />
+              <mxPoint x="499.76" y="261.1" />
+              <mxPoint x="499.76" y="261.1" />
+              <mxPoint x="724.79" y="278.76000000000005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_versions" target="activity_reports">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="714.45" y="371.63000000000005" />
+              <mxPoint x="755.41" y="324.79" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-8" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents" target="document_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="447.85" y="239.83000000000004" />
+              <mxPoint x="496.21" y="369.7900000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-9" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__document_versions" target="document_versions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="442.49" y="589.412" />
+              <mxPoint x="492.79" y="499.98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Actividades y valores capturados" id="08_registros">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="1246" pageHeight="698" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="document_sections" value="&lt;b&gt;Sección del documento&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;document_sections&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK rubric_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;state&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;confirmed_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="236.9992" y="76.00119999999998" width="191.0016" height="169.7976" />
+        </mxCell>
+        <mxCell id="activity_records" value="&lt;b&gt;Registro de actividad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_records&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK section_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK activity_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK project_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK origin_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;weekly_minutes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;numeric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;values&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="489.0012" y="273.2012" width="194.9976" height="191.3976" />
+        </mxCell>
+        <mxCell id="field_values" value="&lt;b&gt;Valor de campo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;field_values&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK record_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK field_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;value&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="744.9992" y="353.5996" width="191.0016" height="148.6008" />
+        </mxCell>
+        <mxCell id="selected_options" value="&lt;b&gt;Selección múltiple&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;selected_options&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK value_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK option_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="996.9992" y="413.2016" width="191.0016" height="127.39680000000001" />
+        </mxCell>
+        <mxCell id="projects" value="&lt;b&gt;Proyecto&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;projects&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;funding&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;start&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;end ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="236.9992" y="373.79959999999994" width="191.0016" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="documents__document_sections" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.001599999999996271" y="60.79987999999998" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rubrics__document_sections" value="&lt;b&gt;Rubro académico&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;rubrics · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.001599999999996271" y="156.79987999999997" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="activities__activity_records" value="&lt;b&gt;Actividad académica&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activities · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="244.5016" y="277.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="self__activity_records" value="&lt;b&gt;Registro de actividad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_records · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="244.5016" y="575.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="field_definitions__field_values" value="&lt;b&gt;Definición de campo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;field_definitions · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="496.176" y="496.79988" width="180.648" height="64.20024" />
+        </mxCell>
+        <mxCell id="field_options__selected_options" value="&lt;b&gt;Opción de campo&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;field_options · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="752.5016" y="533.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents__document_sections" target="document_sections">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="187.74" y="121.40999999999997" />
+              <mxPoint x="218.24" y="139.61" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="rubrics__document_sections" target="document_sections">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="187.74" y="203.01" />
+              <mxPoint x="218.24" y="183.81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_sections" target="activity_records">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="435.47" y="156.32999999999998" />
+              <mxPoint x="478.01" y="308.65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activities__activity_records" target="activity_records">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="433.89" y="338.34" />
+              <mxPoint x="469.29" y="358.16" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="projects" target="activity_records">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="439.74" y="420.28" />
+              <mxPoint x="470.24" y="401.78" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="self__activity_records" target="activity_records">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="429.76" y="602.744" />
+              <mxPoint x="476.84" y="450.84000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activity_records" target="field_values">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="693.4" y="342.45" />
+              <mxPoint x="730" y="403.40999999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-7" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="field_definitions__field_values" target="field_values">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="688.17" y="534.87" />
+              <mxPoint x="728.48" y="474.39" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-8" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="field_values" target="selected_options">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="946.04" y="420.5" />
+              <mxPoint x="981.23" y="467.12" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-9" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="field_options__selected_options" target="selected_options">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="940.61" y="574.526" />
+              <mxPoint x="979.55" y="529.41" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Resultados de cursos y evidencias" id="08b_evidencias">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="528" pageHeight="737" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="course_results" value="&lt;b&gt;Resultado de curso&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;course_results&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK assignment_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;enrolled&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;passed&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;justification ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="276.04920000000004" y="488.39919999999995" width="191.0016" height="191.0016" />
+        </mxCell>
+        <mxCell id="evidence" value="&lt;b&gt;Evidencia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;evidence&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK record_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK type_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK uploaded_by&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;filename&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;mime&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;bytes&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;sha256&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;storage_path&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;uploaded_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="276.04920000000004" y="160.80039999999997" width="191.0016" height="276.1992" />
+        </mxCell>
+        <mxCell id="documents__course_results" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="481.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="teaching_assignments__course_results" value="&lt;b&gt;Asignación docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;teaching_assignments · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="3.8303999999999974" y="577.79988" width="211.2192" height="64.20024" />
+        </mxCell>
+        <mxCell id="documents__evidence" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="60.79987999999998" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="activity_records__evidence" value="&lt;b&gt;Registro de actividad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_records · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="18.849599999999995" y="156.79987999999997" width="181.1808" height="64.20024" />
+        </mxCell>
+        <mxCell id="evidence_types__evidence" value="&lt;b&gt;Tipo de evidencia&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;evidence_types · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="18.8352" y="252.79987999999997" width="181.2096" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__evidence" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="348.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents__course_results" target="course_results">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="212.79" y="540.54" />
+              <mxPoint x="254.19" y="555.37" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="teaching_assignments__course_results" target="course_results">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="226.25" y="622.774" />
+              <mxPoint x="258.24" y="598.124" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents__evidence" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.59" y="131.81999999999994" />
+              <mxPoint x="258.43" y="208.07999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activity_records__evidence" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="214.1" y="218.48999999999995" />
+              <mxPoint x="255.37" y="244.01" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="evidence_types__evidence" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="214.81" y="301.19" />
+              <mxPoint x="254.15" y="286.28999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__evidence" target="evidence">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="210.53" y="386.32" />
+              <mxPoint x="258.27" y="322.84" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Revisión de versiones y observaciones" id="09_revision">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="760" pageHeight="652" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="reviews" value="&lt;b&gt;Revisión de versión&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;reviews&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK version_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK reviewer_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;result&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;comment&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="259.42920000000004" y="306.2012" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="review_visits" value="&lt;b&gt;Sección revisada&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;review_visits&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK version_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK reviewer_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;section_key&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="259.42920000000004" y="71.00119999999998" width="191.0016" height="169.7976" />
+        </mxCell>
+        <mxCell id="observations" value="&lt;b&gt;Observación&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;observations&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK review_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;section_key ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK record_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;resolved_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="511.4291999999999" y="376.79959999999994" width="191.0016" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="documents__reviews" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="11.215599999999995" y="252.79987999999997" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="document_versions__reviews" value="&lt;b&gt;Versión inmutable&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;document_versions · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.001599999999996271" y="348.79988" width="198.4248" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__reviews" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="11.215599999999995" y="444.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="document_versions__review_visits" value="&lt;b&gt;Versión inmutable&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;document_versions · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.001599999999996271" y="60.79987999999998" width="198.4248" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__review_visits" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="11.215599999999995" y="156.79987999999997" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="activity_records__observations" value="&lt;b&gt;Registro de actividad&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;activity_records · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="264.3396" y="529.79988" width="181.1808" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents__reviews" target="reviews">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="199.94" y="318.68" />
+              <mxPoint x="241.02" y="361.72" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_versions__reviews" target="reviews">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="210.6" y="402.36" />
+              <mxPoint x="239.18" y="402.27" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__reviews" target="reviews">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="199.94" y="486.05" />
+              <mxPoint x="241.02" y="442.78999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="document_versions__review_visits" target="review_visits">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="210.17" y="120.44" />
+              <mxPoint x="240.67" y="136.14999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-4" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__review_visits" target="review_visits">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="201.39" y="202.37" />
+              <mxPoint x="239.37" y="179.22000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-5" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="reviews" target="observations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="460.55" y="375.03" />
+              <mxPoint x="496.33" y="428.88" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-6" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="activity_records__observations" target="observations">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="457.29" y="568.568" />
+              <mxPoint x="495.36" y="516.131" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Notificaciones, bitácora e idempotencia" id="09b_trazabilidad">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="540" pageHeight="778" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="notifications" value="&lt;b&gt;Notificación&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;notifications&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK document_id ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;title&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;body&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;read_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="264.3492" y="528.6012" width="191.0016" height="191.3976" />
+        </mxCell>
+        <mxCell id="audit_events" value="&lt;b&gt;Bitácora&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;audit_events&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK actor_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;action&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;entity&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;record_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;before ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;after ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="264.3492" y="283.99920000000003" width="191.0016" height="212.6016" />
+        </mxCell>
+        <mxCell id="idempotency_keys" value="&lt;b&gt;Solicitud idempotente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;idempotency_keys&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK actor_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;request_key&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;request_hash&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;response&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;created_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="264.3492" y="60.799199999999956" width="191.0016" height="191.0016" />
+        </mxCell>
+        <mxCell id="users__notifications" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="27.35159999999999" y="512.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="documents__notifications" value="&lt;b&gt;Documento docente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;documents · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="27.35159999999999" y="608.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__audit_events" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="27.35159999999999" y="306.19988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__idempotency_keys" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="27.35159999999999" y="82.19987999999995" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__notifications" target="notifications">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.1" y="573.04" />
+              <mxPoint x="245.6" y="591.84" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="0..1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="documents__notifications" target="notifications">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.1" y="654.639" />
+              <mxPoint x="245.6" y="636.038" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__audit_events" target="audit_events">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.53" y="359.6" />
+              <mxPoint x="244.11" y="359.13" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-3" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__idempotency_keys" target="idempotency_keys">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="215.53" y="135.76" />
+              <mxPoint x="244.11" y="135.66999999999996" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Indicadores y paneles" id="10_reportes">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="748" pageHeight="491" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="indicators" value="&lt;b&gt;Indicador registrado&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;indicators&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;code&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;unit&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;handler&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;confidentiality&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;active&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="236.99880000000002" y="241.6012" width="201.0024" height="191.3976" />
+        </mxCell>
+        <mxCell id="panels" value="&lt;b&gt;Panel&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;panels&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK owner_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;name&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;scope&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;default_panel&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="241.9992" y="60.80160000000001" width="191.0016" height="148.9968" />
+        </mxCell>
+        <mxCell id="panel_indicators" value="&lt;b&gt;Indicador en panel&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;panel_indicators&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK panel_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK indicator_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;position&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;integer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;filters&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;jsonb&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="498.9992" y="120.40120000000002" width="191.0016" height="169.7976" />
+        </mxCell>
+        <mxCell id="users__panels" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="0.001599999999996271" y="82.19988000000001" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__panels" target="panels">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="189.08" y="135.76" />
+              <mxPoint x="220.06" y="135.66000000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="panels" target="panel_indicators">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="444.7" y="127.69999999999999" />
+              <mxPoint x="482.2" y="174.32" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-2" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="indicators" target="panel_indicators">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="447.96" y="282.33000000000004" />
+              <mxPoint x="482.57" y="237.62" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Autenticación y sesiones" id="11_sesiones">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageScale="1" pageWidth="528" pageHeight="448" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="credentials" value="&lt;b&gt;Credencial local&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;credentials&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;password_hash&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;must_change&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;boolean&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="258.4392" y="263.00000000000006" width="191.0016" height="127.8" />
+        </mxCell>
+        <mxCell id="sessions" value="&lt;b&gt;Sesión&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;sessions&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;FK user_id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;token_hash&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;created_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;expires_at&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;revoked_at ?&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;timestamptz&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#FFFFFF;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="258.4392" y="60.7996" width="191.0016" height="170.20080000000002" />
+        </mxCell>
+        <mxCell id="users__credentials" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="284.79988" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="users__sessions" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#607383&quot;&gt;users · referencia externa&lt;/font&gt;&lt;hr&gt;&lt;table width=&quot;100%&quot; cellpadding=&quot;3&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;PK id&lt;/td&gt;&lt;td align=&quot;left&quot;&gt;text&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=7;fillColor=#EAF1F5;strokeColor=#90A9B7;fontColor=#173847;fontFamily=Arial;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="21.441599999999994" y="82.79988000000003" width="175.9968" height="64.20024" />
+        </mxCell>
+        <mxCell id="rel-0" value="1 : 0..1" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="users__credentials" target="credentials">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="210.66" y="338.27" />
+              <mxPoint x="244.93" y="337.933" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-1" value="1 : 0..N" style="edgeStyle=none;curved=1;rounded=0;html=1;strokeColor=#718D9C;fontColor=#285C76;fontFamily=Arial;fontSize=9;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" edge="1" parent="1" source="users__sessions" target="sessions">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="209.62" y="136.24" />
+              <mxPoint x="238.2" y="135.87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

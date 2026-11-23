@@ -1,0 +1,2943 @@
+{
+  "idPolicy": "Identificadores string estables, iguales en PostgreSQL y Firestore. UID Auth separado.",
+  "collections": [
+    {
+      "collection": "universities",
+      "path": "universities/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "campuses",
+      "path": "campuses/{id}",
+      "relations": [
+        {
+          "field": "university_id",
+          "references": "universities/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "university_id",
+          "type": "text",
+          "required": true,
+          "ref": "universities"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "careers",
+      "path": "careers/{id}",
+      "relations": [
+        {
+          "field": "campus_id",
+          "references": "campuses/{id}",
+          "required": true
+        },
+        {
+          "field": "predecessor_id",
+          "references": "careers/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": true,
+          "ref": "campuses"
+        },
+        {
+          "name": "predecessor_id",
+          "type": "text",
+          "required": false,
+          "ref": "careers"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "study_plans",
+      "path": "study_plans/{id}",
+      "relations": [
+        {
+          "field": "career_id",
+          "references": "careers/{id}",
+          "required": true
+        },
+        {
+          "field": "created_by",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "created_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "semesters",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "registered_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "curriculum_semesters",
+      "path": "curriculum_semesters/{id}",
+      "relations": [
+        {
+          "field": "study_plan_id",
+          "references": "study_plans/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "study_plan_id",
+          "type": "text",
+          "required": true,
+          "ref": "study_plans"
+        },
+        {
+          "name": "number",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "subjects",
+      "path": "subjects/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "credits",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "curriculum_subjects",
+      "path": "curriculum_subjects/{id}",
+      "relations": [
+        {
+          "field": "semester_id",
+          "references": "curriculum_semesters/{id}",
+          "required": true
+        },
+        {
+          "field": "subject_id",
+          "references": "subjects/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "semester_id",
+          "type": "text",
+          "required": true,
+          "ref": "curriculum_semesters"
+        },
+        {
+          "name": "subject_id",
+          "type": "text",
+          "required": true,
+          "ref": "subjects"
+        }
+      ]
+    },
+    {
+      "collection": "periods",
+      "path": "periods/{id}",
+      "relations": [
+        {
+          "field": "catalog_id",
+          "references": "catalog_versions/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "effective_weeks",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "nominal_weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "maximum_weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "enforce_maximum",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "rejection_threshold",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": false,
+          "ref": "catalog_versions"
+        }
+      ]
+    },
+    {
+      "collection": "capture_windows",
+      "path": "capture_windows/{id}",
+      "relations": [
+        {
+          "field": "period_id",
+          "references": "periods/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "opens_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "closes_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "groups",
+      "path": "groups/{id}",
+      "relations": [
+        {
+          "field": "period_id",
+          "references": "periods/{id}",
+          "required": true
+        },
+        {
+          "field": "campus_id",
+          "references": "campuses/{id}",
+          "required": true
+        },
+        {
+          "field": "semester_id",
+          "references": "curriculum_semesters/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": true,
+          "ref": "campuses"
+        },
+        {
+          "name": "semester_id",
+          "type": "text",
+          "required": false,
+          "ref": "curriculum_semesters"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "capacity",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "course_offerings",
+      "path": "course_offerings/{id}",
+      "relations": [
+        {
+          "field": "group_id",
+          "references": "groups/{id}",
+          "required": true
+        },
+        {
+          "field": "subject_id",
+          "references": "subjects/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "group_id",
+          "type": "text",
+          "required": true,
+          "ref": "groups"
+        },
+        {
+          "name": "subject_id",
+          "type": "text",
+          "required": true,
+          "ref": "subjects"
+        }
+      ]
+    },
+    {
+      "collection": "teaching_assignments",
+      "path": "teaching_assignments/{id}",
+      "relations": [
+        {
+          "field": "offering_id",
+          "references": "course_offerings/{id}",
+          "required": true
+        },
+        {
+          "field": "teacher_id",
+          "references": "teachers/{id}",
+          "required": true
+        },
+        {
+          "field": "previous_id",
+          "references": "teaching_assignments/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "offering_id",
+          "type": "text",
+          "required": true,
+          "ref": "course_offerings"
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "previous_id",
+          "type": "text",
+          "required": false,
+          "ref": "teaching_assignments"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "students",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "change_reason",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "users",
+      "path": "users/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "auth_uid",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "employee_number",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "first_name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "second_last_name",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "email",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "employee_history",
+      "path": "employee_history/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "employee_number",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "degrees",
+      "path": "degrees/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "program",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "institution",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "obtained_on",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "license",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "official",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "maximum",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "teacher_categories",
+      "path": "teacher_categories/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "researcher",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "teachers",
+      "path": "teachers/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        },
+        {
+          "field": "category_id",
+          "references": "teacher_categories/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "category_id",
+          "type": "text",
+          "required": true,
+          "ref": "teacher_categories"
+        },
+        {
+          "name": "joined_on",
+          "type": "date",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "affiliations",
+      "path": "affiliations/{id}",
+      "relations": [
+        {
+          "field": "teacher_id",
+          "references": "teachers/{id}",
+          "required": true
+        },
+        {
+          "field": "career_id",
+          "references": "careers/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "distinctions",
+      "path": "distinctions/{id}",
+      "relations": [
+        {
+          "field": "teacher_id",
+          "references": "teachers/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "roles",
+      "path": "roles/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "permissions",
+      "path": "permissions/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "resource",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "action",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "role_permissions",
+      "path": "role_permissions/{id}",
+      "relations": [
+        {
+          "field": "role_id",
+          "references": "roles/{id}",
+          "required": true
+        },
+        {
+          "field": "permission_id",
+          "references": "permissions/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "role_id",
+          "type": "text",
+          "required": true,
+          "ref": "roles"
+        },
+        {
+          "name": "permission_id",
+          "type": "text",
+          "required": true,
+          "ref": "permissions"
+        }
+      ]
+    },
+    {
+      "collection": "role_assignments",
+      "path": "role_assignments/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        },
+        {
+          "field": "role_id",
+          "references": "roles/{id}",
+          "required": true
+        },
+        {
+          "field": "campus_id",
+          "references": "campuses/{id}",
+          "required": false
+        },
+        {
+          "field": "career_id",
+          "references": "careers/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "role_id",
+          "type": "text",
+          "required": true,
+          "ref": "roles"
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": false,
+          "ref": "campuses"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": false,
+          "ref": "careers"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "approval_delegations",
+      "path": "approval_delegations/{id}",
+      "relations": [
+        {
+          "field": "career_id",
+          "references": "careers/{id}",
+          "required": true
+        },
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        },
+        {
+          "field": "assigned_by",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "assigned_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "reason",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "audit_events",
+      "path": "audit_events/{id}",
+      "relations": [
+        {
+          "field": "actor_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "action",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "entity",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "before",
+          "type": "jsonb",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "after",
+          "type": "jsonb",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "notifications",
+      "path": "notifications/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        },
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": false,
+          "ref": "documents"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "read_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "rubrics",
+      "path": "rubrics/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "axis",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activities",
+      "path": "activities/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activity_classifications",
+      "path": "activity_classifications/{id}",
+      "relations": [
+        {
+          "field": "activity_id",
+          "references": "activities/{id}",
+          "required": true
+        },
+        {
+          "field": "rubric_id",
+          "references": "rubrics/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "field_definitions",
+      "path": "field_definitions/{id}",
+      "relations": [
+        {
+          "field": "activity_id",
+          "references": "activities/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "constraints",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "comparison_key",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "field_options",
+      "path": "field_options/{id}",
+      "relations": [
+        {
+          "field": "field_id",
+          "references": "field_definitions/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "field_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_definitions"
+        },
+        {
+          "name": "value",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "evidence_types",
+      "path": "evidence_types/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "mime_types",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "max_bytes",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activity_evidence_types",
+      "path": "activity_evidence_types/{id}",
+      "relations": [
+        {
+          "field": "activity_id",
+          "references": "activities/{id}",
+          "required": true
+        },
+        {
+          "field": "evidence_type_id",
+          "references": "evidence_types/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "evidence_type_id",
+          "type": "text",
+          "required": true,
+          "ref": "evidence_types"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "catalog_versions",
+      "path": "catalog_versions/{id}",
+      "relations": [
+        {
+          "field": "period_id",
+          "references": "periods/{id}",
+          "required": true
+        },
+        {
+          "field": "published_by",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "published_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "published_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "rubric_configuration",
+      "path": "rubric_configuration/{id}",
+      "relations": [
+        {
+          "field": "catalog_id",
+          "references": "catalog_versions/{id}",
+          "required": true
+        },
+        {
+          "field": "rubric_id",
+          "references": "rubrics/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": true,
+          "ref": "catalog_versions"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "in_plan",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "in_report",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activity_configuration",
+      "path": "activity_configuration/{id}",
+      "relations": [
+        {
+          "field": "configuration_id",
+          "references": "rubric_configuration/{id}",
+          "required": true
+        },
+        {
+          "field": "activity_id",
+          "references": "activities/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "configuration_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubric_configuration"
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "calculation",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "projects",
+      "path": "projects/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "funding",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "documents",
+      "path": "documents/{id}",
+      "relations": [
+        {
+          "field": "teacher_id",
+          "references": "teachers/{id}",
+          "required": true
+        },
+        {
+          "field": "period_id",
+          "references": "periods/{id}",
+          "required": true
+        },
+        {
+          "field": "career_id",
+          "references": "careers/{id}",
+          "required": true
+        },
+        {
+          "field": "catalog_id",
+          "references": "catalog_versions/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": true,
+          "ref": "catalog_versions"
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "submitted_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "approved_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "work_plans",
+      "path": "work_plans/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "submitted_version",
+          "type": "integer",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activity_reports",
+      "path": "activity_reports/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "plan_document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "plan_version_id",
+          "references": "document_versions/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "plan_document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "plan_version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "current_section",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "document_sections",
+      "path": "document_sections/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "rubric_id",
+          "references": "rubrics/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "confirmed_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "activity_records",
+      "path": "activity_records/{id}",
+      "relations": [
+        {
+          "field": "section_id",
+          "references": "document_sections/{id}",
+          "required": true
+        },
+        {
+          "field": "activity_id",
+          "references": "activities/{id}",
+          "required": true
+        },
+        {
+          "field": "project_id",
+          "references": "projects/{id}",
+          "required": false
+        },
+        {
+          "field": "origin_id",
+          "references": "activity_records/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "section_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_sections"
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "project_id",
+          "type": "text",
+          "required": false,
+          "ref": "projects"
+        },
+        {
+          "name": "origin_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "values",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "field_values",
+      "path": "field_values/{id}",
+      "relations": [
+        {
+          "field": "record_id",
+          "references": "activity_records/{id}",
+          "required": true
+        },
+        {
+          "field": "field_id",
+          "references": "field_definitions/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": true,
+          "ref": "activity_records"
+        },
+        {
+          "name": "field_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_definitions"
+        },
+        {
+          "name": "value",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "selected_options",
+      "path": "selected_options/{id}",
+      "relations": [
+        {
+          "field": "value_id",
+          "references": "field_values/{id}",
+          "required": true
+        },
+        {
+          "field": "option_id",
+          "references": "field_options/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "value_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_values"
+        },
+        {
+          "name": "option_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_options"
+        }
+      ]
+    },
+    {
+      "collection": "course_results",
+      "path": "course_results/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "assignment_id",
+          "references": "teaching_assignments/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "assignment_id",
+          "type": "text",
+          "required": true,
+          "ref": "teaching_assignments"
+        },
+        {
+          "name": "enrolled",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "passed",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "justification",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "evidence",
+      "path": "evidence/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "record_id",
+          "references": "activity_records/{id}",
+          "required": false
+        },
+        {
+          "field": "type_id",
+          "references": "evidence_types/{id}",
+          "required": true
+        },
+        {
+          "field": "uploaded_by",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "type_id",
+          "type": "text",
+          "required": true,
+          "ref": "evidence_types"
+        },
+        {
+          "name": "uploaded_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "filename",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "mime",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "bytes",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "sha256",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "storage_path",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "uploaded_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "document_versions",
+      "path": "document_versions/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "actor_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "number",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "event",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "digest",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "reviews",
+      "path": "reviews/{id}",
+      "relations": [
+        {
+          "field": "document_id",
+          "references": "documents/{id}",
+          "required": true
+        },
+        {
+          "field": "version_id",
+          "references": "document_versions/{id}",
+          "required": true
+        },
+        {
+          "field": "reviewer_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "reviewer_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "result",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "comment",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "review_visits",
+      "path": "review_visits/{id}",
+      "relations": [
+        {
+          "field": "version_id",
+          "references": "document_versions/{id}",
+          "required": true
+        },
+        {
+          "field": "reviewer_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "reviewer_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "section_key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "observations",
+      "path": "observations/{id}",
+      "relations": [
+        {
+          "field": "review_id",
+          "references": "reviews/{id}",
+          "required": true
+        },
+        {
+          "field": "record_id",
+          "references": "activity_records/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "review_id",
+          "type": "text",
+          "required": true,
+          "ref": "reviews"
+        },
+        {
+          "name": "section_key",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "text",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "resolved_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "idempotency_keys",
+      "path": "idempotency_keys/{id}",
+      "relations": [
+        {
+          "field": "actor_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "request_key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "request_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "response",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "indicators",
+      "path": "indicators/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "handler",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "confidentiality",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "panels",
+      "path": "panels/{id}",
+      "relations": [
+        {
+          "field": "owner_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "owner_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "default_panel",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "panel_indicators",
+      "path": "panel_indicators/{id}",
+      "relations": [
+        {
+          "field": "panel_id",
+          "references": "panels/{id}",
+          "required": true
+        },
+        {
+          "field": "indicator_id",
+          "references": "indicators/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "panel_id",
+          "type": "text",
+          "required": true,
+          "ref": "panels"
+        },
+        {
+          "name": "indicator_id",
+          "type": "text",
+          "required": true,
+          "ref": "indicators"
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "filters",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "credentials",
+      "path": "credentials/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "password_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "must_change",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "sessions",
+      "path": "sessions/{id}",
+      "relations": [
+        {
+          "field": "user_id",
+          "references": "users/{id}",
+          "required": true
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "token_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "expires_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revoked_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "change_requests",
+      "path": "change_requests/{id}",
+      "relations": [
+        {
+          "field": "requested_by",
+          "references": "users/{id}",
+          "required": true
+        },
+        {
+          "field": "authorized_by",
+          "references": "users/{id}",
+          "required": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "requested_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "authorized_by",
+          "type": "text",
+          "required": false,
+          "ref": "users"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "effective_on",
+          "type": "date",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ]
+    },
+    {
+      "collection": "system_settings",
+      "path": "system_settings/{id}",
+      "relations": [],
+      "fields": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ]
+    }
+  ],
+  "storage": "evidence/{documentId}/{evidenceId}",
+  "serverOnly": true
+}

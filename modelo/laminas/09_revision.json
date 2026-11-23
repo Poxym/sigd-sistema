@@ -1,0 +1,5589 @@
+{
+  "name": "09_revision",
+  "directed": true,
+  "strict": false,
+  "_draw_": [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [
+        [
+          -28.8,
+          -28.8
+        ],
+        [
+          -28.8,
+          622.8
+        ],
+        [
+          731.23,
+          622.8
+        ],
+        [
+          731.23,
+          -28.8
+        ]
+      ]
+    }
+  ],
+  "_ldraw_": [
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        570.2
+      ],
+      "align": "l",
+      "width": 464.25,
+      "text": "SIGD  |  Revisión de versiones y observaciones"
+    },
+    {
+      "op": "F",
+      "size": 22,
+      "face": "Arial"
+    },
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#173847"
+    },
+    {
+      "op": "T",
+      "pt": [
+        8,
+        543.8
+      ],
+      "align": "l",
+      "width": 454.88,
+      "text": "Modelo relacional / PK · FK · UQ · ? opcional"
+    }
+  ],
+  "bb": "0,0,702.43,594",
+  "bgcolor": "white",
+  "concentrate": "false",
+  "fontcolor": "#173847",
+  "fontname": "Arial",
+  "fontsize": "22",
+  "label": "SIGD  |  Revisión de versiones y observaciones\\lModelo relacional / PK · FK · UQ · ? opcional\\l",
+  "labeljust": "l",
+  "labelloc": "t",
+  "lheight": "0.73",
+  "lp": "240.12,563.6",
+  "lwidth": "6.45",
+  "nodesep": "0.45",
+  "outputorder": "edgesfirst",
+  "pad": "0.4",
+  "rankdir": "LR",
+  "ranksep": "0.85",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "reviews",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              438.43,
+              287.8
+            ],
+            [
+              438.43,
+              287.8
+            ],
+            [
+              271.43,
+              287.8
+            ],
+            [
+              271.43,
+              287.8
+            ],
+            [
+              265.43,
+              287.8
+            ],
+            [
+              259.43,
+              281.8
+            ],
+            [
+              259.43,
+              275.8
+            ],
+            [
+              259.43,
+              275.8
+            ],
+            [
+              259.43,
+              108.4
+            ],
+            [
+              259.43,
+              108.4
+            ],
+            [
+              259.43,
+              102.4
+            ],
+            [
+              265.43,
+              96.4
+            ],
+            [
+              271.43,
+              96.4
+            ],
+            [
+              271.43,
+              96.4
+            ],
+            [
+              438.43,
+              96.4
+            ],
+            [
+              438.43,
+              96.4
+            ],
+            [
+              444.43,
+              96.4
+            ],
+            [
+              450.43,
+              102.4
+            ],
+            [
+              450.43,
+              108.4
+            ],
+            [
+              450.43,
+              108.4
+            ],
+            [
+              450.43,
+              275.8
+            ],
+            [
+              450.43,
+              275.8
+            ],
+            [
+              450.43,
+              281.8
+            ],
+            [
+              444.43,
+              287.8
+            ],
+            [
+              438.43,
+              287.8
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              259.43,
+              96.4
+            ],
+            [
+              259.43,
+              287.8
+            ],
+            [
+              450.43,
+              287.8
+            ],
+            [
+              450.43,
+              96.4
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              259.43,
+              244.8
+            ],
+            [
+              259.43,
+              287.8
+            ],
+            [
+              450.43,
+              287.8
+            ],
+            [
+              450.43,
+              244.8
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            294.23,
+            267.1
+          ],
+          "align": "l",
+          "width": 121.39,
+          "text": "Revisión de versión"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            337.98,
+            256.8
+          ],
+          "align": "l",
+          "width": 33.9,
+          "text": "reviews"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            232.5
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            229.8
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            230.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            211.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            208.6
+          ],
+          "align": "l",
+          "width": 62.99,
+          "text": "document_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            209.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            190.1
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            187.4
+          ],
+          "align": "l",
+          "width": 50.14,
+          "text": "version_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            188.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            168.9
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            166.2
+          ],
+          "align": "l",
+          "width": 56.25,
+          "text": "reviewer_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            167
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            147.7
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            145
+          ],
+          "align": "l",
+          "width": 26.9,
+          "text": "result"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            145.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            126.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            123.8
+          ],
+          "align": "l",
+          "width": 45.24,
+          "text": "comment"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            124.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            105.3
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            102.6
+          ],
+          "align": "l",
+          "width": 9.17,
+          "text": "at"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            103.4
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.6583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Revisión de versión</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">reviews</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"document_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">document_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"version_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">version_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"reviewer_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">reviewer_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"result\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">result</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"comment\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">comment</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">at</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "354.93,192.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 1,
+      "name": "review_visits",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              438.43,
+              523
+            ],
+            [
+              438.43,
+              523
+            ],
+            [
+              271.43,
+              523
+            ],
+            [
+              271.43,
+              523
+            ],
+            [
+              265.43,
+              523
+            ],
+            [
+              259.43,
+              517
+            ],
+            [
+              259.43,
+              511
+            ],
+            [
+              259.43,
+              511
+            ],
+            [
+              259.43,
+              365.2
+            ],
+            [
+              259.43,
+              365.2
+            ],
+            [
+              259.43,
+              359.2
+            ],
+            [
+              265.43,
+              353.2
+            ],
+            [
+              271.43,
+              353.2
+            ],
+            [
+              271.43,
+              353.2
+            ],
+            [
+              438.43,
+              353.2
+            ],
+            [
+              438.43,
+              353.2
+            ],
+            [
+              444.43,
+              353.2
+            ],
+            [
+              450.43,
+              359.2
+            ],
+            [
+              450.43,
+              365.2
+            ],
+            [
+              450.43,
+              365.2
+            ],
+            [
+              450.43,
+              511
+            ],
+            [
+              450.43,
+              511
+            ],
+            [
+              450.43,
+              517
+            ],
+            [
+              444.43,
+              523
+            ],
+            [
+              438.43,
+              523
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              259.43,
+              353.2
+            ],
+            [
+              259.43,
+              523
+            ],
+            [
+              450.43,
+              523
+            ],
+            [
+              450.43,
+              353.2
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              259.43,
+              480
+            ],
+            [
+              259.43,
+              523
+            ],
+            [
+              450.43,
+              523
+            ],
+            [
+              450.43,
+              480
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            302.17,
+            502.3
+          ],
+          "align": "l",
+          "width": 105.51,
+          "text": "Sección revisada"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            326.59,
+            492
+          ],
+          "align": "l",
+          "width": 56.68,
+          "text": "review_visits"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            467.7
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            465
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            465.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            446.5
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            443.8
+          ],
+          "align": "l",
+          "width": 50.14,
+          "text": "version_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            444.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            425.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            422.6
+          ],
+          "align": "l",
+          "width": 56.25,
+          "text": "reviewer_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            423.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            404.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            401.4
+          ],
+          "align": "l",
+          "width": 58.09,
+          "text": "section_key"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            402.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            263.43,
+            382.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            291.43,
+            380.2
+          ],
+          "align": "l",
+          "width": 9.17,
+          "text": "at"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            396.43,
+            381
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0f5f7"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              259.43,
+              353.2
+            ],
+            [
+              259.43,
+              374
+            ],
+            [
+              450.43,
+              374
+            ],
+            [
+              450.43,
+              353.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526b7a"
+        },
+        {
+          "op": "T",
+          "pt": [
+            264.43,
+            360
+          ],
+          "align": "l",
+          "width": 166.57,
+          "text": "UQ (version_id, reviewer_id, section_key)"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.3583",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Sección revisada</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">review_visits</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"version_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">version_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"reviewer_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">reviewer_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"section_key\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">section_key</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">at</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR><TR><TD ALIGN=\"LEFT\" CELLPADDING=\"5\" BGCOLOR=\"#F0F5F7\"><FONT COLOR=\"#526B7A\" POINT-SIZE=\"9\">UQ (version_id, reviewer_id, section_key)</FONT></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "354.93,438.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 2,
+      "name": "observations",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              690.43,
+              217.2
+            ],
+            [
+              690.43,
+              217.2
+            ],
+            [
+              523.43,
+              217.2
+            ],
+            [
+              523.43,
+              217.2
+            ],
+            [
+              517.43,
+              217.2
+            ],
+            [
+              511.43,
+              211.2
+            ],
+            [
+              511.43,
+              205.2
+            ],
+            [
+              511.43,
+              205.2
+            ],
+            [
+              511.43,
+              59
+            ],
+            [
+              511.43,
+              59
+            ],
+            [
+              511.43,
+              53
+            ],
+            [
+              517.43,
+              47
+            ],
+            [
+              523.43,
+              47
+            ],
+            [
+              523.43,
+              47
+            ],
+            [
+              690.43,
+              47
+            ],
+            [
+              690.43,
+              47
+            ],
+            [
+              696.43,
+              47
+            ],
+            [
+              702.43,
+              53
+            ],
+            [
+              702.43,
+              59
+            ],
+            [
+              702.43,
+              59
+            ],
+            [
+              702.43,
+              205.2
+            ],
+            [
+              702.43,
+              205.2
+            ],
+            [
+              702.43,
+              211.2
+            ],
+            [
+              696.43,
+              217.2
+            ],
+            [
+              690.43,
+              217.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              511.43,
+              47
+            ],
+            [
+              511.43,
+              217.2
+            ],
+            [
+              702.43,
+              217.2
+            ],
+            [
+              702.43,
+              47
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              511.43,
+              174.2
+            ],
+            [
+              511.43,
+              217.2
+            ],
+            [
+              702.43,
+              217.2
+            ],
+            [
+              702.43,
+              174.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            567.91,
+            196.5
+          ],
+          "align": "l",
+          "width": 78.04,
+          "text": "Observación"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            578.58,
+            186.2
+          ],
+          "align": "l",
+          "width": 56.7,
+          "text": "observations"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            161.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            159.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            160
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            140.7
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            138
+          ],
+          "align": "l",
+          "width": 46.47,
+          "text": "review_id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            138.8
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            119.5
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            116.8
+          ],
+          "align": "l",
+          "width": 67.26,
+          "text": "section_key ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            117.6
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            98.3
+          ],
+          "align": "l",
+          "width": 12,
+          "text": "FK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            95.6
+          ],
+          "align": "l",
+          "width": 55.03,
+          "text": "record_id ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            96.4
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            77.1
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            74.4
+          ],
+          "align": "l",
+          "width": 17.73,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            75.2
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            515.43,
+            55.9
+          ],
+          "align": "l",
+          "width": 5,
+          "text": " "
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            543.43,
+            53.2
+          ],
+          "align": "l",
+          "width": 66.04,
+          "text": "resolved_at ?"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            648.43,
+            54
+          ],
+          "align": "l",
+          "width": 48.51,
+          "text": "timestamptz"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "2.3639",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#FFFFFF\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#285C76\" CELLPADDING=\"10\"><FONT COLOR=\"white\" POINT-SIZE=\"13\"><B>Observación</B></FONT><BR/><FONT COLOR=\"white\" POINT-SIZE=\"10\">observations</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"review_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">review_id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"section_key\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">section_key ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"record_id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>FK</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">record_id ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"text\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">text</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR><TR><TD PORT=\"resolved_at\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>&#160;</B></FONT></TD><TD WIDTH=\"105\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">resolved_at ?</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">timestamptz</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "606.93,132.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.6528"
+    },
+    {
+      "_gvid": 3,
+      "name": "documents__reviews",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              175.21,
+              341.2
+            ],
+            [
+              175.21,
+              341.2
+            ],
+            [
+              23.21,
+              341.2
+            ],
+            [
+              23.21,
+              341.2
+            ],
+            [
+              17.21,
+              341.2
+            ],
+            [
+              11.21,
+              335.2
+            ],
+            [
+              11.21,
+              329.2
+            ],
+            [
+              11.21,
+              329.2
+            ],
+            [
+              11.21,
+              289
+            ],
+            [
+              11.21,
+              289
+            ],
+            [
+              11.21,
+              283
+            ],
+            [
+              17.21,
+              277
+            ],
+            [
+              23.21,
+              277
+            ],
+            [
+              23.21,
+              277
+            ],
+            [
+              175.21,
+              277
+            ],
+            [
+              175.21,
+              277
+            ],
+            [
+              181.21,
+              277
+            ],
+            [
+              187.21,
+              283
+            ],
+            [
+              187.21,
+              289
+            ],
+            [
+              187.21,
+              289
+            ],
+            [
+              187.21,
+              329.2
+            ],
+            [
+              187.21,
+              329.2
+            ],
+            [
+              187.21,
+              335.2
+            ],
+            [
+              181.21,
+              341.2
+            ],
+            [
+              175.21,
+              341.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              277
+            ],
+            [
+              11.21,
+              341.2
+            ],
+            [
+              187.21,
+              341.2
+            ],
+            [
+              187.21,
+              277
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              298.2
+            ],
+            [
+              11.21,
+              341.2
+            ],
+            [
+              187.21,
+              341.2
+            ],
+            [
+              187.21,
+              298.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            36.74,
+            320.5
+          ],
+          "align": "l",
+          "width": 124.95,
+          "text": "Documento docente"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            28.9,
+            310.2
+          ],
+          "align": "l",
+          "width": 140.63,
+          "text": "documents · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            15.21,
+            285.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            43.21,
+            283.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            133.21,
+            284
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Documento docente</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">documents · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "99.214,309.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 4,
+      "name": "document_versions__reviews",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              186.43,
+              245.2
+            ],
+            [
+              186.43,
+              245.2
+            ],
+            [
+              12,
+              245.2
+            ],
+            [
+              12,
+              245.2
+            ],
+            [
+              6,
+              245.2
+            ],
+            [
+              0,
+              239.2
+            ],
+            [
+              0,
+              233.2
+            ],
+            [
+              0,
+              233.2
+            ],
+            [
+              0,
+              193
+            ],
+            [
+              0,
+              193
+            ],
+            [
+              0,
+              187
+            ],
+            [
+              6,
+              181
+            ],
+            [
+              12,
+              181
+            ],
+            [
+              12,
+              181
+            ],
+            [
+              186.43,
+              181
+            ],
+            [
+              186.43,
+              181
+            ],
+            [
+              192.43,
+              181
+            ],
+            [
+              198.43,
+              187
+            ],
+            [
+              198.43,
+              193
+            ],
+            [
+              198.43,
+              193
+            ],
+            [
+              198.43,
+              233.2
+            ],
+            [
+              198.43,
+              233.2
+            ],
+            [
+              198.43,
+              239.2
+            ],
+            [
+              192.43,
+              245.2
+            ],
+            [
+              186.43,
+              245.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              181
+            ],
+            [
+              0,
+              245.2
+            ],
+            [
+              198.43,
+              245.2
+            ],
+            [
+              198.43,
+              181
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              202.2
+            ],
+            [
+              0,
+              245.2
+            ],
+            [
+              198.43,
+              245.2
+            ],
+            [
+              198.43,
+              202.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            43.23,
+            224.5
+          ],
+          "align": "l",
+          "width": 111.97,
+          "text": "Versión inmutable"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            10,
+            214.2
+          ],
+          "align": "l",
+          "width": 178.43,
+          "text": "document_versions · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            189.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            39.48,
+            187.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            136.95,
+            188
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Versión inmutable</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">document_versions · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "99.214,213.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.7559"
+    },
+    {
+      "_gvid": 5,
+      "name": "users__reviews",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              175.21,
+              149.2
+            ],
+            [
+              175.21,
+              149.2
+            ],
+            [
+              23.21,
+              149.2
+            ],
+            [
+              23.21,
+              149.2
+            ],
+            [
+              17.21,
+              149.2
+            ],
+            [
+              11.21,
+              143.2
+            ],
+            [
+              11.21,
+              137.2
+            ],
+            [
+              11.21,
+              137.2
+            ],
+            [
+              11.21,
+              97
+            ],
+            [
+              11.21,
+              97
+            ],
+            [
+              11.21,
+              91
+            ],
+            [
+              17.21,
+              85
+            ],
+            [
+              23.21,
+              85
+            ],
+            [
+              23.21,
+              85
+            ],
+            [
+              175.21,
+              85
+            ],
+            [
+              175.21,
+              85
+            ],
+            [
+              181.21,
+              85
+            ],
+            [
+              187.21,
+              91
+            ],
+            [
+              187.21,
+              97
+            ],
+            [
+              187.21,
+              97
+            ],
+            [
+              187.21,
+              137.2
+            ],
+            [
+              187.21,
+              137.2
+            ],
+            [
+              187.21,
+              143.2
+            ],
+            [
+              181.21,
+              149.2
+            ],
+            [
+              175.21,
+              149.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              85
+            ],
+            [
+              11.21,
+              149.2
+            ],
+            [
+              187.21,
+              149.2
+            ],
+            [
+              187.21,
+              85
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              106.2
+            ],
+            [
+              11.21,
+              149.2
+            ],
+            [
+              187.21,
+              149.2
+            ],
+            [
+              187.21,
+              106.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            75.01,
+            128.5
+          ],
+          "align": "l",
+          "width": 48.4,
+          "text": "Usuario"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            41.13,
+            118.2
+          ],
+          "align": "l",
+          "width": 116.17,
+          "text": "users · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            15.21,
+            93.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            43.21,
+            91.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            133.21,
+            92
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Usuario</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">users · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "99.214,117.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 6,
+      "name": "document_versions__review_visits",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              186.43,
+              533.2
+            ],
+            [
+              186.43,
+              533.2
+            ],
+            [
+              12,
+              533.2
+            ],
+            [
+              12,
+              533.2
+            ],
+            [
+              6,
+              533.2
+            ],
+            [
+              0,
+              527.2
+            ],
+            [
+              0,
+              521.2
+            ],
+            [
+              0,
+              521.2
+            ],
+            [
+              0,
+              481
+            ],
+            [
+              0,
+              481
+            ],
+            [
+              0,
+              475
+            ],
+            [
+              6,
+              469
+            ],
+            [
+              12,
+              469
+            ],
+            [
+              12,
+              469
+            ],
+            [
+              186.43,
+              469
+            ],
+            [
+              186.43,
+              469
+            ],
+            [
+              192.43,
+              469
+            ],
+            [
+              198.43,
+              475
+            ],
+            [
+              198.43,
+              481
+            ],
+            [
+              198.43,
+              481
+            ],
+            [
+              198.43,
+              521.2
+            ],
+            [
+              198.43,
+              521.2
+            ],
+            [
+              198.43,
+              527.2
+            ],
+            [
+              192.43,
+              533.2
+            ],
+            [
+              186.43,
+              533.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              469
+            ],
+            [
+              0,
+              533.2
+            ],
+            [
+              198.43,
+              533.2
+            ],
+            [
+              198.43,
+              469
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              0,
+              490.2
+            ],
+            [
+              0,
+              533.2
+            ],
+            [
+              198.43,
+              533.2
+            ],
+            [
+              198.43,
+              490.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            43.23,
+            512.5
+          ],
+          "align": "l",
+          "width": 111.97,
+          "text": "Versión inmutable"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            10,
+            502.2
+          ],
+          "align": "l",
+          "width": 178.43,
+          "text": "document_versions · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            4,
+            477.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            39.48,
+            475.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            136.95,
+            476
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Versión inmutable</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">document_versions · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "99.214,501.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.7559"
+    },
+    {
+      "_gvid": 7,
+      "name": "users__review_visits",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              175.21,
+              437.2
+            ],
+            [
+              175.21,
+              437.2
+            ],
+            [
+              23.21,
+              437.2
+            ],
+            [
+              23.21,
+              437.2
+            ],
+            [
+              17.21,
+              437.2
+            ],
+            [
+              11.21,
+              431.2
+            ],
+            [
+              11.21,
+              425.2
+            ],
+            [
+              11.21,
+              425.2
+            ],
+            [
+              11.21,
+              385
+            ],
+            [
+              11.21,
+              385
+            ],
+            [
+              11.21,
+              379
+            ],
+            [
+              17.21,
+              373
+            ],
+            [
+              23.21,
+              373
+            ],
+            [
+              23.21,
+              373
+            ],
+            [
+              175.21,
+              373
+            ],
+            [
+              175.21,
+              373
+            ],
+            [
+              181.21,
+              373
+            ],
+            [
+              187.21,
+              379
+            ],
+            [
+              187.21,
+              385
+            ],
+            [
+              187.21,
+              385
+            ],
+            [
+              187.21,
+              425.2
+            ],
+            [
+              187.21,
+              425.2
+            ],
+            [
+              187.21,
+              431.2
+            ],
+            [
+              181.21,
+              437.2
+            ],
+            [
+              175.21,
+              437.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              373
+            ],
+            [
+              11.21,
+              437.2
+            ],
+            [
+              187.21,
+              437.2
+            ],
+            [
+              187.21,
+              373
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              11.21,
+              394.2
+            ],
+            [
+              11.21,
+              437.2
+            ],
+            [
+              187.21,
+              437.2
+            ],
+            [
+              187.21,
+              394.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            75.01,
+            416.5
+          ],
+          "align": "l",
+          "width": 48.4,
+          "text": "Usuario"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            41.13,
+            406.2
+          ],
+          "align": "l",
+          "width": 116.17,
+          "text": "users · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            15.21,
+            381.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            43.21,
+            379.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            133.21,
+            380
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Usuario</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">users · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "99.214,405.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.4444"
+    },
+    {
+      "_gvid": 8,
+      "name": "activity_records__observations",
+      "_draw_": [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#90a9b7"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              433.52,
+              64.2
+            ],
+            [
+              433.52,
+              64.2
+            ],
+            [
+              276.34,
+              64.2
+            ],
+            [
+              276.34,
+              64.2
+            ],
+            [
+              270.34,
+              64.2
+            ],
+            [
+              264.34,
+              58.2
+            ],
+            [
+              264.34,
+              52.2
+            ],
+            [
+              264.34,
+              52.2
+            ],
+            [
+              264.34,
+              12
+            ],
+            [
+              264.34,
+              12
+            ],
+            [
+              264.34,
+              6
+            ],
+            [
+              270.34,
+              0
+            ],
+            [
+              276.34,
+              0
+            ],
+            [
+              276.34,
+              0
+            ],
+            [
+              433.52,
+              0
+            ],
+            [
+              433.52,
+              0
+            ],
+            [
+              439.52,
+              0
+            ],
+            [
+              445.52,
+              6
+            ],
+            [
+              445.52,
+              12
+            ],
+            [
+              445.52,
+              12
+            ],
+            [
+              445.52,
+              52.2
+            ],
+            [
+              445.52,
+              52.2
+            ],
+            [
+              445.52,
+              58.2
+            ],
+            [
+              439.52,
+              64.2
+            ],
+            [
+              433.52,
+              64.2
+            ]
+          ]
+        }
+      ],
+      "_ldraw_": [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f7fafb"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              264.34,
+              0
+            ],
+            [
+              264.34,
+              64.2
+            ],
+            [
+              445.52,
+              64.2
+            ],
+            [
+              445.52,
+              0
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7eef2"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              264.34,
+              21.2
+            ],
+            [
+              264.34,
+              64.2
+            ],
+            [
+              445.52,
+              64.2
+            ],
+            [
+              445.52,
+              21.2
+            ]
+          ]
+        },
+        {
+          "op": "F",
+          "size": 13,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            289.19,
+            43.5
+          ],
+          "align": "l",
+          "width": 131.48,
+          "text": "Registro de actividad"
+        },
+        {
+          "op": "F",
+          "size": 10,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            274.34,
+            33.2
+          ],
+          "align": "l",
+          "width": 161.18,
+          "text": "activity_records · referencia externa"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#285c76"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [
+            268.34,
+            8.9
+          ],
+          "align": "l",
+          "width": 12.5,
+          "text": "PK"
+        },
+        {
+          "op": "F",
+          "size": 11,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [
+            298.06,
+            6.2
+          ],
+          "align": "l",
+          "width": 8.56,
+          "text": "id"
+        },
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#586d7c"
+        },
+        {
+          "op": "T",
+          "pt": [
+            389.79,
+            7
+          ],
+          "align": "l",
+          "width": 14.51,
+          "text": "text"
+        }
+      ],
+      "color": "#90A9B7",
+      "fontname": "Arial",
+      "fontsize": "11",
+      "height": "0.89167",
+      "label": "<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\" BGCOLOR=\"#F7FAFB\" COLOR=\"#90A9B7\"><TR><TD BGCOLOR=\"#E7EEF2\" CELLPADDING=\"10\"><FONT COLOR=\"#254657\" POINT-SIZE=\"13\"><B>Registro de actividad</B></FONT><BR/><FONT COLOR=\"#254657\" POINT-SIZE=\"10\">activity_records · referencia externa</FONT></TD></TR><TR><TD PORT=\"id\" CELLPADDING=\"0\"><TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD WIDTH=\"28\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#285C76\" POINT-SIZE=\"9\"><B>PK</B></FONT></TD><TD WIDTH=\"90\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT POINT-SIZE=\"11\">id</FONT></TD><TD WIDTH=\"58\" ALIGN=\"LEFT\" CELLPADDING=\"4\"><FONT COLOR=\"#586D7C\" POINT-SIZE=\"9\">text</FONT></TD></TR></TABLE></TD></TR></TABLE>",
+      "margin": "0",
+      "pos": "354.93,32.1",
+      "shape": "box",
+      "style": "rounded",
+      "width": "2.5164"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 1,
+      "tail": 3,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              190.27,
+              285.45
+            ],
+            [
+              199.94,
+              275.32
+            ],
+            [
+              241.02,
+              232.28
+            ],
+            [
+              254.86,
+              217.79
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              254.7,
+              217.96
+            ],
+            [
+              261.3,
+              215.27
+            ],
+            [
+              257.18,
+              215.35
+            ],
+            [
+              258.94,
+              213.51
+            ],
+            [
+              258.94,
+              213.51
+            ],
+            [
+              258.94,
+              213.51
+            ],
+            [
+              257.18,
+              215.35
+            ],
+            [
+              257.07,
+              211.23
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            247.69,
+            222.6
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              191.01,
+              289.37
+            ],
+            [
+              186.31,
+              284.89
+            ],
+            [
+              187.21,
+              283.95
+            ],
+            [
+              191.91,
+              288.43
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              188.21,
+              287.6
+            ],
+            [
+              190.46,
+              285.25
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            199.95,
+            272.6
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "247.69,225.3",
+      "headlabel": "0..N",
+      "headport": "document_id:w",
+      "id": "rel1",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,188.21,287.6 e,259.43,213 190.27,285.45 199.94,275.32 241.02,232.28 254.86,217.79",
+      "style": "dashed",
+      "tail_lp": "199.95,275.3",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "documents.id → reviews.document_id"
+    },
+    {
+      "_gvid": 2,
+      "tail": 4,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              201.37,
+              191.61
+            ],
+            [
+              210.6,
+              191.64
+            ],
+            [
+              239.18,
+              191.73
+            ],
+            [
+              252.49,
+              191.78
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              252.58,
+              191.78
+            ],
+            [
+              259.07,
+              194.72
+            ],
+            [
+              256.18,
+              191.79
+            ],
+            [
+              258.73,
+              191.8
+            ],
+            [
+              258.73,
+              191.8
+            ],
+            [
+              258.73,
+              191.8
+            ],
+            [
+              256.18,
+              191.79
+            ],
+            [
+              259.09,
+              188.87
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            242.43,
+            189.04
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              199.07,
+              194.85
+            ],
+            [
+              199.09,
+              188.35
+            ],
+            [
+              200.39,
+              188.36
+            ],
+            [
+              200.37,
+              194.86
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              198.43,
+              191.6
+            ],
+            [
+              201.68,
+              191.61
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            215.43,
+            188.96
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "242.43,191.74",
+      "headlabel": "0..N",
+      "headport": "version_id:w",
+      "id": "rel2",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,198.43,191.6 e,259.43,191.8 201.37,191.61 210.6,191.64 239.18,191.73 252.49,191.78",
+      "style": "dashed",
+      "tail_lp": "215.43,191.66",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "document_versions.id → reviews.version_id"
+    },
+    {
+      "_gvid": 3,
+      "tail": 5,
+      "head": 0,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              190.27,
+              97.76
+            ],
+            [
+              199.94,
+              107.95
+            ],
+            [
+              241.02,
+              151.21
+            ],
+            [
+              254.86,
+              165.79
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              254.71,
+              165.63
+            ],
+            [
+              257.06,
+              172.36
+            ],
+            [
+              257.19,
+              168.24
+            ],
+            [
+              258.94,
+              170.09
+            ],
+            [
+              258.94,
+              170.09
+            ],
+            [
+              258.94,
+              170.09
+            ],
+            [
+              257.19,
+              168.24
+            ],
+            [
+              261.31,
+              168.33
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            247.72,
+            155.57
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              186.3,
+              98.31
+            ],
+            [
+              191.02,
+              93.83
+            ],
+            [
+              191.91,
+              94.78
+            ],
+            [
+              187.2,
+              99.25
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              188.21,
+              95.6
+            ],
+            [
+              190.45,
+              97.96
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            199.92,
+            105.23
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "247.72,158.27",
+      "headlabel": "0..N",
+      "headport": "reviewer_id:w",
+      "id": "rel3",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,188.21,95.6 e,259.43,170.6 190.27,97.764 199.94,107.95 241.02,151.21 254.86,165.79",
+      "style": "dashed",
+      "tail_lp": "199.92,107.93",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "users.id → reviews.reviewer_id"
+    },
+    {
+      "_gvid": 4,
+      "tail": 6,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              201.05,
+              478.25
+            ],
+            [
+              210.17,
+              473.56
+            ],
+            [
+              240.67,
+              457.85
+            ],
+            [
+              253.58,
+              451.21
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              253.34,
+              451.34
+            ],
+            [
+              260.45,
+              450.96
+            ],
+            [
+              256.54,
+              449.69
+            ],
+            [
+              258.8,
+              448.52
+            ],
+            [
+              258.8,
+              448.52
+            ],
+            [
+              258.8,
+              448.52
+            ],
+            [
+              256.54,
+              449.69
+            ],
+            [
+              257.78,
+              445.76
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            244.31,
+            453.28
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              200.49,
+              482.19
+            ],
+            [
+              197.52,
+              476.41
+            ],
+            [
+              198.67,
+              475.82
+            ],
+            [
+              201.65,
+              481.6
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              198.43,
+              479.6
+            ],
+            [
+              201.32,
+              478.11
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            213.54,
+            469.12
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "244.31,455.98",
+      "headlabel": "0..N",
+      "headport": "version_id:w",
+      "id": "rel4",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,198.43,479.6 e,259.43,448.2 201.05,478.25 210.17,473.56 240.67,457.85 253.58,451.21",
+      "style": "dashed",
+      "tail_lp": "213.54,471.82",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "document_versions.id → review_visits.version_id"
+    },
+    {
+      "_gvid": 5,
+      "tail": 7,
+      "head": 1,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              190.92,
+              385.25
+            ],
+            [
+              201.39,
+              391.63
+            ],
+            [
+              239.37,
+              414.78
+            ],
+            [
+              253.81,
+              423.57
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              253.58,
+              423.43
+            ],
+            [
+              257.61,
+              429.31
+            ],
+            [
+              256.65,
+              425.31
+            ],
+            [
+              258.83,
+              426.63
+            ],
+            [
+              258.83,
+              426.63
+            ],
+            [
+              258.83,
+              426.63
+            ],
+            [
+              256.65,
+              425.31
+            ],
+            [
+              260.65,
+              424.32
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            244.91,
+            415.45
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              187.08,
+              386.71
+            ],
+            [
+              190.46,
+              381.16
+            ],
+            [
+              191.57,
+              381.84
+            ],
+            [
+              188.19,
+              387.39
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              188.21,
+              383.6
+            ],
+            [
+              190.99,
+              385.29
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            202.73,
+            389.75
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "244.91,418.15",
+      "headlabel": "0..N",
+      "headport": "reviewer_id:w",
+      "id": "rel5",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,188.21,383.6 e,259.43,427 190.92,385.25 201.39,391.63 239.37,414.78 253.81,423.57",
+      "style": "dashed",
+      "tail_lp": "202.73,392.45",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "users.id → review_visits.reviewer_id"
+    },
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              452.19,
+              231.55
+            ],
+            [
+              460.55,
+              218.97
+            ],
+            [
+              496.33,
+              165.12
+            ],
+            [
+              507.84,
+              147.8
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              507.64,
+              148.11
+            ],
+            [
+              513.67,
+              144.31
+            ],
+            [
+              509.63,
+              145.11
+            ],
+            [
+              511.04,
+              142.99
+            ],
+            [
+              511.04,
+              142.99
+            ],
+            [
+              511.04,
+              142.99
+            ],
+            [
+              509.63,
+              145.11
+            ],
+            [
+              508.8,
+              141.07
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            502.02,
+            153.86
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              453.49,
+              235.46
+            ],
+            [
+              448.08,
+              231.86
+            ],
+            [
+              448.8,
+              230.78
+            ],
+            [
+              454.21,
+              234.37
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#78929f"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              450.43,
+              234.2
+            ],
+            [
+              452.23,
+              231.49
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            459.84,
+            217.34
+          ],
+          "align": "c",
+          "width": 5.01,
+          "text": "1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#78929F",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "502.02,156.56",
+      "headlabel": "0..N",
+      "headport": "review_id:w",
+      "id": "rel6",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,450.43,234.2 e,511.43,142.4 452.19,231.55 460.55,218.97 496.33,165.12 507.84,147.8",
+      "tail_lp": "459.84,220.04",
+      "taillabel": "1",
+      "tailport": "id:e",
+      "tooltip": "reviews.id → observations.review_id"
+    },
+    {
+      "_gvid": 6,
+      "tail": 8,
+      "head": 2,
+      "_draw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "dashed"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "b",
+          "points": [
+            [
+              448.39,
+              13.18
+            ],
+            [
+              457.29,
+              25.43
+            ],
+            [
+              495.36,
+              77.87
+            ],
+            [
+              507.61,
+              94.75
+            ]
+          ]
+        }
+      ],
+      "_hdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              507.4,
+              94.46
+            ],
+            [
+              508.85,
+              101.43
+            ],
+            [
+              509.52,
+              97.37
+            ],
+            [
+              511.02,
+              99.43
+            ],
+            [
+              511.02,
+              99.43
+            ],
+            [
+              511.02,
+              99.43
+            ],
+            [
+              509.52,
+              97.37
+            ],
+            [
+              513.59,
+              98
+            ]
+          ]
+        }
+      ],
+      "_hldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            501.44,
+            83.54
+          ],
+          "align": "c",
+          "width": 16.51,
+          "text": "0..N"
+        }
+      ],
+      "_tdraw_": [
+        {
+          "op": "S",
+          "style": "setlinewidth(1.05)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "P",
+          "points": [
+            [
+              444.27,
+              13.04
+            ],
+            [
+              449.53,
+              9.22
+            ],
+            [
+              450.29,
+              10.27
+            ],
+            [
+              445.03,
+              14.09
+            ]
+          ]
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#8fa7b5"
+        },
+        {
+          "op": "L",
+          "points": [
+            [
+              446.52,
+              10.6
+            ],
+            [
+              448.43,
+              13.23
+            ]
+          ]
+        }
+      ],
+      "_tldraw_": [
+        {
+          "op": "F",
+          "size": 9,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#254657"
+        },
+        {
+          "op": "T",
+          "pt": [
+            456.51,
+            21.66
+          ],
+          "align": "c",
+          "width": 15.01,
+          "text": "0..1"
+        }
+      ],
+      "arrowhead": "crow",
+      "arrowsize": "0.65",
+      "arrowtail": "tee",
+      "color": "#8FA7B5",
+      "dir": "both",
+      "fontcolor": "#254657",
+      "fontname": "Arial",
+      "fontsize": "9",
+      "head_lp": "501.44,86.244",
+      "headlabel": "0..N",
+      "headport": "record_id:w",
+      "id": "rel7",
+      "label": "",
+      "labelangle": "0",
+      "labeldistance": "1.7",
+      "penwidth": "1.05",
+      "pos": "s,446.52,10.6 e,511.43,100 448.39,13.179 457.29,25.432 495.36,77.869 507.61,94.746",
+      "style": "dashed",
+      "tail_lp": "456.51,24.356",
+      "taillabel": "0..1",
+      "tailport": "id:e",
+      "tooltip": "activity_records.id → observations.record_id"
+    }
+  ]
+}

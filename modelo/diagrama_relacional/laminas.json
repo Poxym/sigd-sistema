@@ -1,0 +1,111 @@
+[
+  {
+    "id": "00_general",
+    "title": "SIGD · Modelo relacional general",
+    "subtitle": "58 tablas · 90 claves foráneas · vista de claves (PK/FK) agrupada por dominio",
+    "w": 4614,
+    "h": 1795,
+    "rels": 90,
+    "extChildren": []
+  },
+  {
+    "id": "01_estructura",
+    "title": "SIGD · Estructura académica",
+    "subtitle": "12 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 2276,
+    "h": 841,
+    "rels": 18,
+    "extChildren": [
+      "affiliations",
+      "role_assignments",
+      "approval_delegations",
+      "documents",
+      "course_results"
+    ]
+  },
+  {
+    "id": "02_identidad",
+    "title": "SIGD · Identidad docente",
+    "subtitle": "7 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 760,
+    "h": 847,
+    "rels": 7,
+    "extChildren": [
+      "study_plans",
+      "teaching_assignments",
+      "role_assignments",
+      "approval_delegations",
+      "audit_events",
+      "notifications",
+      "catalog_versions",
+      "documents",
+      "evidence",
+      "document_versions",
+      "reviews",
+      "review_visits",
+      "idempotency_keys",
+      "panels",
+      "credentials",
+      "sessions",
+      "change_requests"
+    ]
+  },
+  {
+    "id": "03_seguridad",
+    "title": "SIGD · Seguridad, roles y auditoría",
+    "subtitle": "9 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 619,
+    "h": 1537,
+    "rels": 14,
+    "extChildren": []
+  },
+  {
+    "id": "04_catalogos",
+    "title": "SIGD · Catálogos configurables por periodo",
+    "subtitle": "12 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 1131,
+    "h": 1277,
+    "rels": 14,
+    "extChildren": [
+      "documents",
+      "document_sections",
+      "activity_records",
+      "field_values",
+      "selected_options",
+      "evidence"
+    ]
+  },
+  {
+    "id": "05_documentos",
+    "title": "SIGD · Plan de trabajo, informe y evidencias",
+    "subtitle": "10 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 1839,
+    "h": 1234,
+    "rels": 24,
+    "extChildren": [
+      "notifications",
+      "reviews",
+      "observations"
+    ]
+  },
+  {
+    "id": "06_revision",
+    "title": "SIGD · Versionado y revisión",
+    "subtitle": "5 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 1211,
+    "h": 711,
+    "rels": 10,
+    "extChildren": [
+      "activity_reports"
+    ]
+  },
+  {
+    "id": "07_reportes",
+    "title": "SIGD · Indicadores y paneles",
+    "subtitle": "3 tablas del dominio (detalle completo) · en gris, tablas de otros dominios a las que se hace referencia",
+    "w": 709,
+    "h": 485,
+    "rels": 3,
+    "extChildren": []
+  }
+]

@@ -1,0 +1,2691 @@
+{
+  "version": 1,
+  "idPolicy": "string",
+  "tables": [
+    {
+      "name": "universities",
+      "label": "Universidad",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "campuses",
+      "label": "Campus",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "university_id",
+          "type": "text",
+          "required": true,
+          "ref": "universities"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "careers",
+      "label": "Carrera",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": true,
+          "ref": "campuses"
+        },
+        {
+          "name": "predecessor_id",
+          "type": "text",
+          "required": false,
+          "ref": "careers"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "study_plans",
+      "label": "Plan de estudio",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "created_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "semesters",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "registered_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "curriculum_semesters",
+      "label": "Semestre del plan",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "study_plan_id",
+          "type": "text",
+          "required": true,
+          "ref": "study_plans"
+        },
+        {
+          "name": "number",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "study_plan_id",
+          "number"
+        ]
+      ]
+    },
+    {
+      "name": "subjects",
+      "label": "Materia",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "credits",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "curriculum_subjects",
+      "label": "Asignatura del plan",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "semester_id",
+          "type": "text",
+          "required": true,
+          "ref": "curriculum_semesters"
+        },
+        {
+          "name": "subject_id",
+          "type": "text",
+          "required": true,
+          "ref": "subjects"
+        }
+      ],
+      "unique": [
+        [
+          "semester_id",
+          "subject_id"
+        ]
+      ]
+    },
+    {
+      "name": "periods",
+      "label": "Periodo académico",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "effective_weeks",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "nominal_weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "maximum_weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "enforce_maximum",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "rejection_threshold",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": false,
+          "ref": "catalog_versions"
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "capture_windows",
+      "label": "Periodo de captura",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "opens_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "closes_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "period_id",
+          "kind"
+        ]
+      ]
+    },
+    {
+      "name": "groups",
+      "label": "Grupo",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": true,
+          "ref": "campuses"
+        },
+        {
+          "name": "semester_id",
+          "type": "text",
+          "required": false,
+          "ref": "curriculum_semesters"
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "capacity",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "period_id",
+          "campus_id",
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "course_offerings",
+      "label": "Oferta grupo materia",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "group_id",
+          "type": "text",
+          "required": true,
+          "ref": "groups"
+        },
+        {
+          "name": "subject_id",
+          "type": "text",
+          "required": true,
+          "ref": "subjects"
+        }
+      ],
+      "unique": [
+        [
+          "group_id",
+          "subject_id"
+        ]
+      ]
+    },
+    {
+      "name": "teaching_assignments",
+      "label": "Asignación docente",
+      "group": "Estructura",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "offering_id",
+          "type": "text",
+          "required": true,
+          "ref": "course_offerings"
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "previous_id",
+          "type": "text",
+          "required": false,
+          "ref": "teaching_assignments"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "students",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "change_reason",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "users",
+      "label": "Usuario",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "auth_uid",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "employee_number",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "first_name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "second_last_name",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "email",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "employee_number"
+        ],
+        [
+          "email"
+        ],
+        [
+          "auth_uid"
+        ]
+      ]
+    },
+    {
+      "name": "employee_history",
+      "label": "Historial de número",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "employee_number",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "degrees",
+      "label": "Grado de estudios",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "program",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "institution",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "obtained_on",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "license",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "official",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "maximum",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "teacher_categories",
+      "label": "Categoría docente",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "researcher",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "teachers",
+      "label": "Docente",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "category_id",
+          "type": "text",
+          "required": true,
+          "ref": "teacher_categories"
+        },
+        {
+          "name": "joined_on",
+          "type": "date",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "user_id"
+        ]
+      ]
+    },
+    {
+      "name": "affiliations",
+      "label": "Adscripción docente",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "distinctions",
+      "label": "Distinción",
+      "group": "Identidad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "level",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "roles",
+      "label": "Rol",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "permissions",
+      "label": "Permiso",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "resource",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "action",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "resource",
+          "action"
+        ]
+      ]
+    },
+    {
+      "name": "role_permissions",
+      "label": "Rol permiso",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "role_id",
+          "type": "text",
+          "required": true,
+          "ref": "roles"
+        },
+        {
+          "name": "permission_id",
+          "type": "text",
+          "required": true,
+          "ref": "permissions"
+        }
+      ],
+      "unique": [
+        [
+          "role_id",
+          "permission_id"
+        ]
+      ]
+    },
+    {
+      "name": "role_assignments",
+      "label": "Asignación de rol",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "role_id",
+          "type": "text",
+          "required": true,
+          "ref": "roles"
+        },
+        {
+          "name": "campus_id",
+          "type": "text",
+          "required": false,
+          "ref": "campuses"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": false,
+          "ref": "careers"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "approval_delegations",
+      "label": "Delegación temporal",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "assigned_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "reason",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "audit_events",
+      "label": "Bitácora",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "action",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "entity",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "before",
+          "type": "jsonb",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "after",
+          "type": "jsonb",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "notifications",
+      "label": "Notificación",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": false,
+          "ref": "documents"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "read_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "rubrics",
+      "label": "Rubro académico",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "axis",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "activities",
+      "label": "Actividad académica",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "activity_classifications",
+      "label": "Clasificación vigente",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "field_definitions",
+      "label": "Definición de campo",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "type",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "constraints",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "comparison_key",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "activity_id",
+          "key"
+        ]
+      ]
+    },
+    {
+      "name": "field_options",
+      "label": "Opción de campo",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "field_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_definitions"
+        },
+        {
+          "name": "value",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "field_id",
+          "value"
+        ]
+      ]
+    },
+    {
+      "name": "evidence_types",
+      "label": "Tipo de evidencia",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "mime_types",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "max_bytes",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "activity_evidence_types",
+      "label": "Evidencia requerida",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "evidence_type_id",
+          "type": "text",
+          "required": true,
+          "ref": "evidence_types"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "activity_id",
+          "evidence_type_id"
+        ]
+      ]
+    },
+    {
+      "name": "catalog_versions",
+      "label": "Versión de catálogo",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "published_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "published_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "period_id",
+          "version"
+        ]
+      ]
+    },
+    {
+      "name": "rubric_configuration",
+      "label": "Configuración de rubro",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": true,
+          "ref": "catalog_versions"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "in_plan",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "in_report",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "catalog_id",
+          "rubric_id"
+        ]
+      ]
+    },
+    {
+      "name": "activity_configuration",
+      "label": "Configuración de actividad",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "configuration_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubric_configuration"
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "calculation",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "parameters",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "configuration_id",
+          "activity_id"
+        ]
+      ]
+    },
+    {
+      "name": "projects",
+      "label": "Proyecto",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "funding",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "start",
+          "type": "date",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "end",
+          "type": "date",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "documents",
+      "label": "Documento docente",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "teacher_id",
+          "type": "text",
+          "required": true,
+          "ref": "teachers"
+        },
+        {
+          "name": "period_id",
+          "type": "text",
+          "required": true,
+          "ref": "periods"
+        },
+        {
+          "name": "career_id",
+          "type": "text",
+          "required": true,
+          "ref": "careers"
+        },
+        {
+          "name": "catalog_id",
+          "type": "text",
+          "required": true,
+          "ref": "catalog_versions"
+        },
+        {
+          "name": "kind",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "version",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "submitted_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "approved_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "teacher_id",
+          "period_id",
+          "kind"
+        ]
+      ]
+    },
+    {
+      "name": "work_plans",
+      "label": "Plan de trabajo",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "submitted_version",
+          "type": "integer",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "document_id"
+        ]
+      ]
+    },
+    {
+      "name": "activity_reports",
+      "label": "Informe de actividades",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "plan_document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "plan_version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "current_section",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "document_id"
+        ]
+      ]
+    },
+    {
+      "name": "document_sections",
+      "label": "Sección del documento",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "rubric_id",
+          "type": "text",
+          "required": true,
+          "ref": "rubrics"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "confirmed_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "document_id",
+          "rubric_id"
+        ]
+      ]
+    },
+    {
+      "name": "activity_records",
+      "label": "Registro de actividad",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "section_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_sections"
+        },
+        {
+          "name": "activity_id",
+          "type": "text",
+          "required": true,
+          "ref": "activities"
+        },
+        {
+          "name": "project_id",
+          "type": "text",
+          "required": false,
+          "ref": "projects"
+        },
+        {
+          "name": "origin_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "weekly_minutes",
+          "type": "numeric",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "values",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "field_values",
+      "label": "Valor de campo",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": true,
+          "ref": "activity_records"
+        },
+        {
+          "name": "field_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_definitions"
+        },
+        {
+          "name": "value",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "record_id",
+          "field_id"
+        ]
+      ]
+    },
+    {
+      "name": "selected_options",
+      "label": "Selección múltiple",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "value_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_values"
+        },
+        {
+          "name": "option_id",
+          "type": "text",
+          "required": true,
+          "ref": "field_options"
+        }
+      ],
+      "unique": [
+        [
+          "value_id",
+          "option_id"
+        ]
+      ]
+    },
+    {
+      "name": "course_results",
+      "label": "Resultado de curso",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "assignment_id",
+          "type": "text",
+          "required": true,
+          "ref": "teaching_assignments"
+        },
+        {
+          "name": "enrolled",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "passed",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "justification",
+          "type": "text",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "document_id",
+          "assignment_id"
+        ]
+      ]
+    },
+    {
+      "name": "evidence",
+      "label": "Evidencia",
+      "group": "Documentos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "type_id",
+          "type": "text",
+          "required": true,
+          "ref": "evidence_types"
+        },
+        {
+          "name": "uploaded_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "filename",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "mime",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "bytes",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "sha256",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "storage_path",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "uploaded_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "document_versions",
+      "label": "Versión inmutable",
+      "group": "Revisión",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "number",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "event",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "digest",
+          "type": "text",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "document_id",
+          "number"
+        ]
+      ]
+    },
+    {
+      "name": "reviews",
+      "label": "Revisión de versión",
+      "group": "Revisión",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "document_id",
+          "type": "text",
+          "required": true,
+          "ref": "documents"
+        },
+        {
+          "name": "version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "reviewer_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "result",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "comment",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "review_visits",
+      "label": "Sección revisada",
+      "group": "Revisión",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "version_id",
+          "type": "text",
+          "required": true,
+          "ref": "document_versions"
+        },
+        {
+          "name": "reviewer_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "section_key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "version_id",
+          "reviewer_id",
+          "section_key"
+        ]
+      ]
+    },
+    {
+      "name": "observations",
+      "label": "Observación",
+      "group": "Revisión",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "review_id",
+          "type": "text",
+          "required": true,
+          "ref": "reviews"
+        },
+        {
+          "name": "section_key",
+          "type": "text",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "record_id",
+          "type": "text",
+          "required": false,
+          "ref": "activity_records"
+        },
+        {
+          "name": "text",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "resolved_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "idempotency_keys",
+      "label": "Solicitud idempotente",
+      "group": "Revisión",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "actor_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "request_key",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "request_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "response",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "actor_id",
+          "request_key"
+        ]
+      ]
+    },
+    {
+      "name": "indicators",
+      "label": "Indicador registrado",
+      "group": "Reportes",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "code",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "unit",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "handler",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "confidentiality",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "code"
+        ]
+      ]
+    },
+    {
+      "name": "panels",
+      "label": "Panel",
+      "group": "Reportes",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "owner_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "scope",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "default_panel",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "panel_indicators",
+      "label": "Indicador en panel",
+      "group": "Reportes",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "panel_id",
+          "type": "text",
+          "required": true,
+          "ref": "panels"
+        },
+        {
+          "name": "indicator_id",
+          "type": "text",
+          "required": true,
+          "ref": "indicators"
+        },
+        {
+          "name": "position",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "filters",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "panel_id",
+          "indicator_id"
+        ]
+      ]
+    },
+    {
+      "name": "credentials",
+      "label": "Credencial local",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "password_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "must_change",
+          "type": "boolean",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "user_id"
+        ]
+      ]
+    },
+    {
+      "name": "sessions",
+      "label": "Sesión",
+      "group": "Seguridad",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "user_id",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "token_hash",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "expires_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revoked_at",
+          "type": "timestamptz",
+          "required": false,
+          "ref": null
+        }
+      ],
+      "unique": [
+        [
+          "token_hash"
+        ]
+      ]
+    },
+    {
+      "name": "change_requests",
+      "label": "Solicitud de cambio",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "requested_by",
+          "type": "text",
+          "required": true,
+          "ref": "users"
+        },
+        {
+          "name": "authorized_by",
+          "type": "text",
+          "required": false,
+          "ref": "users"
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "effective_on",
+          "type": "date",
+          "required": false,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    },
+    {
+      "name": "system_settings",
+      "label": "Configuración del sistema",
+      "group": "Catálogos",
+      "columns": [
+        {
+          "name": "id",
+          "type": "text",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "revision",
+          "type": "integer",
+          "required": true,
+          "ref": null
+        },
+        {
+          "name": "content",
+          "type": "jsonb",
+          "required": true,
+          "ref": null
+        }
+      ],
+      "unique": []
+    }
+  ]
+}

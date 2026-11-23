@@ -1,0 +1,35 @@
+digraph "00_conceptual" {
+graph [rankdir=LR, bgcolor="white", fontname="Arial", fontsize=22, fontcolor="#173847", pad="0.4", nodesep="0.45", ranksep="0.85", splines=polyline, concentrate=false, outputorder=edgesfirst, labelloc=t, labeljust=l, label="SIGD  |  Vista conceptual del negocio\lModelo entidad-relación conceptual\l"];
+node [fontname="Arial", fontsize=11, color="#90A9B7"];
+edge [fontname="Arial", fontsize=9, color="#78929F", fontcolor="#254657", arrowsize=0.65, penwidth=1.05, dir=both, arrowtail=tee, arrowhead=crow];
+"users" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Usuario"];
+"teachers" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Docente"];
+"campuses" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Campus"];
+"careers" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Carrera"];
+"periods" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Periodo académico"];
+"catalog_versions" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Versión de catálogo"];
+"documents" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Documento docente"];
+"work_plans" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Plan de trabajo"];
+"activity_reports" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Informe de actividades"];
+"document_versions" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Versión inmutable"];
+"reviews" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Revisión de versión"];
+"document_sections" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Sección del documento"];
+"activity_records" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Registro de actividad"];
+"evidence" [shape=box, style="rounded,filled", margin=".2,.16", fillcolor="#F1F6F8", label="Evidencia"];
+"users" -> "teachers" [id="rel1", taillabel="1", headlabel="0..1", label="tiene perfil", labeldistance=1.7, labelangle=0, arrowhead=tee, tooltip="users.id → teachers.user_id"];
+"campuses" -> "careers" [id="rel2", taillabel="1", headlabel="0..N", label="pertenece a", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="campuses.id → careers.campus_id"];
+"periods" -> "catalog_versions" [id="rel3", taillabel="1", headlabel="0..N", label="publica para", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="periods.id → catalog_versions.period_id"];
+"teachers" -> "documents" [id="rel4", taillabel="1", headlabel="0..N", label="elabora", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="teachers.id → documents.teacher_id"];
+"periods" -> "documents" [id="rel5", taillabel="1", headlabel="0..N", label="corresponde a", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="periods.id → documents.period_id"];
+"careers" -> "documents" [id="rel6", taillabel="1", headlabel="0..N", label="se adscribe a", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="careers.id → documents.career_id"];
+"catalog_versions" -> "documents" [id="rel7", taillabel="1", headlabel="0..N", label="congela", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="catalog_versions.id → documents.catalog_id"];
+"documents" -> "work_plans" [id="rel8", taillabel="1", headlabel="0..1", label="especializa", labeldistance=1.7, labelangle=0, arrowhead=tee, tooltip="documents.id → work_plans.document_id"];
+"documents" -> "activity_reports" [id="rel9", taillabel="1", headlabel="0..1", label="especializa", labeldistance=1.7, labelangle=0, arrowhead=tee, tooltip="documents.id → activity_reports.document_id"];
+"document_versions" -> "activity_reports" [id="rel10", taillabel="1", headlabel="0..N", label="toma como base", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="document_versions.id → activity_reports.plan_version_id"];
+"documents" -> "document_versions" [id="rel11", taillabel="1", headlabel="0..N", label="conserva", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="documents.id → document_versions.document_id"];
+"document_versions" -> "reviews" [id="rel12", taillabel="1", headlabel="0..N", label="revisa", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="document_versions.id → reviews.version_id"];
+"documents" -> "document_sections" [id="rel13", taillabel="1", headlabel="0..N", label="integra", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="documents.id → document_sections.document_id"];
+"document_sections" -> "activity_records" [id="rel14", taillabel="1", headlabel="0..N", label="registra", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="document_sections.id → activity_records.section_id"];
+"documents" -> "evidence" [id="rel15", taillabel="1", headlabel="0..N", label="contiene", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="documents.id → evidence.document_id"];
+"activity_records" -> "evidence" [id="rel16", taillabel="0..1", headlabel="0..N", label="adjunta", labeldistance=1.7, labelangle=0, arrowhead=crow, tooltip="activity_records.id → evidence.record_id"];
+}

@@ -1,0 +1,546 @@
+erDiagram
+  universities {
+    text id PK
+    text name
+  }
+  campuses {
+    text id PK
+    text university_id FK
+    text code
+    text name
+    boolean active
+  }
+  universities ||--o{ campuses : "university_id"
+  careers {
+    text id PK
+    text campus_id FK
+    text predecessor_id FK
+    text code
+    text name
+    boolean active
+  }
+  campuses ||--o{ careers : "campus_id"
+  careers |o--o{ careers : "predecessor_id"
+  study_plans {
+    text id PK
+    text career_id FK
+    text created_by FK
+    text name
+    integer semesters
+    timestamptz registered_at
+    boolean active
+  }
+  careers ||--o{ study_plans : "career_id"
+  users ||--o{ study_plans : "created_by"
+  curriculum_semesters {
+    text id PK
+    text study_plan_id FK
+    integer number
+  }
+  study_plans ||--o{ curriculum_semesters : "study_plan_id"
+  subjects {
+    text id PK
+    text code
+    text name
+    numeric credits
+    boolean active
+  }
+  curriculum_subjects {
+    text id PK
+    text semester_id FK
+    text subject_id FK
+  }
+  curriculum_semesters ||--o{ curriculum_subjects : "semester_id"
+  subjects ||--o{ curriculum_subjects : "subject_id"
+  periods {
+    text id PK
+    text code
+    date start
+    date end
+    numeric effective_weeks
+    numeric nominal_weekly_minutes
+    numeric maximum_weekly_minutes
+    boolean enforce_maximum
+    numeric rejection_threshold
+    text state
+    text catalog_id FK
+  }
+  catalog_versions |o--o{ periods : "catalog_id"
+  capture_windows {
+    text id PK
+    text period_id FK
+    text kind
+    timestamptz opens_at
+    timestamptz closes_at
+    boolean enabled
+  }
+  periods ||--o{ capture_windows : "period_id"
+  groups {
+    text id PK
+    text period_id FK
+    text campus_id FK
+    text semester_id FK
+    text code
+    text kind
+    integer capacity
+  }
+  periods ||--o{ groups : "period_id"
+  campuses ||--o{ groups : "campus_id"
+  curriculum_semesters |o--o{ groups : "semester_id"
+  course_offerings {
+    text id PK
+    text group_id FK
+    text subject_id FK
+  }
+  groups ||--o{ course_offerings : "group_id"
+  subjects ||--o{ course_offerings : "subject_id"
+  teaching_assignments {
+    text id PK
+    text offering_id FK
+    text teacher_id FK
+    text previous_id FK
+    date start
+    date end
+    numeric weekly_minutes
+    integer students
+    text change_reason
+  }
+  course_offerings ||--o{ teaching_assignments : "offering_id"
+  teachers ||--o{ teaching_assignments : "teacher_id"
+  teaching_assignments |o--o{ teaching_assignments : "previous_id"
+  users {
+    text id PK
+    text auth_uid
+    text employee_number
+    text first_name
+    text last_name
+    text second_last_name
+    text email
+    boolean active
+  }
+  employee_history {
+    text id PK
+    text user_id FK
+    text employee_number
+    date start
+    date end
+  }
+  users ||--o{ employee_history : "user_id"
+  degrees {
+    text id PK
+    text user_id FK
+    text level
+    text program
+    text institution
+    date obtained_on
+    text license
+    boolean official
+    boolean maximum
+  }
+  users ||--o{ degrees : "user_id"
+  teacher_categories {
+    text id PK
+    text code
+    text name
+    text level
+    boolean researcher
+    boolean active
+  }
+  teachers {
+    text id PK
+    text user_id FK
+    text category_id FK
+    date joined_on
+  }
+  users ||--o{ teachers : "user_id"
+  teacher_categories ||--o{ teachers : "category_id"
+  affiliations {
+    text id PK
+    text teacher_id FK
+    text career_id FK
+    date start
+    date end
+  }
+  teachers ||--o{ affiliations : "teacher_id"
+  careers ||--o{ affiliations : "career_id"
+  distinctions {
+    text id PK
+    text teacher_id FK
+    text name
+    text level
+    date start
+    date end
+  }
+  teachers ||--o{ distinctions : "teacher_id"
+  roles {
+    text id PK
+    text code
+    text name
+    boolean active
+  }
+  permissions {
+    text id PK
+    text resource
+    text action
+  }
+  role_permissions {
+    text id PK
+    text role_id FK
+    text permission_id FK
+  }
+  roles ||--o{ role_permissions : "role_id"
+  permissions ||--o{ role_permissions : "permission_id"
+  role_assignments {
+    text id PK
+    text user_id FK
+    text role_id FK
+    text campus_id FK
+    text career_id FK
+    date start
+    date end
+  }
+  users ||--o{ role_assignments : "user_id"
+  roles ||--o{ role_assignments : "role_id"
+  campuses |o--o{ role_assignments : "campus_id"
+  careers |o--o{ role_assignments : "career_id"
+  approval_delegations {
+    text id PK
+    text career_id FK
+    text user_id FK
+    text assigned_by FK
+    date start
+    date end
+    text reason
+  }
+  careers ||--o{ approval_delegations : "career_id"
+  users ||--o{ approval_delegations : "user_id"
+  users ||--o{ approval_delegations : "assigned_by"
+  audit_events {
+    text id PK
+    text actor_id FK
+    timestamptz at
+    text action
+    text entity
+    text record_id
+    jsonb before
+    jsonb after
+  }
+  users ||--o{ audit_events : "actor_id"
+  notifications {
+    text id PK
+    text user_id FK
+    text document_id FK
+    timestamptz at
+    text title
+    text body
+    timestamptz read_at
+  }
+  users ||--o{ notifications : "user_id"
+  documents |o--o{ notifications : "document_id"
+  rubrics {
+    text id PK
+    text code
+    text name
+    text axis
+    boolean active
+  }
+  activities {
+    text id PK
+    text code
+    text name
+    boolean active
+  }
+  activity_classifications {
+    text id PK
+    text activity_id FK
+    text rubric_id FK
+    date start
+    date end
+  }
+  activities ||--o{ activity_classifications : "activity_id"
+  rubrics ||--o{ activity_classifications : "rubric_id"
+  field_definitions {
+    text id PK
+    text activity_id FK
+    text key
+    text label
+    text type
+    boolean required
+    integer position
+    jsonb constraints
+    text comparison_key
+  }
+  activities ||--o{ field_definitions : "activity_id"
+  field_options {
+    text id PK
+    text field_id FK
+    text value
+    text label
+    integer position
+  }
+  field_definitions ||--o{ field_options : "field_id"
+  evidence_types {
+    text id PK
+    text code
+    text name
+    jsonb mime_types
+    integer max_bytes
+  }
+  activity_evidence_types {
+    text id PK
+    text activity_id FK
+    text evidence_type_id FK
+    boolean required
+  }
+  activities ||--o{ activity_evidence_types : "activity_id"
+  evidence_types ||--o{ activity_evidence_types : "evidence_type_id"
+  catalog_versions {
+    text id PK
+    text period_id FK
+    integer version
+    timestamptz published_at
+    text published_by FK
+    jsonb content
+  }
+  periods ||--o{ catalog_versions : "period_id"
+  users ||--o{ catalog_versions : "published_by"
+  rubric_configuration {
+    text id PK
+    text catalog_id FK
+    text rubric_id FK
+    boolean in_plan
+    boolean in_report
+    boolean required
+    integer position
+  }
+  catalog_versions ||--o{ rubric_configuration : "catalog_id"
+  rubrics ||--o{ rubric_configuration : "rubric_id"
+  activity_configuration {
+    text id PK
+    text configuration_id FK
+    text activity_id FK
+    text calculation
+    jsonb parameters
+    boolean required
+    integer position
+  }
+  rubric_configuration ||--o{ activity_configuration : "configuration_id"
+  activities ||--o{ activity_configuration : "activity_id"
+  projects {
+    text id PK
+    text code
+    text name
+    text funding
+    date start
+    date end
+  }
+  documents {
+    text id PK
+    text teacher_id FK
+    text period_id FK
+    text career_id FK
+    text catalog_id FK
+    text kind
+    text state
+    integer version
+    integer revision
+    timestamptz created_at
+    timestamptz updated_at
+    timestamptz submitted_at
+    timestamptz approved_at
+    jsonb content
+  }
+  teachers ||--o{ documents : "teacher_id"
+  periods ||--o{ documents : "period_id"
+  careers ||--o{ documents : "career_id"
+  catalog_versions ||--o{ documents : "catalog_id"
+  work_plans {
+    text id PK
+    text document_id FK
+    integer submitted_version
+  }
+  documents ||--o{ work_plans : "document_id"
+  activity_reports {
+    text id PK
+    text document_id FK
+    text plan_document_id FK
+    text plan_version_id FK
+    text current_section
+  }
+  documents ||--o{ activity_reports : "document_id"
+  documents ||--o{ activity_reports : "plan_document_id"
+  document_versions ||--o{ activity_reports : "plan_version_id"
+  document_sections {
+    text id PK
+    text document_id FK
+    text rubric_id FK
+    text state
+    timestamptz confirmed_at
+  }
+  documents ||--o{ document_sections : "document_id"
+  rubrics ||--o{ document_sections : "rubric_id"
+  activity_records {
+    text id PK
+    text section_id FK
+    text activity_id FK
+    text project_id FK
+    text origin_id FK
+    numeric weekly_minutes
+    jsonb values
+  }
+  document_sections ||--o{ activity_records : "section_id"
+  activities ||--o{ activity_records : "activity_id"
+  projects |o--o{ activity_records : "project_id"
+  activity_records |o--o{ activity_records : "origin_id"
+  field_values {
+    text id PK
+    text record_id FK
+    text field_id FK
+    jsonb value
+  }
+  activity_records ||--o{ field_values : "record_id"
+  field_definitions ||--o{ field_values : "field_id"
+  selected_options {
+    text id PK
+    text value_id FK
+    text option_id FK
+  }
+  field_values ||--o{ selected_options : "value_id"
+  field_options ||--o{ selected_options : "option_id"
+  course_results {
+    text id PK
+    text document_id FK
+    text assignment_id FK
+    integer enrolled
+    integer passed
+    text justification
+  }
+  documents ||--o{ course_results : "document_id"
+  teaching_assignments ||--o{ course_results : "assignment_id"
+  evidence {
+    text id PK
+    text document_id FK
+    text record_id FK
+    text type_id FK
+    text uploaded_by FK
+    text filename
+    text mime
+    integer bytes
+    text sha256
+    text storage_path
+    timestamptz uploaded_at
+  }
+  documents ||--o{ evidence : "document_id"
+  activity_records |o--o{ evidence : "record_id"
+  evidence_types ||--o{ evidence : "type_id"
+  users ||--o{ evidence : "uploaded_by"
+  document_versions {
+    text id PK
+    text document_id FK
+    integer number
+    text event
+    text actor_id FK
+    timestamptz at
+    jsonb content
+    text digest
+  }
+  documents ||--o{ document_versions : "document_id"
+  users ||--o{ document_versions : "actor_id"
+  reviews {
+    text id PK
+    text document_id FK
+    text version_id FK
+    text reviewer_id FK
+    text result
+    text comment
+    timestamptz at
+  }
+  documents ||--o{ reviews : "document_id"
+  document_versions ||--o{ reviews : "version_id"
+  users ||--o{ reviews : "reviewer_id"
+  review_visits {
+    text id PK
+    text version_id FK
+    text reviewer_id FK
+    text section_key
+    timestamptz at
+  }
+  document_versions ||--o{ review_visits : "version_id"
+  users ||--o{ review_visits : "reviewer_id"
+  observations {
+    text id PK
+    text review_id FK
+    text section_key
+    text record_id FK
+    text text
+    timestamptz resolved_at
+  }
+  reviews ||--o{ observations : "review_id"
+  activity_records |o--o{ observations : "record_id"
+  idempotency_keys {
+    text id PK
+    text actor_id FK
+    text request_key
+    text request_hash
+    jsonb response
+    timestamptz created_at
+  }
+  users ||--o{ idempotency_keys : "actor_id"
+  indicators {
+    text id PK
+    text code
+    text name
+    text unit
+    text handler
+    text confidentiality
+    boolean active
+  }
+  panels {
+    text id PK
+    text owner_id FK
+    text name
+    text scope
+    boolean default_panel
+  }
+  users ||--o{ panels : "owner_id"
+  panel_indicators {
+    text id PK
+    text panel_id FK
+    text indicator_id FK
+    integer position
+    jsonb filters
+  }
+  panels ||--o{ panel_indicators : "panel_id"
+  indicators ||--o{ panel_indicators : "indicator_id"
+  credentials {
+    text id PK
+    text user_id FK
+    text password_hash
+    boolean must_change
+  }
+  users ||--o{ credentials : "user_id"
+  sessions {
+    text id PK
+    text user_id FK
+    text token_hash
+    timestamptz created_at
+    timestamptz expires_at
+    timestamptz revoked_at
+  }
+  users ||--o{ sessions : "user_id"
+  change_requests {
+    text id PK
+    text requested_by FK
+    text authorized_by FK
+    text state
+    date effective_on
+    jsonb content
+    timestamptz created_at
+  }
+  users ||--o{ change_requests : "requested_by"
+  users |o--o{ change_requests : "authorized_by"
+  system_settings {
+    text id PK
+    integer revision
+    jsonb content
+  }

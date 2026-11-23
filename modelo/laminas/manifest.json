@@ -1,0 +1,484 @@
+[
+  {
+    "id": "00_conceptual",
+    "title": "Vista conceptual del negocio",
+    "names": [
+      "users",
+      "teachers",
+      "campuses",
+      "careers",
+      "periods",
+      "catalog_versions",
+      "documents",
+      "work_plans",
+      "activity_reports",
+      "document_versions",
+      "reviews",
+      "document_sections",
+      "activity_records",
+      "evidence"
+    ],
+    "external": [
+      {
+        "id": "teacher_categories__teachers",
+        "table": "teacher_categories"
+      },
+      {
+        "id": "universities__campuses",
+        "table": "universities"
+      },
+      {
+        "id": "self__careers",
+        "table": "careers"
+      },
+      {
+        "id": "rubrics__document_sections",
+        "table": "rubrics"
+      },
+      {
+        "id": "activities__activity_records",
+        "table": "activities"
+      },
+      {
+        "id": "projects__activity_records",
+        "table": "projects"
+      },
+      {
+        "id": "self__activity_records",
+        "table": "activity_records"
+      },
+      {
+        "id": "evidence_types__evidence",
+        "table": "evidence_types"
+      }
+    ],
+    "relations": 16,
+    "width": 1346,
+    "height": 406,
+    "conceptual": true
+  },
+  {
+    "id": "01_estructura",
+    "title": "Estructura académica",
+    "names": [
+      "universities",
+      "campuses",
+      "careers",
+      "study_plans",
+      "curriculum_semesters",
+      "subjects",
+      "curriculum_subjects"
+    ],
+    "external": [
+      {
+        "id": "self__careers",
+        "table": "careers"
+      },
+      {
+        "id": "users__study_plans",
+        "table": "users"
+      }
+    ],
+    "relations": 8,
+    "width": 1513,
+    "height": 533,
+    "conceptual": false
+  },
+  {
+    "id": "02_docencia",
+    "title": "Periodo, grupos y asignaciones",
+    "names": [
+      "periods",
+      "capture_windows",
+      "groups",
+      "course_offerings",
+      "teaching_assignments"
+    ],
+    "external": [
+      {
+        "id": "catalog_versions__periods",
+        "table": "catalog_versions"
+      },
+      {
+        "id": "campuses__groups",
+        "table": "campuses"
+      },
+      {
+        "id": "curriculum_semesters__groups",
+        "table": "curriculum_semesters"
+      },
+      {
+        "id": "subjects__course_offerings",
+        "table": "subjects"
+      },
+      {
+        "id": "teachers__teaching_assignments",
+        "table": "teachers"
+      },
+      {
+        "id": "self__teaching_assignments",
+        "table": "teaching_assignments"
+      }
+    ],
+    "relations": 10,
+    "width": 1316,
+    "height": 845,
+    "conceptual": false
+  },
+  {
+    "id": "03_identidad",
+    "title": "Identidad y trayectoria docente",
+    "names": [
+      "users",
+      "employee_history",
+      "degrees",
+      "teacher_categories",
+      "teachers",
+      "affiliations",
+      "distinctions"
+    ],
+    "external": [
+      {
+        "id": "careers__affiliations",
+        "table": "careers"
+      }
+    ],
+    "relations": 7,
+    "width": 779,
+    "height": 863,
+    "conceptual": false
+  },
+  {
+    "id": "04_permisos",
+    "title": "Roles y permisos",
+    "names": [
+      "roles",
+      "permissions",
+      "role_permissions"
+    ],
+    "external": [],
+    "relations": 2,
+    "width": 528,
+    "height": 406,
+    "conceptual": false
+  },
+  {
+    "id": "04b_autoridad",
+    "title": "Asignación y delegación de autoridad",
+    "names": [
+      "role_assignments",
+      "approval_delegations"
+    ],
+    "external": [
+      {
+        "id": "users__role_assignments",
+        "table": "users"
+      },
+      {
+        "id": "roles__role_assignments",
+        "table": "roles"
+      },
+      {
+        "id": "campuses__role_assignments",
+        "table": "campuses"
+      },
+      {
+        "id": "careers__role_assignments",
+        "table": "careers"
+      },
+      {
+        "id": "careers__approval_delegations",
+        "table": "careers"
+      },
+      {
+        "id": "users__approval_delegations",
+        "table": "users"
+      }
+    ],
+    "relations": 7,
+    "width": 528,
+    "height": 663,
+    "conceptual": false
+  },
+  {
+    "id": "05_catalogo",
+    "title": "Catálogo dinámico y campos de captura",
+    "names": [
+      "rubrics",
+      "activities",
+      "activity_classifications",
+      "field_definitions",
+      "field_options",
+      "evidence_types",
+      "activity_evidence_types"
+    ],
+    "external": [],
+    "relations": 6,
+    "width": 769,
+    "height": 787,
+    "conceptual": false
+  },
+  {
+    "id": "06_configuracion",
+    "title": "Configuración por periodo e historia de catálogo",
+    "names": [
+      "catalog_versions",
+      "rubric_configuration",
+      "activity_configuration",
+      "change_requests",
+      "system_settings"
+    ],
+    "external": [
+      {
+        "id": "periods__catalog_versions",
+        "table": "periods"
+      },
+      {
+        "id": "users__catalog_versions",
+        "table": "users"
+      },
+      {
+        "id": "rubrics__rubric_configuration",
+        "table": "rubrics"
+      },
+      {
+        "id": "activities__activity_configuration",
+        "table": "activities"
+      },
+      {
+        "id": "users__change_requests",
+        "table": "users"
+      }
+    ],
+    "relations": 8,
+    "width": 1021,
+    "height": 835,
+    "conceptual": false
+  },
+  {
+    "id": "07_documentos",
+    "title": "Plan, informe y documentos del docente",
+    "names": [
+      "documents",
+      "work_plans",
+      "activity_reports",
+      "document_versions"
+    ],
+    "external": [
+      {
+        "id": "teachers__documents",
+        "table": "teachers"
+      },
+      {
+        "id": "periods__documents",
+        "table": "periods"
+      },
+      {
+        "id": "careers__documents",
+        "table": "careers"
+      },
+      {
+        "id": "catalog_versions__documents",
+        "table": "catalog_versions"
+      },
+      {
+        "id": "users__document_versions",
+        "table": "users"
+      }
+    ],
+    "relations": 10,
+    "width": 1038,
+    "height": 676,
+    "conceptual": false
+  },
+  {
+    "id": "08_registros",
+    "title": "Actividades y valores capturados",
+    "names": [
+      "document_sections",
+      "activity_records",
+      "field_values",
+      "selected_options",
+      "projects"
+    ],
+    "external": [
+      {
+        "id": "documents__document_sections",
+        "table": "documents"
+      },
+      {
+        "id": "rubrics__document_sections",
+        "table": "rubrics"
+      },
+      {
+        "id": "activities__activity_records",
+        "table": "activities"
+      },
+      {
+        "id": "self__activity_records",
+        "table": "activity_records"
+      },
+      {
+        "id": "field_definitions__field_values",
+        "table": "field_definitions"
+      },
+      {
+        "id": "field_options__selected_options",
+        "table": "field_options"
+      }
+    ],
+    "relations": 10,
+    "width": 1246,
+    "height": 698,
+    "conceptual": false
+  },
+  {
+    "id": "08b_evidencias",
+    "title": "Resultados de cursos y evidencias",
+    "names": [
+      "course_results",
+      "evidence"
+    ],
+    "external": [
+      {
+        "id": "documents__course_results",
+        "table": "documents"
+      },
+      {
+        "id": "teaching_assignments__course_results",
+        "table": "teaching_assignments"
+      },
+      {
+        "id": "documents__evidence",
+        "table": "documents"
+      },
+      {
+        "id": "activity_records__evidence",
+        "table": "activity_records"
+      },
+      {
+        "id": "evidence_types__evidence",
+        "table": "evidence_types"
+      },
+      {
+        "id": "users__evidence",
+        "table": "users"
+      }
+    ],
+    "relations": 6,
+    "width": 528,
+    "height": 737,
+    "conceptual": false
+  },
+  {
+    "id": "09_revision",
+    "title": "Revisión de versiones y observaciones",
+    "names": [
+      "reviews",
+      "review_visits",
+      "observations"
+    ],
+    "external": [
+      {
+        "id": "documents__reviews",
+        "table": "documents"
+      },
+      {
+        "id": "document_versions__reviews",
+        "table": "document_versions"
+      },
+      {
+        "id": "users__reviews",
+        "table": "users"
+      },
+      {
+        "id": "document_versions__review_visits",
+        "table": "document_versions"
+      },
+      {
+        "id": "users__review_visits",
+        "table": "users"
+      },
+      {
+        "id": "activity_records__observations",
+        "table": "activity_records"
+      }
+    ],
+    "relations": 7,
+    "width": 760,
+    "height": 652,
+    "conceptual": false
+  },
+  {
+    "id": "09b_trazabilidad",
+    "title": "Notificaciones, bitácora e idempotencia",
+    "names": [
+      "notifications",
+      "audit_events",
+      "idempotency_keys"
+    ],
+    "external": [
+      {
+        "id": "users__notifications",
+        "table": "users"
+      },
+      {
+        "id": "documents__notifications",
+        "table": "documents"
+      },
+      {
+        "id": "users__audit_events",
+        "table": "users"
+      },
+      {
+        "id": "users__idempotency_keys",
+        "table": "users"
+      }
+    ],
+    "relations": 4,
+    "width": 540,
+    "height": 778,
+    "conceptual": false
+  },
+  {
+    "id": "10_reportes",
+    "title": "Indicadores y paneles",
+    "names": [
+      "indicators",
+      "panels",
+      "panel_indicators"
+    ],
+    "external": [
+      {
+        "id": "users__panels",
+        "table": "users"
+      }
+    ],
+    "relations": 3,
+    "width": 748,
+    "height": 491,
+    "conceptual": false
+  },
+  {
+    "id": "11_sesiones",
+    "title": "Autenticación y sesiones",
+    "names": [
+      "credentials",
+      "sessions"
+    ],
+    "external": [
+      {
+        "id": "users__credentials",
+        "table": "users"
+      },
+      {
+        "id": "users__sessions",
+        "table": "users"
+      }
+    ],
+    "relations": 2,
+    "width": 528,
+    "height": 448,
+    "conceptual": false
+  }
+]
