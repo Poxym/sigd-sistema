@@ -85,3 +85,26 @@ test('Informe original: datos inválidos se rechazan y el borrador nunca enviado
  assert.deepEqual(e.teacher.discard(r.id),{ok:true});assert(!e.s.documents.some(d=>d.id===r.id));validateRelations(e.s,schema);
  r=e.teacher.create('REPORT');for(const k of 'ABCDEFGHI')r.informe.sec[k]='noact';r=e.teacher.save(r.id,{informe:r.informe},r.revision);r=e.teacher.submit(r.id,r.revision,'inf-sub-3');
  assert.throws(()=>e.teacher.discard(r.id),/nunca se ha enviado/)});
+
+test('Administración (NextCode): carga catálogos reales y guarda cambios en las tablas',()=>{
+ const{s,admin,teacher}=setup();let w=admin.adminWorkspace();assert.equal(w.workspace,null);
+ assert.deepEqual(w.live.catalogs.campus.map(c=>c.code).sort(),['IXT','JUC','TEH']);assert.equal(w.live.threshold,30);
+ const ws={catalogs:{...w.live.catalogs,parametros:[{code:'REB-UMBRAL',name:'Umbral',paramValue:'35',status:'Vigente'}],rubros:[{code:'DOC',name:'Docencia'}]},users:w.live.users,period:w.live.period,requests:[{id:1,title:'x'}]};
+ ws.catalogs.carreras=[...ws.catalogs.carreras,{code:'IND',name:'Ingeniería Industrial',parentCode:'TEH',status:'Vigente'}];
+ ws.catalogs.campus=ws.catalogs.campus.map(c=>c.code==='JUC'?{...c,status:'Inactivo'}:c);
+ const r=admin.saveAdminWorkspace(ws,0);assert.equal(r.revision,1);
+ assert(s.careers.some(c=>c.code==='IND'&&c.campus_id==='teh'));assert.equal(s.campuses.find(c=>c.code==='JUC').active,false);assert.equal(s.periods[0].rejection_threshold,35);
+ assert.equal(r.workspace.requests.length,1);assert(!('users' in r.workspace));assert(!r.workspace.catalogs.campus);
+ assert.throws(()=>admin.saveAdminWorkspace(ws,0),/Otra persona/);
+ assert.throws(()=>teacher.saveAdminWorkspace(ws,1),e=>e.status===403);validateRelations(s,schema)});
+
+test('Administración (NextCode): identidad estable al cambiar número y alta con contraseña temporal',()=>{
+ const{s,admin}=setup();const w=admin.adminWorkspace();const users=w.live.users.map(u=>u.num==='209'?{...u,num:'000209'}:u);
+ users.push({num:'4501',name:'Marta Ruiz Pineda',mail:'marta.ruiz@unistmo.example',role:'Docente',area:'Tehuantepec',careerCode:'IC',categoryCode:'PI',status:'Activo'});
+ const r=admin.saveAdminWorkspace({catalogs:{},users,period:w.live.period},0);
+ assert.equal(s.users.find(u=>u.id==='u209').employee_number,'000209');assert.equal(s.teachers.find(t=>t.user_id==='u209').id,'demo-teacher-209');
+ assert.equal(r.temps.length,1);const nu=s.users.find(u=>u.employee_number==='4501');assert(nu&&s.credentials.find(c=>c.user_id===nu.id).must_change);
+ assert(s.teachers.some(t=>t.user_id===nu.id));assert(verifyPassword(r.temps[0].password,s.credentials.find(c=>c.user_id===nu.id).password_hash));
+ const svc=new Service(s,nu.id,date);assert.equal(svc.profile().mustChange,true);
+ assert.throws(()=>svc.changePassword('incorrecta','nueva-segura-2026'),/no es correcta/);assert.throws(()=>svc.changePassword(r.temps[0].password,'corta'),/12 caracteres/);
+ svc.changePassword(r.temps[0].password,'nueva-segura-2026');assert.equal(svc.profile().mustChange,false);validateRelations(s,schema)});
