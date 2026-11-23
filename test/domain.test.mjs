@@ -38,3 +38,19 @@ test('tutorías, proporción y periodos superpuestos usan el dominio compartido'
 test('resultados de cursos validan rango y reprobación ponderada',()=>{const e=setup();approved(e);let r=e.teacher.create('REPORT');r.courseResults[0].passed=1000;assert.throws(()=>e.teacher.save(r.id,r,r.revision),/aprobados/);r.courseResults[0].passed=10;for(const a of Object.values(r.sections)){a.applicability='not_applicable';a.completion='done'}r=e.teacher.save(r.id,r,r.revision);assert.throws(()=>e.teacher.submit(r.id,r.revision,'report-unjustified'),/Justifica/)});
 test('FK inexistente y duplicado se detectan antes de persistir',()=>{const e=setup();e.s.careers[0].campus_id='missing';assert.throws(()=>validateRelations(e.s,schema),/FK/)});
 test('SQLite revierte la transacción completa y sobrevive reinicio',async()=>{const dir=mkdtempSync(path.join(tmpdir(),'sigd-'));const repo=new SQLiteRepository(path.join(dir,'data.sqlite'),schema.tables);try{await repo.transaction(s=>{seed(s)});await assert.rejects(repo.transaction(s=>{s.users[0].first_name='Perdido';throw Error('fallo')}));assert.equal(await repo.transaction(s=>s.users[0].first_name),'Ana');repo.close();const reopened=new SQLiteRepository(path.join(dir,'data.sqlite'),schema.tables);assert.equal(await reopened.transaction(s=>s.users.length),8);reopened.close()}finally{try{repo.close()}catch{}rmSync(dir,{recursive:true,force:true})}});
+test('Administración agrega o retira actividades de Docencia por periodo (sinodal de examen)',()=>{
+ const e=setup();const cat=structuredClone(e.s.catalog_versions[0].content);
+ const p1=e.teacher.create('PLAN');assert(p1.catalogSnapshot.sections.some(s=>s.id==='sinodales'),'la semilla incluye Sinodal de examen');
+ const opts=p1.catalogSnapshot.sections.find(s=>s.id==='sinodales').fields.find(f=>f.id==='examType').options.map(o=>o.label);
+ assert.deepEqual(opts,['Extraordinario 1','Extraordinario 2','Especial']);
+ cat.sections=cat.sections.filter(s=>s.id!=='sinodales');e.admin.publishCatalog(p1.semester.id,cat);
+ const other=new Service(e.s,'u301',date).create('PLAN');assert(!other.catalogSnapshot.sections.some(s=>s.id==='sinodales'),'retirada del catálogo vigente');
+ assert(e.s.documents.find(d=>d.id===p1.id).content.catalogSnapshot.sections.some(s=>s.id==='sinodales'),'el plan anterior conserva su catálogo congelado');
+ validateRelations(e.s,schema)});
+test('las 40 horas semanales son un máximo obligatorio al enviar el plan (acuerdo del 22/11)',()=>{
+ const{teacher,s}=setup();assert.equal(s.periods[0].enforce_maximum,true);
+ let p=ready(teacher);const c=p.sections.comisiones;c.applicability='applies';c.completion='done';
+ c.rows=[{id:'comision-larga',title:'Comisión extraordinaria',weeklyHours:30,notes:''}];
+ p=teacher.save(p.id,p,p.revision);assert.equal(p.semester.enforceMaximum,true);assert.equal(p.semester.maximumWeeklyMinutes,2400);
+ assert.throws(()=>teacher.submit(p.id,p.revision,'over-40-key-1'),/máximo obligatorio de 40 h/);
+ c.rows[0].weeklyHours=10;p.sections.comisiones=c;p=teacher.save(p.id,p,p.revision);assert.equal(teacher.submit(p.id,p.revision,'under-40-key-1').status,'in_review')});
