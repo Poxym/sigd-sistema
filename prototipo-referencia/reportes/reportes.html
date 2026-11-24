@@ -1,0 +1,347 @@
+<header class="vr-hd"><div><h1 id="page-title"></h1><p id="page-subtitle"></p></div><div class="acts"><button class="btn-primary" id="btn-export"><i class="ti ti-download"></i> Exportar Reporte</button></div></header><div class="vr-chips" id="vr-chips"></div>
+<div class="content-body">
+<!-- ================= 1. VISTA GENERAL ================= -->
+            <div id="section-resumen" class="content-section view-active">
+<div class="vr-views" id="vr-views"></div>
+                <div class="card card-full" data-card="balance">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Metas Institucionales</span>
+                            <h3 class="card-title mt-1">Balance Global: Planeado vs. Realizado</h3>
+                            <p class="card-subtitle"><span class="text-success font-bold">Superávit detectado (+4.2%)</span> en el padrón actual.</p>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="resumen" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Resumen -->
+                    <div id="view-chart-bar-resumen" class="chart-view active-chart mt-4">
+                        <div class="progress-group">
+                            <div class="progress-labels">
+                                <span>Total de Horas/Actividades Planeadas</span>
+                                <span class="font-mono">14,200 hrs (100%)</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar bar-muted" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="progress-labels">
+                                <span class="font-bold">Total Realizado / Informado</span>
+                                <span class="text-success font-bold font-mono">14,796 hrs (104.2%)</span>
+                            </div>
+                            <div class="progress-bar-container dual-bar">
+                                <div class="progress-bar bar-primary" style="width: 95.8%;"></div>
+                                <div class="progress-bar bar-pulse" style="width: 4.2%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Resumen -->
+                    <div id="view-chart-circular-resumen" class="chart-view hidden-chart">
+                        <div class="circular-chart-box">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-resumen" class="css-pie css-chart-resumen"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item">
+                                    <div class="legend-color bg-primary"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Horas Cumplidas Base</p><p class="text-muted text-xs" style="font-size: 11px;">14,200 hrs (95.8%)</p></div>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #fbbf24;"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Superávit (Extra)</p><p class="text-muted text-xs" style="font-size: 11px;">596 hrs (4.2%)</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-grid" id="kpi-grid" data-card="kpis">
+                    <div class="card kpi-card">
+                        <p class="kpi-label">Padrón Activo</p>
+                        <div class="kpi-value-group"><span class="kpi-value">452</span><span class="kpi-unit">Docentes</span></div>
+                    </div>
+                    <div class="card kpi-card">
+                        <p class="kpi-label">Puntos Extra Global</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-success">+184</span><span class="kpi-subtext text-warning">Sobrecumplimiento</span></div>
+                    </div>
+                    <div class="card kpi-card border-purple bg-purple-light" style="background-color: var(--purple-bg); border-color: var(--purple-border);">
+                        <p class="kpi-label text-purple">Casos Extraordinarios</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-purple">5</span><span class="kpi-subtext text-purple">Justificados</span></div>
+                    </div>
+                    <div class="card kpi-card border-red bg-red-light" id="kpi-alertas" style="background-color: var(--red-bg); border-color: var(--red-border);">
+                        <p class="kpi-label text-red">Alertas Críticas</p>
+                        <div class="kpi-value-group"><span class="kpi-value text-red">12</span><span class="kpi-subtext text-red pulse">Sin justificar</span></div>
+                    </div>
+                </div>
+                <div class="card card-full mt-6" id="monitor-incidencias" data-card="incidencias">
+                    <h3 class="card-title">Monitor de Entregas e Incidencias</h3>
+                    <p class="card-subtitle">Alertas del sistema reguladas para evitar fatiga de notificaciones en secretarías.</p>
+                    <div class="incidents-grid mt-4">
+                        <div class="incident-box box-red">
+                            <div><span class="badge badge-red">Discrepancia de Carga</span><h4>Dr. Luis Ramos Villa</h4><p>Declaró 0 horas de tutoría, pero control escolar le asignó 15 alumnos.</p></div>
+                            <button class="link-action text-red" data-act="audit" data-v="10482">Revisar discrepancia →</button>
+                        </div>
+                        <div class="incident-box box-gray">
+                            <div><div class="box-inline-header"><span class="badge badge-gray">⌛ Alerta Silenciosa</span><span class="text-success text-xs font-bold">✓ Auto-gestionado</span></div><h4>Mtra. Sonia López (y 4 más)</h4><p>El sistema disparó recordatorio cordial automático por límite de fecha.</p></div>
+                            <span class="box-footer-text" style="font-size: 11px; color: var(--text-muted); text-align: right; margin-top: 16px; font-weight: 600;">Reprogramado a 48 hrs</span>
+                        </div>
+                        <div class="incident-box box-purple" style="background-color: var(--purple-bg); border-color: var(--purple-border);">
+                            <div><span class="badge badge-purple">Caso Protegido</span><h4>Dra. Claudia Gómez</h4><p>Informe retenido por sabático internacional. Estatus congelado.</p></div>
+                            <button class="link-action text-purple" data-act="audit" data-v="44102">Ver oficio de aval →</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="card card-full" data-card="reprob" id="card-reprob"></div>
+<div class="card card-full" data-card="incump" id="card-incump"></div>
+<div class="card card-full" data-card="reprob2" id="card-reprob2"></div>
+<div class="card card-full" data-card="eval" id="card-eval"></div>
+<div class="card card-full vr-empty" id="vr-empty" hidden><p>No hay tarjetas visibles. Usa la burbuja <b>Personalizar</b> (abajo a la derecha) para elegir qué ver.</p></div>
+</div>
+            <!-- ================= ESTADÍSTICAS DE REPROBACIÓN (Minuta 18) ================= -->
+<div id="section-reprobacion" class="content-section view-hidden">
+<div class="rs-kpis" id="rs-kpis"></div>
+<div class="card card-full" id="rs-matrix"></div>
+<div class="rs-grid"><div class="card" id="rs-carrera"></div><div class="card" id="rs-semestre"></div><div class="card" id="rs-profesor"></div><div class="card" id="rs-campus"></div></div>
+<div class="card card-full mt-6" id="card-reprobS"></div>
+</div>
+<!-- ================= 2. BÚSQUEDA E INFORMES ================= -->
+            <div id="section-busqueda" class="content-section view-hidden">
+                <div class="card card-full">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Vista Previa Institucional</span>
+                            <h3 class="card-title mt-1">Distribución Global del Padrón (Semáforo)</h3>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="busqueda" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Búsqueda -->
+                    <div id="view-chart-bar-busqueda" class="chart-view active-chart mt-4">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels"><span class="text-success font-bold flex-align-center"><i class="ti ti-circle-check" style="font-size: 16px; margin-right:4px;"></i> Cumplido (Verde)</span><span class="font-mono text-dark font-bold">316 docentes (70%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: 70%; background-color: var(--green-text);"></div></div>
+                            </div>
+                            <div class="chart-row mt-4">
+                                <div class="chart-labels"><span class="text-warning font-bold flex-align-center"><i class="ti ti-clock" style="font-size: 16px; margin-right:4px;"></i> Incompleto (Amarillo)</span><span class="font-mono text-warning font-bold">90 docentes (20%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-amber" style="width: 20%;"></div></div>
+                            </div>
+                            <div class="chart-row mt-4">
+                                <div class="chart-labels"><span class="text-red font-bold flex-align-center"><i class="ti ti-alert-circle" style="font-size: 16px; margin-right:4px;"></i> Crítico (Rojo)</span><span class="font-mono text-red font-bold">32 docentes (7%)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner" style="width: 7%; background-color: var(--red-text);"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Búsqueda -->
+                    <div id="view-chart-circular-busqueda" class="chart-view hidden-chart mt-4">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-busqueda" class="css-pie css-chart-busqueda"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--green-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Cumplido</p><p class="text-muted text-xs" style="font-size: 11px;">70%</p></div></div>
+                                <div class="legend-item"><div class="legend-color bg-amber"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Incompleto</p><p class="text-muted text-xs" style="font-size: 11px;">20%</p></div></div>
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--red-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Crítico</p><p class="text-muted text-xs" style="font-size: 11px;">7%</p></div></div>
+                                <div class="legend-item"><div class="legend-color" style="background-color: var(--purple-text);"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Extraordinario</p><p class="text-muted text-xs" style="font-size: 11px;">3%</p></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filtros -->
+                <section class="card card-full mt-6">
+                    <h3 class="card-title-upper">Módulo de Filtrado Avanzado</h3>
+                    <div class="filters-grid mt-4">
+                        <div>
+                            <label class="filter-label highlight-label">ID Empleado <span class="ping-dot"></span></label>
+                            <input type="text" id="filter-id" placeholder="Ej. 84920" class="filter-input font-mono">
+                        </div>
+                        <div><label class="filter-label">Nombre del Docente</label><input type="text" id="filter-nombre" placeholder="Ej. Dra. Elena" class="filter-input"></div>
+                        <div>
+                            <label class="filter-label">Departamento</label>
+                            <select class="filter-input" id="filter-carrera"><option value="">Todas</option><option value="Ing. Sistemas">Ing. Sistemas</option><option value="Bioingeniería">Bioingeniería</option><option value="Matemáticas">Matemáticas</option></select>
+                        </div>
+                        <div>
+                            <label class="filter-label">Semáforo Variable</label>
+                            <select class="filter-input" id="filter-semaforo"><option value="">Todos los estados</option><option value="cumplido">🟢 Cumplido</option><option value="incompleto">🟡 Incompleto</option><option value="critico">🔴 Crítico</option><option value="extraordinario">🟣 Extraordinario</option></select>
+                        </div>
+                        <div>
+                            <label class="filter-label">Perfil Académico</label>
+                            <select class="filter-input" id="filter-perfil"><option value="">Todos los perfiles</option><option value="true">✔ Perfil Deseable</option><option value="false">⚠ Sin Perfil Deseable</option></select>
+                        </div>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="btn-secondary" id="btn-clear-filters"><i class="ti ti-x" style="font-size: 16px;"></i> Limpiar</button>
+                        <button class="btn-primary" id="btn-apply-filters"><i class="ti ti-filter" style="font-size: 16px;"></i> Aplicar Filtros</button>
+                    </div>
+                </section>
+                <section class="card card-full table-card mt-6">
+                    <div class="table-header flex-row-between"><h3 class="card-title">Registros de Desempeño</h3><details class="vr-cols"><summary class="btn-secondary"><i class="ti ti-eye"></i> Columnas</summary><div class="vr-cols-pop" id="vr-cols-pop"></div></details></div>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead><tr><th data-col="emp">N° Emp.</th><th>Docente</th><th data-col="campus">Campus</th><th data-col="plan">Plan vs. Real</th><th data-col="estado">Estado</th><th data-col="punt">Puntuación</th><th class="text-right column-action">Acción</th></tr></thead>
+                            <tbody id="table-body-docentes"></tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <!-- VISTA PARTICULAR: DETALLE DOCENTE -->
+            <div id="section-particular" class="content-section view-hidden">
+                <button class="btn-back" data-act="back"><i class="ti ti-arrow-left" style="font-size:16px;margin-right:4px"></i> Volver a Búsqueda</button>
+                <div class="card card-full" id="particular-view-container"></div>
+            </div>
+            <!-- ================= 3. INVESTIGACIÓN Y SNII ================= -->
+            <div id="section-investigacion" class="content-section view-hidden">
+                <div class="kpi-grid grid-3">
+                    <div class="card kpi-card bg-gradient-green text-white flex-row-between">
+                        <div><p class="kpi-label-light">Miembros SNII</p><h2 class="kpi-value-large">142</h2><p class="kpi-desc-light">31.4% de la plantilla</p></div>
+                        <span class="giant-icon" style="background: rgba(255,255,255,0.2);"><i class="ti ti-flask"></i></span>
+                    </div>
+                    <div class="card kpi-card flex-row-between">
+                        <div><p class="kpi-label">Distinciones</p><h2 class="kpi-value-large text-dark">38 <span class="text-success text-sm" style="font-size: 14px;">▲ +6 este año</span></h2><p class="card-subtitle">Premios de alto impacto</p></div>
+                        <span class="giant-icon bg-neutral"><i class="ti ti-award"></i></span>
+                    </div>
+                    <div class="card kpi-card flex-row-between">
+                        <div><p class="kpi-label">Candidatos a SNII</p><h2 class="kpi-value-large text-primary">24 <span class="text-muted text-sm" style="font-size: 14px;">en revisión</span></h2><p class="card-subtitle">Cumplen puntaje mínimo</p></div>
+                        <span class="giant-icon bg-neutral"><i class="ti ti-rocket"></i></span>
+                    </div>
+                </div>
+                <div class="card card-full mt-6">
+                    <div class="flex-row-between" style="align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <span class="tag-meta">Indicador de Calidad Académica</span>
+                            <h3 class="card-title mt-1">Contraste de Plantilla: Perfil Deseable</h3>
+                            <p class="card-subtitle">Equilibrio en docencia, tutoría e investigación activa.</p>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="investigacion" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Investigación -->
+                    <div id="view-chart-bar-investigacion" class="chart-view active-chart mt-4">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels">
+                                    <span class="text-success font-bold flex-align-center"><i class="ti ti-circle-check" style="font-size: 16px; margin-right:4px;"></i> Profesores con Perfil Deseable</span>
+                                    <span class="font-mono text-dark font-bold">343 docentes (75.8%)</span>
+                                </div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: 75.8%;"></div></div>
+                                <button class="link-action text-success" style="margin-top: 8px; font-size: 11px;" data-act="perfil" data-v="true">Ver padrón →</button>
+                            </div>
+                            <div class="chart-row mt-6">
+                                <div class="chart-labels">
+                                    <span class="text-warning font-bold flex-align-center"><i class="ti ti-alert-triangle" style="font-size: 16px; margin-right:4px;"></i> Profesores sin Perfil Deseable</span>
+                                    <span class="font-mono text-warning font-bold">109 docentes (24.2%)</span>
+                                </div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-amber" style="width: 24.2%;"></div></div>
+                                <button class="link-action text-warning" style="margin-top: 8px; font-size: 11px;" data-act="perfil" data-v="false">Ver padrón →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Investigación -->
+                    <div id="view-chart-circular-investigacion" class="chart-view hidden-chart mt-4">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-investigacion" class="css-pie css-chart-investigacion"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item" data-act="perfil" data-v="true" style="cursor:pointer;">
+                                    <div class="legend-color bg-primary"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Perfil Deseable (75.8%)</p><p class="text-muted text-xs" style="font-size: 11px;">343 docentes</p><span class="link-action text-success" style="font-size: 10px; margin-top:4px;">Ver padrón →</span></div>
+                                </div>
+                                <div class="legend-item" data-act="perfil" data-v="false" style="cursor:pointer;">
+                                    <div class="legend-color bg-amber"></div>
+                                    <div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Sin Perfil Deseable (24.2%)</p><p class="text-muted text-xs" style="font-size: 11px;">109 docentes en fortalecimiento</p><span class="link-action text-warning" style="font-size: 10px; margin-top:4px;">Ver padrón →</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-full mt-6">
+                    <h3 class="card-title">Muro de Honor</h3>
+                    <div class="honor-grid mt-4">
+                        <div class="honor-box">
+                            <i class="ti ti-trophy honor-icon" style="color: #fbbf24;"></i>
+                            <div><span class="honor-tag text-primary">Premio Estatal</span><h4>Dra. Patricia Mercader</h4><p>Desarrollo de biomateriales.</p></div>
+                        </div>
+                        <div class="honor-box">
+                            <i class="ti ti-shield-check honor-icon" style="color: var(--purple-text);"></i>
+                            <div><span class="honor-tag text-purple">Patente (IMPI)</span><h4>Dr. Carlos Mendoza</h4><p>Sistema de captación pluvial.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================= 4. HISTÓRICO ================= -->
+            <div id="section-historico" class="content-section view-hidden">
+                <div class="card card-full mt-6">
+                    <div class="balance-header" style="margin-bottom: 0;">
+                        <div>
+                            <span class="tag-meta" style="background-color: var(--purple-bg); color: var(--purple-text); border: 1px solid var(--purple-border);">Análisis Comparativo Temporal</span>
+                            <h3 class="card-title mt-2">Crecimiento Padrón SNII: 2024 vs 2025</h3>
+                        </div>
+                        <select class="btn-secondary chart-selector" data-target="historico" style="outline:none; padding:6px 12px; height: 36px;">
+                            <option value="bar">📊 Gráfica de Barras</option>
+                            <option value="pie">🥧 Gráfica Circular (Pastel)</option>
+                            <option value="donut">🍩 Gráfica de Anillo (Donut)</option>
+                        </select>
+                    </div>
+                    <!-- VISTA BARRAS: Histórico -->
+                    <div id="view-chart-bar-historico" class="chart-view active-chart mt-6">
+                        <div class="bar-chart-box" style="margin-top: 0;">
+                            <div class="chart-row">
+                                <div class="chart-labels"><span class="text-muted font-bold flex-align-center"><i class="ti ti-history" style="font-size: 16px; margin-right:4px;"></i> Ciclo 2024</span><span class="font-mono text-dark font-bold">120 docentes (45.8% del total histórico)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner" style="width: 45.8%; background-color: #9ca3af;"></div></div>
+                            </div>
+                            <div class="chart-row mt-6">
+                                <div class="chart-labels"><span class="text-primary font-bold flex-align-center"><i class="ti ti-calendar-event" style="font-size: 16px; margin-right:4px;"></i> Ciclo 2025 (Actual)</span><span class="font-mono text-primary font-bold">142 docentes (54.2% del total histórico)</span></div>
+                                <div class="chart-bar-outer mt-2"><div class="chart-bar-inner bar-primary" style="width: 54.2%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VISTA CIRCULAR/DONUT: Histórico -->
+                    <div id="view-chart-circular-historico" class="chart-view hidden-chart mt-6">
+                        <div class="circular-chart-box" style="margin-top: 0;">
+                            <div class="css-chart-wrapper">
+                                <div id="css-circular-chart-historico" class="css-pie css-chart-historico"></div>
+                            </div>
+                            <div class="circular-legend">
+                                <div class="legend-item"><div class="legend-color" style="background-color: #9ca3af;"></div><div><p class="font-bold text-dark text-sm" style="font-size: 13px;">Ciclo 2024</p><p class="text-muted text-xs" style="font-size: 11px;">120 investigadores</p></div></div>
+                                <div class="legend-item"><div class="legend-color bg-primary"></div><div><p class="font-bold text-primary text-sm" style="font-size: 13px;">Ciclo 2025 (Actual)</p><p class="text-muted text-xs" style="font-size: 11px;">142 investigadores</p><span class="link-action text-success" style="font-size: 10px; margin-top:4px;">+18.3% Crecimiento</span></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historic-comparison mt-6">
+                        <div class="comparison-row header-row">
+                            <div class="comp-col">Indicador Académico</div>
+                            <div class="comp-col text-center">Ciclo 2024</div>
+                            <div class="comp-col text-center font-bold">Ciclo 2025 (Actual)</div>
+                            <div class="comp-col text-right">Tendencia</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Horas Totales Impartidas</div>
+                            <div class="comp-col text-center text-muted">13,500 hrs</div>
+                            <div class="comp-col text-center font-bold">14,796 hrs</div>
+                            <div class="comp-col text-right text-success font-bold flex-end"><i class="ti ti-trending-up"></i> +9.6%</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Profesores en Padrón SNII</div>
+                            <div class="comp-col text-center text-muted">120 docentes</div>
+                            <div class="comp-col text-center font-bold">142 docentes</div>
+                            <div class="comp-col text-right text-success font-bold flex-end"><i class="ti ti-trending-up"></i> +18.3%</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comp-col">Alertas Críticas sin Justificar</div>
+                            <div class="comp-col text-center text-muted">28 casos</div>
+                            <div class="comp-col text-center font-bold text-red">12 casos</div>
+                            <div class="comp-col text-right text-success font-bold flex-end"><i class="ti ti-trending-down"></i> Mejoría</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>

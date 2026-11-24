@@ -1,0 +1,18 @@
+// Paleta verde institucional de la pantalla de acceso del prototipo.
+.acceso { --verde: #1e4a46; min-height: 100vh; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); background: var(--bg); }
+.identidad { background: var(--verde); color: #fff; padding: 40px 56px; display: flex; flex-direction: column; gap: 48px;
+  ::ng-deep sigd-marca { b { color: #fff; } small { color: #b9d2ce; } .div { background: rgba(255, 255, 255, 0.25); }
+    .escudo { background: #fff; border-radius: 16px; padding: 4px; } } }
+.cuerpo { margin-top: auto; margin-bottom: auto; max-width: 520px; }
+.hero { font-size: 48px; line-height: 1.1; font-weight: 700; em { font-style: normal; color: #9fd3c0; } }
+.lead { margin-top: 20px; font-size: 18px; color: #d4e5e2; }
+.entrada { display: grid; place-items: center; padding: 40px 24px; }
+.caja { width: 100%; max-width: 440px; background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 40px 36px; box-shadow: var(--e1);
+  h1 { font-size: 34px; line-height: 1.15; } .desc { color: var(--muted); margin: 8px 0 24px; } }
+form { display: flex; flex-direction: column; gap: 18px; }
+.pw { position: relative; input { width: 100%; padding-right: 48px; }
+  button { position: absolute; right: 4px; top: 4px; width: 36px; height: 36px; border: 0; background: transparent; color: var(--muted); border-radius: 50%; } }
+.fe { color: var(--err); font-size: 13px; }
+.grande { min-height: 48px; justify-content: center; }
+.sec { margin-top: 24px; display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 13px; }
+@media (max-width: 1000px) { .acceso { grid-template-columns: 1fr; } .identidad { padding: 28px 24px; gap: 20px; } .hero { font-size: 32px; } }

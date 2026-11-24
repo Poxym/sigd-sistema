@@ -1,0 +1,35 @@
+<header class="top">
+  <button class="menu" type="button" aria-label="Abrir menú" title="Abrir menú" (click)="abrirMenu.emit()">
+    <i class="ti ti-menu-2"></i>
+  </button>
+  <sigd-marca class="bk" />
+
+  <div class="hr">
+    @let mods = sesion.modulos();
+    @let actual = activo.modulo();
+    <nav class="mods" aria-label="Módulos disponibles">
+      @for (m of mods; track m.id) {
+        <a [routerLink]="'/' + m.ruta" [attr.aria-current]="actual?.id === m.id ? 'true' : null" [title]="m.nombre" [attr.aria-label]="m.nombre">
+          <i class="ti ti-{{ m.icono }}"></i><span class="l">{{ m.nombre }}</span>
+        </a>
+      }
+    </nav>
+
+    @if (sesion.modulos().some(m => m.id === 'plan')) {
+      <a class="bell" routerLink="/plan/notificaciones" [attr.aria-label]="noLeidas() ? 'Notificaciones, ' + noLeidas() + ' sin leer' : 'Notificaciones'" title="Notificaciones">
+        <i class="ti ti-bell"></i>
+        @if (noLeidas()) { <em class="bdg">{{ noLeidas() > 99 ? '99+' : noLeidas() }}</em> }
+      </a>
+    }
+
+    @if (sesion.perfil(); as p) {
+      <div class="usr">
+        <span class="av"><i class="ti ti-user"></i></span>
+        <div><b>{{ p.nombre }}</b><small>{{ p.roles.join(' · ') }}</small></div>
+      </div>
+    }
+    <button class="btn lo" type="button" (click)="salir()" aria-label="Cerrar sesión" title="Cerrar sesión">
+      <i class="ti ti-logout"></i><span>Cerrar sesión</span>
+    </button>
+  </div>
+</header>

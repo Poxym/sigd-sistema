@@ -1,0 +1,41 @@
+# Entorno de desarrollo completo:  docker compose up --build
+#   Frontend  http://localhost:4200
+#   API       http://localhost:8000/api/salud/
+#   Admin     http://localhost:8000/django-admin/
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sigd}
+      POSTGRES_USER: ${POSTGRES_USER:-sigd}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sigd}
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER:-sigd}"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    env_file: .env
+    environment:
+      POSTGRES_HOST: db
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes: ["./backend:/app"]
+    ports: ["8000:8000"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  frontend:
+    build: { context: ./frontend, target: dev }
+    environment:
+      API_URL: http://backend:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules   # conserva los node_modules del contenedor
+    ports: ["4200:4200"]
+    depends_on: [backend]
+
+volumes:
+  pgdata:

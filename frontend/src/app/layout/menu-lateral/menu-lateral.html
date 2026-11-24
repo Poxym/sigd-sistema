@@ -1,0 +1,17 @@
+<aside class="nav" aria-label="Navegación del módulo">
+  <button class="tg" type="button" (click)="alternar.emit()" [attr.aria-expanded]="!colapsado()" [attr.aria-label]="colapsado() ? 'Mostrar menú' : 'Ocultar menú'">
+    <i class="ti" [class.ti-layout-sidebar-left-collapse]="!colapsado()" [class.ti-layout-sidebar-left-expand]="colapsado()"></i>
+    <span>{{ colapsado() ? 'Mostrar menú' : 'Ocultar menú' }}</span>
+  </button>
+  <div class="nlist">
+    @if (activo.modulo(); as m) {
+      @for (x of activo.nav(); track x.ruta) {
+        <a class="ni" [routerLink]="['/', m.ruta, x.ruta]" routerLinkActive #rla="routerLinkActive"
+           [attr.aria-current]="rla.isActive ? 'page' : null" [attr.aria-label]="x.etiqueta" [title]="colapsado() ? x.etiqueta : ''" (click)="navegar.emit()">
+          <i class="ti ti-{{ x.icono }}"></i><span>{{ x.etiqueta }}</span>
+          @if (insignia(x.ruta); as n) { <em class="bdg">{{ n }}</em> }
+        </a>
+      }
+    }
+  </div>
+</aside>

@@ -1,0 +1,123 @@
+
+<div class="shell" id="shell"><div class="mobile-shade" id="shade"></div><aside>
+<div class="logo"><button aria-controls="navigation" aria-expanded="true" aria-label="Contraer menú lateral" class="logo-menu-toggle" id="collapse" title="Contraer menú" type="button"><div class="emblem"><img alt="Logotipo UNISTMO" class="univ-logo" src=""/></div><span aria-hidden="true" class="logo-toggle-icon"><svg aria-hidden="true" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24" width="24"><rect height="16" rx="3" width="18" x="3" y="4"></rect><path d="M9 4v16"></path><path class="fold-arrow" d="m16 9-3 3 3 3"></path></svg></span><div class="logo-copy"><div class="logo-name">Plataforma Académica</div><small>Administración del sistema</small></div></button></div>
+<div class="nav-section">Espacio de trabajo</div><nav aria-label="Navegación principal" class="nav" id="navigation">
+<button class="nav-btn active" data-view="inicio" title="Inicio"><i class="ti ti-layout-dashboard"></i><span>Inicio</span></button>
+<button class="nav-btn" data-view="solicitudes" title="Solicitudes de cambio"><i class="ti ti-git-pull-request"></i><span>Solicitudes de cambio</span></button>
+<button class="nav-btn" data-view="catalogos" title="Catálogos académicos"><i class="ti ti-folders"></i><span>Catálogos académicos</span></button>
+<button class="nav-btn" data-view="usuarios" title="Usuarios y permisos"><i class="ti ti-users"></i><span>Usuarios y permisos</span></button>
+<button class="nav-btn" data-view="periodos" title="Periodos de captura"><i class="ti ti-calendar-cog"></i><span>Periodos de captura</span></button>
+<button class="nav-btn" data-view="bitacora" title="Bitácora"><i class="ti ti-clipboard-list"></i><span>Bitácora</span></button></nav>
+</aside>
+<div class="workspace"><header class="mast"><div class="mast-inner"><div class="mast-left"><button aria-controls="navigation" aria-label="Abrir menú" class="sidebar-toggle" id="sidebarToggle"><i class="ti ti-menu-2"></i></button><div class="mast-copy"><div class="eyebrow">Administración / <span id="mastTrail">Inicio</span></div><div class="mast-title" id="mastTitle">Resumen general</div></div></div><div class="mast-right"><div class="session-divider"></div><div class="profile-control" id="profileControl"><button aria-controls="profileMenu" aria-expanded="false" aria-haspopup="true" class="profile-trigger" id="profileTrigger" type="button"><span class="session-avatar" id="activeAvatar">JP</span><span class="session-copy"><strong id="activeFullName">Juan Pérez Martínez</strong><small id="activeRole">Administrador general</small></span><i aria-hidden="true" class="ti ti-chevron-down profile-chevron"></i></button><div class="profile-menu" hidden="" id="profileMenu"><div class="profile-menu-head"><strong id="menuProfileName">Juan Pérez Martínez</strong><span id="menuProfileEmail">juan.perez@universidad.edu.mx</span></div><div class="profile-menu-row"><i class="ti ti-shield-check"></i><span>Rol activo</span><strong id="menuActiveRole">Administrador general</strong></div><button class="profile-menu-action profile-logout" id="logoutButton" type="button"><i class="ti ti-logout"></i> Cerrar sesión</button></div></div></div></div></header>
+<main class="main">
+<section class="view active" id="view-inicio"><div class="heading home-heading"><div><h1>Panel de administración</h1><p id="homeCycleText">Seguimiento de la operación institucional</p></div><div class="head-actions home-actions"><button class="btn primary" id="newRequestHome" type="button"><i class="ti ti-plus"></i> Registrar solicitud</button></div></div>
+<div aria-label="Indicadores administrativos" class="home-summary-grid" id="homeSummaryGrid"></div>
+<div class="home-main-grid"><section class="surface pad home-pending"><div class="surface-head"><div><h3>Pendientes administrativos</h3></div><button class="inline-link" data-go="solicitudes">Ver todas <i class="ti ti-arrow-right"></i></button></div><div class="home-task-list" id="homeTasks"></div></section><section class="surface pad home-periods"><div class="surface-head"><div><h3>Periodos de captura</h3><small id="homePeriodCycle">Ciclo escolar</small></div><button class="inline-link" data-go="periodos">Administrar <i class="ti ti-arrow-right"></i></button></div><div class="home-period-list" id="homePeriodList"></div></section></div>
+
+</section>
+<section class="view" id="view-solicitudes"><div class="heading"><div><h1>Solicitudes de cambio</h1><p>Controla las modificaciones autorizadas y su entrada en vigor.</p></div><div class="head-actions"><button class="btn primary" id="newRequest"><i class="ti ti-plus"></i>Registrar solicitud</button></div></div>
+<div class="surface pad"><div class="toolbar"><div class="search-wrap"><i class="ti ti-search"></i><input aria-label="Buscar solicitudes" id="requestSearch" placeholder="Buscar por concepto o solicitante"/></div><div class="filters"><select aria-label="Filtrar por estado" id="requestFilter"><option value="all">Todos los estados</option><option value="pendiente">Pendientes</option><option value="autorizada">Autorizadas</option><option value="aplicada">Aplicadas</option><option value="rechazada">Rechazadas</option></select></div></div><div class="table-wrap work-table"><table><thead><tr><th>Solicitud</th><th>Origen</th><th>Aplicación</th><th>Estado</th><th style="text-align:right">Acción</th></tr></thead><tbody id="requestRows"></tbody></table></div></div></section>
+<section class="view" id="view-catalogos"><div class="heading"><div><h1>Catálogos académicos</h1><p>Catálogos compartidos entre Plan de Trabajo, Informe y Reportes.</p></div><div class="head-actions"><button class="btn primary" id="newCatalog"><i class="ti ti-plus"></i>Nuevo registro</button></div></div><div class="catalog-navigation"><div aria-label="Tipo de catálogo" class="tabs" id="catalogTabs" role="tablist"></div></div><div class="surface pad"><div class="surface-head"><div><h3 id="catalogTitle">Campus</h3></div><span class="status neutral" id="catalogCount"></span></div><div aria-live="polite" class="catalog-context" id="catalogContext"></div><div class="toolbar"><div class="search-wrap"><i class="ti ti-search"></i><input aria-label="Buscar catálogo" id="catalogSearch" placeholder="Buscar registro"/></div><div class="filters"><select aria-label="Estado del registro" id="catalogFilter"><option value="all">Todos los estados</option><option value="Vigente">Vigentes</option><option value="Histórico">Históricos</option></select><div hidden="" id="optionGroupFilterWrap"><select aria-label="Filtrar por grupo de opciones" id="optionGroupFilter"><option value="all">Todos los grupos</option></select></div></div></div><div class="table-wrap work-table"><table><thead><tr><th>Nombre / clave</th><th>Información vinculada</th><th>Estado</th><th style="text-align:right">Acción</th></tr></thead><tbody id="catalogRows"></tbody></table></div></div></section>
+<section class="view" id="view-usuarios"><div class="heading"><div><h1>Usuarios y roles</h1><p>Gestión de cuentas, roles y permisos · Registros académicos de referencia</p></div><div class="head-actions"><button class="btn" id="importUsers" type="button"><i class="ti ti-upload"></i>Importar</button><input accept=".csv,text/csv" aria-label="Seleccionar archivo CSV de usuarios" hidden="" id="importUsersFile" type="file"/><button class="btn primary" id="newUser"><i class="ti ti-user-plus"></i>Nuevo usuario</button></div></div><div aria-label="Resumen de usuarios por tipo de rol" class="user-role-grid" id="userRoleStats"></div>
+<div class="surface pad users-workspace"><div class="toolbar"><div class="search-wrap"><i class="ti ti-search"></i><input aria-label="Buscar usuarios" id="userSearch" placeholder="Nombre, número de empleado o correo"/></div><div class="filters"><select id="userRole"><option value="all">Todos los roles</option></select><select id="userStatus"><option value="all">Todos los estados</option><option value="Activo">Activos</option><option value="Inactivo">Inactivos</option></select></div></div><div class="table-wrap work-table"><table><thead><tr><th>Usuario</th><th>Núm. empleado</th><th>Rol</th><th>Adscripción</th><th>Estado</th><th style="text-align:right">Acción</th></tr></thead><tbody id="userRows"></tbody></table></div></div><details class="permission-disclosure"><summary><span><i class="ti ti-shield-lock"></i> Configuración de permisos por rol</span><i class="ti ti-chevron-down"></i></summary><div class="surface pad" id="permissionPanel"></div></details></section>
+<section class="view" id="view-periodos">
+<div class="heading period-heading period-heading-v45">
+<div>
+<h1>Periodos de captura</h1>
+<p>Configura las ventanas operativas del ciclo escolar y consulta su estado desde una sola vista.</p>
+</div>
+<div class="head-actions">
+<button class="btn primary" id="savePeriods"><i class="ti ti-device-floppy"></i>Guardar configuración</button>
+</div>
+</div>
+<div class="period-page-grid v45-period-layout">
+<section class="surface pad period-config-card v45-config-card">
+<div class="period-config-top v45-config-top">
+<div>
+<span class="section-kicker">CONFIGURACIÓN DEL CICLO</span>
+<h3>Ventanas de captura</h3>
+<p>Administra las fechas de apertura, cierre y estado de cada documento institucional.</p>
+</div>
+<span class="status neutral" id="cycleBadge">Sin configurar</span>
+</div>
+<form id="periodForm">
+<div class="v45-cycle-block">
+<div class="form-field period-cycle-field v45-cycle-field">
+<label class="required" for="cycleName">Ciclo escolar</label>
+<input class="field" id="cycleName" placeholder="Ej. 2026-2027" required=""/>
+</div>
+<div class="v41-academic-row v45-academic-row">
+<div class="form-field">
+<label for="v41Semester">Semestre</label>
+<select aria-label="Semestre académico" id="v41Semester">
+<option value="">Seleccionar</option>
+<option value="A">A</option>
+<option value="B">B</option>
+</select>
+</div>
+<div class="form-field">
+<label for="v41AcademicStart">Inicio del periodo reportado</label>
+<input class="field" id="v41AcademicStart" type="date"/>
+</div>
+<div class="form-field">
+<label for="v41AcademicEnd">Fin del periodo reportado</label>
+<input class="field" id="v41AcademicEnd" type="date"/>
+</div>
+</div>
+</div>
+<div class="period-module-grid v45-module-grid">
+<article aria-labelledby="planModuleTitle" class="period-module-card v45-module-card">
+<div class="period-module-head">
+<div class="period-module-title-wrap">
+<span class="period-module-icon"><i class="ti ti-file-pencil"></i></span>
+<div>
+<h3 class="period-module-title" id="planModuleTitle">Plan de Trabajo</h3>
+<p>Captura del plan de trabajo docente.</p>
+</div>
+</div>
+<div id="planStatePreview"></div>
+</div>
+<div class="period-module-fields">
+<div class="form-field"><label for="planStart">Inicio de captura</label><input class="field" id="planStart" required="" type="date"/></div>
+<div class="form-field"><label for="planEnd">Cierre de captura</label><input class="field" id="planEnd" required="" type="date"/></div>
+<div class="form-field span-all"><label for="planState">Estado de captura</label><select id="planState"><option>Abierto</option><option>Cerrado</option><option>En revisión</option></select></div>
+</div>
+</article>
+<article aria-labelledby="reportModuleTitle" class="period-module-card v45-module-card">
+<div class="period-module-head">
+<div class="period-module-title-wrap">
+<span class="period-module-icon report"><i class="ti ti-file-check"></i></span>
+<div>
+<h3 class="period-module-title" id="reportModuleTitle">Informe de Actividades</h3>
+<p>Captura del reporte y evidencias del periodo.</p>
+</div>
+</div>
+<div id="reportStatePreview"></div>
+</div>
+<div class="period-module-fields">
+<div class="form-field"><label for="reportStart">Inicio de captura</label><input class="field" id="reportStart" required="" type="date"/></div>
+<div class="form-field"><label for="reportEnd">Cierre de captura</label><input class="field" id="reportEnd" required="" type="date"/></div>
+<div class="form-field span-all"><label for="reportState">Estado de captura</label><select id="reportState"><option>Abierto</option><option>Cerrado</option><option>En revisión</option></select></div>
+</div>
+</article>
+</div>
+</form>
+</section>
+<aside class="period-side-stack v45-side-stack">
+<section class="surface pad period-overview-card v45-overview-card">
+<div class="surface-head v45-side-head">
+<div>
+<h3>Resumen operativo</h3>
+<small>Vista rápida del ciclo actual</small>
+</div>
+</div>
+<div class="period-overview-list" id="periodOverviewList"></div>
+</section>
+<section class="surface pad period-history-card v45-history-card" id="periodHistoryPanel"></section>
+</aside>
+</div>
+</section>
+<section class="view" id="view-bitacora"><div class="heading"><div><h1>Bitácora de auditoría</h1><p>Consulta quién modificó qué información, cuándo y con qué resultado.</p></div><div class="head-actions"><button class="btn" id="exportAudit"><i class="ti ti-file-type-csv"></i>Exportar CSV</button></div></div><div class="surface pad"><div class="toolbar"><div class="search-wrap"><i class="ti ti-search"></i><input aria-label="Buscar bitácora" id="auditSearch" placeholder="Buscar acción, responsable o detalle"/></div><div class="filters"><select id="auditFilter"><option value="all">Todas las acciones</option><option>Solicitud</option><option>Catálogo</option><option>Usuario</option><option>Periodo</option><option>Autorización</option></select></div></div><div class="table-wrap work-table"><table><thead><tr><th>Fecha y hora</th><th>Responsable</th><th>Acción</th><th>Detalle del cambio</th></tr></thead><tbody id="auditRows"></tbody></table></div></div></section>
+</main></div></div><dialog id="editor"><form id="editorForm"><div class="dialog-head modal-toolbar"><div><div class="eyebrow" id="modalEyebrow">ADMINISTRACIÓN</div><h2 id="modalTitle">Registrar</h2></div><button aria-label="Cerrar" class="btn icon-only" id="closeModal" type="button"><i class="ti ti-x"></i></button></div><div class="dialog-body" id="modalContent"></div><div class="dialog-actions"><button class="btn" id="cancelModal" type="button">Cancelar</button><button class="btn primary" id="submitModal" type="submit">Guardar</button></div></form></dialog><div aria-live="polite" class="toast-stack" id="toasts" role="status"></div>
+<dialog aria-label="Búsqueda rápida" class="finder-dialog" id="globalSearch"><div class="finder-top"><i aria-hidden="true" class="ti ti-search"></i><input aria-label="Buscar usuarios, catálogos y secciones" autocomplete="off" id="globalQuery" placeholder="Buscar usuarios, catálogos o secciones…" type="search"/><button aria-label="Cerrar búsqueda" id="closeFinder" type="button"><i class="ti ti-x"></i></button></div><div aria-label="Resultados de búsqueda" class="finder-results" id="globalResults" role="listbox"></div><div class="finder-footer">Selecciona un resultado para abrirlo <span>ESC para cerrar</span></div></dialog>

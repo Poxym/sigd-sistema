@@ -1,0 +1,44 @@
+</script><!-- ===== DEBUG · Selector de rol del módulo Vicerrectoría (INICIO) =====
+     Bloque autónomo. Para quitarlo en producción, borra todo desde este comentario hasta "DEBUG ... (FIN)".
+     El módulo VR sigue funcionando sin él (toma el rol de la cuenta). -->
+<style id="dbg-rol-css">
+#dbgRol{position:fixed;right:20px;bottom:20px;z-index:80;font:500 14px/1.3 'Inter',system-ui,sans-serif}
+#dbgRol[hidden]{display:none}
+#dbgRol .fab{display:flex;align-items:center;gap:8px;height:48px;padding:0 18px 0 14px;border:0;border-radius:16px;background:#2F3E48;color:#fff;font-weight:600;box-shadow:0 1px 3px rgba(34,49,59,.3),0 4px 8px 3px rgba(34,49,59,.15);cursor:pointer}
+#dbgRol .fab .ti{font-size:20px}
+#dbgRol .fab em{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.06em;background:#F2B8B5;color:#601410;border-radius:6px;padding:2px 6px}
+#dbgRol .pop{position:absolute;right:0;bottom:58px;width:260px;background:#fff;border:1px solid #E0E7EA;border-radius:12px;padding:8px;box-shadow:0 1px 3px rgba(34,49,59,.3),0 4px 8px 3px rgba(34,49,59,.15)}
+#dbgRol .pop p{margin:4px 8px 8px;font-size:12px;color:#62737E;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+#dbgRol .pop button{display:flex;flex-direction:column;align-items:flex-start;width:100%;border:0;background:none;border-radius:8px;padding:8px 10px;text-align:left;cursor:pointer;color:#22313B}
+#dbgRol .pop button small{color:#62737E;font-size:12px}
+#dbgRol .pop button:hover{background:#F3F7F9}
+#dbgRol .pop button[aria-checked=true]{background:#E8F1F8;color:#183E56;font-weight:600}
+</style>
+<div id="dbgRol" hidden><div class="pop" id="dbgRolPop" role="menu" hidden></div>
+ <button class="fab" id="dbgRolBtn" type="button" aria-haspopup="menu" aria-expanded="false" title="Simulador de rol (depuración)"><i class="ti ti-user-cog"></i><span id="dbgRolTxt">Rol</span><em>DEBUG</em></button></div>
+<script>
+(()=>{const ROLES=[['vicerrectoria','Vicerrectoría','Acceso total'],['configurador','Configurador del módulo','Acceso total + define el panel de todos'],['rectoria','Rectoría','Consultivo: sin columna de acción'],['secretaria','Secretaría / Captura','Sin Investigación ni Histórico'],['representante','Representante Institucional','Sin columna de acción']];
+ const box=document.getElementById('dbgRol'),btn=document.getElementById('dbgRolBtn'),pop=document.getElementById('dbgRolPop'),txt=document.getElementById('dbgRolTxt');
+ const paint=()=>{const r=VR.rol();txt.textContent=(ROLES.find(x=>x[0]===r)||[,r])[1];
+  pop.innerHTML='<p>Simular rol</p>'+ROLES.map(x=>`<button role="menuitemradio" aria-checked="${x[0]===r}" data-r="${x[0]}">${x[1]}<small>${x[2]}</small></button>`).join('')};
+ const close=()=>{pop.hidden=true;btn.setAttribute('aria-expanded','false')};
+ btn.onclick=()=>{const o=pop.hidden;paint();pop.hidden=!o;btn.setAttribute('aria-expanded',String(o))};
+ pop.onclick=e=>{const b=e.target.closest('[data-r]');if(!b)return;VR.setRolDebug(b.dataset.r);close();render();paint()};
+ document.addEventListener('click',e=>{if(!box.contains(e.target))close()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+ /* visible solo dentro del módulo de Vicerrectoría */
+ setInterval(()=>{const on=!document.getElementById('app').hidden&&cur==='reportes';if(box.hidden===on){box.hidden=!on;if(on)paint();else close()}},300);
+})();
+</script>
+<!-- ===== DEBUG · Selector de rol del módulo Vicerrectoría (FIN) ===== -->
+<!-- ===== SESIÓN PERSISTENTE DEL PROTOTIPO (INICIO) =====
+     Mantiene la sesión al recargar la página, solo en esta pestaña. Se borra al cerrar sesión o al cerrar la pestaña.
+     Bloque autónomo fuera del módulo VR: para quitarlo, borra desde este comentario hasta "(FIN)". -->
+<script>
+(()=>{const K='sigd-sesion';let st;try{st=window.sessionStorage}catch(e){return}if(!st)return;
+ try{const v=JSON.parse(st.getItem(K)||'null');if(v&&USERS[v.k]){U=Object.assign({k:v.k},USERS[v.k]);if(v.cur&&U.mods.includes(v.cur))open(v.cur);else if(U.mods.length===1)open(U.mods[0]);else picker()}}catch(e){}
+ let last=null;setInterval(()=>{const s=U?JSON.stringify({k:U.k,cur:document.getElementById('app').hidden?null:cur}):'';if(s===last)return;last=s;try{if(s)st.setItem(K,s);else st.removeItem(K)}catch(e){}},300);
+})();
+</script>
+<!-- ===== SESIÓN PERSISTENTE DEL PROTOTIPO (FIN) ===== -->
+</body></html>

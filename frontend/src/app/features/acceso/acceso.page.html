@@ -1,0 +1,40 @@
+<div class="acceso">
+  <section class="identidad" aria-label="SIGD">
+    <sigd-marca />
+    <div class="cuerpo">
+      <p class="hero">Cada semestre,<br />una nueva<br /><em>perspectiva.</em></p>
+      <p class="lead">Dale estructura a tus compromisos.<br />Dale espacio a lo que sigue.</p>
+    </div>
+  </section>
+
+  <main class="entrada">
+    <div class="caja">
+      <h1>Bienvenido<br />a tu espacio.</h1>
+      <p class="desc">Ingresa con tu cuenta institucional.</p>
+      <form [formGroup]="form" (ngSubmit)="entrar()" novalidate>
+        <div class="campo">
+          <label for="u">Número de empleado o correo institucional</label>
+          <input id="u" formControlName="identificador" autocomplete="username" spellcheck="false" placeholder="p. ej. 209 o nombre@unistmo.example" />
+          @if (form.controls.identificador.touched && form.controls.identificador.invalid) {
+            <small class="fe">Escribe tu número de empleado o correo institucional.</small>
+          }
+        </div>
+        <div class="campo">
+          <label for="pw">Contraseña</label>
+          <div class="pw">
+            <input id="pw" formControlName="password" [type]="verClave() ? 'text' : 'password'" autocomplete="current-password" placeholder="Contraseña" />
+            <button type="button" (click)="verClave.set(!verClave())" [attr.aria-pressed]="verClave()" [attr.aria-label]="verClave() ? 'Ocultar contraseña' : 'Mostrar contraseña'">
+              <i class="ti" [class.ti-eye]="!verClave()" [class.ti-eye-off]="verClave()"></i>
+            </button>
+          </div>
+          @if (form.controls.password.touched && form.controls.password.invalid) { <small class="fe">Escribe tu contraseña.</small> }
+        </div>
+        @if (error()) {
+          <div class="aviso error" role="alert"><i class="ti ti-alert-triangle"></i><div><strong>{{ error() }}</strong> Revisa los datos e intenta de nuevo.</div></div>
+        }
+        <button class="btn primario grande" type="submit" [disabled]="enviando()">Entrar a mi espacio <i class="ti ti-arrow-right"></i></button>
+      </form>
+      <p class="sec"><i class="ti ti-lock"></i>Acceso para personal autorizado por la Vicerrectoría Académica.</p>
+    </div>
+  </main>
+</div>
