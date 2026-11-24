@@ -1,0 +1,30 @@
+/* Estilos de la pantalla usuarios (antes en src/styles/admin.css; mismo orden). Se cargan después de admin.css. */
+#view-usuarios .toolbar{align-items:center}
+#view-usuarios #permissionPanel{margin-top:14px!important}
+#view-usuarios .user-role-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:13px!important;margin:0 0 16px!important}
+#view-usuarios .user-stat{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:13px!important;min-height:116px!important;padding:17px!important;background:#fff!important;border:1px solid #d7e3ee!important;border-radius:14px!important}
+#view-usuarios .user-stat-symbol{width:44px!important;height:44px!important;flex:0 0 44px!important;border-radius:12px!important}
+#view-usuarios .user-stat-content{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:3px!important}
+#view-usuarios .user-stat-label{font-size:12px!important;letter-spacing:0!important;line-height:1.4!important}
+#view-usuarios .user-stat-value{font-size:29px!important;line-height:1!important;font-weight:750!important;color:#152f49!important}
+#view-usuarios .user-stat-caption{font-size:12px!important;line-height:1.45!important;color:#647788!important}
+#view-usuarios .permission-disclosure{margin-top:13px!important}
+@media(max-width:1300px){#view-usuarios .user-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:760px){#view-usuarios .user-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#view-usuarios .user-stat{flex-direction:column!important;gap:8px!important;padding:12px!important}#view-usuarios .user-stat-symbol{width:37px!important;height:37px!important;flex-basis:37px!important}}
+#view-usuarios .users-workspace{padding:13px 14px!important}
+#view-usuarios .work-table{max-height:clamp(235px,calc(100vh - 360px),640px)}
+#view-usuarios .user-role-grid{margin:0 0 13px!important}
+#view-usuarios .user-stat{min-height:88px!important}
+#view-usuarios #permissionPanel{margin-top:12px!important}
+#view-usuarios .permission-options{gap:6px 9px!important}
+#view-usuarios .permission-check{padding:8px 10px!important}
+#view-usuarios .permission-editor{gap:12px!important}
+#view-usuarios .user-role-grid{display:grid!important}
+#view-usuarios .permission-editor select,#view-usuarios .permission-editor input{font-size:13px}
+#view-usuarios .permission-disclosure{margin-top:12px}
+#view-usuarios .user-stat-content{min-width:0!important}
+#view-usuarios .user-stat-caption{overflow-wrap:anywhere}
+#view-usuarios .user-role-grid{align-items:stretch}
+@media(max-width:1050px){#view-usuarios .user-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:760px){#view-usuarios .work-table tbody td:nth-child(4){grid-row:3;grid-column:2;text-align:right;color:#536d82}}
+@media(max-width:500px){#view-usuarios .user-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#view-usuarios .user-stat{min-height:115px!important;align-items:flex-start!important}}

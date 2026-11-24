@@ -1,0 +1,36 @@
+{
+  "ejemplo": {
+    "subtitulo": "Seguimiento institucional · Ciclo 2026-2027",
+    "indicadores": "Por autorizar 3 Solicitudes en revisión | Por aplicar 1 Cambios autorizados | Usuarios activos 11 Cuentas habilitadas | Catálogos vigentes 127 Registros institucionales | Accesos hoy 1 Accesos registrados",
+    "pendientes": "Revisión de descripción de Ingeniería en Computación Vicerrectoría · Pendiente de autorización Ajuste de rubro de tutorías Vicerrectoría · Pendiente de autorización Revisión de parámetro de reprobación Vicerrectoría · Pendiente de autorización Actualización de categoría docente Rectoría · Autorizada, pendiente de aplicación",
+    "cicloPeriodos": "Ciclo escolar 2026-2027",
+    "periodos": "Plan de Trabajo 10/08/2026 – 30/11/2026 Abierto Informe de Actividades 01/10/2026 – 15/12/2026 Abierto"
+  },
+  "botonesIr": [
+    "solicitudes",
+    "periodos"
+  ],
+  "cantidadPendientes": 4,
+  "detallePendiente": {
+    "titulo": "Revisión de descripción de Ingeniería en Computación",
+    "eyebrow": "SEGUIMIENTO DE CAMBIO"
+  },
+  "nuevaSolicitud": {
+    "titulo": "Registrar solicitud"
+  },
+  "viendoTrasIr": "view-solicitudes",
+  "modificado": {
+    "subtitulo": "Seguimiento institucional · Ciclo 2027-A",
+    "indicadores": "Por autorizar 3 Solicitudes en revisión | Por aplicar 1 Cambios autorizados | Usuarios activos 10 Cuentas habilitadas | Catálogos vigentes 127 Registros institucionales | Accesos hoy 9 Accesos registrados",
+    "pendientes": "Revisión de descripción de Ingeniería en Computación Vicerrectoría · Pendiente de autorización Ajuste de rubro de tutorías Vicerrectoría · Pendiente de autorización Revisión de parámetro de reprobación Vicerrectoría · Pendiente de autorización Actualización de categoría docente Rectoría · Autorizada, pendiente de aplicación",
+    "cicloPeriodos": "Ciclo escolar 2027-A",
+    "periodos": "Plan de Trabajo 10/08/2026 – 30/11/2026 Cerrado Informe de Actividades 01/10/2026 – 15/12/2026 Abierto"
+  },
+  "sinSolicitudes": {
+    "subtitulo": "Seguimiento institucional · Ciclo 2027-A",
+    "indicadores": "Por autorizar 0 Solicitudes en revisión | Por aplicar 0 Cambios autorizados | Usuarios activos 10 Cuentas habilitadas | Catálogos vigentes 127 Registros institucionales | Accesos hoy 10 Accesos registrados",
+    "pendientes": "Sin pendientes administrativos Las solicitudes nuevas aparecerán aquí.",
+    "cicloPeriodos": "Ciclo escolar 2027-A",
+    "periodos": "Plan de Trabajo 10/08/2026 – 30/11/2026 Cerrado Informe de Actividades 01/10/2026 – 15/12/2026 Abierto"
+  }
+}

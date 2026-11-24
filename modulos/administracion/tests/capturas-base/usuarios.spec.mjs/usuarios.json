@@ -1,0 +1,1274 @@
+{
+  "pantalla": {
+    "inicial": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "Juan Pérez Martínez administracion@unistmo.example 900001 Administrador general Institucional Activo",
+        "Francisco Aguilar Acevedo personal02@unistmo.example 900002 Docente Tehuantepec Activo",
+        "Daniel Pacheco Bautista personal03@unistmo.example 900003 Jefe de carrera Tehuantepec Activo",
+        "Ricardo Carreño Aguilera personal04@unistmo.example 900004 Docente Tehuantepec Activo",
+        "J. Jesús Arellano Pimentel personal05@unistmo.example 900005 Docente Tehuantepec Activo",
+        "Sergio Juárez Vázquez personal06@unistmo.example 900006 Docente Tehuantepec Activo",
+        "Omar Santiago Nieva García personal07@unistmo.example 900007 Docente Tehuantepec Activo",
+        "Ernesto Cortés Pérez personal08@unistmo.example 900008 Docente Tehuantepec Activo",
+        "Silvia Reyes Jiménez personal09@unistmo.example 900009 Docente Tehuantepec Activo",
+        "Guadalupe Toledo Toledo personal10@unistmo.example 900010 Docente Tehuantepec Activo",
+        "Martha Patricia Luna González personal11@unistmo.example 900011 Docente Tehuantepec Activo"
+      ]
+    },
+    "opcionesDeRol": [
+      "Todos los roles",
+      "Docente",
+      "Jefe de carrera",
+      "Rectoría",
+      "Vicerrectoría",
+      "Secretaría de Rectoría",
+      "Secretaría de Vicerrectoría",
+      "Representante de distinciones",
+      "Administrador general"
+    ],
+    "buscar «Aguilar» (nombre)": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "Francisco Aguilar Acevedo personal02@unistmo.example 900002 Docente Tehuantepec Activo"
+      ]
+    },
+    "buscar «900003» (número)": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "Daniel Pacheco Bautista personal03@unistmo.example 900003 Jefe de carrera Tehuantepec Activo"
+      ]
+    },
+    "buscar por correo": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "Juan Pérez Martínez administracion@unistmo.example 900001 Administrador general Institucional Activo"
+      ]
+    },
+    "rol Jefe de carrera": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "Daniel Pacheco Bautista personal03@unistmo.example 900003 Jefe de carrera Tehuantepec Activo"
+      ]
+    },
+    "estado Inactivo": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 0 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "cuenta": null,
+      "filas": [
+        "No se encontraron registros Prueba otra búsqueda"
+      ]
+    }
+  },
+  "dialogo": {
+    "nuevo": {
+      "titulo": "Nuevo usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Selecciona una adscripción ✓",
+            "Tehuantepec",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar categoría ✓",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        }
+      ],
+      "historiales": [],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "nuevo · Docente en Ixtepec": {
+      "titulo": "Nuevo usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Ixtepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec",
+            "Juchitán",
+            "Ixtepec ✓",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar categoría ✓",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓",
+            "REF-IXT-08=Licenciatura en Ciencias Empresariales",
+            "REF-IXT-09=Licenciatura en Derecho",
+            "REF-IXT-10=Ingeniería en Desarrollo de Software y Sistemas Inteligentes",
+            "REF-IXT-11=Licenciatura en Comercio Exterior y Gestión de Aduanas"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        }
+      ],
+      "historiales": [],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "nuevo · cambiar a Rectoría": {
+      "titulo": "Nuevo usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Rectoría",
+          "opciones": [
+            "Docente",
+            "Jefe de carrera",
+            "Rectoría ✓",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Ixtepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec",
+            "Juchitán",
+            "Ixtepec ✓",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar categoría ✓",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓",
+            "REF-IXT-08=Licenciatura en Ciencias Empresariales",
+            "REF-IXT-09=Licenciatura en Derecho",
+            "REF-IXT-10=Ingeniería en Desarrollo de Software y Sistemas Inteligentes",
+            "REF-IXT-11=Licenciatura en Comercio Exterior y Gestión de Aduanas"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        }
+      ],
+      "historiales": [],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "editar · administración general (#1)": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900001"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Juan Pérez Martínez"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "administracion@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Administrador general",
+          "opciones": [
+            "Docente",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general ✓"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Institucional",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales) ✓"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar categoría ✓",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "editar · docente (#2)": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900002"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Francisco Aguilar Acevedo"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "personal02@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec ✓",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-P",
+          "opciones": [
+            "=Seleccionar categoría",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor ✓"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-04",
+          "opciones": [
+            "=Seleccionar carrera",
+            "REF-TEH-01=Ingeniería Química",
+            "REF-TEH-02=Ingeniería de Petróleos",
+            "REF-TEH-03=Ingeniería en Diseño",
+            "REF-TEH-04=Ingeniería en Computación ✓",
+            "REF-TEH-05=Ingeniería Industrial",
+            "REF-TEH-06=Licenciatura en Matemáticas Aplicadas",
+            "REF-TEH-07=Ingeniería en Energías Renovables"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "editar · docente (#2) · cambiar a Juchitán": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900002"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Francisco Aguilar Acevedo"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "personal02@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Juchitán",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec",
+            "Juchitán ✓",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-P",
+          "opciones": [
+            "=Seleccionar categoría",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor ✓"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓",
+            "REF-JUC-12=Licenciatura en Nutrición",
+            "REF-JUC-13=Licenciatura en Enfermería"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "editar · jefe de carrera (#3)": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900003"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Daniel Pacheco Bautista"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "personal03@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Jefe de carrera",
+          "opciones": [
+            "Docente",
+            "Jefe de carrera ✓",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec ✓",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-PI",
+          "opciones": [
+            "=Seleccionar categoría",
+            "CAT-PI=Profesor investigador ✓",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-04",
+          "opciones": [
+            "=Seleccionar carrera",
+            "REF-TEH-01=Ingeniería Química",
+            "REF-TEH-02=Ingeniería de Petróleos",
+            "REF-TEH-03=Ingeniería en Diseño",
+            "REF-TEH-04=Ingeniería en Computación ✓",
+            "REF-TEH-05=Ingeniería Industrial",
+            "REF-TEH-06=Licenciatura en Matemáticas Aplicadas",
+            "REF-TEH-07=Ingeniería en Energías Renovables"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    }
+  },
+  "historiales": {
+    "cambiar carrera del #2 · avisos": [
+      "Usuario guardado correctamente"
+    ],
+    "#2 tras cambiar de carrera": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900002"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Francisco Aguilar Acevedo"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "personal02@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec ✓",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-P",
+          "opciones": [
+            "=Seleccionar categoría",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor ✓"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-01",
+          "opciones": [
+            "=Seleccionar carrera",
+            "REF-TEH-01=Ingeniería Química ✓",
+            "REF-TEH-02=Ingeniería de Petróleos",
+            "REF-TEH-03=Ingeniería en Diseño",
+            "REF-TEH-04=Ingeniería en Computación",
+            "REF-TEH-05=Ingeniería Industrial",
+            "REF-TEH-06=Licenciatura en Matemáticas Aplicadas",
+            "REF-TEH-07=Ingeniería en Energías Renovables"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 1 movimientosIngeniería en Computación → Ingeniería Química2026-11-02 · Reasignación de carrera"
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "cambiar adscripción del #1 · avisos": [
+      "Usuario guardado correctamente"
+    ],
+    "#1 tras cambiar de adscripción": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900001"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Juan Pérez Martínez"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "administracion@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Administrador general",
+          "opciones": [
+            "Docente",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general ✓"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec ✓",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar categoría ✓",
+            "CAT-PI=Profesor investigador",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar carrera ✓"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 1 movimientosInstitucional → Tehuantepec2026-11-02 · Reasignación",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    },
+    "#5 con adscripción que ya no existe": {
+      "titulo": "Editar usuario",
+      "seccion": "USUARIOS Y PERMISOS",
+      "campos": [
+        {
+          "nombre": "num",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "900005"
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "J. Jesús Arellano Pimentel"
+        },
+        {
+          "nombre": "mail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "personal05@unistmo.example"
+        },
+        {
+          "nombre": "role",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Docente",
+          "opciones": [
+            "Docente ✓",
+            "Jefe de carrera",
+            "Rectoría",
+            "Vicerrectoría",
+            "Secretaría de Rectoría",
+            "Secretaría de Vicerrectoría",
+            "Representante de distinciones",
+            "Administrador general"
+          ]
+        },
+        {
+          "nombre": "area",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Campus Antiguo",
+          "opciones": [
+            "=Selecciona una adscripción",
+            "Tehuantepec",
+            "Juchitán",
+            "Ixtepec",
+            "Rectoría",
+            "Vicerrectoría Académica",
+            "Institucional=Institucional (servicios centrales)",
+            "Campus Antiguo=Campus Antiguo (adscripción anterior) ✓"
+          ]
+        },
+        {
+          "nombre": "categoryCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-PI",
+          "opciones": [
+            "=Seleccionar categoría",
+            "CAT-PI=Profesor investigador ✓",
+            "CAT-P=Profesor"
+          ]
+        },
+        {
+          "nombre": "careerCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-04",
+          "opciones": [
+            "=Seleccionar carrera",
+            "REF-TEH-04=Ingeniería en Computación ✓"
+          ]
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Activo",
+          "opciones": [
+            "Activo ✓",
+            "Inactivo"
+          ]
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reasignación institucional"
+        }
+      ],
+      "historiales": [
+        "modal-history: Ver historial de rolesHistorial de rolesAlta inicial",
+        "v36-assignment-history: Historial de adscripciones 0 movimientosLos cambios de adscripción aparecerán aquí.",
+        "v36-assignment-history: Historial de carreras de adscripción 0 movimientosNo hay movimientos registrados."
+      ],
+      "ayuda": [
+        "Los cambios se registran en el historial de la cuenta."
+      ]
+    }
+  },
+  "permisos": {
+    "plegadoAlEntrar": true,
+    "plegadoTrasDesplegar": false,
+    "inicial": {
+      "rol": "Docente",
+      "casillas": [
+        "☑ Consultar catálogos",
+        "☑ Capturar documentos",
+        "☐ Validar documentos",
+        "☐ Consultar reportes",
+        "☐ Autorizar solicitudes",
+        "☐ Validar distinciones",
+        "☐ Administrar usuarios",
+        "☐ Editar catálogos",
+        "☐ Configurar periodos",
+        "☐ Aplicar solicitudes",
+        "☐ Consultar auditoría"
+      ]
+    },
+    "rol Jefe de carrera": {
+      "rol": "Jefe de carrera",
+      "casillas": [
+        "☑ Consultar catálogos",
+        "☑ Capturar documentos",
+        "☑ Validar documentos",
+        "☐ Consultar reportes",
+        "☐ Autorizar solicitudes",
+        "☐ Validar distinciones",
+        "☐ Administrar usuarios",
+        "☐ Editar catálogos",
+        "☐ Configurar periodos",
+        "☐ Aplicar solicitudes",
+        "☐ Consultar auditoría"
+      ]
+    },
+    "cambiar la primera casilla": {
+      "avisos": [
+        "Permisos del rol actualizados"
+      ],
+      "bitacoraNueva": [
+        "Usuario · Permisos configurados para Jefe de carrera (Consultar catálogos, Capturar documentos, Validar documentos → Capturar documentos, Validar documentos)"
+      ],
+      "guardado": [
+        "Capturar documentos",
+        "Validar documentos"
+      ]
+    },
+    "al volver a la pantalla": {
+      "rol": "Jefe de carrera",
+      "casillas": [
+        "☐ Consultar catálogos",
+        "☑ Capturar documentos",
+        "☑ Validar documentos",
+        "☐ Consultar reportes",
+        "☐ Autorizar solicitudes",
+        "☐ Validar distinciones",
+        "☐ Administrar usuarios",
+        "☐ Editar catálogos",
+        "☐ Configurar periodos",
+        "☐ Aplicar solicitudes",
+        "☐ Consultar auditoría"
+      ]
+    }
+  },
+  "importar": {
+    "válido · BOM, acentos, sinónimos y comas entre comillas": {
+      "avisos": [
+        "2 usuario(s) importados · 0 omitidos"
+      ],
+      "usuariosNuevos": [
+        "810001 · Pérez, Ana · ana@unistmo.example · Docente · Tehuantepec · Activo · Importación CSV · 2/11/2026",
+        "810002 · Luis \"Lucho\" Gómez · luis@unistmo.example · Rectoría · Institucional · Inactivo · Importación CSV · 2/11/2026"
+      ],
+      "bitacoraNueva": [
+        "Usuario · Importación CSV: 2 cuentas agregadas"
+      ],
+      "filas": 13,
+      "valorDelInput": "",
+      "erroresDePagina": []
+    },
+    "filas que se omiten": {
+      "avisos": [
+        "1 usuario(s) importados · 7 omitidos"
+      ],
+      "usuariosNuevos": [
+        "810014 · Fila válida · valida@unistmo.example · Jefe de carrera · Juchitán · Activo · Importación CSV · 2/11/2026"
+      ],
+      "bitacoraNueva": [
+        "Usuario · Importación CSV: 1 cuentas agregadas"
+      ],
+      "filas": 12,
+      "valorDelInput": "",
+      "erroresDePagina": []
+    },
+    "faltan columnas": {
+      "avisos": [
+        "No se pudo importar: Se requieren columnas: num, name, mail y role"
+      ],
+      "usuariosNuevos": [],
+      "bitacoraNueva": [],
+      "filas": 11,
+      "valorDelInput": "",
+      "erroresDePagina": []
+    },
+    "comillas sin cerrar": {
+      "avisos": [
+        "No se pudo importar: El CSV tiene comillas sin cerrar"
+      ],
+      "usuariosNuevos": [],
+      "bitacoraNueva": [],
+      "filas": 11,
+      "valorDelInput": "",
+      "erroresDePagina": []
+    },
+    "solo encabezados": {
+      "avisos": [
+        "No se pudo importar: El archivo debe incluir encabezados y al menos un usuario"
+      ],
+      "usuariosNuevos": [],
+      "bitacoraNueva": [],
+      "filas": 11,
+      "valorDelInput": "",
+      "erroresDePagina": []
+    }
+  }
+}

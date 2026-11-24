@@ -1,0 +1,170 @@
+{
+  "1440px · Inicio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1440px · Solicitudes de cambio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1440px · Catálogos académicos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1440px · Usuarios y permisos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1440px · Periodos de captura": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1440px · Bitácora": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Inicio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Solicitudes de cambio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Catálogos académicos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Usuarios y permisos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Periodos de captura": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "1024px · Bitácora": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Inicio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Solicitudes de cambio": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Catálogos académicos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Usuarios y permisos": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Periodos de captura": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "768px · Bitácora": {
+    "display": "flex",
+    "flexDirection": "row",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Inicio": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Solicitudes de cambio": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Catálogos académicos": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Usuarios y permisos": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Periodos de captura": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  },
+  "390px · Bitácora": {
+    "display": "flex",
+    "flexDirection": "column",
+    "flexWrap": "nowrap",
+    "rowGap": "8px",
+    "columnGap": "12px"
+  }
+}

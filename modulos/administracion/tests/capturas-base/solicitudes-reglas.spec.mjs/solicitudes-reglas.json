@@ -1,0 +1,446 @@
+{
+  "A-registrar": {
+    "catálogo que no existe": {
+      "avisos": [
+        "Selecciona un catálogo válido"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "registro que no existe": {
+      "avisos": [
+        "Selecciona un registro del catálogo"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "campo que no se puede modificar (clave)": {
+      "avisos": [
+        "Ese campo no se puede modificar desde esta solicitud"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "valor vacío": {
+      "avisos": [
+        "Escribe el valor autorizado"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "valor con solo espacios": {
+      "avisos": [
+        "Escribe el valor autorizado"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "nombre repetido (otro registro)": {
+      "avisos": [
+        "Ya existe un registro con ese nombre"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "nombre repetido en mayúsculas": {
+      "avisos": [
+        "Ya existe un registro con ese nombre"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "estado que no es Vigente ni Histórico": {
+      "avisos": [
+        "El estado solo puede ser Vigente o Histórico"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "unidad no admitida": {
+      "avisos": [
+        "Selecciona una unidad admitida"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "desactivar un campus con carreras vigentes": {
+      "avisos": [
+        "No se puede desactivar: existen registros vigentes asociados"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "4 → 4",
+      "bitacoraNueva": []
+    },
+    "unidad admitida: correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "4 → 5",
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Unidad del umbral"
+      ],
+      "efecto": {
+        "status": "pendiente",
+        "effectiveDate": "",
+        "expectedBefore": "Porcentaje"
+      }
+    },
+    "desactivar una carrera sin planes: correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "5 → 6",
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Baja de Ingeniería Química"
+      ],
+      "efecto": {
+        "status": "pendiente",
+        "effectiveDate": "",
+        "expectedBefore": "Vigente"
+      }
+    },
+    "el mismo nombre que ya tiene: correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "6 → 7",
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Mismo nombre"
+      ],
+      "efecto": {
+        "status": "pendiente",
+        "effectiveDate": "",
+        "expectedBefore": "Juchitán"
+      }
+    },
+    "renombrar un campus: correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "7 → 8",
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Renombrar Ixtepec"
+      ],
+      "efecto": {
+        "status": "pendiente",
+        "effectiveDate": "",
+        "expectedBefore": "Ixtepec"
+      }
+    },
+    "programada: correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "8 → 9",
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Programada"
+      ],
+      "efecto": {
+        "status": "pendiente",
+        "effectiveDate": "2027-02-01",
+        "expectedBefore": "Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca"
+      }
+    }
+  },
+  "B-gestionar": {
+    "renombrar: instrucción": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Renombrar Ixtepec (pendiente → autorizada)"
+      ]
+    },
+    "renombrar: aplicar correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Solicitud · Aplicación documentada #8 por Administrador general ({\"id\":3,\"code\":\"IXT\",\"name\":\"Ixtepec\",\"detail\":\"Carretera Ch → {\"id\":3,\"code\":\"IXT\",\"name\":\"Ixtepec Centro\",\"detail\":\"Carre)",
+        "Catálogo · Solicitud #8 aplicada: Ixtepec Centro · name (Ixtepec → Ixtepec Centro)"
+      ],
+      "efecto": {
+        "registro": {
+          "name": "Ixtepec Centro",
+          "status": "Vigente",
+          "updatedAt": "2026-11-02",
+          "cambio": {
+            "requestId": 8,
+            "date": "2026-11-02",
+            "field": "name",
+            "oldValue": "Ixtepec",
+            "newValue": "Ixtepec Centro",
+            "authority": "Vicerrectoría",
+            "evidence": "Oficio VR-100",
+            "validFrom": "2026-11-02"
+          }
+        },
+        "solicitud": {
+          "status": "aplicada",
+          "appliedAt": "2026-11-02",
+          "beforeValue": "Ixtepec",
+          "afterValue": "Ixtepec Centro",
+          "effectiveDate": "",
+          "expectedBefore": "Ixtepec"
+        }
+      }
+    },
+    "mismo nombre: instrucción": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Mismo nombre (pendiente → autorizada)"
+      ]
+    },
+    "mismo nombre: aplicar": {
+      "avisos": [
+        "El registro ya contiene el valor indicado; no hay modificación que aplicar"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "baja de carrera: instrucción": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Baja de Ingeniería Química (pendiente → autorizada)"
+      ]
+    },
+    "alta de un plan de esa carrera": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Planes de estudio · Oficio R-200 ( → Plan de Ingeniería Química)"
+      ]
+    },
+    "baja de carrera: aplicar con un plan vigente": {
+      "avisos": [
+        "No se puede desactivar: existen registros vigentes asociados"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "programada: instrucción": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Programada (pendiente → autorizada)"
+      ]
+    },
+    "programada: adelantar la vigencia": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Solicitud · Actualización de vigencia de la solicitud #9 (2027-02-01 → 2026-10-25)"
+      ]
+    },
+    "programada: ejecutar antes de la vigencia": {
+      "avisos": [
+        "La ejecución no puede preceder a la fecha de vigencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "programada: aplicar correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": [
+        "Solicitud · Aplicación documentada #9 por Administrador general ({\"id\":3,\"code\":\"IXT\",\"name\":\"Ixtepec Centro\",\"detail\":\"Carre → {\"id\":3,\"code\":\"IXT\",\"name\":\"Ixtepec Centro\",\"detail\":\"Sede )",
+        "Catálogo · Solicitud #9 aplicada: Ixtepec Centro · detail (Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca → Sede de Ixtepec)"
+      ],
+      "efecto": {
+        "registro": {
+          "name": "Ixtepec Centro",
+          "status": "Vigente",
+          "updatedAt": "2026-11-02",
+          "cambio": {
+            "requestId": 9,
+            "date": "2026-11-02",
+            "field": "detail",
+            "oldValue": "Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca",
+            "newValue": "Sede de Ixtepec",
+            "authority": "Vicerrectoría",
+            "evidence": "Oficio VR-100",
+            "validFrom": "2026-10-25"
+          }
+        },
+        "solicitud": {
+          "status": "aplicada",
+          "appliedAt": "2026-11-02",
+          "beforeValue": "Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca",
+          "afterValue": "Sede de Ixtepec",
+          "effectiveDate": "2026-10-25",
+          "expectedBefore": "Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca"
+        }
+      }
+    }
+  },
+  "C-forzado": {
+    "aplicar una pendiente": {
+      "avisos": [
+        "La solicitud requiere una instrucción autorizada identificable"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "aplicar otra vez una ya aplicada": {
+      "avisos": [
+        "La solicitud requiere una instrucción autorizada identificable"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "instrucción a una autorizada": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "instrucción sin referencia": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "instrucción de una autoridad que no es Rectoría ni Vicerrectoría": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "instrucción sin fecha": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "aplicar sin fecha de ejecución": {
+      "avisos": [
+        "Indica fecha y resultado de ejecución"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "fecha programada en una inmediata": {
+      "avisos": [
+        "Solo una solicitud programada para el siguiente ciclo lleva fecha de vigencia"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    },
+    "acción que no existe": {
+      "avisos": [
+        "Selecciona una acción válida"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "9 → 9",
+      "bitacoraNueva": []
+    }
+  },
+  "D-anterior": {
+    "aplicar sin vigencia guardada": {
+      "avisos": [
+        "Define primero la vigencia de esta solicitud"
+      ],
+      "dialogoCerrado": false,
+      "solicitudes": "10 → 10",
+      "bitacoraNueva": []
+    },
+    "guardar la vigencia": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "10 → 10",
+      "bitacoraNueva": [
+        "Solicitud · Actualización de vigencia de la solicitud #90 ( → 2026-10-15)"
+      ]
+    },
+    "aplicar ya con vigencia": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "solicitudes": "10 → 10",
+      "bitacoraNueva": [
+        "Solicitud · Aplicación documentada #90 por Administrador general ({\"id\":2,\"code\":\"JUC\",\"name\":\"Juchitán\",\"detail\":\"Carretera T → {\"id\":2,\"code\":\"JUC\",\"name\":\"Juchitán\",\"detail\":\"Sede de Juc)",
+        "Catálogo · Solicitud #90 aplicada: Juchitán · detail (Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán,  → Sede de Juchitán)"
+      ],
+      "efecto": {
+        "registro": {
+          "name": "Juchitán",
+          "status": "Vigente",
+          "updatedAt": "2026-11-02",
+          "cambio": {
+            "requestId": 90,
+            "date": "2026-11-02",
+            "field": "detail",
+            "oldValue": "Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán, Oaxaca",
+            "newValue": "Sede de Juchitán",
+            "authority": "Vicerrectoría",
+            "evidence": "Oficio antiguo",
+            "validFrom": "2026-10-15"
+          }
+        },
+        "solicitud": {
+          "status": "aplicada",
+          "appliedAt": "2026-11-02",
+          "beforeValue": "Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán, Oaxaca",
+          "afterValue": "Sede de Juchitán",
+          "effectiveDate": "2026-10-15"
+        }
+      }
+    }
+  }
+}

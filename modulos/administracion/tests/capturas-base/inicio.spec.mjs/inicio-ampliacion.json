@@ -1,0 +1,19 @@
+{
+  "indicadores": "Por autorizar 3 Solicitudes en revisión | Por aplicar 3 Cambios autorizados | Usuarios activos 11 Cuentas habilitadas | Catálogos vigentes 1,127 Registros institucionales | Accesos hoy 6 Accesos registrados",
+  "pendientes": [
+    "12 · <b>Negrita</b> & \"comillas\" Rectoría 'A' · Pendiente de autorización",
+    "14 · Pendiente dos Vicerrectoría · Pendiente de autorización",
+    "16 · Pendiente tres Vicerrectoría · Pendiente de autorización",
+    "11 · Autorizada uno Vicerrectoría · Autorizada, pendiente de aplicación"
+  ],
+  "htmlDelPendienteConComillas": "<strong>&lt;b&gt;Negrita&lt;/b&gt; &amp; \"comillas\"</strong><span>Rectoría 'A' · Pendiente de autorización</span>",
+  "periodos": "Plan de Trabajo Sin fecha – 30/11/2026 Abierto Informe de Actividades 01/10/2026 – 15/12/2026 Abierto",
+  "detalleDeAutorizada": {
+    "titulo": "Autorizada uno",
+    "eyebrow": "SEGUIMIENTO DE CAMBIO"
+  },
+  "botonesVer": [
+    "solicitudes → view-solicitudes",
+    "periodos → view-periodos"
+  ]
+}

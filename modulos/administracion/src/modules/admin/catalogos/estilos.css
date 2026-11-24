@@ -1,0 +1,9 @@
+/* Estilos de la pantalla catalogos (antes en src/styles/admin.css; mismo orden). Se cargan después de admin.css. */
+#view-catalogos .surface-head{margin-bottom:9px!important}
+#view-catalogos .surface-head{margin-bottom:4px!important}
+#view-catalogos .work-table{max-height:clamp(240px,calc(100vh - 330px),660px)}
+#view-catalogos .toolbar{align-items:center}
+#view-catalogos .toolbar .filters{min-width:0}
+#view-catalogos .table-wrap{min-width:0}
+#view-catalogos .table-wrap table{min-width:650px}
+@media(max-width:760px){#view-catalogos .toolbar .filters{width:100%}#view-catalogos .toolbar .filters select{flex:1;min-width:0;width:100%;max-width:none}}

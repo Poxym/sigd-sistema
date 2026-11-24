@@ -1,0 +1,29 @@
+{
+  "name": "sigd-administracion",
+  "version": "1.0.0",
+  "description": "Prototipo del módulo de Administración del SIGD (Nexora Technologies): usuarios, catálogos, solicitudes, periodos y bitácora.",
+  "scripts": {
+    "test": "playwright test",
+    "dev": "vite --port 4201",
+    "test:actualizar": "playwright test --update-snapshots",
+    "build": "vite build",
+    "preview": "vite preview --port 4201",
+    "build:sigd": "vite build --config vite.integracion.config.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamalielsp/sigd-administracion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Gamalielsp/sigd-administracion/issues"
+  },
+  "homepage": "https://github.com/Gamalielsp/sigd-administracion#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "vite": "^8.3.8"
+  }
+}

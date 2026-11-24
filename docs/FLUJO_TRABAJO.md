@@ -25,6 +25,10 @@
 
 Copiar la forma de `apps/estructura/` (Periodo).
 
+## Equipo de Administración
+
+Trabaja en `modulos/administracion/` como siempre (`npm run dev`, `npm test`). Antes de subir: `npm run build:sigd` y sube también `frontend/public/modulos/administracion/administracion.js`. Si se agrega una pantalla nueva, además: su entrada en `core/modulos/modulos.registry.ts` y una línea `vista('<nombre>')` en `administracion.routes.ts`.
+
 ## Migrar desde el prototipo
 
 `prototipo-referencia/` tiene el v17 separado por módulo. No se ejecuta: es para consultar textos, estructura de pantallas, reglas y estilos. Al migrar una pantalla, tomar de ahí el HTML y la lógica, pasar los datos simulados al repositorio `memoria` y los colores a tokens.

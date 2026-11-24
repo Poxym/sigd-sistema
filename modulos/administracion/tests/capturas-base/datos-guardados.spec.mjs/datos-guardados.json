@@ -1,0 +1,224 @@
+{
+  "forma de lo guardado": {
+    "partes": [
+      "audit",
+      "catalogs",
+      "demoAccessEvents",
+      "period",
+      "periodHistory",
+      "permissions",
+      "requests",
+      "users"
+    ],
+    "users": [
+      "area",
+      "assignmentHistory",
+      "careerCode",
+      "careerHistory",
+      "categoryCode",
+      "history",
+      "id",
+      "mail",
+      "name",
+      "num",
+      "role",
+      "status"
+    ],
+    "requests": [
+      "authority",
+      "authorizationBy",
+      "authorizationDate",
+      "detail",
+      "effectiveDate",
+      "evidence",
+      "id",
+      "schedule",
+      "status",
+      "targetCatalog",
+      "targetField",
+      "targetId",
+      "targetValue",
+      "title",
+      "type"
+    ],
+    "audit": [
+      "date",
+      "detail",
+      "id",
+      "kind",
+      "newVal",
+      "oldVal",
+      "user"
+    ],
+    "period": [
+      "activityEnd",
+      "activityStart",
+      "cycle",
+      "planEnd",
+      "planStart",
+      "planState",
+      "reportEnd",
+      "reportStart",
+      "reportState",
+      "semester"
+    ],
+    "periodHistory": [
+      "cycle",
+      "date",
+      "summary"
+    ],
+    "tiposDeCatalogo": [
+      "campus",
+      "carreras",
+      "categorias",
+      "comisiones",
+      "distinciones",
+      "institucion",
+      "materias",
+      "opciones",
+      "parametros",
+      "planes",
+      "rubros"
+    ],
+    "camposDeCatalogo": {
+      "institucion": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "status"
+      ],
+      "parametros": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "paramUnit",
+        "paramValue",
+        "status"
+      ],
+      "campus": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "status"
+      ],
+      "carreras": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "parentCode",
+        "status"
+      ],
+      "planes": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "parentCode",
+        "status"
+      ],
+      "materias": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "parentCode",
+        "status"
+      ],
+      "rubros": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "planSection",
+        "reportSection",
+        "status"
+      ],
+      "categorias": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "status"
+      ],
+      "comisiones": [
+        "code",
+        "detail",
+        "id",
+        "name",
+        "status"
+      ],
+      "distinciones": [],
+      "opciones": [
+        "appliesTo",
+        "code",
+        "detail",
+        "group",
+        "id",
+        "name",
+        "selectionMode",
+        "sourceRef",
+        "status"
+      ]
+    },
+    "rolesConPermisos": [
+      "Administrador general",
+      "Docente",
+      "Jefe de carrera",
+      "Rectoría",
+      "Representante de distinciones",
+      "Secretaría de Rectoría",
+      "Secretaría de Vicerrectoría",
+      "Vicerrectoría"
+    ]
+  },
+  "A · formato actual con datos modificados": {
+    "cambiosAlArrancar": [
+      "demoAccessEvents[0].count: 1 → 2"
+    ],
+    "seVeLaCuentaGuardada": true,
+    "seVeLaSolicitudAplicada": true,
+    "seVeLaEntradaDeBitacora": true
+  },
+  "B · formato antiguo (migraciones)": {
+    "cambiosAlArrancar": [
+      "users[3].role: \"Profesor\" → \"Docente\"",
+      "catalogs.distinciones: (no existía) → agregado",
+      "catalogs.opciones: (no existía) → agregado",
+      "demoAccessEvents[0].count: 1 → 2",
+      "permissions.Profesor: (existía) → eliminado",
+      "permissions.Docente: (no existía) → agregado"
+    ]
+  },
+  "C · JSON dañado": {
+    "cambiosRespectoALaSemilla": []
+  },
+  "D · falta la bitácora": {
+    "cambiosRespectoALaSemilla": []
+  },
+  "E · menú lateral plegado": {
+    "botonesVisibles": {
+      "collapse": false,
+      "sidebarToggle": false
+    },
+    "alArrancar": {
+      "plegado": true,
+      "guardado": "true"
+    },
+    "trasDesplegar": {
+      "plegado": false,
+      "guardado": "false"
+    },
+    "trasPlegar": {
+      "plegado": true,
+      "guardado": "true"
+    },
+    "trasRecargar": {
+      "plegado": true,
+      "guardado": "true"
+    }
+  }
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "paso": "A1 · inicio del Plan vacío",
+    "avisos": [],
+    "seGuardoAlgo": false,
+    "camposInvalidos": [
+      "planStart"
+    ],
+    "periodo": {
+      "cycle": "2026-2027",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "historial": [
+      "2026-2027 · Ajuste de cierre del Informe de Actividades",
+      "2026-2027 · Configuración inicial de ventanas de captura"
+    ],
+    "bitacora": [
+      "Catálogo: Alta de plan de estudios 2024 [ → IC-2024]",
+      "Usuario: Registro de cuenta de docente [ → Tehuantepec]"
+    ],
+    "formulario": {
+      "cycleName": "2026-2027",
+      "v41Semester": "A",
+      "v41AcademicStart": "2026-08-10",
+      "v41AcademicEnd": "2026-12-15",
+      "planStart": "",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto"
+    }
+  },
+  {
+    "paso": "A2 · inicio del Plan vacío y sin semestre",
+    "avisos": [
+      "Selecciona el semestre A o B del ciclo escolar"
+    ],
+    "seGuardoAlgo": false,
+    "camposInvalidos": [
+      "planStart"
+    ],
+    "periodo": {
+      "cycle": "2026-2027",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "historial": [
+      "2026-2027 · Ajuste de cierre del Informe de Actividades",
+      "2026-2027 · Configuración inicial de ventanas de captura"
+    ],
+    "bitacora": [
+      "Catálogo: Alta de plan de estudios 2024 [ → IC-2024]",
+      "Usuario: Registro de cuenta de docente [ → Tehuantepec]"
+    ],
+    "formulario": {
+      "cycleName": "2026-2027",
+      "v41Semester": "",
+      "v41AcademicStart": "2026-08-10",
+      "v41AcademicEnd": "2026-12-15",
+      "planStart": "",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto"
+    }
+  },
+  {
+    "paso": "A3 · cierre del Informe antes de su inicio",
+    "avisos": [
+      "El cierre de captura no puede preceder al inicio"
+    ],
+    "seGuardoAlgo": false,
+    "camposInvalidos": [],
+    "periodo": {
+      "cycle": "2026-2027",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "historial": [
+      "2026-2027 · Ajuste de cierre del Informe de Actividades",
+      "2026-2027 · Configuración inicial de ventanas de captura"
+    ],
+    "bitacora": [
+      "Catálogo: Alta de plan de estudios 2024 [ → IC-2024]",
+      "Usuario: Registro de cuenta de docente [ → Tehuantepec]"
+    ],
+    "formulario": {
+      "cycleName": "2026-2027",
+      "v41Semester": "A",
+      "v41AcademicStart": "2026-08-10",
+      "v41AcademicEnd": "2026-12-15",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-12-01",
+      "reportEnd": "2026-11-01",
+      "reportState": "Abierto"
+    }
+  },
+  {
+    "paso": "A4 · mismo ciclo con espacios",
+    "avisos": [
+      "No hay cambios pendientes por guardar"
+    ],
+    "seGuardoAlgo": false,
+    "camposInvalidos": [],
+    "periodo": {
+      "cycle": "2026-2027",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "historial": [
+      "2026-2027 · Ajuste de cierre del Informe de Actividades",
+      "2026-2027 · Configuración inicial de ventanas de captura"
+    ],
+    "bitacora": [
+      "Catálogo: Alta de plan de estudios 2024 [ → IC-2024]",
+      "Usuario: Registro de cuenta de docente [ → Tehuantepec]"
+    ],
+    "formulario": {
+      "cycleName": "  2026-2027  ",
+      "v41Semester": "A",
+      "v41AcademicStart": "2026-08-10",
+      "v41AcademicEnd": "2026-12-15",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto"
+    }
+  },
+  {
+    "paso": "A5 · ciclo nuevo con espacios",
+    "avisos": [
+      "Configuración guardada"
+    ],
+    "seGuardoAlgo": true,
+    "camposInvalidos": [],
+    "periodo": {
+      "cycle": "2026-2028",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "historial": [
+      "2026-2028 · Actualización de fechas o estados de captura",
+      "2026-2027 · Ajuste de cierre del Informe de Actividades"
+    ],
+    "bitacora": [
+      "Periodo: Actualización de ventanas de captura [{\"cycle\":\"2026-2027\",\"planStart\":\"2026-08-10\",\"planEnd\":\"2026-11-30\",\"planState\":\"Abierto\",\"reportStart\":\"2026-10-01\",\"reportEnd\":\"2026-12-15\",\"reportState\":\"Abierto\",\"semester\":\"A\",\"activityStart\":\"2026-08-10\",\"activityEnd\":\"2026-12-15\"} → {\"cycle\":\"2026-2028\",\"planStart\":\"2026-08-10\",\"planEnd\":\"2026-11-30\",\"planState\":\"Abierto\",\"reportStart\":\"2026-10-01\",\"reportEnd\":\"2026-12-15\",\"reportState\":\"Abierto\"}]",
+      "Catálogo: Alta de plan de estudios 2024 [ → IC-2024]"
+    ],
+    "formulario": {
+      "cycleName": "2026-2028",
+      "v41Semester": "A",
+      "v41AcademicStart": "2026-08-10",
+      "v41AcademicEnd": "2026-12-15",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Abierto",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto"
+    }
+  },
+  {
+    "paso": "A6 · pantalla tras guardar",
+    "resumen": "Plan de TrabajoAbierto10/08/2026 – 30/11/2026Ventana activa para la captura de planeación académica.Informe de ActividadesAbierto01/10/2026 – 15/12/2026Ventana activa para el reporte institucional del periodo.",
+    "historial": "Historial de configuración Últimas modificaciones del ciclo 3 cambios 02 nov 2026 · 12:00 pm 2026-2028 Actualización de fechas o estados de captura 15 oct 2026 · 10:10 am 2026-2027 Ajuste de cierre del Informe de Actividades 09 oct 2026 · 08:20 am 2026-2027 Configuración inicial de ventanas de captura",
+    "insignia": "2026-2028"
+  }
+]

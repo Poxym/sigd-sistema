@@ -52,6 +52,24 @@ features/<modulo>/
 - **Estilos**: `src/styles/marco.css` es una **copia fiel** del CSS del marco del prototipo v17 (paleta, tipografía Inter, capa Material 3, acceso, selector, cabecera y menú); no se edita a mano. Los ajustes propios van en `src/styles/_sigd.scss`. Los componentes del marco generan exactamente el mismo HTML y clases del prototipo, así que se ven igual. En las páginas usa las clases del prototipo: `.hd` (vía `<sigd-encabezado-pagina>`), `.card`, `.tiles/.tile`, `.btn` / `.btn.primary` / `.btn.tonal` / `.btn.ghost`, `.tag`, y las de `_sigd.scss`: `.campo`, `.tabla`, `.aviso`, `.semaforo`. Iconos Tabler (`<i class="ti ti-nombre">`), la misma familia del prototipo.
 - Las features no se importan entre sí. Si dos módulos necesitan lo mismo, se sube a `shared/` o `core/`.
 
+## Módulos integrados (Administración)
+
+Un equipo puede seguir trabajando su módulo como proyecto propio y el SIGD lo integra sin reescribirlo:
+
+```
+modulos/administracion/            proyecto del equipo (Vite, MVC, repositorio, Playwright)
+   └─ npm run build:sigd  ──►  frontend/public/modulos/administracion/administracion.js
+                                   expone window.SigdAdministracion.NX = { mount, go, active, views }
+frontend/src/app/features/administracion/integracion/modulo-administracion.ts
+   · carga el script una vez, monta NX en la página y llama NX.go(<vista>) según la ruta /admin/<vista>
+   · si el módulo cambia de vista por dentro, actualiza la URL (el menú lateral la sigue)
+   · entrega el evento «sigd:sesion-iniciada» cuando el módulo ya escucha (cuenta los accesos)
+```
+
+El módulo vive en su propio Shadow DOM, así que sus estilos no chocan con los del marco. Sus datos siguen en el navegador (localStorage) mediante su repositorio; para conectarlo a Django se cambia su adaptador de almacenamiento (`repositorio/almacen-local.js`) por uno HTTP, sin tocar pantallas.
+
+`/admin/periodos-api` (fuera del menú) es el ejemplo de referencia del patrón Angular → Django.
+
 ## Docker
 
 | Servicio | Imagen | Puerto |

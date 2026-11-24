@@ -21,6 +21,8 @@ export class SesionService {
   private repo = inject(SesionRepository);
   private _perfil = signal<Perfil | null>(null);
   private cargada = false;
+  /** Cuenta del último inicio de sesión, aún no avisado a los módulos integrados. */
+  private accesoPendiente: string | null = null;
 
   readonly perfil = this._perfil.asReadonly();
   readonly autenticado = computed(() => this._perfil() !== null);
@@ -42,11 +44,26 @@ export class SesionService {
   }
 
   iniciar(c: Credenciales): Observable<Perfil> {
-    return this.repo.iniciar(c).pipe(tap((p) => this._perfil.set(p)));
+    return this.repo.iniciar(c).pipe(
+      tap((p) => {
+        this._perfil.set(p);
+        this.accesoPendiente = p.numero_empleado;
+      }),
+    );
   }
 
   async cerrar(): Promise<void> {
     try { await firstValueFrom(this.repo.cerrar()); } finally { this.limpiar(); }
+  }
+
+  /**
+   * Avisa a los módulos integrados (evento «sigd:sesion-iniciada», el mismo del prototipo) que hubo un
+   * inicio de sesión correcto. Lo llama el módulo cuando ya está montado y escuchando; se entrega una sola vez.
+   */
+  avisarInicioDeSesion(): void {
+    if (!this.accesoPendiente) return;
+    document.dispatchEvent(new CustomEvent('sigd:sesion-iniciada', { detail: { cuenta: this.accesoPendiente } }));
+    this.accesoPendiente = null;
   }
 
   limpiar(): void {

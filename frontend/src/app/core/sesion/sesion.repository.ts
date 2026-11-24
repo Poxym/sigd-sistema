@@ -32,7 +32,7 @@ const DEMO: Perfil[] = [
   { id: 'u209', nombre: 'Ana Ramírez', correo: 'ana.ramirez@unistmo.example', numero_empleado: '209', roles: ['DOCENTE'], modulos: ['plan', 'informe'] },
   { id: 'u118', nombre: 'Luis López', correo: 'luis.lopez@unistmo.example', numero_empleado: '118', roles: ['DOCENTE', 'JEFE_CARRERA'], modulos: ['plan', 'informe', 'reportes'] },
   { id: 'u100', nombre: 'Vicerrectoría', correo: 'vicerrectoria@unistmo.example', numero_empleado: '100', roles: ['VICERRECTORIA'], modulos: ['reportes'] },
-  { id: 'u001', nombre: 'Administración institucional', correo: 'administracion@unistmo.example', numero_empleado: '001', roles: ['ADMINISTRADOR'], modulos: ['admin'] },
+  { id: 'u001', nombre: 'Carlos Mendoza', correo: 'administracion@unistmo.example', numero_empleado: '001', roles: ['ADMINISTRADOR'], modulos: ['admin'] },
   { id: 'u000', nombre: 'Coordinación SIGD', correo: 'coordinacion.sigd@unistmo.example', numero_empleado: '000', roles: ['ADMINISTRADOR', 'JEFE_CARRERA'], modulos: ['admin', 'plan', 'informe', 'reportes'] },
 ];
 

@@ -1,0 +1,40 @@
+{
+  "actualizar": {
+    "esLaMismaSolicitud": true,
+    "camposEnOrden": [
+      "title",
+      "status",
+      "schedule",
+      "id",
+      "evidence",
+      "authorizationBy"
+    ],
+    "valores": {
+      "status": "autorizada",
+      "evidence": "Oficio 1",
+      "authorizationBy": "Rectoría"
+    },
+    "quitados": [],
+    "noExiste": null
+  },
+  "anotarVigencia": {
+    "sinHistorial": {
+      "tieneHistorial": false
+    },
+    "historial": [
+      {
+        "field": "name",
+        "oldValue": "b",
+        "newValue": "c",
+        "validFrom": "2026-12-01"
+      },
+      {
+        "field": "name",
+        "oldValue": "a",
+        "newValue": "b"
+      }
+    ],
+    "registroQueNoExiste": null
+  },
+  "ningunoGuarda": true
+}

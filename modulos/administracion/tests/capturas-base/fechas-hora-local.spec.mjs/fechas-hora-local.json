@@ -1,0 +1,77 @@
+{
+  "valoresPorDefecto": {
+    "usuario · fecha efectiva del movimiento": "2026-11-02",
+    "carrera · fecha efectiva del traslado": "2026-11-02",
+    "solicitud pendiente · fecha de autorización": "2026-11-02",
+    "solicitud autorizada · fecha de ejecución": "2026-11-02"
+  },
+  "casos": {
+    "usuario · cambio de adscripción con fecha de mañana": {
+      "avisos": [
+        "Registra los movimientos futuros mediante solicitudes de cambio"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "carrera · cambio de relación con fecha de mañana": {
+      "avisos": [
+        "Para cambios futuros registra una solicitud programada"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "solicitud · instrucción con fecha de mañana": {
+      "avisos": [
+        "La fecha de autorización no puede estar en el futuro"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "solicitud · aplicación con fecha de mañana": {
+      "avisos": [
+        "Para ejecuciones futuras, conserva la solicitud autorizada"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "usuario · cambio de adscripción con fecha de hoy": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Usuario · Cambio de adscripción de Juan Pérez Martínez (Institucional → Tehuantepec)",
+        "Usuario · Actualización de Juan Pérez Martínez (Administrador general → Administrador general)"
+      ]
+    },
+    "carrera · cambio de relación con fecha de hoy": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Relación modificada: Ingeniería Química (TEH → JUC)",
+        "Catálogo · Edición autorizada en Carreras · Oficio R-001 (Ingeniería Química / Vigente → Ingeniería Química / Vigente)"
+      ]
+    },
+    "solicitud · instrucción con fecha de hoy": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Revisión de descripción de Ingeniería en Computación (pendiente → autorizada)"
+      ]
+    },
+    "solicitud · aplicación con fecha de hoy": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Solicitud · Aplicación documentada #2 por Administrador general ({\"id\":1,\"code\":\"CAT-PI\",\"name\":\"Profesor investigador\",\"detail\":\"Categoría de referencia para captura académica; denominación por validar\",\"status\":\"Vigente\"} → {\"id\":1,\"code\":\"CAT-PI\",\"name\":\"Profesor investigador\",\"detail\":\"Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades\",\"status\":\"Vigente\",\"updatedAt\":\"2026-11-02\",\"changeHistory\":[{\"requestId\":2,\"date\":\"2026-11-02\",\"field\":\"detail\",\"oldValue\":\"Categoría de referencia para captura académica; denominación por validar\",\"newValue\":\"Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades\",\"authority\":\"Rectoría\",\"evidence\":\"SIM-AUT-002\"}]})",
+        "Catálogo · Solicitud #2 aplicada: Profesor investigador · detail (Categoría de referencia para captura académica; denominación por validar → Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades)"
+      ]
+    }
+  }
+}

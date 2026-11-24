@@ -1,0 +1,49 @@
+{
+  "actualizar": {
+    "esElMismoRegistro": true,
+    "camposEnOrden": [
+      "code",
+      "name",
+      "status",
+      "parentCode",
+      "id",
+      "extra"
+    ],
+    "valores": {
+      "name": "Carrera Repo 2",
+      "extra": 1
+    },
+    "quitados": [],
+    "noExiste": null,
+    "tipoQueNoExiste": null
+  },
+  "anotarCambio": [
+    {
+      "field": "status",
+      "oldValue": "Vigente",
+      "newValue": "Histórico"
+    },
+    {
+      "field": "name",
+      "oldValue": "Carrera Repo",
+      "newValue": "Carrera Repo 2"
+    }
+  ],
+  "relacion": {
+    "noExistiaAntes": true,
+    "creaArregloVacio": true,
+    "reemplazaUnValorQueNoEsArreglo": true,
+    "agregaAlFinal": [
+      {
+        "from": "",
+        "to": "TEH"
+      },
+      {
+        "from": "TEH",
+        "to": "IXT"
+      }
+    ],
+    "esLaMismaLista": true
+  },
+  "ningunoGuarda": true
+}

@@ -1,0 +1,13 @@
+/* Estilos de la pantalla inicio (antes en src/styles/admin.css; mismo orden). Se cargan después de admin.css. */
+#view-inicio .home-summary-grid{gap:11px!important;margin-bottom:13px!important}
+#view-inicio .home-indicator{min-height:103px!important;padding:16px!important;box-shadow:none!important}
+#view-inicio .home-main-grid >.surface{min-height:0!important}
+@media(max-width:1050px){#view-inicio .home-main-grid{grid-template-columns:1fr!important}#view-inicio .home-summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:500px){#view-inicio .home-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Color del ícono según el tipo de cifra (antes dependía de su posición con :nth-child): ámbar «por autorizar»,
+   lila «por aplicar» y azul grisáceo las demás (el de .home-indicator-icon en admin.css). */
+#view-inicio .home-indicator.is-autorizar .home-indicator-icon{background:#fff4e5;color:#946627}
+#view-inicio .home-indicator.is-aplicar .home-indicator-icon{background:#eeeefe;color:#6d67a1}
+/* Cifras que llevan a su pantalla: botones con el mismo aspecto que la tarjeta, y el hover de los pendientes. */
+#view-inicio button.home-indicator{font:inherit;color:inherit;text-align:left;width:100%;cursor:pointer}
+#view-inicio button.home-indicator:hover{background-image:linear-gradient(var(--md-hover-p),var(--md-hover-p))!important}

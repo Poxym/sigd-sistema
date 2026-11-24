@@ -1,0 +1,164 @@
+[
+  {
+    "paso": "1 · primer login (001)",
+    "indicador": "Accesos hoy 1 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "2 · salir y volver a entrar (001)",
+    "indicador": "Accesos hoy 2 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "paso": "3 · otra cuenta (000)",
+    "indicador": "Accesos hoy 3 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 2
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "4 · contraseña incorrecta (001)",
+    "indicador": "(pantalla de acceso)",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 2
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "5 · login correcto después del fallido (001)",
+    "indicador": "Accesos hoy 4 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 3
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "6 · entra con el correo de 001",
+    "indicador": "Accesos hoy 5 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 4
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "7 · después de recargar la página (001)",
+    "indicador": "Accesos hoy 6 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 5
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "paso": "8 · con 4 accesos de ayer guardados (000)",
+    "indicador": "Accesos hoy 7 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-01",
+        "account": "001",
+        "count": 4
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 5
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "paso": "9 · a las 20:00 hora local (001)",
+    "indicador": "Accesos hoy 8 Accesos registrados",
+    "guardado": [
+      {
+        "source": "login",
+        "day": "2026-11-01",
+        "account": "001",
+        "count": 4
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "001",
+        "count": 6
+      },
+      {
+        "source": "login",
+        "day": "2026-11-02",
+        "account": "000",
+        "count": 2
+      }
+    ]
+  }
+]

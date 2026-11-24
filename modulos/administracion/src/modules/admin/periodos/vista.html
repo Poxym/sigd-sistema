@@ -1,0 +1,97 @@
+<section class="view" id="view-periodos">
+<div class="heading period-heading period-heading-v45">
+<div>
+<h1>Periodos de captura</h1>
+<p>Configura las ventanas operativas del ciclo escolar y consulta su estado desde una sola vista.</p>
+</div>
+<div class="head-actions">
+<button class="btn primary" id="savePeriods"><i class="ti ti-device-floppy"></i>Guardar configuración</button>
+</div>
+</div>
+<div class="period-page-grid v45-period-layout">
+<section class="surface pad period-config-card v45-config-card">
+<div class="period-config-top v45-config-top">
+<div>
+<span class="section-kicker">CONFIGURACIÓN DEL CICLO</span>
+<h3>Ventanas de captura</h3>
+<p>Administra las fechas de apertura, cierre y estado de cada documento institucional.</p>
+</div>
+<span class="status neutral" id="cycleBadge">Sin configurar</span>
+</div>
+<form id="periodForm">
+<div class="v45-cycle-block">
+<div class="form-field period-cycle-field v45-cycle-field">
+<label class="required" for="cycleName">Ciclo escolar</label>
+<input class="field" id="cycleName" placeholder="Ej. 2026-2027" required=""/>
+</div>
+<div class="v41-academic-row v45-academic-row">
+<div class="form-field">
+<label for="v41Semester">Semestre</label>
+<select aria-label="Semestre académico" id="v41Semester">
+<option value="">Seleccionar</option>
+<option value="A">A</option>
+<option value="B">B</option>
+</select>
+</div>
+<div class="form-field">
+<label for="v41AcademicStart">Inicio del periodo reportado</label>
+<input class="field" id="v41AcademicStart" type="date"/>
+</div>
+<div class="form-field">
+<label for="v41AcademicEnd">Fin del periodo reportado</label>
+<input class="field" id="v41AcademicEnd" type="date"/>
+</div>
+</div>
+</div>
+<div class="period-module-grid v45-module-grid">
+<article aria-labelledby="planModuleTitle" class="period-module-card v45-module-card">
+<div class="period-module-head">
+<div class="period-module-title-wrap">
+<span class="period-module-icon"><i class="ti ti-file-pencil"></i></span>
+<div>
+<h3 class="period-module-title" id="planModuleTitle">Plan de Trabajo</h3>
+<p>Captura del plan de trabajo docente.</p>
+</div>
+</div>
+<div id="planStatePreview"></div>
+</div>
+<div class="period-module-fields">
+<div class="form-field"><label for="planStart">Inicio de captura</label><input class="field" id="planStart" required="" type="date"/></div>
+<div class="form-field"><label for="planEnd">Cierre de captura</label><input class="field" id="planEnd" required="" type="date"/></div>
+<div class="form-field span-all"><label for="planState">Estado de captura</label><select id="planState"><option>Abierto</option><option>Cerrado</option><option>En revisión</option></select></div>
+</div>
+</article>
+<article aria-labelledby="reportModuleTitle" class="period-module-card v45-module-card">
+<div class="period-module-head">
+<div class="period-module-title-wrap">
+<span class="period-module-icon report"><i class="ti ti-file-check"></i></span>
+<div>
+<h3 class="period-module-title" id="reportModuleTitle">Informe de Actividades</h3>
+<p>Captura del reporte y evidencias del periodo.</p>
+</div>
+</div>
+<div id="reportStatePreview"></div>
+</div>
+<div class="period-module-fields">
+<div class="form-field"><label for="reportStart">Inicio de captura</label><input class="field" id="reportStart" required="" type="date"/></div>
+<div class="form-field"><label for="reportEnd">Cierre de captura</label><input class="field" id="reportEnd" required="" type="date"/></div>
+<div class="form-field span-all"><label for="reportState">Estado de captura</label><select id="reportState"><option>Abierto</option><option>Cerrado</option><option>En revisión</option></select></div>
+</div>
+</article>
+</div>
+</form>
+</section>
+<aside class="period-side-stack v45-side-stack">
+<section class="surface pad period-overview-card v45-overview-card">
+<div class="surface-head v45-side-head">
+<div>
+<h3>Resumen operativo</h3>
+<small>Vista rápida del ciclo actual</small>
+</div>
+</div>
+<div class="period-overview-list" id="periodOverviewList"></div>
+</section>
+<section class="surface pad period-history-card v45-history-card" id="periodHistoryPanel"></section>
+</aside>
+</div>
+</section>

@@ -1,0 +1,10 @@
+﻿node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+test-results/
+playwright-report/
+# Skills de Claude: viven en la carpeta del usuario (~/.claude/skills), no en el proyecto
+.claude/skills/
+skills-lock.json

@@ -1,0 +1,37 @@
+{
+  "B1 · solo coincide en «Después» (IC-2024)": [
+    "14 oct 2026, 11:30 am Administrador general Catálogo Alta de plan de estudios 2024 IC-2024"
+  ],
+  "B1 · solo coincide en «Antes» (Sin fechas)": [
+    "11 oct 2026, 2:30 pm Administrador general Periodo Configuración de ventanas de captura Sin fechas → Ciclo 2026-2027 A"
+  ],
+  "B2 · «plan» y chip Catálogo": [
+    "14 oct 2026, 11:30 am Administrador general Catálogo Alta de plan de estudios 2024 IC-2024",
+    "10 oct 2026, 3:30 pm Administrador general Catálogo Vinculación de asignaturas con plan 2016 IC-2016"
+  ],
+  "B3 · CATÁLOGO en mayúsculas": 2,
+  "B3 · catalogo sin acento": 1,
+  "B3 · espacios alrededor": 2,
+  "B4 · caracteres especiales": {
+    "filas": [
+      "1 nov 2026, 10:00 am Administrador general Periodo Solo valor anterior Antes →",
+      "1 nov 2026, 9:15 am Usuario \"de prueba\" Catálogo Dice \"hola\", y más; <b>negrita</b> Después, con coma"
+    ],
+    "htmlDeLasFilas": "<td>1 nov 2026, 10:00 am</td><td>Administrador general</td><td><span class=\"status neutral\">Periodo</span></td><td><span class=\"cell-strong\">Solo valor anterior</span><span class=\"cell-sub\">Antes → </span></td>\n<td>1 nov 2026, 9:15 am</td><td>Usuario \"de prueba\"</td><td><span class=\"status neutral\">Catálogo</span></td><td><span class=\"cell-strong\">Dice \"hola\", y más; &lt;b&gt;negrita&lt;/b&gt;</span><span class=\"cell-sub\"> Después, con coma</span></td>",
+    "archivo": "bitacora-administracion.csv",
+    "empiezaConBOM": true,
+    "separadorDeLineas": "CRLF",
+    "primerasLineasDelCSV": [
+      "﻿\"Fecha\",\"Responsable\",\"Acción\",\"Detalle\",\"Antes\",\"Después\"",
+      "\"1 nov 2026, 10:00 am\",\"Administrador general\",\"Periodo\",\"Solo valor anterior\",\"Antes\",\"\"",
+      "\"1 nov 2026, 9:15 am\",\"Usuario \"\"de prueba\"\"\",\"Catálogo\",\"Dice \"\"hola\"\", y más; <b>negrita</b>\",\"\",\"Después, con coma\""
+    ],
+    "totalDeLineas": 9,
+    "avisos": [
+      "Exportación CSV generada"
+    ]
+  },
+  "B5 · bitácora vacía": [
+    "No se encontraron registros Todavía no hay movimientos registrados"
+  ]
+}

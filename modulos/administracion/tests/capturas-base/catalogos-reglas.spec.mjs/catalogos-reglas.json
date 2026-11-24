@@ -1,0 +1,799 @@
+{
+  "A-guardado": {
+    "respaldo: autoridad sin referencia": {
+      "avisos": [
+        "Toda modificación del catálogo requiere respaldo de Rectoría o Vicerrectoría"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "respaldo: referencia con solo espacios": {
+      "avisos": [
+        "Toda modificación del catálogo requiere respaldo de Rectoría o Vicerrectoría"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "respaldo: referencia sin autoridad": {
+      "avisos": [
+        "Toda modificación del catálogo requiere respaldo de Rectoría o Vicerrectoría"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "clave repetida con otras mayúsculas": {
+      "avisos": [
+        "La clave oficial ya existe"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "clave solo con espacios": {
+      "avisos": [
+        "La clave oficial es obligatoria"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "alta con espacios alrededor de la clave": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Campus · Oficio R-001 ( → Campus Nuevo)"
+      ],
+      "efecto": {
+        "code": "NUE",
+        "status": "Vigente",
+        "name": "Campus Nuevo",
+        "id": 4
+      }
+    },
+    "clave repetida contra una guardada con espacios": {
+      "avisos": [
+        "La clave oficial ya existe"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "carrera: cambio de campus con motivo y sin fecha": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del cambio de relación"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "carrera: sin cambio de campus y fecha futura": {
+      "avisos": [
+        "Los movimientos futuros deben registrarse mediante una solicitud programada"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "carrera: sin cambio de campus, renombrar": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Carreras · Oficio R-001 (Ingeniería de Petróleos / Vigente → Ingeniería de Petróleos y Gas / Vigente)"
+      ],
+      "efecto": {
+        "id": 2,
+        "code": "REF-TEH-02",
+        "name": "Ingeniería de Petróleos y Gas",
+        "parentCode": "TEH",
+        "status": "Vigente",
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "name",
+            "oldValue": "Ingeniería de Petróleos",
+            "newValue": "Ingeniería de Petróleos y Gas",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Ajuste de denominación"
+          }
+        ],
+        "relationHistory": []
+      }
+    },
+    "editar el registro con espacios en la clave cuando ya existe sin espacios": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Campus · Oficio R-001 (Campus Nuevo / Vigente → Campus Nuevo / Vigente)"
+      ]
+    },
+    "campus: cambiar la clave sin relaciones": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Campus · Oficio R-001 (Campus Nuevo / Vigente → Campus Nuevo / Vigente)"
+      ],
+      "efecto": {
+        "code": "NUE2",
+        "status": "Vigente",
+        "name": "Campus Nuevo",
+        "id": 4,
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "code",
+            "oldValue": "NUE",
+            "newValue": "NUE2",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "detail",
+            "oldValue": "",
+            "newValue": "Sede nueva",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ]
+      }
+    },
+    "campus: cerrar la vigencia sin carreras": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Campus · Oficio R-001 (Campus Nuevo / Vigente → Campus Nuevo / Histórico)"
+      ],
+      "efecto": {
+        "code": "NUE2",
+        "status": "Histórico",
+        "name": "Campus Nuevo",
+        "id": 4,
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "status",
+            "oldValue": "Vigente",
+            "newValue": "Histórico",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "code",
+            "oldValue": "NUE",
+            "newValue": "NUE2",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "detail",
+            "oldValue": "",
+            "newValue": "Sede nueva",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ]
+      }
+    },
+    "carrera: cerrar con un plan vigente": {
+      "avisos": [
+        "No se puede cerrar la vigencia: existen 1 registros vinculados activos"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "editar sin cambiar nada": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Categorías docentes · Oficio R-001 (Profesor / Vigente → Profesor / Vigente)"
+      ],
+      "efecto": {
+        "id": 2,
+        "code": "CAT-P",
+        "name": "Profesor",
+        "status": "Vigente"
+      }
+    },
+    "parámetro: cambiar valor y unidad": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Parámetros y pesos · Oficio R-001 (Umbral de reprobación para justificar / Vigente → Umbral de reprobación para justificar / Vigente)"
+      ],
+      "efecto": {
+        "id": 1,
+        "code": "REB-UMBRAL",
+        "name": "Umbral de reprobación para justificar",
+        "paramValue": "40",
+        "paramUnit": "Horas",
+        "status": "Vigente",
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "paramUnit",
+            "oldValue": "Porcentaje",
+            "newValue": "Horas",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "paramValue",
+            "oldValue": "35",
+            "newValue": "40",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ]
+      }
+    },
+    "parámetro: valor vacío": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Parámetros y pesos · Oficio R-001 (Umbral de reprobación para justificar / Vigente → Umbral de reprobación para justificar / Vigente)"
+      ],
+      "efecto": {
+        "id": 1,
+        "code": "REB-UMBRAL",
+        "name": "Umbral de reprobación para justificar",
+        "paramValue": "",
+        "paramUnit": "Horas",
+        "status": "Vigente",
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "paramValue",
+            "oldValue": "40",
+            "newValue": "",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "paramUnit",
+            "oldValue": "Porcentaje",
+            "newValue": "Horas",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          },
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "paramValue",
+            "oldValue": "35",
+            "newValue": "40",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ]
+      }
+    },
+    "opciones: mismo nombre con mayúsculas y espacios en el mismo grupo": {
+      "avisos": [
+        "Esta opción ya existe en el grupo seleccionado"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "opciones: mismo nombre en otro grupo": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Opciones de captura · Oficio R-001 ( → Presencial)"
+      ],
+      "efecto": {
+        "code": "OPC-X2",
+        "status": "Vigente",
+        "name": "Presencial",
+        "group": "Vinculación",
+        "appliesTo": "Informe de Actividades",
+        "selectionMode": "Múltiple",
+        "id": 86
+      }
+    },
+    "opciones: editar la propia opción sin cambiar el nombre": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Opciones de captura · Oficio R-001 (Presencial / Vigente → Presencial / Vigente)"
+      ],
+      "efecto": {
+        "id": 1,
+        "code": "OPC-001",
+        "name": "Presencial",
+        "group": "Modalidad de curso",
+        "appliesTo": "Ambos",
+        "sourceRef": "Hoja Datos · Plan 2025-2026",
+        "status": "Vigente",
+        "selectionMode": "Única"
+      }
+    },
+    "opciones: grupo nuevo con espacios alrededor": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Opciones de captura · Oficio R-001 ( → Opción con grupo)"
+      ],
+      "efecto": {
+        "code": "OPC-X3",
+        "status": "Vigente",
+        "name": "Opción con grupo",
+        "group": "Grupo con espacios",
+        "appliesTo": "Plan de Trabajo",
+        "selectionMode": "Única",
+        "id": 87
+      }
+    },
+    "opciones: grupo nuevo con solo espacios": {
+      "avisos": [
+        "Indica un nombre para el nuevo grupo"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "materia: alta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Materias · Oficio R-001 ( → Materia Nueva)"
+      ],
+      "efecto": {
+        "code": "IC-M99",
+        "status": "Vigente",
+        "name": "Materia Nueva",
+        "parentCode": "IC-2024",
+        "id": 8,
+        "relationHistory": [
+          {
+            "from": "",
+            "to": "IC-2024",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta del registro"
+          }
+        ]
+      }
+    },
+    "materia: editar conservando un plan histórico": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Materias · Oficio R-001 (Programación Estructurada / Histórico → Programación Estructurada I / Histórico)"
+      ],
+      "efecto": {
+        "id": 1,
+        "code": "IC-M01",
+        "name": "Programación Estructurada I",
+        "parentCode": "IC-2016",
+        "status": "Histórico",
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "name",
+            "oldValue": "Programación Estructurada",
+            "newValue": "Programación Estructurada I",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ],
+        "relationHistory": []
+      }
+    },
+    "materia: pasar del plan histórico al vigente": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Relación modificada: Estructuras de Datos (IC-2016 → IC-2024)",
+        "Catálogo · Edición autorizada en Materias · Oficio R-001 (Estructuras de Datos / Histórico → Estructuras de Datos / Histórico)"
+      ],
+      "efecto": {
+        "id": 2,
+        "code": "IC-M02",
+        "name": "Estructuras de Datos",
+        "parentCode": "IC-2024",
+        "status": "Histórico",
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "parentCode",
+            "oldValue": "IC-2016",
+            "newValue": "IC-2024",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Actualización del plan"
+          }
+        ],
+        "relationHistory": [
+          {
+            "from": "IC-2016",
+            "to": "IC-2024",
+            "when": "2026-11-02",
+            "recordedAt": "2026-11-02T18:00:00.000Z",
+            "reason": "Actualización del plan"
+          }
+        ]
+      }
+    },
+    "plan: alta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Planes de estudio · Oficio R-001 ( → Plan para cerrar)"
+      ]
+    },
+    "materia histórica: pasar al plan nuevo": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Relación modificada: Programación Orientada a Objetos I (IC-2016 → PLAN-C)",
+        "Catálogo · Edición autorizada en Materias · Oficio R-001 (Programación Orientada a Objetos I / Histórico → Programación Orientada a Objetos I / Histórico)"
+      ]
+    },
+    "plan: cerrar con materias solo históricas": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Planes de estudio · Oficio R-001 (Plan para cerrar / Vigente → Plan para cerrar / Histórico)"
+      ],
+      "efecto": {
+        "code": "PLAN-C",
+        "status": "Histórico",
+        "name": "Plan para cerrar",
+        "parentCode": "REF-TEH-01",
+        "id": 3,
+        "relationHistory": [
+          {
+            "from": "",
+            "to": "REF-TEH-01",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta del registro"
+          }
+        ],
+        "changeHistory": [
+          {
+            "requestId": null,
+            "date": "2026-11-02",
+            "field": "status",
+            "oldValue": "Vigente",
+            "newValue": "Histórico",
+            "authority": "Rectoría",
+            "evidence": "Oficio R-001",
+            "executionNote": "Modificación institucional"
+          }
+        ]
+      }
+    }
+  },
+  "B-forzado": {
+    "alta de materia con un plan histórico": {
+      "avisos": [
+        "Debes seleccionar una relación institucional vigente"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "alta de carrera con un campus que no existe": {
+      "avisos": [
+        "Debes seleccionar una relación institucional vigente"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "editar materia: pasar a un plan que no existe": {
+      "avisos": [
+        "Debes seleccionar una relación institucional vigente"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "fecha con otro formato": {
+      "avisos": [
+        "Indica una fecha de vigencia válida"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "valor del parámetro no numérico": {
+      "avisos": [
+        "El valor del parámetro debe ser numérico"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "autoridad que no es Rectoría ni Vicerrectoría": {
+      "avisos": [
+        "Toda modificación del catálogo requiere respaldo de Rectoría o Vicerrectoría"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "opciones: documento que no existe": {
+      "avisos": [
+        "Selecciona un grupo y el documento al que aplica"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": []
+    },
+    "estado que no es Vigente ni Histórico": {
+      "avisos": [
+        "Selecciona un estado válido"
+      ],
+      "dialogoCerrado": false,
+      "bitacoraNueva": [],
+      "efecto": "no existe"
+    }
+  },
+  "C-pantalla": {
+    "distinciones · vacío": {
+      "tipoActual": "Distinciones 0",
+      "herramientasVisibles": false,
+      "cuenta": "0 registros",
+      "chips": [
+        "Todos0",
+        "Vigentes0",
+        "Históricos0"
+      ],
+      "subencabezados": [],
+      "vacio": [
+        "Este catálogo aún no tiene registros Crea el primero para que esté disponible en los formularios. Nuevo registro"
+      ],
+      "filas": [],
+      "htmlDeNombres": []
+    },
+    "distinciones · botón «Nuevo registro»": {
+      "titulo": "Nuevo registro",
+      "seccion": "DISTINCIONES"
+    },
+    "teclado en la lista de tipos": {
+      "teclas": [
+        "ArrowDown → campus",
+        "ArrowDown → carreras",
+        "ArrowUp → campus",
+        "ArrowUp → institucion",
+        "End → parametros",
+        "ArrowDown → institucion",
+        "Home → institucion",
+        "Enter → institucion"
+      ],
+      "tipoActual": "Institución y áreas 3"
+    },
+    "materias · buscar «Programación»": {
+      "tipoActual": "Materias 8",
+      "herramientasVisibles": true,
+      "cuenta": "2 de 8 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 0",
+        "Históricos 2"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Programación Estructurada I IC-M01 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Programación Orientada a Objetos I IC-M03 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan para cerrar Histórico Editar"
+      ],
+      "htmlDeNombres": [
+        "Programación Estructurada I",
+        "Programación Orientada a Objetos I"
+      ]
+    },
+    "materias · buscar y chip Vigentes": {
+      "tipoActual": "Materias 8",
+      "herramientasVisibles": true,
+      "cuenta": "0 de 8 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 0",
+        "Históricos 2"
+      ],
+      "subencabezados": [],
+      "vacio": [
+        "Sin resultados Prueba con otra palabra o quita los filtros. Quitar búsqueda y filtros"
+      ],
+      "filas": [],
+      "htmlDeNombres": []
+    },
+    "materias · buscar y chip Históricos": {
+      "tipoActual": "Materias 8",
+      "herramientasVisibles": true,
+      "cuenta": "2 de 8 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 0",
+        "Históricos 2"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Programación Estructurada I IC-M01 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Programación Orientada a Objetos I IC-M03 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan para cerrar Histórico Editar"
+      ],
+      "htmlDeNombres": [
+        "Programación Estructurada I",
+        "Programación Orientada a Objetos I"
+      ]
+    },
+    "materias · sin búsqueda y chip Históricos": {
+      "tipoActual": "Materias 8",
+      "herramientasVisibles": true,
+      "cuenta": "7 de 8 registros",
+      "chips": [
+        "Todos 8",
+        "Vigentes 1",
+        "Históricos 7"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Programación Estructurada I IC-M01 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Estructuras de Datos IC-M02 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2024 · Ingeniería en Computación Histórico Editar",
+        "Programación Orientada a Objetos I IC-M03 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan para cerrar Histórico Editar",
+        "Diseño Digital IC-M04 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Matemáticas Discretas IC-M05 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Teoría de la Computación IC-M06 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+        "Cálculo Integral para Ingeniería IC-M07 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar"
+      ],
+      "htmlDeNombres": [
+        "Programación Estructurada I",
+        "Estructuras de Datos",
+        "Programación Orientada a Objetos I",
+        "Diseño Digital",
+        "Matemáticas Discretas",
+        "Teoría de la Computación",
+        "Cálculo Integral para Ingeniería"
+      ]
+    },
+    "opciones · grupo y búsqueda": {
+      "tipoActual": "Opciones de captura 87",
+      "herramientasVisibles": true,
+      "cuenta": "1 de 87 opciones",
+      "chips": [
+        "Todos 1",
+        "Vigentes 1",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Virtual OPC-002 Aplicable en: Plan de Trabajo Selección: única Vigente Editar"
+      ],
+      "htmlDeNombres": [
+        "Virtual"
+      ]
+    },
+    "opciones · todos los grupos y búsqueda": {
+      "tipoActual": "Opciones de captura 87",
+      "herramientasVisibles": true,
+      "cuenta": "2 de 87 opciones",
+      "chips": [
+        "Todos 2",
+        "Vigentes 2",
+        "Históricos 0"
+      ],
+      "subencabezados": [
+        "Modalidad de curso 1",
+        "Vinculación 1"
+      ],
+      "vacio": [],
+      "filas": [
+        "Presencial OPC-001 Aplicable en: Ambos Selección: única Vigente Editar",
+        "Presencial OPC-X2 Aplicable en: Informe de Actividades Selección: múltiple Vigente Editar"
+      ],
+      "htmlDeNombres": [
+        "Presencial",
+        "Presencial"
+      ]
+    },
+    "carreras · campus inexistente y HTML en el nombre (se busca en el texto guardado)": {
+      "tipoActual": "Carreras 14",
+      "herramientasVisibles": true,
+      "cuenta": "1 de 14 registros",
+      "chips": [
+        "Todos 1",
+        "Vigentes 1",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Carrera <b>sin</b> campus & más REF-X-90 <i>detalle</i> Campus: sin asignar Vigente Editar"
+      ],
+      "htmlDeNombres": [
+        "Carrera &lt;b&gt;sin&lt;/b&gt; campus &amp; más"
+      ]
+    },
+    "carreras · buscar en la descripción": {
+      "tipoActual": "Carreras 14",
+      "herramientasVisibles": true,
+      "cuenta": "1 de 14 registros",
+      "chips": [
+        "Todos 1",
+        "Vigentes 1",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Carrera <b>sin</b> campus & más REF-X-90 <i>detalle</i> Campus: sin asignar Vigente Editar"
+      ],
+      "htmlDeNombres": [
+        "Carrera &lt;b&gt;sin&lt;/b&gt; campus &amp; más"
+      ]
+    },
+    "parámetros · uno sin valor": {
+      "tipoActual": "Parámetros y pesos 2",
+      "herramientasVisibles": true,
+      "cuenta": "2 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 2",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Umbral de reprobación para justificar REB-UMBRAL Referencia del 35 % identificada en las reuniones, su aplicación requiere confirmación. Valor: — Vigente Editar",
+        "Parámetro sin valor PAR-SIN Valor: — Vigente Editar"
+      ],
+      "htmlDeNombres": [
+        "Umbral de reprobación para justificar",
+        "Parámetro sin valor"
+      ]
+    }
+  }
+}

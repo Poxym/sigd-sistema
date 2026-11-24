@@ -1,0 +1,32 @@
+{
+  "usuarios": 18,
+  "solicitudes": 5,
+  "bitacora": 15,
+  "catalogos": {
+    "institucion": 3,
+    "parametros": 1,
+    "campus": 4,
+    "carreras": 13,
+    "planes": 2,
+    "materias": 7,
+    "rubros": 10,
+    "categorias": 2,
+    "comisiones": 9,
+    "distinciones": 0,
+    "opciones": 85
+  },
+  "ultimasAcciones": [
+    "Catálogo: Alta documentada en Campus · Prueba cat1",
+    "Solicitud: Registro de solicitud vinculada: Prueba sol1",
+    "Usuario: Alta de cuenta Prueba usr6",
+    "Usuario: Alta de cuenta Prueba usr5",
+    "Usuario: Alta de cuenta Prueba usr4",
+    "Usuario: Alta de cuenta Prueba usr3",
+    "Usuario: Alta de cuenta Prueba usr2",
+    "Usuario: Alta de cuenta Prueba usr1",
+    "Usuario: Alta de cuenta Prueba usr0",
+    "Catálogo: Alta de plan de estudios 2024",
+    "Usuario: Registro de cuenta de docente",
+    "Solicitud: Registro de revisión de carrera"
+  ]
+}

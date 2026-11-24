@@ -1,0 +1,4 @@
+/* Estilos de la pantalla bitacora (antes en src/styles/admin.css; mismo orden). Se cargan después de admin.css. */
+@media(max-width:760px){#view-bitacora .work-table tbody tr{grid-template-columns:minmax(0,1fr) auto}#view-bitacora .work-table tbody td:nth-child(2){grid-column:1;grid-row:2;color:#60788c}#view-bitacora .work-table tbody td:nth-child(3){grid-column:2;grid-row:1;justify-self:end}#view-bitacora .work-table tbody td:nth-child(4){grid-column:1/-1;grid-row:3;padding-top:5px!important;border-top:1px solid #e8eef3!important}}
+.nxb #view-bitacora .work-table tbody td:nth-child(1){font-size:13px!important}
+@media(max-width:600px){.nxb #view-bitacora .work-table tbody td:nth-child(1){font-size:13px!important}}

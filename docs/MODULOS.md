@@ -27,7 +27,7 @@ El diagrama de clases de Vicerrectoría (Usuario, Cumplimiento, ConfiguracionSem
 
 | Módulo | Ruta | Pantallas (menú lateral) | Referencia en `prototipo-referencia/` |
 |---|---|---|---|
-| Administración | `/admin` | inicio, solicitudes, catalogos, usuarios, **periodos** (hecha), bitacora | `administracion/` (html + app.js + css) |
+| Administración | `/admin` | inicio, solicitudes, catalogos, usuarios, periodos, bitacora — **las seis hechas** (módulo integrado de `modulos/administracion`) | ya no aplica: la fuente es `modulos/administracion/` |
 | Plan de Trabajo | `/plan` | mi-plan, historial (docente) · bandeja (jefatura) · notificaciones · ayuda | `plan-trabajo/` (plan.js + plan.dominio.js + css) |
 | Informe de Actividades | `/informe` | panel · mi-informe (docente) · revision (jefatura) | `informe-actividades/` |
 | Reportes | `/reportes` | resumen, reprobacion, busqueda, investigacion, historico | `reportes/` (html + js + css) |

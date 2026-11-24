@@ -1,0 +1,156 @@
+{
+  "adaptador": {
+    "clave": "nexora-admin-v51-computacion",
+    "sinDatosUsaLaSemilla": {
+      "usuarios": 11,
+      "solicitudes": 4,
+      "bitacora": 6
+    },
+    "guardaConLaClave": [
+      "nexora-admin-v51-computacion"
+    ],
+    "loGuardadoEsElMismoJSON": true,
+    "alReleerQuedaIgual": true,
+    "bloqueadoUsaLaSemilla": 11,
+    "bloqueadoGuardarNoFalla": true
+  },
+  "preferencias": {
+    "alPrincipioNoPlegado": true,
+    "guardadoTrue": [
+      [
+        "nexora-sidebar-collapsed",
+        "true"
+      ]
+    ],
+    "leeTrue": true,
+    "bloqueadoLeeNoPlegado": true,
+    "bloqueadoGuardarNoFalla": true
+  },
+  "baseCompletaSinAppJs": {
+    "permisosDeRoles": [
+      "Docente",
+      "Jefe de carrera",
+      "Rectoría",
+      "Vicerrectoría",
+      "Secretaría de Rectoría",
+      "Secretaría de Vicerrectoría",
+      "Representante de distinciones",
+      "Administrador general"
+    ],
+    "opciones": 85,
+    "comisiones": [
+      "COM-F01",
+      "COM-F02",
+      "COM-F03",
+      "COM-F04",
+      "COM-F05",
+      "COM-F06",
+      "COM-F07",
+      "COM-F08",
+      "COM-F09"
+    ],
+    "camposDelPeriodo": [
+      "semester",
+      "activityStart",
+      "activityEnd"
+    ],
+    "guardoAlCrearse": true
+  },
+  "usuarios": {
+    "todos": 12,
+    "buscar1": "Juan Pérez Martínez",
+    "buscarPorNumeroConEspacios": "Francisco Aguilar Acevedo",
+    "noExiste": null,
+    "agregarAsignaId": 12,
+    "agregarVaAlFinal": true,
+    "esElMismoObjeto": true,
+    "aunNoSeGuarda": true
+  },
+  "permisos": {
+    "docente": [
+      "Consultar catálogos",
+      "Capturar documentos"
+    ],
+    "rolSinPermisos": [],
+    "asignar": [
+      "Consultar catálogos"
+    ],
+    "quedoEnDb": [
+      "Consultar catálogos"
+    ]
+  },
+  "catalogos": {
+    "campus": [
+      "TEH",
+      "JUC",
+      "IXT",
+      "REP"
+    ],
+    "tipoInexistente": [],
+    "buscar": "Tehuantepec",
+    "buscarPorClave": "Ingeniería en Computación",
+    "agregarAsignaId": 4,
+    "agregarVaAlFinal": true
+  },
+  "catalogosTodos": {
+    "esElMismoObjeto": true,
+    "tipos": 11
+  },
+  "accesos": {
+    "semillaVacia": [],
+    "esElMismoArreglo": true,
+    "sinLaParteDevuelveVacio": []
+  },
+  "solicitudes": {
+    "todas": 5,
+    "buscar2": "autorizada",
+    "agregarAsignaId": 5,
+    "agregarVaAlPrincipio": true
+  },
+  "periodos": {
+    "ciclo": "2026-2027",
+    "historial": [
+      "Entrada Repo",
+      "Ajuste de cierre del Informe de Actividades",
+      "Configuración inicial de ventanas de captura"
+    ],
+    "esElMismoObjeto": true
+  },
+  "periodosActualizar": {
+    "mezcla": {
+      "cycle": "2030-2031",
+      "planStart": "2026-08-10",
+      "planEnd": "2026-11-30",
+      "planState": "Cerrado",
+      "reportStart": "2026-10-01",
+      "reportEnd": "2026-12-15",
+      "reportState": "Abierto",
+      "semester": "A",
+      "activityStart": "2026-08-10",
+      "activityEnd": "2026-12-15"
+    },
+    "actualDevuelveElNuevo": true,
+    "esUnObjetoNuevo": true,
+    "elAnteriorNoCambia": "2026-2027",
+    "aunNoSeGuarda": true
+  },
+  "bitacora": {
+    "entradasAntes": 6,
+    "primeraTrasRegistrar": {
+      "id": 7,
+      "date": "2026-11-02T18:00:00.000Z",
+      "user": "Administrador general",
+      "kind": "Usuario",
+      "detail": "Entrada Repo",
+      "oldVal": "antes",
+      "newVal": "después"
+    },
+    "registrarGuarda": true,
+    "alGuardarSeLlevaTodo": {
+      "usuario": true,
+      "campus": true,
+      "solicitud": "Solicitud Repo",
+      "historial": "Entrada Repo"
+    }
+  }
+}

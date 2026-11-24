@@ -1,0 +1,52 @@
+{
+  "actualizar": {
+    "esLaMismaCuenta": true,
+    "camposEnOrden": [
+      "num",
+      "name",
+      "role",
+      "area",
+      "status",
+      "id",
+      "extra"
+    ],
+    "valores": {
+      "name": "Cuenta Repo 2",
+      "role": "Jefe de carrera",
+      "extra": 1
+    },
+    "quitados": [],
+    "noExiste": null
+  },
+  "anotarCambioDeRol": [
+    "Jefe de carrera → Docente",
+    "Docente → Jefe de carrera"
+  ],
+  "adscripcion": {
+    "noExistiaAntes": true,
+    "creaArregloVacio": true,
+    "reemplazaUnValorQueNoEsArreglo": true,
+    "agregaAlFinal": [
+      {
+        "from": "",
+        "to": "Tehuantepec"
+      },
+      {
+        "from": "Tehuantepec",
+        "to": "Ixtepec"
+      }
+    ],
+    "esLaMismaLista": true
+  },
+  "carrera": [
+    {
+      "from": "A",
+      "to": "B"
+    },
+    {
+      "from": "B",
+      "to": "C"
+    }
+  ],
+  "ningunoGuarda": true
+}

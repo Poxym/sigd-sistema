@@ -13,6 +13,17 @@ jobs:
         env: { DJANGO_SETTINGS_MODULE: config.settings.test }
       - run: python manage.py test
         env: { DJANGO_SETTINGS_MODULE: config.settings.test }
+  modulo-administracion:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: modulos/administracion } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "24" }
+      - run: npm ci
+      - run: npm run build:sigd
+      - name: El archivo integrado en el frontend está al día
+        run: git diff --exit-code -- ../../frontend/public/modulos/administracion/
   frontend:
     runs-on: ubuntu-latest
     defaults: { run: { working-directory: frontend } }

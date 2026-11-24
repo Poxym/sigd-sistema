@@ -1,0 +1,2030 @@
+{
+  "pantalla": {
+    "navegacion": [
+      "Estructura institucional Institución y áreas 3 Campus 3 Carreras 13",
+      "Oferta académica Planes de estudio 2 Materias 7",
+      "Plan de Trabajo e Informe Rubros y actividades 10 Opciones de captura 85 Categorías docentes 2 Comisiones 9 Distinciones 0",
+      "Reglas del sistema Parámetros y pesos 1"
+    ],
+    "inicial": {
+      "tipoActual": "Campus 3",
+      "titulo": "Campus",
+      "descripcion": "Sedes institucionales. Conservar registros históricos al cambiar de estado.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "3 registros",
+      "chips": [
+        "Todos 3",
+        "Vigentes 3",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Tehuantepec TEH Ciudad Universitaria S/N, Barrio Santa Cruz Tagolaba, Tehuantepec, Oaxaca Vigente Editar",
+        "Juchitán JUC Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán, Oaxaca Vigente Editar",
+        "Ixtepec IXT Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca Vigente Editar"
+      ],
+      "totalFilas": 3
+    },
+    "porTipo": {
+      "institucion": {
+        "tipoActual": "Institución y áreas 3",
+        "titulo": "Institución y áreas",
+        "descripcion": "Identificación y estructura institucional configurable.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "3 registros",
+        "chips": [
+          "Todos 3",
+          "Vigentes 3",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Universidad del Istmo UNI Institución Vigente Editar",
+          "Rectoría REC Área institucional Vigente Editar",
+          "Vicerrectoría Académica VIC Área institucional Vigente Editar"
+        ],
+        "totalFilas": 3
+      },
+      "campus": {
+        "tipoActual": "Campus 3",
+        "titulo": "Campus",
+        "descripcion": "Sedes institucionales. Conservar registros históricos al cambiar de estado.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "3 registros",
+        "chips": [
+          "Todos 3",
+          "Vigentes 3",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Tehuantepec TEH Ciudad Universitaria S/N, Barrio Santa Cruz Tagolaba, Tehuantepec, Oaxaca Vigente Editar",
+          "Juchitán JUC Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán, Oaxaca Vigente Editar",
+          "Ixtepec IXT Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca Vigente Editar"
+        ],
+        "totalFilas": 3
+      },
+      "carreras": {
+        "tipoActual": "Carreras 13",
+        "titulo": "Carreras",
+        "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "13 registros",
+        "chips": [
+          "Todos 13",
+          "Vigentes 13",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Ingeniería Química REF-TEH-01 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Ingeniería de Petróleos REF-TEH-02 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Ingeniería en Diseño REF-TEH-03 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Ingeniería en Computación REF-TEH-04 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Ingeniería Industrial REF-TEH-05 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Licenciatura en Matemáticas Aplicadas REF-TEH-06 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Ingeniería en Energías Renovables REF-TEH-07 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+          "Licenciatura en Ciencias Empresariales REF-IXT-08 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+          "Licenciatura en Derecho REF-IXT-09 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+          "Ingeniería en Desarrollo de Software y Sistemas Inteligentes REF-IXT-10 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+          "Licenciatura en Comercio Exterior y Gestión de Aduanas REF-IXT-11 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+          "Licenciatura en Nutrición REF-JUC-12 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar",
+          "Licenciatura en Enfermería REF-JUC-13 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar"
+        ],
+        "totalFilas": 13
+      },
+      "planes": {
+        "tipoActual": "Planes de estudio 2",
+        "titulo": "Planes de estudio",
+        "descripcion": "Cada plan de estudios se relaciona con una carrera; los planes históricos deben seguir disponibles para consulta.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "2 registros",
+        "chips": [
+          "Todos 2",
+          "Vigentes 1",
+          "Históricos 1"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Plan de estudios 2016 · Ingeniería en Computación IC-2016 Plan publicado en el portal de Ingeniería en Computación (referencia académica) Carrera: Ingeniería en Computación Histórico Editar",
+          "Plan de estudios 2024 · Ingeniería en Computación IC-2024 Plan publicado en el portal de Ingeniería en Computación (referencia académica) Carrera: Ingeniería en Computación Vigente Editar"
+        ],
+        "totalFilas": 2
+      },
+      "materias": {
+        "tipoActual": "Materias 7",
+        "titulo": "Materias",
+        "descripcion": "Las asignaturas deben proceder de planes de estudio oficiales y conservar su vigencia.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "7 registros",
+        "chips": [
+          "Todos 7",
+          "Vigentes 0",
+          "Históricos 7"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Programación Estructurada IC-M01 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Estructuras de Datos IC-M02 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Programación Orientada a Objetos I IC-M03 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Diseño Digital IC-M04 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Matemáticas Discretas IC-M05 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Teoría de la Computación IC-M06 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar",
+          "Cálculo Integral para Ingeniería IC-M07 Asignatura identificada en temarios u horarios institucionales; código referencial Plan de estudios: Plan de estudios 2016 · Ingeniería en Computación Histórico Editar"
+        ],
+        "totalFilas": 7
+      },
+      "rubros": {
+        "tipoActual": "Rubros y actividades 10",
+        "titulo": "Rubros y actividades",
+        "descripcion": "Estos rubros alimentan los formularios de Plan de Trabajo e Informe de Actividades.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "10 registros",
+        "chips": [
+          "Todos 10",
+          "Vigentes 10",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Docencia DOC Plan e Informe de Actividades Plan: A. Docencia Informe: A. Docencia Vigente Editar",
+          "Investigación INV Plan e Informe de Actividades Plan: J. Investigación Informe: B. Investigación Vigente Editar",
+          "Formación de recursos humanos FRH Plan de Trabajo / Dirección de tesis en Informe Plan: B. Formación de recursos humanos Informe: C. Dirección de tesis Vigente Editar",
+          "Tutorías TUT Plan e Informe de Actividades Plan: C. Tutorías Informe: D. Tutorías Vigente Editar",
+          "Vinculación VIN Plan e Informe de Actividades Plan: D. Vinculación Informe: E. Vinculación Vigente Editar",
+          "Difusión de la cultura CUL Plan e Informe de Actividades Plan: E. Difusión de la cultura Informe: F. Difusión de la cultura Vigente Editar",
+          "Gestión GAC Plan e Informe de Actividades Plan: F. Gestión Informe: G. Gestión Vigente Editar",
+          "Distinciones DIST Plan e Informe de Actividades Plan: G. Distinciones Informe: H. Distinciones Vigente Editar",
+          "Promoción del desarrollo PROM Plan e Informe de Actividades Plan: H. Promoción del desarrollo Informe: I. Promoción al desarrollo Vigente Editar",
+          "Superación académica SUPAC Plan de Trabajo Plan: I. Superación académica Informe: no asociado Vigente Editar"
+        ],
+        "totalFilas": 10
+      },
+      "opciones": {
+        "tipoActual": "Opciones de captura 85",
+        "titulo": "Opciones de captura",
+        "descripcion": "Listas utilizadas por los formularios académicos, organizadas por tipo de dato y documento.",
+        "filtroDeGrupoVisible": true,
+        "cuenta": "85 opciones",
+        "chips": [
+          "Todos 85",
+          "Vigentes 85",
+          "Históricos 0"
+        ],
+        "subencabezados": [
+          "Ámbito de publicación 2",
+          "Autoría en libro 2",
+          "Clasificación de artículo 3",
+          "Comités 5",
+          "Coordinación de programas 9",
+          "Difusión de la cultura 4",
+          "Dirección de tesis 2",
+          "Distinciones 5",
+          "Estado de artículo 2",
+          "Índice de publicación 3",
+          "Modalidad de curso 3",
+          "Origen de proyecto 4",
+          "Participación en foros 5",
+          "Participación en proyecto 2",
+          "Promoción del desarrollo 3",
+          "Proyecto de investigación 6",
+          "Publicación prevista 7",
+          "Revisión de tesis 2",
+          "Superación académica 12",
+          "Tipo de obra 2",
+          "Vinculación 2"
+        ],
+        "vacio": [],
+        "filas": [
+          "Nacional OPC-077 Aplicable en: Informe de Actividades Selección: única Vigente Editar",
+          "Extranjero OPC-078 Aplicable en: Informe de Actividades Selección: única Vigente Editar",
+          "Autor OPC-084 Aplicable en: Informe de Actividades Selección: única Vigente Editar"
+        ],
+        "totalFilas": 85
+      },
+      "categorias": {
+        "tipoActual": "Categorías docentes 2",
+        "titulo": "Categorías docentes",
+        "descripcion": "Distingue las categorías de Profesor Investigador y Profesor sin esa denominación.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "2 registros",
+        "chips": [
+          "Todos 2",
+          "Vigentes 2",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Profesor investigador CAT-PI Categoría de referencia para captura académica; denominación por validar Vigente Editar",
+          "Profesor CAT-P Categoría de referencia para captura académica; denominación por validar Vigente Editar"
+        ],
+        "totalFilas": 2
+      },
+      "comisiones": {
+        "tipoActual": "Comisiones 9",
+        "titulo": "Comisiones",
+        "descripcion": "Comisiones y actividades académicas administradas como registros institucionales.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "9 registros",
+        "chips": [
+          "Todos 9",
+          "Vigentes 9",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Personal Académico COM-F01 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Planes y programas de estudio COM-F02 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Finanzas COM-F03 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Reglamentos COM-F04 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Cafetería COM-F05 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Mixta de Seguridad e Higiene COM-F06 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Fondo de Ahorro COM-F07 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Evaluación docente COM-F08 Comisión indicada en el Plan de Trabajo Vigente Editar",
+          "Comisión de género COM-F09 Comisión indicada en el Plan de Trabajo Vigente Editar"
+        ],
+        "totalFilas": 9
+      },
+      "distinciones": {
+        "tipoActual": "Distinciones 0",
+        "titulo": "Distinciones",
+        "descripcion": "Catálogo de tipos de distinción; la validación individual corresponde al rol institucional autorizado.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "0 registros",
+        "chips": [
+          "Todos0",
+          "Vigentes0",
+          "Históricos0"
+        ],
+        "subencabezados": [],
+        "vacio": [
+          "Este catálogo aún no tiene registros Crea el primero para que esté disponible en los formularios. Nuevo registro"
+        ],
+        "filas": [],
+        "totalFilas": 0
+      },
+      "parametros": {
+        "tipoActual": "Parámetros y pesos 1",
+        "titulo": "Parámetros y pesos",
+        "descripcion": "Pesos, horas y reglas configurables, sujetos a indicación institucional.",
+        "filtroDeGrupoVisible": false,
+        "cuenta": "1 registro",
+        "chips": [
+          "Todos 1",
+          "Vigentes 1",
+          "Históricos 0"
+        ],
+        "subencabezados": [],
+        "vacio": [],
+        "filas": [
+          "Umbral de reprobación para justificar REB-UMBRAL Referencia del 35 % identificada en las reuniones, su aplicación requiere confirmación. Valor: 35% Vigente Editar"
+        ],
+        "totalFilas": 1
+      }
+    },
+    "carreras · buscar «Química»": {
+      "tipoActual": "Carreras 13",
+      "titulo": "Carreras",
+      "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "1 de 13 registros",
+      "chips": [
+        "Todos 1",
+        "Vigentes 1",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Ingeniería Química REF-TEH-01 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar"
+      ],
+      "totalFilas": 1
+    },
+    "carreras · buscar el campus «Juchitán»": {
+      "tipoActual": "Carreras 13",
+      "titulo": "Carreras",
+      "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "2 de 13 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 2",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Licenciatura en Nutrición REF-JUC-12 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar",
+        "Licenciatura en Enfermería REF-JUC-13 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar"
+      ],
+      "totalFilas": 2
+    },
+    "carreras · sin resultados": {
+      "tipoActual": "Carreras 13",
+      "titulo": "Carreras",
+      "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "0 de 13 registros",
+      "chips": [
+        "Todos 0",
+        "Vigentes 0",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [
+        "Sin resultados Prueba con otra palabra o quita los filtros. Quitar búsqueda y filtros"
+      ],
+      "filas": [],
+      "totalFilas": 0
+    },
+    "carreras · tras «Quitar búsqueda y filtros»": {
+      "tipoActual": "Carreras 13",
+      "titulo": "Carreras",
+      "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "13 registros",
+      "chips": [
+        "Todos 13",
+        "Vigentes 13",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Ingeniería Química REF-TEH-01 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Ingeniería de Petróleos REF-TEH-02 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Ingeniería en Diseño REF-TEH-03 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Ingeniería en Computación REF-TEH-04 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Ingeniería Industrial REF-TEH-05 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Licenciatura en Matemáticas Aplicadas REF-TEH-06 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Ingeniería en Energías Renovables REF-TEH-07 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Vigente Editar",
+        "Licenciatura en Ciencias Empresariales REF-IXT-08 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Derecho REF-IXT-09 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Ingeniería en Desarrollo de Software y Sistemas Inteligentes REF-IXT-10 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Comercio Exterior y Gestión de Aduanas REF-IXT-11 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Nutrición REF-JUC-12 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar",
+        "Licenciatura en Enfermería REF-JUC-13 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar"
+      ],
+      "totalFilas": 13
+    },
+    "planes · chip Históricos": {
+      "tipoActual": "Planes de estudio 2",
+      "titulo": "Planes de estudio",
+      "descripcion": "Cada plan de estudios se relaciona con una carrera; los planes históricos deben seguir disponibles para consulta.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "1 de 2 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 1",
+        "Históricos 1"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Plan de estudios 2016 · Ingeniería en Computación IC-2016 Plan publicado en el portal de Ingeniería en Computación (referencia académica) Carrera: Ingeniería en Computación Histórico Editar"
+      ],
+      "totalFilas": 1
+    },
+    "planes · chip Vigentes": {
+      "tipoActual": "Planes de estudio 2",
+      "titulo": "Planes de estudio",
+      "descripcion": "Cada plan de estudios se relaciona con una carrera; los planes históricos deben seguir disponibles para consulta.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "1 de 2 registros",
+      "chips": [
+        "Todos 2",
+        "Vigentes 1",
+        "Históricos 1"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Plan de estudios 2024 · Ingeniería en Computación IC-2024 Plan publicado en el portal de Ingeniería en Computación (referencia académica) Carrera: Ingeniería en Computación Vigente Editar"
+      ],
+      "totalFilas": 1
+    },
+    "opciones · grupos disponibles": [
+      "Todos los grupos (85)",
+      "Ámbito de publicación (2)",
+      "Autoría en libro (2)",
+      "Clasificación de artículo (3)",
+      "Comités (5)",
+      "Coordinación de programas (9)",
+      "Difusión de la cultura (4)",
+      "Dirección de tesis (2)",
+      "Distinciones (5)",
+      "Estado de artículo (2)",
+      "Índice de publicación (3)",
+      "Modalidad de curso (3)",
+      "Origen de proyecto (4)",
+      "Participación en foros (5)",
+      "Participación en proyecto (2)",
+      "Promoción del desarrollo (3)",
+      "Proyecto de investigación (6)",
+      "Publicación prevista (7)",
+      "Revisión de tesis (2)",
+      "Superación académica (12)",
+      "Tipo de obra (2)",
+      "Vinculación (2)"
+    ],
+    "opciones · un grupo": {
+      "tipoActual": "Opciones de captura 85",
+      "titulo": "Opciones de captura",
+      "descripcion": "Listas utilizadas por los formularios académicos, organizadas por tipo de dato y documento.",
+      "filtroDeGrupoVisible": true,
+      "cuenta": "2 de 85 opciones",
+      "chips": [
+        "Todos 2",
+        "Vigentes 2",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Nacional OPC-077 Aplicable en: Informe de Actividades Selección: única Vigente Editar",
+        "Extranjero OPC-078 Aplicable en: Informe de Actividades Selección: única Vigente Editar"
+      ],
+      "totalFilas": 2
+    },
+    "campus · cambiar de tipo limpia filtros": {
+      "tipoActual": "Campus 3",
+      "titulo": "Campus",
+      "descripcion": "Sedes institucionales. Conservar registros históricos al cambiar de estado.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "3 registros",
+      "chips": [
+        "Todos 3",
+        "Vigentes 3",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Tehuantepec TEH Ciudad Universitaria S/N, Barrio Santa Cruz Tagolaba, Tehuantepec, Oaxaca Vigente Editar",
+        "Juchitán JUC Carretera Transísmica Juchitán–La Ventosa, km 14, Juchitán, Oaxaca Vigente Editar",
+        "Ixtepec IXT Carretera Chihuitán–Ixtepec S/N, Ciudad Ixtepec, Oaxaca Vigente Editar"
+      ],
+      "totalFilas": 3
+    },
+    "clic en la fila abre": "Editar registro",
+    "botón Editar abre": "Editar registro"
+  },
+  "dialogo": {
+    "nuevo · campus": {
+      "titulo": "Nuevo registro",
+      "seccion": "CAMPUS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · carreras": {
+      "titulo": "Nuevo registro",
+      "seccion": "CARRERAS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Selecciona un registro ✓",
+            "TEH=Tehuantepec · TEH",
+            "JUC=Juchitán · JUC",
+            "IXT=Ixtepec · IXT"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · planes": {
+      "titulo": "Nuevo registro",
+      "seccion": "PLANES DE ESTUDIO",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Selecciona un registro ✓",
+            "REF-TEH-01=Ingeniería Química · REF-TEH-01",
+            "REF-TEH-02=Ingeniería de Petróleos · REF-TEH-02",
+            "REF-TEH-03=Ingeniería en Diseño · REF-TEH-03",
+            "REF-TEH-04=Ingeniería en Computación · REF-TEH-04",
+            "REF-TEH-05=Ingeniería Industrial · REF-TEH-05",
+            "REF-TEH-06=Licenciatura en Matemáticas Aplicadas · REF-TEH-06",
+            "REF-TEH-07=Ingeniería en Energías Renovables · REF-TEH-07",
+            "REF-IXT-08=Licenciatura en Ciencias Empresariales · REF-IXT-08",
+            "REF-IXT-09=Licenciatura en Derecho · REF-IXT-09",
+            "REF-IXT-10=Ingeniería en Desarrollo de Software y Sistemas Inteligentes · REF-IXT-10",
+            "REF-IXT-11=Licenciatura en Comercio Exterior y Gestión de Aduanas · REF-IXT-11",
+            "REF-JUC-12=Licenciatura en Nutrición · REF-JUC-12",
+            "REF-JUC-13=Licenciatura en Enfermería · REF-JUC-13"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · materias": {
+      "titulo": "Nuevo registro",
+      "seccion": "MATERIAS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Selecciona un registro ✓",
+            "IC-2024=Plan de estudios 2024 · Ingeniería en Computación · IC-2024"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · parametros": {
+      "titulo": "Nuevo registro",
+      "seccion": "PARÁMETROS Y PESOS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "paramValue",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. 2"
+        },
+        {
+          "nombre": "paramUnit",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Horas",
+          "opciones": [
+            "Horas ✓",
+            "Porcentaje",
+            "Puntos",
+            "Cantidad",
+            "No aplica"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · rubros": {
+      "titulo": "Nuevo registro",
+      "seccion": "RUBROS Y ACTIVIDADES",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "planSection",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=No está en este formato ✓",
+            "A. Docencia",
+            "B. Formación de recursos humanos",
+            "C. Tutorías",
+            "D. Vinculación",
+            "E. Difusión de la cultura",
+            "F. Gestión",
+            "G. Distinciones",
+            "H. Promoción del desarrollo",
+            "I. Superación académica",
+            "J. Investigación"
+          ]
+        },
+        {
+          "nombre": "reportSection",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=No está en este formato ✓",
+            "A. Docencia",
+            "B. Investigación",
+            "C. Dirección de tesis",
+            "D. Tutorías",
+            "E. Vinculación",
+            "F. Difusión de la cultura",
+            "G. Gestión",
+            "H. Distinciones",
+            "I. Promoción al desarrollo"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · categorias": {
+      "titulo": "Nuevo registro",
+      "seccion": "CATEGORÍAS DOCENTES",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · opciones": {
+      "titulo": "Nuevo registro",
+      "seccion": "OPCIONES DE CAPTURA",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "group",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Ámbito de publicación",
+            "Autoría en libro",
+            "Clasificación de artículo",
+            "Comités",
+            "Coordinación de programas",
+            "Difusión de la cultura",
+            "Dirección de tesis",
+            "Distinciones",
+            "Estado de artículo",
+            "Índice de publicación",
+            "Modalidad de curso",
+            "Origen de proyecto",
+            "Participación en foros",
+            "Participación en proyecto",
+            "Promoción del desarrollo",
+            "Proyecto de investigación",
+            "Publicación prevista",
+            "Revisión de tesis",
+            "Superación académica",
+            "Tipo de obra",
+            "Vinculación",
+            "__NEW__=Nuevo grupo…"
+          ]
+        },
+        {
+          "nombre": "appliesTo",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Plan de Trabajo",
+            "Informe de Actividades",
+            "Ambos"
+          ]
+        },
+        {
+          "nombre": "groupCustom",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Tipo de evaluación"
+        },
+        {
+          "nombre": "selectionMode",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Única",
+          "opciones": [
+            "Única ✓",
+            "Múltiple"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "nuevo · opciones · «Nuevo grupo…»": {
+      "titulo": "Nuevo registro",
+      "seccion": "OPCIONES DE CAPTURA",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "group",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "__NEW__",
+          "opciones": [
+            "=Seleccionar",
+            "Ámbito de publicación",
+            "Autoría en libro",
+            "Clasificación de artículo",
+            "Comités",
+            "Coordinación de programas",
+            "Difusión de la cultura",
+            "Dirección de tesis",
+            "Distinciones",
+            "Estado de artículo",
+            "Índice de publicación",
+            "Modalidad de curso",
+            "Origen de proyecto",
+            "Participación en foros",
+            "Participación en proyecto",
+            "Promoción del desarrollo",
+            "Proyecto de investigación",
+            "Publicación prevista",
+            "Revisión de tesis",
+            "Superación académica",
+            "Tipo de obra",
+            "Vinculación",
+            "__NEW__=Nuevo grupo… ✓"
+          ]
+        },
+        {
+          "nombre": "appliesTo",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Plan de Trabajo",
+            "Informe de Actividades",
+            "Ambos"
+          ]
+        },
+        {
+          "nombre": "groupCustom",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Tipo de evaluación"
+        },
+        {
+          "nombre": "selectionMode",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Única",
+          "opciones": [
+            "Única ✓",
+            "Múltiple"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · campus": {
+      "titulo": "Editar registro",
+      "seccion": "CAMPUS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "TEH"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Ciudad Universitaria S/N, Barrio Santa Cruz Tagolaba, Tehuantepec, Oaxaca",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · carreras": {
+      "titulo": "Editar registro",
+      "seccion": "CARRERAS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-01"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Ingeniería Química"
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "TEH",
+          "opciones": [
+            "=Selecciona un registro",
+            "TEH=Tehuantepec · TEH ✓",
+            "JUC=Juchitán · JUC",
+            "IXT=Ixtepec · IXT"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial)",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reestructuración académica"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · planes": {
+      "titulo": "Editar registro",
+      "seccion": "PLANES DE ESTUDIO",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "IC-2016"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Histórico",
+          "opciones": [
+            "Vigente",
+            "Histórico ✓"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Plan de estudios 2016 · Ingeniería en Computación"
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-04",
+          "opciones": [
+            "=Selecciona un registro",
+            "REF-TEH-01=Ingeniería Química · REF-TEH-01",
+            "REF-TEH-02=Ingeniería de Petróleos · REF-TEH-02",
+            "REF-TEH-03=Ingeniería en Diseño · REF-TEH-03",
+            "REF-TEH-04=Ingeniería en Computación · REF-TEH-04 ✓",
+            "REF-TEH-05=Ingeniería Industrial · REF-TEH-05",
+            "REF-TEH-06=Licenciatura en Matemáticas Aplicadas · REF-TEH-06",
+            "REF-TEH-07=Ingeniería en Energías Renovables · REF-TEH-07",
+            "REF-IXT-08=Licenciatura en Ciencias Empresariales · REF-IXT-08",
+            "REF-IXT-09=Licenciatura en Derecho · REF-IXT-09",
+            "REF-IXT-10=Ingeniería en Desarrollo de Software y Sistemas Inteligentes · REF-IXT-10",
+            "REF-IXT-11=Licenciatura en Comercio Exterior y Gestión de Aduanas · REF-IXT-11",
+            "REF-JUC-12=Licenciatura en Nutrición · REF-JUC-12",
+            "REF-JUC-13=Licenciatura en Enfermería · REF-JUC-13"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Plan publicado en el portal de Ingeniería en Computación (referencia académica)",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reestructuración académica"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · parametros": {
+      "titulo": "Editar registro",
+      "seccion": "PARÁMETROS Y PESOS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REB-UMBRAL"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Umbral de reprobación para justificar"
+        },
+        {
+          "nombre": "paramValue",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "35",
+          "placeholder": "Ej. 2"
+        },
+        {
+          "nombre": "paramUnit",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Porcentaje",
+          "opciones": [
+            "Horas",
+            "Porcentaje ✓",
+            "Puntos",
+            "Cantidad",
+            "No aplica"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Referencia del 35 % identificada en las reuniones, su aplicación requiere confirmación.",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · rubros": {
+      "titulo": "Editar registro",
+      "seccion": "RUBROS Y ACTIVIDADES",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "DOC"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Docencia"
+        },
+        {
+          "nombre": "planSection",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "A. Docencia",
+          "opciones": [
+            "=No está en este formato",
+            "A. Docencia ✓",
+            "B. Formación de recursos humanos",
+            "C. Tutorías",
+            "D. Vinculación",
+            "E. Difusión de la cultura",
+            "F. Gestión",
+            "G. Distinciones",
+            "H. Promoción del desarrollo",
+            "I. Superación académica",
+            "J. Investigación"
+          ]
+        },
+        {
+          "nombre": "reportSection",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "A. Docencia",
+          "opciones": [
+            "=No está en este formato",
+            "A. Docencia ✓",
+            "B. Investigación",
+            "C. Dirección de tesis",
+            "D. Tutorías",
+            "E. Vinculación",
+            "F. Difusión de la cultura",
+            "G. Gestión",
+            "H. Distinciones",
+            "I. Promoción al desarrollo"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Plan e Informe de Actividades",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "editar · opciones": {
+      "titulo": "Editar registro",
+      "seccion": "OPCIONES DE CAPTURA",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "OPC-077"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Nacional"
+        },
+        {
+          "nombre": "group",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Ámbito de publicación",
+          "opciones": [
+            "=Seleccionar",
+            "Ámbito de publicación ✓",
+            "Autoría en libro",
+            "Clasificación de artículo",
+            "Comités",
+            "Coordinación de programas",
+            "Difusión de la cultura",
+            "Dirección de tesis",
+            "Distinciones",
+            "Estado de artículo",
+            "Índice de publicación",
+            "Modalidad de curso",
+            "Origen de proyecto",
+            "Participación en foros",
+            "Participación en proyecto",
+            "Promoción del desarrollo",
+            "Proyecto de investigación",
+            "Publicación prevista",
+            "Revisión de tesis",
+            "Superación académica",
+            "Tipo de obra",
+            "Vinculación",
+            "__NEW__=Nuevo grupo…"
+          ]
+        },
+        {
+          "nombre": "appliesTo",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Informe de Actividades",
+          "opciones": [
+            "=Seleccionar",
+            "Plan de Trabajo",
+            "Informe de Actividades ✓",
+            "Ambos"
+          ]
+        },
+        {
+          "nombre": "groupCustom",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Tipo de evaluación"
+        },
+        {
+          "nombre": "selectionMode",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Única",
+          "opciones": [
+            "Única ✓",
+            "Múltiple"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados."
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    }
+  },
+  "historiales": {
+    "traslado de carrera · avisos": [
+      "Registro guardado"
+    ],
+    "carrera trasladada · diálogo": {
+      "titulo": "Editar registro",
+      "seccion": "CARRERAS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "REF-TEH-01"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Ingeniería Química"
+        },
+        {
+          "nombre": "parentCode",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "JUC",
+          "opciones": [
+            "=Selecciona un registro",
+            "TEH=Tehuantepec · TEH",
+            "JUC=Juchitán · JUC ✓",
+            "IXT=Ixtepec · IXT"
+          ]
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial)",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "movementDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "movementReason",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Ej. Reestructuración académica"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 1 movimientosTEH → JUC2026-11-02 · Reubicación",
+        "Versiones anteriores y cambios1 ajustesRelación institucional · 02 nov 2026Antes: TEHDespués: JUCRectoría · Oficio R-001"
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "renombrar campus · avisos": [
+      "Registro guardado"
+    ],
+    "campus renombrado · diálogo": {
+      "titulo": "Editar registro",
+      "seccion": "CAMPUS",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "TEH"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Tehuantepec Centro"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Ciudad Universitaria S/N, Barrio Santa Cruz Tagolaba, Tehuantepec, Oaxaca",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados.",
+        "Versiones anteriores y cambios1 ajustesDenominación · 02 nov 2026Antes: TehuantepecDespués: Tehuantepec CentroRectoría · Oficio R-001"
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "aplicar solicitud #2 · avisos": [
+      "Estado de la solicitud actualizado"
+    ],
+    "categoría tras aplicar la solicitud · diálogo": {
+      "titulo": "Editar registro",
+      "seccion": "CATEGORÍAS DOCENTES",
+      "campos": [
+        {
+          "nombre": "code",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "CAT-PI"
+        },
+        {
+          "nombre": "status",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vigente",
+          "opciones": [
+            "Vigente ✓",
+            "Histórico"
+          ]
+        },
+        {
+          "nombre": "name",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Profesor investigador"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades",
+          "placeholder": "Especificaciones y notas de gestión"
+        },
+        {
+          "nombre": "directAuthority",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar autoridad ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "directEvidence",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o instrucción"
+        }
+      ],
+      "historiales": [
+        "Historial de relación académica 0 movimientosNo hay movimientos de relación registrados.",
+        "Versiones anteriores y cambios1 ajustesDescripción · 02 nov 2026Antes: Categoría de referencia para captura académica; denominación por validarDespués: Clasificación docente utilizada en Plan de Trabajo e Informe de ActividadesRectoría · SIM-AUT-002 · Solicitud #2"
+      ],
+      "textos": [
+        "Mantén la denominación y las relaciones oficiales actualizadas.",
+        "Respaldo de la modificación",
+        "Se conservan las relaciones y vigencias anteriores para consulta."
+      ]
+    },
+    "carreras · pantalla tras el traslado": {
+      "tipoActual": "Carreras 13",
+      "titulo": "Carreras",
+      "descripcion": "Las carreras se relacionan con un campus y pueden conservar antecedentes de traslados o sustitución.",
+      "filtroDeGrupoVisible": false,
+      "cuenta": "13 registros",
+      "chips": [
+        "Todos 13",
+        "Vigentes 13",
+        "Históricos 0"
+      ],
+      "subencabezados": [],
+      "vacio": [],
+      "filas": [
+        "Ingeniería Química REF-TEH-01 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar",
+        "Ingeniería de Petróleos REF-TEH-02 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Ingeniería en Diseño REF-TEH-03 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Ingeniería en Computación REF-TEH-04 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Ingeniería Industrial REF-TEH-05 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Licenciatura en Matemáticas Aplicadas REF-TEH-06 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Ingeniería en Energías Renovables REF-TEH-07 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Tehuantepec Centro Vigente Editar",
+        "Licenciatura en Ciencias Empresariales REF-IXT-08 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Derecho REF-IXT-09 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Ingeniería en Desarrollo de Software y Sistemas Inteligentes REF-IXT-10 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Comercio Exterior y Gestión de Aduanas REF-IXT-11 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Ixtepec Vigente Editar",
+        "Licenciatura en Nutrición REF-JUC-12 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar",
+        "Licenciatura en Enfermería REF-JUC-13 Oferta educativa publicada por UNISTMO · Clave referencial de NEXORA (no oficial) Campus: Juchitán Vigente Editar"
+      ],
+      "totalFilas": 13
+    }
+  }
+}

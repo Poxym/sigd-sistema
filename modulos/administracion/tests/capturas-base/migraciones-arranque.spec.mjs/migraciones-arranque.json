@@ -1,0 +1,100 @@
+{
+  "1 · relaciones heredadas": {
+    "cambiosAlArrancar": [
+      "catalogs.carreras[0].parentCode: (no existía) → agregado \"JUC\"",
+      "catalogs.planes[0].parentCode: (no existía) → agregado \"REF-TEH-04\"",
+      "catalogs.materias[0].parentCode: (no existía) → agregado \"IC-2024\"",
+      "demoAccessEvents[0].count: 1 → 2"
+    ]
+  },
+  "2 · sin permisos ni historial de periodos": {
+    "cambiosAlArrancar": [
+      "demoAccessEvents[0].count: 1 → 2",
+      "permissions: (no existía) → agregado",
+      "periodHistory: (no existía) → agregado"
+    ],
+    "permisosIgualesALosDeUnPrimerArranque": true,
+    "historialDePeriodos": [],
+    "panelDeHistorial": "Historial de configuración Últimas modificaciones del ciclo 0 cambios Sin modificaciones registradas."
+  },
+  "3 · base anterior a v41": {
+    "cambiosAlArrancar": [
+      "catalogs.parametros: 0 elementos → 1",
+      "catalogs.parametros[0]: agregado {\"id\":1,\"code\":\"REB-UMBRAL\",\"name\":\"Umbral de reprobación para justificar\",\"detail\":\"Porcentaje superior al cual debe solicitarse justificación en el Informe, conforme a entrevista institucional.\",\"paramValue\":\"\",\"paramUnit\":\"Porcentaje\",\"status\":\"Vigente\"}",
+      "catalogs.rubros: 7 elementos → 10",
+      "catalogs.rubros[0].planSection: (no existía) → agregado \"A. Docencia\"",
+      "catalogs.rubros[0].reportSection: (no existía) → agregado \"A. Docencia\"",
+      "catalogs.rubros[1].planSection: (no existía) → agregado \"J. Investigación\"",
+      "catalogs.rubros[1].reportSection: (no existía) → agregado \"B. Investigación\"",
+      "catalogs.rubros[2].planSection: (no existía) → agregado \"B. Formación de recursos humanos\"",
+      "catalogs.rubros[2].reportSection: (no existía) → agregado \"C. Dirección de tesis\"",
+      "catalogs.rubros[3].planSection: (no existía) → agregado \"C. Tutorías\"",
+      "catalogs.rubros[3].reportSection: (no existía) → agregado \"D. Tutorías\"",
+      "catalogs.rubros[4].planSection: (no existía) → agregado \"D. Vinculación\"",
+      "catalogs.rubros[4].reportSection: (no existía) → agregado \"E. Vinculación\"",
+      "catalogs.rubros[5].planSection: (no existía) → agregado \"E. Difusión de la cultura\"",
+      "catalogs.rubros[5].reportSection: (no existía) → agregado \"F. Difusión de la cultura\"",
+      "catalogs.rubros[6].planSection: (no existía) → agregado \"F. Gestión\"",
+      "catalogs.rubros[6].reportSection: (no existía) → agregado \"G. Gestión\"",
+      "catalogs.rubros[7]: agregado {\"id\":8,\"code\":\"DIST\",\"name\":\"Distinciones\",\"detail\":\"Plan e Informe de Actividades\",\"status\":\"Vigente\",\"planSection\":\"G. Distinciones\",\"reportSection\":\"H. Distinciones\"}",
+      "catalogs.rubros[8]: agregado {\"id\":9,\"code\":\"PROM\",\"name\":\"Promoción del desarrollo\",\"detail\":\"Plan e Informe de Actividades\",\"status\":\"Vigente\",\"planSection\":\"H. Promoción del desarrollo\",\"reportSection\":\"I. Promoción al desarrollo\"}",
+      "catalogs.rubros[9]: agregado {\"id\":10,\"code\":\"SUPAC\",\"name\":\"Superación académica\",\"detail\":\"Plan de Trabajo\",\"status\":\"Vigente\",\"planSection\":\"I. Superación académica\",\"reportSection\":\"\"}",
+      "catalogs.comisiones: 1 elementos → 9",
+      "catalogs.comisiones[1]: agregado {\"id\":51,\"code\":\"COM-F01\",\"name\":\"Personal Académico\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[2]: agregado {\"id\":52,\"code\":\"COM-F02\",\"name\":\"Planes y programas de estudio\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[3]: agregado {\"id\":53,\"code\":\"COM-F04\",\"name\":\"Reglamentos\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[4]: agregado {\"id\":54,\"code\":\"COM-F05\",\"name\":\"Cafetería\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[5]: agregado {\"id\":55,\"code\":\"COM-F06\",\"name\":\"Mixta de Seguridad e Higiene\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[6]: agregado {\"id\":56,\"code\":\"COM-F07\",\"name\":\"Fondo de Ahorro\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[7]: agregado {\"id\":57,\"code\":\"COM-F08\",\"name\":\"Evaluación docente\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "catalogs.comisiones[8]: agregado {\"id\":58,\"code\":\"COM-F09\",\"name\":\"Comisión de género\",\"detail\":\"Comisión indicada en el Plan de Trabajo\",\"status\":\"Vigente\"}",
+      "period.semester: (no existía) → agregado \"\"",
+      "period.activityStart: (no existía) → agregado \"\"",
+      "period.activityEnd: (no existía) → agregado \"\"",
+      "demoAccessEvents[0].count: 1 → 2"
+    ],
+    "opcionesAgregadas": {
+      "total": 85,
+      "grupos": [
+        "Modalidad de curso",
+        "Dirección de tesis",
+        "Revisión de tesis",
+        "Vinculación",
+        "Difusión de la cultura",
+        "Proyecto de investigación",
+        "Publicación prevista",
+        "Participación en foros",
+        "Distinciones",
+        "Promoción del desarrollo",
+        "Superación académica",
+        "Comités",
+        "Coordinación de programas",
+        "Origen de proyecto",
+        "Participación en proyecto",
+        "Clasificación de artículo",
+        "Estado de artículo",
+        "Ámbito de publicación",
+        "Índice de publicación",
+        "Tipo de obra",
+        "Autoría en libro"
+      ],
+      "primera": {
+        "id": 1,
+        "code": "OPC-001",
+        "name": "Presencial",
+        "group": "Modalidad de curso",
+        "appliesTo": "Plan de Trabajo",
+        "sourceRef": "Hoja Datos · Plan 2025-2026",
+        "detail": "",
+        "status": "Vigente",
+        "selectionMode": "Única"
+      }
+    }
+  },
+  "4 · secciones de rubros ya escritas": {
+    "cambiosAlArrancar": [
+      "catalogs.rubros[0].reportSection: (no existía) → agregado \"A. Docencia\"",
+      "demoAccessEvents[0].count: 1 → 2"
+    ]
+  }
+}

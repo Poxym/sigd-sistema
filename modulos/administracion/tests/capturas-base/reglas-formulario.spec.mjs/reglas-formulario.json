@@ -1,0 +1,1222 @@
+{
+  "usuarios": {
+    "alta: número no numérico": {
+      "avisos": [
+        "El número de empleado debe contener solo dígitos"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: número repetido": {
+      "avisos": [
+        "El número de empleado ya está asignado"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: correo repetido": {
+      "avisos": [
+        "El correo institucional ya está registrado"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: segunda administración general activa": {
+      "avisos": [
+        "La administración general solo puede asignarse a una cuenta activa"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: adscripción vacía": {
+      "avisos": [
+        "Selecciona una adscripción institucional vigente"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta docente: sin categoría": {
+      "avisos": [
+        "Selecciona una categoría docente vigente"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta docente: sin carrera": {
+      "avisos": [
+        "Selecciona una carrera vigente del campus indicado"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta docente: correcta": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 12,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Persona de Prueba"
+      ]
+    },
+    "alta rectoría: correcta": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 12,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Persona de Prueba"
+      ]
+    },
+    "edición: cambio de adscripción sin motivo": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del movimiento"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: cambio de adscripción sin fecha": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del movimiento"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: cambio de adscripción con fecha futura": {
+      "avisos": [
+        "Registra los movimientos futuros mediante solicitudes de cambio"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: quitar la única administración general": {
+      "avisos": [
+        "Debe mantenerse una cuenta de administración general activa"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: desactivar la única administración general (sin motivo)": {
+      "avisos": [
+        "Debe mantenerse una cuenta de administración general activa"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: desactivar la única administración general (con motivo)": {
+      "avisos": [
+        "Debe mantenerse una cuenta de administración general activa"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: cambio de rol sin motivo (jefe de carrera)": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del movimiento"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: cambio de rol con motivo (jefe de carrera)": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Usuario · Actualización de Daniel Pacheco Bautista (Jefe de carrera → Docente)"
+      ]
+    },
+    "edición: cambio de carrera sin motivo": {
+      "avisos": [
+        "Indica fecha y motivo del cambio de carrera"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "edición: cambio de carrera correcto": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Usuario · Cambio de carrera de adscripción de Francisco Aguilar Acevedo (Ingeniería en Computación → Ingeniería Química)",
+        "Usuario · Actualización de Francisco Aguilar Acevedo (Docente → Docente)"
+      ]
+    },
+    "edición: cambio de adscripción correcto": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 13,
+        "solicitudes": 4,
+        "bitacora": 13,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Usuario · Cambio de adscripción de Juan Pérez Martínez (Institucional → Tehuantepec)",
+        "Usuario · Actualización de Juan Pérez Martínez (Administrador general → Administrador general)"
+      ]
+    },
+    "_huellaFinal": "7f740d94e4"
+  },
+  "solicitudes": {
+    "alta: sin título": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: "
+      ]
+    },
+    "alta: valor no numérico": {
+      "avisos": [
+        "El valor debe ser numérico y no negativo"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: siguiente ciclo sin fecha": {
+      "avisos": [
+        "Indica una fecha futura de entrada en vigor"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: siguiente ciclo con fecha pasada": {
+      "avisos": [
+        "Indica una fecha futura de entrada en vigor"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta: inmediata correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 5,
+        "bitacora": 7,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 6,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Ajuste de prueba"
+      ]
+    },
+    "alta: siguiente ciclo correcta": {
+      "avisos": [
+        "Solicitud registrada, pendiente de autorización"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 6,
+        "bitacora": 8,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Registro de solicitud vinculada: Ajuste programado"
+      ]
+    },
+    "instrucción: sin referencia": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "instrucción: autoridad que no corresponde": {
+      "avisos": [
+        "Registra la instrucción de la autoridad correspondiente con fecha y evidencia"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "instrucción: fecha futura": {
+      "avisos": [
+        "La fecha de autorización no puede estar en el futuro"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "instrucción: vigencia anterior a la autorización": {
+      "avisos": [
+        "La vigencia debe ser igual o posterior a la fecha de autorización"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "instrucción: correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 9,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 10,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Revisión de descripción de Ingeniería en Computación (pendiente → autorizada)"
+      ]
+    },
+    "devolver para aclaración": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 10,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Solicitud devuelta para aclaración: Ajuste de rubro de tutorías (pendiente → rechazada)"
+      ]
+    },
+    "aplicar: sin resultado": {
+      "avisos": [
+        "Indica fecha y resultado de ejecución"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "aplicar: antes de la autorización": {
+      "avisos": [
+        "La ejecución no puede preceder a la autorización"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "aplicar: fecha futura": {
+      "avisos": [
+        "Para ejecuciones futuras, conserva la solicitud autorizada"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "aplicar: correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 11,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 13,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Aplicación documentada #2 por Administrador general ({\"id\":1,\"code\":\"CAT-PI\",\"name\":\"Profesor investigador\",\"detail\":\"Categoría de referencia para captura académica; denominación por validar\",\"status\":\"Vigente\"} → {\"id\":1,\"code\":\"CAT-PI\",\"name\":\"Profesor investigador\",\"detail\":\"Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades\",\"status\":\"Vigente\",\"updatedAt\":\"2026-11-02\",\"changeHistory\":[{\"requestId\":2,\"date\":\"2026-11-02\",\"field\":\"detail\",\"oldValue\":\"Categoría de referencia para captura académica; denominación por validar\",\"newValue\":\"Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades\",\"authority\":\"Rectoría\",\"evidence\":\"SIM-AUT-002\"}]})",
+        "Catálogo · Solicitud #2 aplicada: Profesor investigador · detail (Categoría de referencia para captura académica; denominación por validar → Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades)"
+      ]
+    },
+    "_huellaFinal": "678ca6e054"
+  },
+  "solicitudes-ampliacion": {
+    "mantener pendiente": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 13,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 13,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "instrucción siguiente ciclo: correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 13,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Autorización · Instrucción documentada de Vicerrectoría: Revisión de parámetro de reprobación (pendiente → autorizada)"
+      ]
+    },
+    "mantener autorizada": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "fecha programada: anterior a la autorización": {
+      "avisos": [
+        "La vigencia debe ser igual o posterior a la fecha autorizada"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "fecha programada: correcta": {
+      "avisos": [
+        "Estado de la solicitud actualizado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 14,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 15,
+        "catalogos": 135
+      },
+      "bitacoraNueva": [
+        "Solicitud · Actualización de vigencia de la solicitud #4 (2027-02-01 → 2027-03-01)"
+      ]
+    },
+    "aplicar siguiente ciclo: antes de la vigencia": {
+      "avisos": [
+        "Aplicación disponible desde 01 mar 2027"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 15,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 7,
+        "bitacora": 15,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "_huellaFinal": "0c7b3d181b"
+  },
+  "catalogos": {
+    "alta campus: sin respaldo": {
+      "avisos": [
+        "Toda modificación del catálogo requiere respaldo de Rectoría o Vicerrectoría"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta campus: sin clave": {
+      "avisos": [
+        "La clave oficial es obligatoria"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta campus: clave repetida": {
+      "avisos": [
+        "La clave oficial ya existe"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "bitacoraNueva": []
+    },
+    "alta campus: correcta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 6,
+        "catalogos": 135
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 136
+      },
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Campus · Oficio R-001 ( → Campus Nuevo)"
+      ]
+    },
+    "alta carrera: sin relación": {
+      "avisos": [
+        "Debes seleccionar una relación institucional vigente"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 136
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 136
+      },
+      "bitacoraNueva": []
+    },
+    "alta carrera: correcta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 7,
+        "catalogos": 136
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 137
+      },
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Carreras · Oficio R-001 ( → Carrera Nueva)"
+      ]
+    },
+    "alta parámetro: correcto": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 8,
+        "catalogos": 137
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Parámetros y pesos · Oficio R-001 ( → Parámetro Nuevo)"
+      ]
+    },
+    "alta opción: grupo nuevo sin nombre": {
+      "avisos": [
+        "Indica un nombre para el nuevo grupo"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "bitacoraNueva": []
+    },
+    "alta opción: sin documento": {
+      "avisos": [
+        "Selecciona un grupo y el documento al que aplica"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "bitacoraNueva": []
+    },
+    "alta opción: correcta con grupo nuevo": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 9,
+        "catalogos": 138
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Opciones de captura · Oficio R-001 ( → Opción Nueva)"
+      ]
+    },
+    "edición campus: cerrar con carreras vigentes": {
+      "avisos": [
+        "No se puede cerrar la vigencia: existen 8 registros vinculados activos"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "bitacoraNueva": []
+    },
+    "edición campus: cambiar clave con relaciones": {
+      "avisos": [
+        "Esta clave tiene relaciones vinculadas. Conserva la clave y modifica la denominación"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "bitacoraNueva": []
+    },
+    "edición campus: correcta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 10,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Campus · Oficio R-001 (Tehuantepec / Vigente → Tehuantepec Centro / Vigente)"
+      ]
+    },
+    "edición carrera: cambio de relación sin motivo": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del cambio de relación"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "bitacoraNueva": []
+    },
+    "edición carrera: cambio de relación con fecha futura": {
+      "avisos": [
+        "Para cambios futuros registra una solicitud programada"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "bitacoraNueva": []
+    },
+    "edición carrera: cambio de relación correcto": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 11,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 13,
+        "catalogos": 139
+      },
+      "bitacoraNueva": [
+        "Catálogo · Relación modificada: Ingeniería Química (TEH → JUC)",
+        "Catálogo · Edición autorizada en Carreras · Oficio R-001 (Ingeniería Química / Vigente → Ingeniería Química / Vigente)"
+      ]
+    },
+    "_huellaFinal": "fcff0c0949"
+  },
+  "catalogos-ampliacion": {
+    "alta opción: nombre repetido en el grupo": {
+      "avisos": [
+        "Esta opción ya existe en el grupo seleccionado"
+      ],
+      "dialogoCerrado": false,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 13,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 13,
+        "catalogos": 139
+      },
+      "bitacoraNueva": []
+    },
+    "alta plan: correcta": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 13,
+        "catalogos": 139
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 14,
+        "catalogos": 140
+      },
+      "bitacoraNueva": [
+        "Catálogo · Alta documentada en Planes de estudio · Oficio R-001 ( → Plan Nuevo)"
+      ]
+    },
+    "edición rubro: secciones del Plan y del Informe": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "antes": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 14,
+        "catalogos": 140
+      },
+      "despues": {
+        "usuarios": 11,
+        "solicitudes": 4,
+        "bitacora": 15,
+        "catalogos": 140
+      },
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Rubros y actividades · Oficio R-001 (Docencia / Vigente → Docencia / Vigente)"
+      ]
+    },
+    "_huellaFinal": "45bbade54c"
+  }
+}

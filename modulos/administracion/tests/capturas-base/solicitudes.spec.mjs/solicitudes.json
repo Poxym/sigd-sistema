@@ -1,0 +1,1058 @@
+{
+  "lista": {
+    "inicial": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+      "detalle": "Revisión de descripción de Ingeniería en Computación Campus / carrera Pendiente 1 Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Vicerrectoría Vigencia solicitada Inmediata Justificación y alcance Revisar la descripción de la carrera con base en su perfil vigente. Referencia documental SIM-CAMBIO-001 Gestionar solicitud"
+    },
+    "filtro pendiente": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+      "detalle": "Revisión de descripción de Ingeniería en Computación Campus / carrera Pendiente 1 Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Vicerrectoría Vigencia solicitada Inmediata Justificación y alcance Revisar la descripción de la carrera con base en su perfil vigente. Referencia documental SIM-CAMBIO-001 Gestionar solicitud"
+    },
+    "filtro autorizada": {
+      "filas": [
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata"
+      ],
+      "seleccionada": "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+      "detalle": "Actualización de categoría docente Categoría docente Autorizada Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Rectoría Vigencia solicitada Inmediata Justificación y alcance Actualizar denominación de una categoría académica para el ejercicio de revisión del proceso. Referencia documental SIM-AUT-002 Autoridad que emitió instrucción Rectoría Fecha de instrucción 2026-10-02 Gestionar solicitud"
+    },
+    "filtro aplicada": {
+      "filas": [
+        "No hay solicitudes con ese filtro Prueba otro estado o borra la búsqueda."
+      ],
+      "seleccionada": "",
+      "detalle": "Selecciona una solicitud Aquí verás su justificación, vigencia y avance."
+    },
+    "filtro rechazada": {
+      "filas": [
+        "No hay solicitudes con ese filtro Prueba otro estado o borra la búsqueda."
+      ],
+      "seleccionada": "",
+      "detalle": "Selecciona una solicitud Aquí verás su justificación, vigencia y avance."
+    },
+    "búsqueda «tutorías»": {
+      "filas": [
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata"
+      ],
+      "seleccionada": "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+      "detalle": "Ajuste de rubro de tutorías Rubro o sección Pendiente 1 Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Vicerrectoría Vigencia solicitada Inmediata Justificación y alcance Validar el texto de apoyo del rubro de tutorías. Referencia documental SIM-CAMBIO-003 Gestionar solicitud"
+    },
+    "búsqueda «Rectoría»": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+      "detalle": "Ajuste de rubro de tutorías Rubro o sección Pendiente 1 Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Vicerrectoría Vigencia solicitada Inmediata Justificación y alcance Validar el texto de apoyo del rubro de tutorías. Referencia documental SIM-CAMBIO-003 Gestionar solicitud"
+    },
+    "búsqueda sin resultados": {
+      "filas": [
+        "No hay solicitudes con ese filtro Prueba otro estado o borra la búsqueda."
+      ],
+      "seleccionada": "",
+      "detalle": "Selecciona una solicitud Aquí verás su justificación, vigencia y avance."
+    },
+    "elegir la #2 (autorizada)": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+      "detalle": "Actualización de categoría docente Categoría docente Autorizada Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Rectoría Vigencia solicitada Inmediata Justificación y alcance Actualizar denominación de una categoría académica para el ejercicio de revisión del proceso. Referencia documental SIM-AUT-002 Autoridad que emitió instrucción Rectoría Fecha de instrucción 2026-10-02 Gestionar solicitud"
+    },
+    "elegir la #4 (siguiente ciclo)": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+        "Ajuste de rubro de tutorías Pendiente Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027",
+      "detalle": "Revisión de parámetro de reprobación Parámetro / peso Pendiente 1 Pendiente 2 Autorizada 3 Aplicada Autoridad solicitante Vicerrectoría Vigencia solicitada Siguiente ciclo · desde 01 feb 2027 Justificación y alcance Validar el valor de referencia conforme a los acuerdos institucionales. Referencia documental SIM-CAMBIO-004 Gestionar solicitud"
+    }
+  },
+  "registrar": {
+    "al abrir": {
+      "titulo": "Registrar solicitud",
+      "seccion": "CONTROL DE CAMBIOS",
+      "botonGuardar": "Registrar solicitud",
+      "campos": [
+        {
+          "nombre": "title",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Ajuste de horas en tutorías"
+        },
+        {
+          "nombre": "type",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Parámetro / peso",
+          "opciones": [
+            "Parámetro / peso ✓",
+            "Rubro o sección",
+            "Campus / carrera",
+            "Plan de estudios / materia",
+            "Categoría docente",
+            "Periodo de captura",
+            "Otro"
+          ]
+        },
+        {
+          "nombre": "authority",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vicerrectoría",
+          "opciones": [
+            "Vicerrectoría ✓",
+            "Rectoría"
+          ]
+        },
+        {
+          "nombre": "schedule",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Inmediata",
+          "opciones": [
+            "Inmediata ✓",
+            "Siguiente ciclo"
+          ]
+        },
+        {
+          "nombre": "effectiveDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": ""
+        },
+        {
+          "nombre": "evidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o comunicación"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "¿Qué debe cambiar y por qué?"
+        },
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "parametros",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos ✓",
+            "campus=Campus",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar registro ✓",
+            "1=Umbral de reprobación para justificar · REB-UMBRAL"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "name",
+          "opciones": [
+            "name=Denominación oficial ✓",
+            "detail=Descripción",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro",
+            "paramUnit=Unidad del parámetro"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Valor autorizado"
+        }
+      ],
+      "ayudas": [
+        "Describe el alcance y registra el respaldo del cambio.",
+        "Selecciona el registro institucional para consultar su valor actual.",
+        "El registro de esta solicitud no aplica ninguna modificación. Solo podrá ejecutarse tras consignar la autorización."
+      ]
+    },
+    "aplicación: siguiente ciclo": {
+      "titulo": "Registrar solicitud",
+      "seccion": "CONTROL DE CAMBIOS",
+      "botonGuardar": "Registrar solicitud",
+      "campos": [
+        {
+          "nombre": "title",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Ajuste de horas en tutorías"
+        },
+        {
+          "nombre": "type",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Parámetro / peso",
+          "opciones": [
+            "Parámetro / peso ✓",
+            "Rubro o sección",
+            "Campus / carrera",
+            "Plan de estudios / materia",
+            "Categoría docente",
+            "Periodo de captura",
+            "Otro"
+          ]
+        },
+        {
+          "nombre": "authority",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vicerrectoría",
+          "opciones": [
+            "Vicerrectoría ✓",
+            "Rectoría"
+          ]
+        },
+        {
+          "nombre": "schedule",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Siguiente ciclo",
+          "opciones": [
+            "Inmediata",
+            "Siguiente ciclo ✓"
+          ]
+        },
+        {
+          "nombre": "effectiveDate",
+          "visible": true,
+          "obligatorio": true,
+          "valor": ""
+        },
+        {
+          "nombre": "evidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o comunicación"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "¿Qué debe cambiar y por qué?"
+        },
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "parametros",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos ✓",
+            "campus=Campus",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar registro ✓",
+            "1=Umbral de reprobación para justificar · REB-UMBRAL"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "name",
+          "opciones": [
+            "name=Denominación oficial ✓",
+            "detail=Descripción",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro",
+            "paramUnit=Unidad del parámetro"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Valor autorizado"
+        }
+      ],
+      "ayudas": [
+        "Describe el alcance y registra el respaldo del cambio.",
+        "Selecciona el registro institucional para consultar su valor actual.",
+        "El registro de esta solicitud no aplica ninguna modificación. Solo podrá ejecutarse tras consignar la autorización."
+      ]
+    },
+    "catálogo: campus": {
+      "titulo": "Registrar solicitud",
+      "seccion": "CONTROL DE CAMBIOS",
+      "botonGuardar": "Registrar solicitud",
+      "campos": [
+        {
+          "nombre": "title",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Ajuste de horas en tutorías"
+        },
+        {
+          "nombre": "type",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Parámetro / peso",
+          "opciones": [
+            "Parámetro / peso ✓",
+            "Rubro o sección",
+            "Campus / carrera",
+            "Plan de estudios / materia",
+            "Categoría docente",
+            "Periodo de captura",
+            "Otro"
+          ]
+        },
+        {
+          "nombre": "authority",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vicerrectoría",
+          "opciones": [
+            "Vicerrectoría ✓",
+            "Rectoría"
+          ]
+        },
+        {
+          "nombre": "schedule",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Inmediata",
+          "opciones": [
+            "Inmediata ✓",
+            "Siguiente ciclo"
+          ]
+        },
+        {
+          "nombre": "effectiveDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": ""
+        },
+        {
+          "nombre": "evidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o comunicación"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "¿Qué debe cambiar y por qué?"
+        },
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "campus",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos",
+            "campus=Campus ✓",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar registro ✓",
+            "1=Tehuantepec · TEH",
+            "2=Juchitán · JUC",
+            "3=Ixtepec · IXT"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "name",
+          "opciones": [
+            "name=Denominación oficial ✓",
+            "detail=Descripción",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro (desactivada)",
+            "paramUnit=Unidad del parámetro (desactivada)"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Valor autorizado"
+        }
+      ],
+      "ayudas": [
+        "Describe el alcance y registra el respaldo del cambio.",
+        "Selecciona el registro institucional para consultar su valor actual.",
+        "El registro de esta solicitud no aplica ninguna modificación. Solo podrá ejecutarse tras consignar la autorización."
+      ]
+    },
+    "campus #1 · campo estado": {
+      "titulo": "Registrar solicitud",
+      "seccion": "CONTROL DE CAMBIOS",
+      "botonGuardar": "Registrar solicitud",
+      "campos": [
+        {
+          "nombre": "title",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Ajuste de horas en tutorías"
+        },
+        {
+          "nombre": "type",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Parámetro / peso",
+          "opciones": [
+            "Parámetro / peso ✓",
+            "Rubro o sección",
+            "Campus / carrera",
+            "Plan de estudios / materia",
+            "Categoría docente",
+            "Periodo de captura",
+            "Otro"
+          ]
+        },
+        {
+          "nombre": "authority",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vicerrectoría",
+          "opciones": [
+            "Vicerrectoría ✓",
+            "Rectoría"
+          ]
+        },
+        {
+          "nombre": "schedule",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Inmediata",
+          "opciones": [
+            "Inmediata ✓",
+            "Siguiente ciclo"
+          ]
+        },
+        {
+          "nombre": "effectiveDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": ""
+        },
+        {
+          "nombre": "evidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o comunicación"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "¿Qué debe cambiar y por qué?"
+        },
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "campus",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos",
+            "campus=Campus ✓",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "1",
+          "opciones": [
+            "=Seleccionar registro",
+            "1=Tehuantepec · TEH ✓",
+            "2=Juchitán · JUC",
+            "3=Ixtepec · IXT"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "status",
+          "opciones": [
+            "name=Denominación oficial",
+            "detail=Descripción",
+            "status=Estado de vigencia ✓",
+            "paramValue=Valor del parámetro (desactivada)",
+            "paramUnit=Unidad del parámetro (desactivada)"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Vigente o Histórico"
+        }
+      ],
+      "ayudas": [
+        "Describe el alcance y registra el respaldo del cambio.",
+        "Valor actual: Vigente",
+        "El registro de esta solicitud no aplica ninguna modificación. Solo podrá ejecutarse tras consignar la autorización."
+      ]
+    },
+    "parámetro #1 · campo unidad": {
+      "titulo": "Registrar solicitud",
+      "seccion": "CONTROL DE CAMBIOS",
+      "botonGuardar": "Registrar solicitud",
+      "campos": [
+        {
+          "nombre": "title",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Ej. Ajuste de horas en tutorías"
+        },
+        {
+          "nombre": "type",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Parámetro / peso",
+          "opciones": [
+            "Parámetro / peso ✓",
+            "Rubro o sección",
+            "Campus / carrera",
+            "Plan de estudios / materia",
+            "Categoría docente",
+            "Periodo de captura",
+            "Otro"
+          ]
+        },
+        {
+          "nombre": "authority",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Vicerrectoría",
+          "opciones": [
+            "Vicerrectoría ✓",
+            "Rectoría"
+          ]
+        },
+        {
+          "nombre": "schedule",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Inmediata",
+          "opciones": [
+            "Inmediata ✓",
+            "Siguiente ciclo"
+          ]
+        },
+        {
+          "nombre": "effectiveDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": ""
+        },
+        {
+          "nombre": "evidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Oficio, acuerdo o comunicación"
+        },
+        {
+          "nombre": "detail",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "¿Qué debe cambiar y por qué?"
+        },
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "parametros",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos ✓",
+            "campus=Campus",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "1",
+          "opciones": [
+            "=Seleccionar registro",
+            "1=Umbral de reprobación para justificar · REB-UMBRAL ✓"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "paramUnit",
+          "opciones": [
+            "name=Denominación oficial",
+            "detail=Descripción",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro",
+            "paramUnit=Unidad del parámetro ✓"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "",
+          "placeholder": "Horas, Porcentaje, Puntos, Cantidad o No aplica"
+        }
+      ],
+      "ayudas": [
+        "Describe el alcance y registra el respaldo del cambio.",
+        "Valor actual: Porcentaje",
+        "El registro de esta solicitud no aplica ninguna modificación. Solo podrá ejecutarse tras consignar la autorización."
+      ]
+    }
+  },
+  "gestionar": {
+    "pendiente inmediata (#1)": {
+      "titulo": "Revisión de descripción de Ingeniería en Computación",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Guardar seguimiento",
+      "campos": [
+        {
+          "nombre": "transition",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Mantener pendiente",
+          "opciones": [
+            "Mantener pendiente ✓",
+            "Registrar instrucción recibida",
+            "Devolver para aclaración"
+          ]
+        },
+        {
+          "nombre": "authorizationBy",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "authorizationDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "authEvidence",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Referencia de la instrucción"
+        }
+      ],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición."
+      ]
+    },
+    "pendiente inmediata (#1) · registrar instrucción": {
+      "titulo": "Revisión de descripción de Ingeniería en Computación",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Guardar seguimiento",
+      "campos": [
+        {
+          "nombre": "transition",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Registrar instrucción recibida",
+          "opciones": [
+            "Mantener pendiente",
+            "Registrar instrucción recibida ✓",
+            "Devolver para aclaración"
+          ]
+        },
+        {
+          "nombre": "authorizationBy",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "authorizationDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "authEvidence",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Referencia de la instrucción"
+        }
+      ],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición."
+      ]
+    },
+    "pendiente siguiente ciclo (#4)": {
+      "titulo": "Revisión de parámetro de reprobación",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Guardar seguimiento",
+      "campos": [
+        {
+          "nombre": "effectiveDate",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2027-02-01"
+        },
+        {
+          "nombre": "transition",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Mantener pendiente",
+          "opciones": [
+            "Mantener pendiente ✓",
+            "Registrar instrucción recibida",
+            "Devolver para aclaración"
+          ]
+        },
+        {
+          "nombre": "authorizationBy",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "opciones": [
+            "=Seleccionar ✓",
+            "Rectoría",
+            "Vicerrectoría"
+          ]
+        },
+        {
+          "nombre": "authorizationDate",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "authEvidence",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Referencia de la instrucción"
+        }
+      ],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición."
+      ]
+    },
+    "autorizada (#2)": {
+      "titulo": "Actualización de categoría docente",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Guardar seguimiento",
+      "campos": [
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "categorias",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos",
+            "campus=Campus",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes ✓",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "1",
+          "opciones": [
+            "=Seleccionar registro",
+            "1=Profesor investigador · CAT-PI ✓",
+            "2=Profesor · CAT-P"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "detail",
+          "opciones": [
+            "name=Denominación oficial",
+            "detail=Descripción ✓",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro (desactivada)",
+            "paramUnit=Unidad del parámetro (desactivada)"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades",
+          "placeholder": "Valor autorizado"
+        },
+        {
+          "nombre": "transition",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Mantener autorizada",
+          "opciones": [
+            "Mantener autorizada ✓",
+            "Marcar como aplicada"
+          ]
+        },
+        {
+          "nombre": "appliedAt",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "executionNote",
+          "visible": false,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Indica qué registro o parámetro fue modificado, su valor anterior y el resultado. Se registrará junto al valor anterior y nuevo."
+        }
+      ],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición.",
+        "Valor actual: Categoría de referencia para captura académica; denominación por validar"
+      ]
+    },
+    "autorizada (#2) · marcar como aplicada": {
+      "titulo": "Actualización de categoría docente",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Guardar seguimiento",
+      "campos": [
+        {
+          "nombre": "targetCatalog",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "categorias",
+          "opciones": [
+            "institucion=Institución y áreas",
+            "parametros=Parámetros y pesos",
+            "campus=Campus",
+            "carreras=Carreras",
+            "planes=Planes de estudio",
+            "materias=Materias",
+            "rubros=Rubros y actividades",
+            "categorias=Categorías docentes ✓",
+            "comisiones=Comisiones",
+            "distinciones=Distinciones",
+            "opciones=Opciones de captura"
+          ]
+        },
+        {
+          "nombre": "targetId",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "1",
+          "opciones": [
+            "=Seleccionar registro",
+            "1=Profesor investigador · CAT-PI ✓",
+            "2=Profesor · CAT-P"
+          ]
+        },
+        {
+          "nombre": "targetField",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "detail",
+          "opciones": [
+            "name=Denominación oficial",
+            "detail=Descripción ✓",
+            "status=Estado de vigencia",
+            "paramValue=Valor del parámetro (desactivada)",
+            "paramUnit=Unidad del parámetro (desactivada)"
+          ]
+        },
+        {
+          "nombre": "targetValue",
+          "visible": true,
+          "obligatorio": true,
+          "valor": "Clasificación docente utilizada en Plan de Trabajo e Informe de Actividades",
+          "placeholder": "Valor autorizado"
+        },
+        {
+          "nombre": "transition",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "Marcar como aplicada",
+          "opciones": [
+            "Mantener autorizada",
+            "Marcar como aplicada ✓"
+          ]
+        },
+        {
+          "nombre": "appliedAt",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "2026-11-02"
+        },
+        {
+          "nombre": "executionNote",
+          "visible": true,
+          "obligatorio": false,
+          "valor": "",
+          "placeholder": "Indica qué registro o parámetro fue modificado, su valor anterior y el resultado. Se registrará junto al valor anterior y nuevo."
+        }
+      ],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición.",
+        "Valor actual: Categoría de referencia para captura académica; denominación por validar"
+      ]
+    },
+    "devolver la #3: avisos": [
+      "Estado de la solicitud actualizado"
+    ],
+    "lista tras devolver la #3": {
+      "filas": [
+        "Revisión de descripción de Ingeniería en Computación Pendiente Vicerrectoría · Inmediata",
+        "Actualización de categoría docente Autorizada Rectoría · Inmediata",
+        "Ajuste de rubro de tutorías Rechazada Vicerrectoría · Inmediata",
+        "Revisión de parámetro de reprobación Pendiente Vicerrectoría · Siguiente ciclo · 01 feb 2027"
+      ],
+      "seleccionada": "Ajuste de rubro de tutorías Rechazada Vicerrectoría · Inmediata",
+      "detalle": "Ajuste de rubro de tutorías Rubro o sección Rechazada Solicitud rechazada. No se aplicó ningún cambio. Autoridad solicitante Vicerrectoría Vigencia solicitada Inmediata Justificación y alcance Validar el texto de apoyo del rubro de tutorías. Referencia documental SIM-CAMBIO-003 Solicitud finalizada. El historial se conserva en la bitácora. Ver detalle"
+    },
+    "finalizada (#3)": {
+      "titulo": "Ajuste de rubro de tutorías",
+      "seccion": "SEGUIMIENTO DE CAMBIO",
+      "botonGuardar": "Cerrar (oculto)",
+      "campos": [],
+      "ayudas": [
+        "Consulta los antecedentes antes de confirmar una transición.",
+        "Solicitud finalizada. El historial de esta operación se conserva en la bitácora."
+      ]
+    }
+  },
+  "valorCambiado": {
+    "registrar": [
+      "Solicitud registrada, pendiente de autorización"
+    ],
+    "autorizar": [
+      "Estado de la solicitud actualizado"
+    ],
+    "editar el parámetro a 36": [
+      "Registro guardado"
+    ],
+    "aplicar": [
+      "El valor actual cambió desde que se registró la solicitud. Registra una nueva solicitud con los datos actualizados"
+    ],
+    "diálogo sigue abierto": true
+  }
+}

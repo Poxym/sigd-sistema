@@ -1,0 +1,60 @@
+{
+  "dialogoAlAbrir": {
+    "rol": "Invitado",
+    "rolEnLaLista": true,
+    "estado": "Suspendido",
+    "estadoEnLaLista": true
+  },
+  "conservaRolYEstadoAnteriores": {
+    "avisos": [
+      "Usuario guardado correctamente"
+    ],
+    "dialogoCerrado": true,
+    "bitacoraNueva": [
+      "Usuario · Actualización de Cuenta Anterior"
+    ],
+    "cuentaGuardada": {
+      "name": "Cuenta Anterior",
+      "role": "Invitado",
+      "status": "Suspendido"
+    }
+  },
+  "desdeLaInterfazSeConservan": {
+    "avisos": [
+      "Usuario guardado correctamente"
+    ],
+    "dialogoCerrado": true,
+    "bitacoraNueva": [
+      "Usuario · Actualización de Cuenta Anterior 2"
+    ],
+    "cuentaGuardada": {
+      "name": "Cuenta Anterior 2",
+      "role": "Invitado",
+      "status": "Suspendido"
+    }
+  },
+  "otroRolFueraDeLaLista": {
+    "avisos": [
+      "Selecciona un rol institucional válido"
+    ],
+    "dialogoCerrado": false,
+    "bitacoraNueva": [],
+    "cuentaGuardada": {
+      "name": "Cuenta Anterior 2",
+      "role": "Invitado",
+      "status": "Suspendido"
+    }
+  },
+  "otroEstadoFueraDeLaLista": {
+    "avisos": [
+      "Selecciona un estado válido"
+    ],
+    "dialogoCerrado": false,
+    "bitacoraNueva": [],
+    "cuentaGuardada": {
+      "name": "Cuenta Anterior 2",
+      "role": "Invitado",
+      "status": "Suspendido"
+    }
+  }
+}

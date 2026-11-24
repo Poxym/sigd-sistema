@@ -1,0 +1,540 @@
+{
+  "A-guardado": {
+    "alta: número con espacios alrededor": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "11 → 12",
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Cuenta Nueva"
+      ],
+      "efecto": {
+        "num": "910001",
+        "name": "Cuenta Nueva",
+        "mail": "nueva@unistmo.example",
+        "role": "Rectoría",
+        "area": "Institucional",
+        "categoryCode": "",
+        "careerCode": "",
+        "status": "Activo",
+        "id": 12,
+        "history": [
+          "Alta de usuario · 2/11/2026"
+        ],
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "Institucional",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta de cuenta"
+          }
+        ]
+      }
+    },
+    "alta: número repetido contra uno guardado con espacios": {
+      "avisos": [
+        "El número de empleado ya está asignado"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "12 → 12",
+      "bitacoraNueva": []
+    },
+    "alta: correo repetido con mayúsculas (el campo de correo quita los espacios solo)": {
+      "avisos": [
+        "El correo institucional ya está registrado"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "12 → 12",
+      "bitacoraNueva": []
+    },
+    "alta: correo vacío": {
+      "avisos": [
+        "El correo institucional es obligatorio"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "12 → 12",
+      "bitacoraNueva": [],
+      "efecto": "no existe"
+    },
+    "alta: segunda administración general inactiva": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "12 → 13",
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Admin Inactiva"
+      ],
+      "efecto": {
+        "num": "910004",
+        "name": "Admin Inactiva",
+        "mail": "admin2@unistmo.example",
+        "role": "Administrador general",
+        "area": "Institucional",
+        "categoryCode": "",
+        "careerCode": "",
+        "status": "Inactivo",
+        "id": 13,
+        "history": [
+          "Alta de usuario · 2/11/2026"
+        ],
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "Institucional",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta de cuenta"
+          }
+        ]
+      }
+    },
+    "alta: adscripción Rectoría": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "13 → 14",
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Secretaria Nueva"
+      ],
+      "efecto": {
+        "num": "910005",
+        "name": "Secretaria Nueva",
+        "mail": "secre@unistmo.example",
+        "role": "Secretaría de Rectoría",
+        "area": "Rectoría",
+        "categoryCode": "",
+        "careerCode": "",
+        "status": "Activo",
+        "id": 14,
+        "history": [
+          "Alta de usuario · 2/11/2026"
+        ],
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "Rectoría",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta de cuenta"
+          }
+        ]
+      }
+    },
+    "alta: docente en Ixtepec": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "14 → 15",
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Docente Ixtepec"
+      ],
+      "efecto": {
+        "num": "910006",
+        "name": "Docente Ixtepec",
+        "mail": "ixt@unistmo.example",
+        "role": "Docente",
+        "area": "Ixtepec",
+        "categoryCode": "CAT-P",
+        "careerCode": "REF-IXT-09",
+        "status": "Activo",
+        "id": 15,
+        "history": [
+          "Alta de usuario · 2/11/2026"
+        ],
+        "assignmentHistory": [
+          {
+            "from": "",
+            "to": "Ixtepec",
+            "when": "2026-11-02T18:00:00.000Z",
+            "reason": "Alta de cuenta"
+          }
+        ]
+      }
+    },
+    "edición: cambio de carrera con motivo y sin fecha": {
+      "avisos": [
+        "Indica fecha y motivo del cambio de carrera"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: cambio de rol con motivo y sin fecha": {
+      "avisos": [
+        "Indica la fecha efectiva y el motivo del movimiento"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: cambio de rol con fecha futura": {
+      "avisos": [
+        "Registra los movimientos futuros mediante solicitudes de cambio"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: solo el nombre, con fecha futura": {
+      "avisos": [
+        "Los movimientos futuros deben registrarse mediante una solicitud programada"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: solo el nombre": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Actualización de Sergio Juárez V. (Docente → Docente)"
+      ],
+      "efecto": {
+        "id": 6,
+        "num": "900006",
+        "name": "Sergio Juárez V.",
+        "mail": "personal06@unistmo.example",
+        "role": "Docente",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "CAT-P",
+        "careerCode": "REF-TEH-04",
+        "history": [
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": []
+      }
+    },
+    "edición: cambio de categoría": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Actualización de Omar Santiago Nieva García (Docente → Docente)"
+      ],
+      "efecto": {
+        "id": 7,
+        "num": "900007",
+        "name": "Omar Santiago Nieva García",
+        "mail": "personal07@unistmo.example",
+        "role": "Docente",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "CAT-P",
+        "careerCode": "REF-TEH-04",
+        "history": [
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": []
+      }
+    },
+    "edición: de docente a Rectoría sin motivo": {
+      "avisos": [
+        "Indica fecha y motivo del cambio de carrera"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: de docente a Rectoría": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Cambio de carrera de adscripción de Ernesto Cortés Pérez (Ingeniería en Computación → )",
+        "Usuario · Actualización de Ernesto Cortés Pérez (Docente → Rectoría)"
+      ],
+      "efecto": {
+        "id": 8,
+        "num": "900008",
+        "name": "Ernesto Cortés Pérez",
+        "mail": "personal08@unistmo.example",
+        "role": "Rectoría",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "",
+        "careerCode": "",
+        "history": [
+          "Docente → Rectoría · 2/11/2026",
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": [
+          {
+            "from": "Ingeniería en Computación",
+            "to": "",
+            "when": "2026-11-02",
+            "reason": "Reasignación"
+          }
+        ]
+      }
+    },
+    "catálogos: cerrar la categoría «Profesor»": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Categorías docentes · Oficio R-001 (Profesor / Vigente → Profesor / Histórico)"
+      ]
+    },
+    "edición: docente con categoría histórica": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Actualización de Guadalupe Toledo T. (Docente → Docente)"
+      ],
+      "efecto": {
+        "id": 10,
+        "num": "900010",
+        "name": "Guadalupe Toledo T.",
+        "mail": "personal10@unistmo.example",
+        "role": "Docente",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "CAT-P",
+        "careerCode": "REF-TEH-04",
+        "history": [
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": []
+      }
+    },
+    "edición: cambio de carrera correcto": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Cambio de carrera de adscripción de Martha Patricia Luna González (Ingeniería en Computación → Ingeniería Química)",
+        "Usuario · Actualización de Martha Patricia Luna González (Docente → Docente)"
+      ],
+      "efecto": {
+        "id": 11,
+        "num": "900011",
+        "name": "Martha Patricia Luna González",
+        "mail": "personal11@unistmo.example",
+        "role": "Docente",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "CAT-PI",
+        "careerCode": "REF-TEH-01",
+        "history": [
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": [
+          {
+            "from": "Ingeniería en Computación",
+            "to": "Ingeniería Química",
+            "when": "2026-11-02",
+            "reason": "Reasignación"
+          }
+        ]
+      }
+    },
+    "catálogos: cerrar Ingeniería Química": {
+      "avisos": [
+        "Registro guardado"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Catálogo · Edición autorizada en Carreras · Oficio R-001 (Ingeniería Química / Vigente → Ingeniería Química / Histórico)"
+      ]
+    },
+    "edición: docente con carrera histórica": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [
+        "Usuario · Actualización de Martha Patricia Luna G. (Docente → Docente)"
+      ],
+      "efecto": {
+        "id": 11,
+        "num": "900011",
+        "name": "Martha Patricia Luna G.",
+        "mail": "personal11@unistmo.example",
+        "role": "Docente",
+        "area": "Tehuantepec",
+        "status": "Activo",
+        "categoryCode": "CAT-PI",
+        "careerCode": "REF-TEH-01",
+        "history": [
+          "Alta inicial"
+        ],
+        "assignmentHistory": [],
+        "careerHistory": [
+          {
+            "from": "Ingeniería en Computación",
+            "to": "Ingeniería Química",
+            "when": "2026-11-02",
+            "reason": "Reasignación"
+          }
+        ]
+      }
+    }
+  },
+  "B-forzado": {
+    "alta: categoría histórica": {
+      "avisos": [
+        "Selecciona una categoría docente vigente"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: pasar a la categoría histórica": {
+      "avisos": [
+        "Selecciona una categoría docente vigente"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "alta: carrera histórica": {
+      "avisos": [
+        "Selecciona una carrera vigente del campus indicado"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "alta: carrera de otro campus": {
+      "avisos": [
+        "Selecciona una carrera vigente del campus indicado"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "edición: fecha con otro formato": {
+      "avisos": [
+        "Indica una fecha de vigencia válida"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": []
+    },
+    "alta: estado que no es Activo ni Inactivo": {
+      "avisos": [
+        "Selecciona un estado válido"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [],
+      "efecto": "no existe"
+    },
+    "alta: rol que no existe": {
+      "avisos": [
+        "Selecciona un rol institucional válido"
+      ],
+      "dialogoCerrado": false,
+      "cuentas": "15 → 15",
+      "bitacoraNueva": [],
+      "efecto": "no existe"
+    }
+  },
+  "C-pantalla": {
+    "buscar por adscripción «Rectoría» (ningún nombre ni correo la contiene)": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 4 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "filas": [
+        "Secretaria Nueva secre@unistmo.example 910005 Secretaría de Rectoría Rectoría Activo"
+      ],
+      "htmlDeNombres": [
+        "Secretaria Nueva"
+      ]
+    },
+    "nombre con HTML": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 4 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "filas": [
+        "Ana <b>Ruiz</b> & Cía html@unistmo.example 930001 Rectoría Institucional Activo"
+      ],
+      "htmlDeNombres": [
+        "Ana &lt;b&gt;Ruiz&lt;/b&gt; &amp; Cía"
+      ]
+    },
+    "Docente e Inactivo: sin resultados": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 4 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "filas": [
+        "No se encontraron registros Prueba otra búsqueda"
+      ],
+      "htmlDeNombres": []
+    },
+    "Administrador general (una activa y una inactiva)": {
+      "tarjetas": [
+        "Docentes 9 Activos",
+        "Jefaturas 1 De carrera",
+        "Autoridades 4 Rectoría, Vicerrectoría y secretarías",
+        "Administrador 1 General"
+      ],
+      "filas": [
+        "Juan Pérez Martínez administracion@unistmo.example 900001 Administrador general Institucional Activo",
+        "Admin Inactiva admin2@unistmo.example 910004 Administrador general Institucional Inactivo"
+      ],
+      "htmlDeNombres": [
+        "Juan Pérez Martínez",
+        "Admin Inactiva"
+      ]
+    }
+  },
+  "C-pantalla-alta": {
+    "alta: nombre con HTML": {
+      "avisos": [
+        "Usuario guardado correctamente"
+      ],
+      "dialogoCerrado": true,
+      "cuentas": "15 → 16",
+      "bitacoraNueva": [
+        "Usuario · Alta de cuenta Ana <b>Ruiz</b> & Cía"
+      ]
+    }
+  },
+  "D-permisos": {
+    "antes": [
+      "Consultar catálogos",
+      "Capturar documentos"
+    ],
+    "alQuitarLaPrimera": [
+      "Capturar documentos"
+    ],
+    "alVolverAPonerla": [
+      "Consultar catálogos",
+      "Capturar documentos"
+    ]
+  }
+}

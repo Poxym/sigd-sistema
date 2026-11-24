@@ -38,6 +38,8 @@ sigd/
 │   ├── layout/              MARCO COMPARTIDO: shell, barra superior, menú lateral, selector de módulo, marca
 │   ├── shared/ui/           componentes reutilizables (encabezado de página, página pendiente…)
 │   └── features/            acceso · administracion · plan-trabajo · informe-actividades · reportes
+├── modulos/
+│   └── administracion/      proyecto del módulo Administración (su equipo trabaja aquí; ver abajo)
 ├── prototipo-referencia/    el v17 separado por módulo (solo consulta, no se ejecuta)
 ├── modelo/                  (del repo actual) esquema, diccionario y diagramas de BD
 └── docs/                    CONTEXTO · ARQUITECTURA · MODULOS · FLUJO_TRABAJO · DECISIONES
@@ -46,6 +48,20 @@ sigd/
 Empieza por [docs/PROBAR.md](docs/PROBAR.md), luego [docs/CONTEXTO.md](docs/CONTEXTO.md) y [docs/FLUJO_TRABAJO.md](docs/FLUJO_TRABAJO.md).
 
 > Rama de prueba. La implementación anterior en Node.js sigue intacta en `main`.
+
+## Módulo Administración
+
+Administración ya no es «pendiente»: es el proyecto de su equipo, en `modulos/administracion/` (JS con MVC por pantalla y su propio repositorio, ADR-006). Angular lo monta dentro del marco común en las seis rutas `/admin/...`.
+
+```bash
+cd modulos/administracion
+npm install
+npm run dev          # trabajar el módulo solo, como siempre (http://localhost:4201)
+npm test             # sus pruebas de Playwright
+npm run build:sigd   # actualiza frontend/public/modulos/administracion/administracion.js
+```
+
+Después de cambiar el módulo hay que correr `npm run build:sigd` y subir también ese archivo; CI lo comprueba.
 
 ## Pruebas
 
