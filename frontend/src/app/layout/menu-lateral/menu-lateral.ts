@@ -2,12 +2,11 @@ import { Component, inject, input, output } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ModuloActivoService } from '../../core/modulos/modulo-activo.service';
 
-/** aside.nav del prototipo: el contenido cambia según el módulo activo. */
+/** aside.nav del prototipo v17: botón «Ocultar menú», separador y la lista del módulo activo. */
 @Component({
   selector: 'sigd-menu-lateral',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './menu-lateral.html',
-  styleUrl: './menu-lateral.scss',
 })
 export class MenuLateral {
   protected activo = inject(ModuloActivoService);

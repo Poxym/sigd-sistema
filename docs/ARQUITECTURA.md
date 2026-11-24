@@ -49,7 +49,7 @@ features/<modulo>/
 
 - **El marco no conoce las pantallas**: lee `core/modulos/modulos.registry.ts` (nombre, icono, menú lateral por rol). Para que un módulo aparezca en el menú basta con editar ese registro y su `routes.ts`.
 - **Repositorio en el front**: la página inyecta la clase abstracta; `proveerRepositorio()` usa la de HTTP o la de memoria según `environment.fuenteDatos`. Así cada equipo diseña con datos falsos antes de que exista su API.
-- **Estilos**: solo variables de `src/styles/_tokens.scss` y clases globales de `_componentes.scss` (`.btn`, `.tarjeta`, `.campo`, `.tabla`, `.semaforo`, `.aviso`). Iconos Tabler (`<i class="ti ti-nombre">`), los mismos del prototipo.
+- **Estilos**: `src/styles/marco.css` es una **copia fiel** del CSS del marco del prototipo v17 (paleta, tipografía Inter, capa Material 3, acceso, selector, cabecera y menú); no se edita a mano. Los ajustes propios van en `src/styles/_sigd.scss`. Los componentes del marco generan exactamente el mismo HTML y clases del prototipo, así que se ven igual. En las páginas usa las clases del prototipo: `.hd` (vía `<sigd-encabezado-pagina>`), `.card`, `.tiles/.tile`, `.btn` / `.btn.primary` / `.btn.tonal` / `.btn.ghost`, `.tag`, y las de `_sigd.scss`: `.campo`, `.tabla`, `.aviso`, `.semaforo`. Iconos Tabler (`<i class="ti ti-nombre">`), la misma familia del prototipo.
 - Las features no se importan entre sí. Si dos módulos necesitan lo mismo, se sube a `shared/` o `core/`.
 
 ## Docker

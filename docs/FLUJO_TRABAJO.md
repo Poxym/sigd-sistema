@@ -12,7 +12,7 @@
 2. En `<modulo>.routes.ts`, cambiar la entrada `PaginaPendiente` por `loadComponent: () => import(...)`.
 3. Si la pantalla es nueva en el menú, agregar su `ElementoNav` en `core/modulos/modulos.registry.ts` (icono Tabler, etiqueta, ruta, roles).
 4. Si usa datos: en `data-access/` crear el contrato `<x>.repository.ts` y sus dos implementaciones (`http` y `memoria`), y proveerlo en `providers` de las rutas del módulo. Copiar la forma de `administracion/data-access/periodos.*`.
-5. Usar `<sigd-encabezado-pagina>` y las clases globales; no redefinir colores.
+5. Usar `<sigd-encabezado-pagina>` y las clases del prototipo (`.card`, `.tiles`, `.btn.primary`, `.tag`…) más las de `_sigd.scss`; no redefinir colores: todos salen de las variables de `marco.css`.
 
 ## Agregar un caso de uso (backend)
 

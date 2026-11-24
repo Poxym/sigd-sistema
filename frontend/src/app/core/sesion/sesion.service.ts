@@ -4,6 +4,17 @@ import { MODULOS } from '../modulos/modulos.registry';
 import { Credenciales, Perfil } from './perfil.model';
 import { SesionRepository } from './sesion.repository';
 
+/** Nombre visible de cada rol (mismos textos del prototipo v17). */
+export const NOMBRE_ROL: Record<string, string> = {
+  DOCENTE: 'Docente',
+  JEFE_CARRERA: 'Jefe de carrera',
+  VICERRECTORIA: 'Vicerrectoría Académica',
+  RECTORIA: 'Rectoría',
+  SECRETARIA_ACADEMICA: 'Secretaría Académica',
+  REPRESENTANTE_INSTITUCIONAL: 'Representante institucional',
+  ADMINISTRADOR: 'Administrador general',
+};
+
 /** Estado de la sesión para toda la app (señales). */
 @Injectable({ providedIn: 'root' })
 export class SesionService {
@@ -41,6 +52,16 @@ export class SesionService {
   limpiar(): void {
     this._perfil.set(null);
   }
+
+  /** Texto bajo el nombre del usuario (U.r en el prototipo): «Docente», «Jefe de carrera», «Todos los módulos»… */
+  readonly etiquetaRol = computed(() => {
+    const p = this._perfil();
+    if (!p) return '';
+    if (MODULOS.every((m) => p.modulos.includes(m.id))) return 'Todos los módulos';
+    const orden = ['ADMINISTRADOR', 'VICERRECTORIA', 'RECTORIA', 'SECRETARIA_ACADEMICA', 'REPRESENTANTE_INSTITUCIONAL', 'JEFE_CARRERA', 'DOCENTE'];
+    const r = orden.find((x) => p.roles.includes(x));
+    return r ? NOMBRE_ROL[r] : p.roles.join(' · ');
+  });
 
   tieneRol(...roles: string[]): boolean {
     const mios = this._perfil()?.roles ?? [];

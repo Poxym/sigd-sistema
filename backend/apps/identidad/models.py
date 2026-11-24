@@ -27,7 +27,7 @@ class Usuario(ModeloBase, AbstractBaseUser):
     auth_uid = models.CharField(max_length=128, unique=True, null=True, blank=True)
     numero_empleado = models.CharField(max_length=20, unique=True)
     nombres = models.CharField(max_length=120)
-    primer_apellido = models.CharField(max_length=120)
+    primer_apellido = models.CharField(max_length=120, blank=True)
     segundo_apellido = models.CharField(max_length=120, blank=True)
     correo = models.EmailField(unique=True)
     is_active = models.BooleanField("activo", default=True)

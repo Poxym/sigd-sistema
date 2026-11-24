@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { EncabezadoPagina } from '../../../../shared/ui/encabezado-pagina/encabezado-pagina';
 import { PeriodosRepository } from '../../data-access/periodos.repository';
@@ -15,6 +15,7 @@ import { Periodo } from '../../models/periodo.model';
   templateUrl: './periodos.page.html',
   styles: `
     .alta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; align-items: end; }
+    .alta .btn { min-height: 48px; justify-content: center; }
     .aviso { margin-top: 12px; }
   `,
 })
@@ -22,6 +23,8 @@ export class PeriodosPage {
   private repo = inject(PeriodosRepository);
   protected periodos = signal<Periodo[]>([]);
   protected error = signal<string | null>(null);
+  protected hoy = new Date().toISOString().slice(0, 10);
+  protected vigente = computed(() => this.periodos().find((p) => p.inicio <= this.hoy && this.hoy <= p.fin) ?? null);
   protected form = inject(FormBuilder).nonNullable.group({
     clave: ['', Validators.required],
     inicio: ['', Validators.required],

@@ -1,34 +1,35 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, computed, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ModuloActivoService } from '../../core/modulos/modulo-activo.service';
 import { BarraSuperior } from '../barra-superior/barra-superior';
 import { MenuLateral } from '../menu-lateral/menu-lateral';
 
-const CLAVE = 'sigd-menu-colapsado';
+const CLAVE = 'sigd.nav.col';
 
-/** Marco común: barra superior + menú lateral + contenido del módulo (router-outlet). */
+/** div.app del prototipo v17: cabecera + menú lateral + contenido (#mn). Estilos en styles/marco.css. */
 @Component({
   selector: 'sigd-shell',
   imports: [RouterOutlet, BarraSuperior, MenuLateral],
   template: `
-    <div class="app" [class.col]="colapsado()" [class.abierto]="abierto()">
-      <sigd-barra-superior (abrirMenu)="abierto.set(true)" />
+    <div class="app" [class.col]="colapsado()" [class.open]="abierto()" [attr.data-mod]="modulo()">
+      <sigd-barra-superior [desplazado]="desplazado()" (abrirMenu)="abierto.set(true)" />
       <sigd-menu-lateral [colapsado]="colapsado()" (alternar)="alternar()" (navegar)="abierto.set(false)" />
-      <main id="contenido"><router-outlet /></main>
+      <main id="mn"><router-outlet /></main>
     </div>
     @if (abierto()) { <div class="scrim" (click)="abierto.set(false)"></div> }
   `,
-  styles: `
-    .app { min-height: 100vh; display: grid; grid-template-columns: var(--nav-w) minmax(0, 1fr); grid-template-rows: auto 1fr;
-      transition: grid-template-columns 0.2s ease; }
-    .app.col { grid-template-columns: var(--nav-w-col) minmax(0, 1fr); }
-    main { padding: 20px var(--mp) 32px; min-width: 0; }
-    .scrim { position: fixed; inset: 0; background: rgba(41, 75, 80, 0.35); z-index: 60; }
-    @media (max-width: 920px) { .app, .app.col { grid-template-columns: minmax(0, 1fr); } }
-  `,
 })
 export class Shell {
+  private activo = inject(ModuloActivoService);
+  protected modulo = computed(() => this.activo.modulo()?.id ?? '');
   protected abierto = signal(false);
   protected colapsado = signal(leer());
+  protected desplazado = signal(false);
+
+  @HostListener('window:scroll')
+  alDesplazar() {
+    this.desplazado.set((window.scrollY || document.documentElement.scrollTop) > 2);
+  }
 
   alternar() {
     this.colapsado.update((v) => !v);

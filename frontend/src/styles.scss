@@ -1,4 +1,6 @@
-// Estilos globales. Iconos: Tabler (clases "ti ti-<nombre>", las mismas del prototipo).
-@use 'styles/tokens';
+// Orden de carga (angular.json → styles):
+//   1. tabler-icons (iconos «ti ti-<nombre>», la misma familia del prototipo)
+//   2. styles/marco.css  → marco del prototipo v17, sin editar (paleta, tipografía, M3, acceso, cabecera, menú)
+//   3. este archivo      → base + ajustes propios de Angular
 @use 'styles/base';
-@use 'styles/componentes';
+@use 'styles/sigd';

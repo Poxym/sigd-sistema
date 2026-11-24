@@ -1,19 +1,26 @@
 <sigd-encabezado-pagina titulo="Periodos de captura" subtitulo="Periodos académicos compartidos por todos los módulos." />
 
-<section class="tarjeta">
+<div class="tiles">
+  <div class="tile"><span class="ic"><i class="ti ti-calendar-cog"></i></span><div><b>{{ periodos().length }}</b><small>Periodos registrados</small></div></div>
+  <div class="tile"><span class="ic"><i class="ti ti-calendar-event"></i></span><div><b>{{ vigente()?.clave ?? '—' }}</b><small>Periodo vigente</small></div></div>
+  <div class="tile"><span class="ic"><i class="ti ti-clock"></i></span><div><b>{{ vigente() ? vigente()!.minutos_nominales_semana / 60 + ' h' : '—' }}</b><small>Carga nominal semanal</small></div></div>
+</div>
+
+<section class="card">
   <h2>Nuevo periodo</h2>
   <form class="alta" [formGroup]="form" (ngSubmit)="crear()">
     <div class="campo"><label for="clave">Clave</label><input id="clave" formControlName="clave" placeholder="2027-2028 A" /></div>
     <div class="campo"><label for="inicio">Inicio</label><input id="inicio" type="date" formControlName="inicio" /></div>
     <div class="campo"><label for="fin">Fin</label><input id="fin" type="date" formControlName="fin" /></div>
-    <button class="btn primario" type="submit"><i class="ti ti-plus"></i>Agregar</button>
+    <button class="btn primary" type="submit"><i class="ti ti-plus"></i>Agregar periodo</button>
   </form>
-  @if (error()) { <div class="aviso error" role="alert"><i class="ti ti-alert-triangle"></i>{{ error() }}</div> }
+  @if (error()) { <div class="aviso error" role="alert"><i class="ti ti-alert-triangle"></i><span>{{ error() }}</span></div> }
 </section>
 
-<section class="tarjeta">
+<section class="card">
+  <h2>Historial de periodos</h2>
   <table class="tabla">
-    <thead><tr><th>Clave</th><th>Inicio</th><th>Fin</th><th>Semanas</th><th>Máximo semanal</th></tr></thead>
+    <thead><tr><th>Clave</th><th>Inicio</th><th>Fin</th><th>Semanas efectivas</th><th>Máximo semanal</th><th>Estado</th></tr></thead>
     <tbody>
       @for (p of periodos(); track p.id) {
         <tr>
@@ -22,9 +29,14 @@
           <td>{{ p.fin | date: 'dd/MM/yyyy' }}</td>
           <td>{{ p.semanas_efectivas }}</td>
           <td>{{ p.aplicar_maximo && p.minutos_maximos_semana ? p.minutos_maximos_semana / 60 + ' h' : 'Sin límite' }}</td>
+          <td>
+            @if (p.id === vigente()?.id) { <span class="semaforo verde">Vigente</span> }
+            @else if (p.fin < hoy) { <span class="tag">Concluido</span> }
+            @else { <span class="semaforo amarillo">Programado</span> }
+          </td>
         </tr>
       } @empty {
-        <tr><td colspan="5">Aún no hay periodos.</td></tr>
+        <tr><td colspan="6">Aún no hay periodos.</td></tr>
       }
     </tbody>
   </table>

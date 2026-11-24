@@ -11,8 +11,8 @@ CLAVE = "Unistmo#2026"
 CUENTAS = [
     ("209", "ana.ramirez@unistmo.example", "Ana", "Ramírez", ["DOCENTE"]),
     ("118", "luis.lopez@unistmo.example", "Luis", "López", ["DOCENTE", "JEFE_CARRERA"]),
-    ("100", "vicerrectoria@unistmo.example", "Vicerrectoría", "Académica", ["VICERRECTORIA"]),
-    ("001", "administracion@unistmo.example", "Administración", "Institucional", ["ADMINISTRADOR"]),
+    ("100", "vicerrectoria@unistmo.example", "Vicerrectoría", "", ["VICERRECTORIA"]),
+    ("001", "administracion@unistmo.example", "Administración", "institucional", ["ADMINISTRADOR"]),
     ("000", "coordinacion.sigd@unistmo.example", "Coordinación", "SIGD", ["ADMINISTRADOR", "JEFE_CARRERA"]),
 ]
 

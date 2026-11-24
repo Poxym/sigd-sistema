@@ -1,3 +1,4 @@
+// Tipografía del prototipo: Inter variable (100–900), servida desde public/fonts.
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -6,17 +7,11 @@
   src: url('/fonts/inter-variable.woff2') format('woff2');
 }
 
-*, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; }
-body { font: 400 15px/1.5 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--bg); }
-button, input, select, textarea { font: inherit; color: inherit; }
-button { cursor: pointer; }
-h1, h2, h3, h4, p { margin: 0; }
-[hidden] { display: none !important; }
-:focus-visible { outline: 3px solid var(--p); outline-offset: 2px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.ti { font-size: 18px; line-height: 1; vertical-align: -0.15em; }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
+// Medidas extra que usa el marco en Angular (los colores están en marco.css :root).
+:root {
+  --nav-w: 272px;
+  --nav-w-col: 88px;
 }
+
+// Iconos: mismas medidas que los iconos SVG del prototipo (1em, 18px, alineados a -.2em).
+.ti { display: inline-block; width: 1em; height: 1em; font-size: 18px; line-height: 1; flex: none; vertical-align: -0.2em; font-style: normal; }

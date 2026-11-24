@@ -1,0 +1,49 @@
+// Ajustes propios de Angular sobre el marco del prototipo.
+// Regla: aquí no se inventan colores; solo se usan las variables de marco.css
+// (--p --ph --pa --ps --pon --bg --panel --line --ink --muted --ok --warn --err, --md-*).
+
+// Los componentes del marco no deben romper la retícula de .app (header/aside/main son hijos directos).
+sigd-barra-superior, sigd-menu-lateral, sigd-encabezado-pagina { display: contents; }
+a.ni, a.pk-card { text-decoration: none; color: inherit; }
+a.ni[aria-current='page'] { color: var(--pon); }
+
+// ---- Piezas para las páginas de los módulos (mismo lenguaje M3 del prototipo) ----
+.campo { display: flex; flex-direction: column; gap: 6px; min-width: 0;
+  label { font-size: 14px; font-weight: 600; color: var(--ink); }
+  input, select, textarea { min-height: 48px; padding: 0 14px; border: 1px solid var(--md-outline, #7f919c); border-radius: var(--md-shape-xs, 4px);
+    background: #fff; font: inherit; color: var(--ink); transition: border-color .15s;
+    &:hover { border-color: var(--ink); }
+    &:focus { outline: none; border: 2px solid var(--p); padding: 0 13px; } } }
+
+.tabla { width: 100%; border-collapse: collapse; font-size: 15px;
+  th { text-align: left; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .02em; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  td { padding: 12px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; } }
+
+.aviso { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: var(--md-shape-sm, 8px); font-size: 14px;
+  .ti { font-size: 20px; margin-top: 1px; }
+  &.error { background: var(--err-bg); color: var(--err); }
+  &.ok { background: var(--ok-bg); color: var(--ok); }
+  &.atencion { background: var(--warn-bg); color: var(--warn); } }
+
+// Semáforo de cumplimiento (EstadoSemaforo / ColorIndicador)
+.semaforo { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  &::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  &.verde { background: var(--ok-bg); color: var(--ok); }
+  &.amarillo { background: var(--warn-bg); color: var(--warn); }
+  &.rojo { background: var(--err-bg); color: var(--err); } }
+
+// Página pendiente de migrar
+.pendiente { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 56px 16px; text-align: center; color: var(--muted);
+  .ic { width: 56px; height: 56px; border-radius: 16px; background: var(--ps); color: var(--p); display: grid; place-items: center; .ti { font-size: 28px; } }
+  b { color: var(--ink); font-size: 17px; }
+  code { background: var(--panel); color: var(--pon); padding: 2px 8px; border-radius: 6px; font-size: 13px; } }
+.resp { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--muted); }
+
+// Corrección sobre el prototipo: a ≤ 420 px la cabecera se desbordaba ~25 px (el botón de salir quedaba cortado).
+@media (max-width: 420px) {
+  header.top { gap: 4px; }
+  header.top .hr { gap: 4px; }
+  .mods button { min-width: 34px; padding: 0 5px; }
+  header.top .btn.lo { padding: 0 10px; }
+}

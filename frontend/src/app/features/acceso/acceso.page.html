@@ -1,40 +1,32 @@
-<div class="acceso">
-  <section class="identidad" aria-label="SIGD">
-    <sigd-marca />
-    <div class="cuerpo">
-      <p class="hero">Cada semestre,<br />una nueva<br /><em>perspectiva.</em></p>
-      <p class="lead">Dale estructura a tus compromisos.<br />Dale espacio a lo que sigue.</p>
-    </div>
+<!-- Pantalla de acceso: mismo HTML que el prototipo v17 (00-marco/marco.html, bloque .login). -->
+<div class="login" id="login"><div class="access">
+  <section class="identity" aria-label="SIGD">
+    <div class="brand"><span class="plate"><img src="assets/escudo-unistmo.png" alt="Escudo de la Universidad del Istmo" /></span><i class="bv" aria-hidden="true"></i><div><b>SIGD</b><small>Sistema Integral de Gestión Docente</small></div></div>
+    <div class="id-body"><p class="hero enter">Cada semestre,<br />una nueva<br /><em>perspectiva.</em></p><p class="lead enter e2">Dale estructura a tus compromisos.<br />Dale espacio a lo que sigue.</p></div>
+    <div class="art" aria-hidden="true"><svg preserveAspectRatio="none" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clipx)"><path opacity="0.25" d="M-50 300C80 280 20 -60 430 40" stroke="#5E9A86" stroke-width="2"/><path opacity="0.273077" d="M-46 300C85 275 27 -56 434 46" stroke="#3C6B83"/><path opacity="0.296154" d="M-42 300C90 270 34 -52 438 52" stroke="#3C6B83"/><path opacity="0.319231" d="M-38 300C95 265 41 -48 442 58" stroke="#E0E7EA"/><path opacity="0.342308" d="M-34 300C100 260 48 -44 446 64" stroke="#3C6B83"/><path opacity="0.365385" d="M-30 300C105 255 55 -40 450 70" stroke="#5E9A86" stroke-width="2"/><path opacity="0.388462" d="M-26 300C110 250 62 -36 454 76" stroke="#E0E7EA"/><path opacity="0.411538" d="M-22 300C115 245 69 -32 458 82" stroke="#3C6B83"/><path opacity="0.434615" d="M-18 300C120 240 76 -28 462 88" stroke="#3C6B83"/><path opacity="0.457692" d="M-14 300C125 235 83 -24 466 94" stroke="#E0E7EA"/><path opacity="0.480769" d="M-10 300C130 230 90 -20 470 100" stroke="#5E9A86" stroke-width="2"/><path opacity="0.503846" d="M-6 300C135 225 97 -16 474 106" stroke="#3C6B83"/><path opacity="0.526923" d="M-2 300C140 220 104 -12 478 112" stroke="#E0E7EA"/><path opacity="0.55" d="M2 300C145 215 111 -8 482 118" stroke="#3C6B83"/><path opacity="0.573077" d="M6 300C150 210 118 -4 486 124" stroke="#3C6B83"/><path opacity="0.596154" d="M10 300C155 205 125 0 490 130" stroke="#5E9A86" stroke-width="2"/><path opacity="0.619231" d="M14 300C160 200 132 4 494 136" stroke="#3C6B83"/><path opacity="0.642308" d="M18 300C165 195 139 8 498 142" stroke="#3C6B83"/><path opacity="0.665385" d="M22 300C170 190 146 12 502 148" stroke="#E0E7EA"/><path opacity="0.688462" d="M26 300C175 185 153 16 506 154" stroke="#3C6B83"/><path opacity="0.711538" d="M30 300C180 180 160 20 510 160" stroke="#5E9A86" stroke-width="2"/><path opacity="0.734615" d="M34 300C185 175 167 24 514 166" stroke="#E0E7EA"/><path opacity="0.757692" d="M38 300C190 170 174 28 518 172" stroke="#3C6B83"/><path opacity="0.780769" d="M42 300C195 165 181 32 522 178" stroke="#3C6B83"/><path opacity="0.803846" d="M46 300C200 160 188 36 526 184" stroke="#E0E7EA"/><path opacity="0.826923" d="M50 300C205 155 195 40 530 190" stroke="#5E9A86" stroke-width="2"/></g><defs><clipPath id="clipx"><rect width="400" height="300" fill="white"/></clipPath></defs></svg></div>
   </section>
-
-  <main class="entrada">
-    <div class="caja">
-      <h1>Bienvenido<br />a tu espacio.</h1>
-      <p class="desc">Ingresa con tu cuenta institucional.</p>
-      <form [formGroup]="form" (ngSubmit)="entrar()" novalidate>
-        <div class="campo">
-          <label for="u">Número de empleado o correo institucional</label>
-          <input id="u" formControlName="identificador" autocomplete="username" spellcheck="false" placeholder="p. ej. 209 o nombre@unistmo.example" />
-          @if (form.controls.identificador.touched && form.controls.identificador.invalid) {
-            <small class="fe">Escribe tu número de empleado o correo institucional.</small>
-          }
-        </div>
-        <div class="campo">
-          <label for="pw">Contraseña</label>
-          <div class="pw">
-            <input id="pw" formControlName="password" [type]="verClave() ? 'text' : 'password'" autocomplete="current-password" placeholder="Contraseña" />
-            <button type="button" (click)="verClave.set(!verClave())" [attr.aria-pressed]="verClave()" [attr.aria-label]="verClave() ? 'Ocultar contraseña' : 'Mostrar contraseña'">
-              <i class="ti" [class.ti-eye]="!verClave()" [class.ti-eye-off]="verClave()"></i>
-            </button>
-          </div>
-          @if (form.controls.password.touched && form.controls.password.invalid) { <small class="fe">Escribe tu contraseña.</small> }
-        </div>
-        @if (error()) {
-          <div class="aviso error" role="alert"><i class="ti ti-alert-triangle"></i><div><strong>{{ error() }}</strong> Revisa los datos e intenta de nuevo.</div></div>
-        }
-        <button class="btn primario grande" type="submit" [disabled]="enviando()">Entrar a mi espacio <i class="ti ti-arrow-right"></i></button>
-      </form>
-      <p class="sec"><i class="ti ti-lock"></i>Acceso para personal autorizado por la Vicerrectoría Académica.</p>
-    </div>
-  </main>
-</div>
+  <main class="entry"><div class="entry-in enter e2">
+    <span class="stripe" aria-hidden="true"><i style="background:#183E56"></i><i style="background:#285C76"></i><i style="background:#5E9A86"></i></span>
+    <h1 class="pt">Bienvenido<br />a tu espacio.</h1>
+    <p class="desc">Ingresa con tu cuenta institucional.</p>
+    <form id="lf" novalidate [formGroup]="form" (ngSubmit)="entrar()">
+      <div class="fld">
+        <label class="fl" for="u">Número de empleado o correo institucional</label>
+        <div class="fw"><i class="ti ti-user"></i><input class="fc" id="u" formControlName="identificador" [class.bad]="falta('identificador')" autocomplete="username" spellcheck="false" placeholder="p. ej. 209 o nombre@unistmo.example" /></div>
+        @if (falta('identificador')) { <span class="fe">Escribe tu número de empleado o correo institucional.</span> }
+      </div>
+      <div class="fld">
+        <label class="fl" for="pw">Contraseña</label>
+        <div class="fw pw"><i class="ti ti-lock"></i><input class="fc" id="pw" formControlName="password" [class.bad]="falta('password')" [type]="verClave() ? 'text' : 'password'" autocomplete="current-password" placeholder="Contraseña" /><button type="button" id="eye" (click)="verClave.set(!verClave())" [attr.aria-pressed]="verClave()" [attr.aria-label]="verClave() ? 'Ocultar contraseña' : 'Mostrar contraseña'" [title]="verClave() ? 'Ocultar contraseña' : 'Mostrar contraseña'"><i class="ti" [class.ti-eye]="!verClave()" [class.ti-eye-off]="verClave()"></i></button></div>
+        @if (falta('password')) { <span class="fe">Escribe tu contraseña.</span> }
+      </div>
+      @if (error()) {
+        <div class="notice" id="err" role="alert"><i class="ti ti-alert-triangle"></i><div><strong>{{ error() }}</strong> Revisa los datos e intenta de nuevo.</div></div>
+      }
+      <button class="btn primary lg-btn" type="submit" [disabled]="enviando()">Entrar a mi espacio <i class="ti ti-arrow-right"></i></button>
+    </form>
+    <button type="button" class="lnote" id="hb" [attr.aria-expanded]="ayuda()" (click)="ayuda.set(!ayuda())">¿Necesitas acceso? Consulta a soporte institucional.</button>
+    @if (ayuda()) { <p class="hbox" id="hx">El alta de cuentas y la recuperación de acceso los atiende el área institucional que administra los usuarios. Este sistema no crea cuentas ni envía correos.</p> }
+    <div class="sec"><i class="ti ti-lock"></i>Acceso para personal autorizado por la Vicerrectoría Académica.</div>
+  </div></main>
+</div></div>

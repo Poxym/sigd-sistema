@@ -10,16 +10,15 @@ import { EncabezadoPagina } from '../encabezado-pagina/encabezado-pagina';
   selector: 'sigd-pagina-pendiente',
   imports: [EncabezadoPagina],
   template: `
-    <sigd-encabezado-pagina [titulo]="titulo()" [subtitulo]="'Empresa responsable: ' + (activo.modulo()?.responsable ?? '')" />
-    <div class="tarjeta vacia">
-      <i class="ti ti-tools"></i>
-      <p>Pantalla pendiente de migrar a Angular.</p>
-      @if (referencia()) { <small>Referencia del prototipo: <code>{{ referencia() }}</code></small> }
-    </div>
-  `,
-  styles: `
-    .vacia { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 48px 16px; text-align: center; color: var(--muted);
-      .ti { font-size: 40px; color: var(--pa); } code { background: var(--panel); padding: 2px 6px; border-radius: 4px; } }
+    <sigd-encabezado-pagina [titulo]="titulo()" [subtitulo]="activo.modulo()?.nombre">
+      <span class="resp"><i class="ti ti-users"></i>Empresa responsable: {{ activo.modulo()?.responsable }}</span>
+    </sigd-encabezado-pagina>
+    <section class="card pendiente">
+      <span class="ic"><i class="ti ti-tools"></i></span>
+      <b>Pantalla pendiente de migrar a Angular</b>
+      <span>Toma el diseño, los textos y los datos de ejemplo del prototipo.</span>
+      @if (referencia()) { <code>{{ referencia() }}</code> }
+    </section>
   `,
 })
 export class PaginaPendiente {

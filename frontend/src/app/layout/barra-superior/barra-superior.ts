@@ -1,22 +1,20 @@
-import { Component, inject, output } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, inject, input, output } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModuloActivoService } from '../../core/modulos/modulo-activo.service';
 import { SesionService } from '../../core/sesion/sesion.service';
-import { Marca } from '../marca/marca';
 
-/** header.top del prototipo: marca, selector de módulo, campana, usuario y salir. */
+/** header.top del prototipo v17 (mismo HTML y clases; estilos en styles/marco.css). */
 @Component({
   selector: 'sigd-barra-superior',
-  imports: [Marca, RouterLink],
   templateUrl: './barra-superior.html',
-  styleUrl: './barra-superior.scss',
 })
 export class BarraSuperior {
   protected sesion = inject(SesionService);
   protected activo = inject(ModuloActivoService);
-  private router = inject(Router);
-  /** Abre el menú lateral en pantallas angostas. */
+  protected router = inject(Router);
   abrirMenu = output<void>();
+  /** Sombra de la cabecera al desplazar (clase .sc del prototipo). */
+  desplazado = input(false);
 
   protected noLeidas() {
     return this.activo.insignias()['plan/notificaciones'] ?? 0;
